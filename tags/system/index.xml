@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>system on Jasmine❀Hiker</title>
-    <link>/tags/system/</link>
-    <description>Recent content in system on Jasmine❀Hiker</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <title>System on Jasmine❀Hiker</title>
+    <link>//localhost:1313/tags/system/</link>
+    <description>Recent content in System on Jasmine❀Hiker</description>
+    <generator>Hugo</generator>
+    <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 29 Jan 2022 09:20:55 +0800</lastBuildDate><atom:link href="/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jan 2022 09:20:55 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>进程与线程</title>
-      <link>/posts/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/</link>
+      <link>//localhost:1313/posts/process_and_threads/</link>
       <pubDate>Sat, 29 Jan 2022 09:20:55 +0800</pubDate>
-      
-      <guid>/posts/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/</guid>
-      <description>进程与线程的理解 个人对于进程和线程概念的理解，可能会有些偏差
-进程（Process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。^1^
-线程（英语：thread）是操作系统能够进行运算调度的最小单位。它被包含在进程之中，是进程中的实际运作单位。^2^
-百度百科上面的解释是一种比较抽象的解释，看了不是非常容易理解。
-可以进程的概念和线程的概念联系到一起进行理解
-首先明确一下进程的概念：
-“进程是数据集合的运行运动”，这句话简单来说就是将数据进行整合的封装成一个又个文件，而这些文件就是模块。
-“线程是操作系统能够进行运算调度的最小单位”，这句话简单来说就是线程把各种文件模块跑起来的单位。
-这就需要了解一下一个程序是如何跑起来的了？ 一个程序要运行起来需要创建进程，**所有的进程都是别的进程创建的（第一个进程是由操作系统内核创建的）**都是由explorer.exe这个进程创建的。
-Explorer是怎么创建进程的？
-它调用了一个函数：CreateProcess()，把我们的程序变成了进程
-CreateProcess怎么把一个程序变成进程的？
-映射exe文件
-创建内核对象EPROCESS
-映射系统DLL(ntdll.dll)
-创建线程内核对象ETHREAD
-系统启动线程
-5.1 映射DLL(ntdll.LdrlnitializeThunk)
-5.2 线程开始执行
-进程提供代码、资源、数据等，使用这些东西的都是线程，不然它就是一个死的
-那么该怎么去理解进程和线程 我个人找到了几个理解线程和进程的角度：
-生物学的角度 参考有丝分裂的过程来进行进程与线程的理解
-根据高中生物学的基础知识来理解，我们都知道生物的有丝分裂的过程是一个高中生物学非常基本的分裂过程。有丝分裂主要分为两个重要的时期，分裂间期和分裂期。根据最基本的高中生物知识可以很容易地知道，分裂间期需要准备资源的过程，也就是蛋白质和DNA复制的过程。分裂期也就是利用资源进行分裂的过程。
-我们可以这样理解进程和线程，进程提供代码、资源、数据。线程进行程序的运算。仔细观察线程和进程是不是和生物学中的有丝分裂的分裂间期和分裂期。
-我们可以把有丝分裂的分裂间期来看作进程的过程，把有丝分裂的分裂期来看作线程的过程。
-这样进行类比，对于进程和线程的理解就非常清晰了。
-面向对象的角度 面向对象的思想是现代编程的一个重要思想，通过面向对象的概念可以比较清晰地理解进程和线程的关系。
-面向对象是一种抽象的思维过程，有几个比较关键的概念，类，构造函数，析构函数，实例化。在编程过程中，会经常使用到面向对象的思想。
-#include &amp;lt;iostream&amp;gt; class MyObj { int var = 0; public: MyObj() { var = 10; } int run() { std::cout &amp;lt;&amp;lt; &amp;#34;the program running!&amp;#34; &amp;lt;&amp;lt; std::endl; return 0; } ~MyObj() { var = 0; } }; int main(){ MyObj* obj = new MyObj(); obj-&amp;gt;run(); return 0; } 这是C++中简单的对象格式。</description>
+      <guid>//localhost:1313/posts/process_and_threads/</guid>
+      <description>&lt;h1 id=&#34;进程与线程的理解&#34;&gt;进程与线程的理解&lt;/h1&gt;&#xA;&lt;p&gt;个人对于进程和线程概念的理解，可能会有些偏差&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;进程（Process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是&lt;a href=&#34;https://baike.baidu.com/item/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&#34;&gt;操作系统&lt;/a&gt;结构的基础。^1^&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;线程&lt;/strong&gt;（英语：thread）是&lt;a href=&#34;https://baike.baidu.com/item/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F&#34;&gt;操作系统&lt;/a&gt;能够进行运算&lt;a href=&#34;https://baike.baidu.com/item/%E8%B0%83%E5%BA%A6&#34;&gt;调度&lt;/a&gt;的最小单位。它被包含在&lt;a href=&#34;https://baike.baidu.com/item/%E8%BF%9B%E7%A8%8B&#34;&gt;进程&lt;/a&gt;之中，是&lt;a href=&#34;https://baike.baidu.com/item/%E8%BF%9B%E7%A8%8B&#34;&gt;进程&lt;/a&gt;中的实际运作单位。^2^&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;百度百科上面的解释是一种比较抽象的解释，看了不是非常容易理解。&lt;/p&gt;&#xA;&lt;p&gt;可以进程的概念和线程的概念联系到一起进行理解&lt;/p&gt;&#xA;&lt;p&gt;首先明确一下进程的概念：&lt;/p&gt;&#xA;&lt;p&gt;“进程是数据集合的运行运动”，这句话简单来说就是将数据进行整合的封装成一个又个文件，而这些文件就是模块。&lt;/p&gt;&#xA;&lt;p&gt;“线程是操作系统能够进行运算调度的最小单位”，这句话简单来说就是线程把各种文件模块跑起来的单位。&lt;/p&gt;&#xA;&lt;h2 id=&#34;这就需要了解一下一个程序是如何跑起来的了&#34;&gt;这就需要了解一下一个程序是如何跑起来的了？&lt;/h2&gt;&#xA;&lt;p&gt;一个程序要运行起来需要创建进程，**所有的进程都是别的进程创建的（第一个进程是由操作系统内核创建的）**都是由explorer.exe这个进程创建的。&lt;/p&gt;&#xA;&lt;p&gt;Explorer是怎么创建进程的？&lt;/p&gt;&#xA;&lt;p&gt;它调用了一个函数：&lt;code&gt;CreateProcess()&lt;/code&gt;，把我们的程序变成了进程&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;CreateProcess&lt;/code&gt;怎么把一个程序变成进程的？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;映射exe文件&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;创建内核对象EPROCESS&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;映射系统DLL(ntdll.dll)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;创建线程内核对象ETHREAD&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;系统启动线程&lt;/p&gt;&#xA;&lt;p&gt;5.1 映射DLL(ntdll.LdrlnitializeThunk)&lt;/p&gt;&#xA;&lt;p&gt;5.2 线程开始执行&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;进程提供代码、资源、数据等，使用这些东西的都是线程，不然它就是一个死的&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;那么该怎么去理解进程和线程&#34;&gt;那么该怎么去理解进程和线程&lt;/h2&gt;&#xA;&lt;p&gt;我个人找到了几个理解线程和进程的角度：&lt;/p&gt;&#xA;&lt;h3 id=&#34;生物学的角度&#34;&gt;生物学的角度&lt;/h3&gt;&#xA;&lt;p&gt;参考有丝分裂的过程来进行进程与线程的理解&lt;/p&gt;&#xA;&lt;p&gt;根据高中生物学的基础知识来理解，我们都知道生物的有丝分裂的过程是一个高中生物学非常基本的分裂过程。有丝分裂主要分为两个重要的时期，分裂间期和分裂期。根据最基本的高中生物知识可以很容易地知道，分裂间期需要准备资源的过程，也就是蛋白质和DNA复制的过程。分裂期也就是利用资源进行分裂的过程。&lt;/p&gt;&#xA;&lt;p&gt;我们可以这样理解进程和线程，进程提供代码、资源、数据。线程进行程序的运算。仔细观察线程和进程是不是和生物学中的有丝分裂的分裂间期和分裂期。&lt;/p&gt;&#xA;&lt;p&gt;我们可以把有丝分裂的分裂间期来看作进程的过程，把有丝分裂的分裂期来看作线程的过程。&lt;/p&gt;&#xA;&lt;p&gt;这样进行类比，对于进程和线程的理解就非常清晰了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;面向对象的角度&#34;&gt;面向对象的角度&lt;/h3&gt;&#xA;&lt;p&gt;面向对象的思想是现代编程的一个重要思想，通过面向对象的概念可以比较清晰地理解进程和线程的关系。&lt;/p&gt;&#xA;&lt;p&gt;面向对象是一种抽象的思维过程，有几个比较关键的概念，类，构造函数，析构函数，实例化。在编程过程中，会经常使用到面向对象的思想。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MyObj&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; var &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    MyObj() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        var &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;run&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;cout &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;the program running!&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; std&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;endl;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;MyObj() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        var &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;};&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(){&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    MyObj&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; obj &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; MyObj();&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    obj&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;run();&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这是C++中简单的对象格式。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

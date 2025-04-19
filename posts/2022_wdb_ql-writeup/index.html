@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
@@ -11,7 +12,7 @@ Crypto题目由于自身的数学敏感度不够没能解出，还需要继续�
 解出 fakeshell 题目给到了一个exe文件，使用die查看该文件：
 发现是一个upx压缩壳加密的程序，尝试使用upx脱壳：
 发现壳可能被修改过，需要手动脱壳。先尝试运行下程序，寻找下可能存在的锚点字符串信息：
-找到两个锚点字符串，一个是&amp;lt;&amp;lt;Input your flag:，另一个是Wrong.
+找到两个锚点字符串，一个是&lt;&lt;Input your flag:，另一个是Wrong.
 使用x64dbg进行手动脱壳，进行入口点的测试找到一个关键跳转地址0x1400276CB
 这是一个长跳转指令，运行到这个指令的时候程序已经完成解密。可以对程序的内存引用进行查看：
 发现程序的内存引用中已经出现了锚点字符串，说明此时的程序已经完成了解密。然后跟进到锚点字符串所在的函数位置：
@@ -29,11 +30,12 @@ Crypto题目由于自身的数学敏感度不够没能解出，还需要继续�
 第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：
 发现判断的位置有密文，跟进密文查看：
 使用shift&#43; E将数据提取出来，可以得到：
-unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的" />
+unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的
+" />
 <meta name="keywords" content=", writeup, ctf" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/2022_wdb_ql-writeup/" />
+<link rel="canonical" href="//localhost:1313/posts/2022_wdb_ql-writeup/" />
 
 
     <title>
@@ -46,7 +48,9 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 
 
 
-<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
 
 
 
@@ -59,8 +63,9 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
     <meta name="msapplication-TileColor" content="">
 
 
-<meta itemprop="name" content="2022 网鼎杯 青龙组 Writeup">
-<meta itemprop="description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
+
+  <meta itemprop="name" content="2022 网鼎杯 青龙组 Writeup">
+  <meta itemprop="description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
 第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。
 Crypto题目由于自身的数学敏感度不够没能解出，还需要继续提高
 解出 fakeshell 题目给到了一个exe文件，使用die查看该文件：
@@ -84,15 +89,17 @@ Crypto题目由于自身的数学敏感度不够没能解出，还需要继续�
 第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：
 发现判断的位置有密文，跟进密文查看：
 使用shift&#43; E将数据提取出来，可以得到：
-unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的"><meta itemprop="datePublished" content="2022-08-31T17:28:44+08:00" />
-<meta itemprop="dateModified" content="2022-08-31T17:28:44+08:00" />
-<meta itemprop="wordCount" content="1902"><meta itemprop="image" content=""/>
-<meta itemprop="keywords" content="writeup,ctf," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content=""/>
+unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的">
+  <meta itemprop="datePublished" content="2022-08-31T17:28:44+08:00">
+  <meta itemprop="dateModified" content="2022-08-31T17:28:44+08:00">
+  <meta itemprop="wordCount" content="1902">
+  <meta itemprop="image" content="//localhost:1313/">
+  <meta itemprop="keywords" content="Writeup,Ctf">
 
-<meta name="twitter:title" content="2022 网鼎杯 青龙组 Writeup"/>
-<meta name="twitter:description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="2022 网鼎杯 青龙组 Writeup">
+  <meta name="twitter:description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
 第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。
 Crypto题目由于自身的数学敏感度不够没能解出，还需要继续提高
 解出 fakeshell 题目给到了一个exe文件，使用die查看该文件：
@@ -116,12 +123,14 @@ Crypto题目由于自身的数学敏感度不够没能解出，还需要继续�
 第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：
 发现判断的位置有密文，跟进密文查看：
 使用shift&#43; E将数据提取出来，可以得到：
-unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的"/>
+unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的">
 
 
 
-    <meta property="og:title" content="2022 网鼎杯 青龙组 Writeup" />
-<meta property="og:description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
+    <meta property="og:url" content="//localhost:1313/posts/2022_wdb_ql-writeup/">
+  <meta property="og:site_name" content="Jasmine❀Hiker">
+  <meta property="og:title" content="2022 网鼎杯 青龙组 Writeup">
+  <meta property="og:description" content="2022 网鼎杯 青龙组 Writeup 今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。
 第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。
 Crypto题目由于自身的数学敏感度不够没能解出，还需要继续提高
 解出 fakeshell 题目给到了一个exe文件，使用die查看该文件：
@@ -145,11 +154,15 @@ Crypto题目由于自身的数学敏感度不够没能解出，还需要继续�
 第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：
 发现判断的位置有密文，跟进密文查看：
 使用shift&#43; E将数据提取出来，可以得到：
-unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022_wdb_ql-writeup/" /><meta property="og:image" content=""/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-31T17:28:44+08:00" />
-<meta property="article:modified_time" content="2022-08-31T17:28:44+08:00" /><meta property="og:site_name" content="Jasmine❀Hiker" />
+unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x45, 0x00, 0x00, 0x00, 0x30, 0x00, 0x00, 0x00, 0x5C, 0x00, 0x00, 0x00, 0x49, 0x00, 0x00, 0x00, 0x5A, 0x00, 0x00, 0x00, 0x79, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x78, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x6F, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; 显然是以4字节，小端序存储的">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-08-31T17:28:44+08:00">
+    <meta property="article:modified_time" content="2022-08-31T17:28:44+08:00">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Ctf">
+    <meta property="og:image" content="//localhost:1313/">
 
 
 
@@ -158,7 +171,8 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 
 
 
-    <meta property="article:published_time" content="2022-08-31 17:28:44 &#43;0800 CST" />
+    <meta property="article:published_time" content="2022-08-31 17:28:44 &#43;0800 HKT" />
+
 
 
 
@@ -196,9 +210,8 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 
 
         <span class="header__right">
-            
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/tags">Tags</a></li><li><a href="/link">Link</a></li><li><a href="/about">About</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/link">Link</a></li><li><a href="/tags">Tags</a></li>
     </ul>
 </nav>
 
@@ -208,7 +221,6 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -232,7 +244,7 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 
     <article>
       <h1 class="post-title">
-        <a href="/posts/2022_wdb_ql-writeup/">2022 网鼎杯 青龙组 Writeup</a>
+        <a href="//localhost:1313/posts/2022_wdb_ql-writeup/">2022 网鼎杯 青龙组 Writeup</a>
       </h1>
 
       
@@ -272,39 +284,39 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 <h2 id="解出">解出</h2>
 <h3 id="fakeshell">fakeshell</h3>
 <p>题目给到了一个exe文件，使用die查看该文件：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828123956402.png" alt="image-20220828123956402"></p>
+<p><img alt="image-20220828123956402" src="/images/2022_WDB_QL-writeup/image-20220828123956402.png"></p>
 <p>发现是一个upx压缩壳加密的程序，尝试使用upx脱壳：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828133038392.png" alt="image-20220828133038392"></p>
+<p><img alt="image-20220828133038392" src="/images/2022_WDB_QL-writeup/image-20220828133038392.png"></p>
 <p>发现壳可能被修改过，需要手动脱壳。先尝试运行下程序，寻找下可能存在的锚点字符串信息：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828140533175.png" alt="image-20220828140533175"></p>
+<p><img alt="image-20220828140533175" src="/images/2022_WDB_QL-writeup/image-20220828140533175.png"></p>
 <p>找到两个锚点字符串，一个是<code>&lt;&lt;Input your flag:</code>，另一个是<code>Wrong.</code></p>
 <p>使用x64dbg进行手动脱壳，进行入口点的测试找到一个关键跳转地址0x1400276CB</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828140317972.png" alt="image-20220828140317972"></p>
+<p><img alt="image-20220828140317972" src="/images/2022_WDB_QL-writeup/image-20220828140317972.png"></p>
 <p>这是一个长跳转指令，运行到这个指令的时候程序已经完成解密。可以对程序的内存引用进行查看：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828140739058.png" alt="image-20220828140739058"></p>
+<p><img alt="image-20220828140739058" src="/images/2022_WDB_QL-writeup/image-20220828140739058.png"></p>
 <p>发现程序的内存引用中已经出现了锚点字符串，说明此时的程序已经完成了解密。然后跟进到锚点字符串所在的函数位置：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828140905779.png" alt="image-20220828140905779"></p>
+<p><img alt="image-20220828140905779" src="/images/2022_WDB_QL-writeup/image-20220828140905779.png"></p>
 <p>这个位置应该是主函数空间，在这个主函数空间中对函数开头位置下断点，然后让程序运行到断点位置</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828141834266.png" alt="image-20220828141834266"></p>
+<p><img alt="image-20220828141834266" src="/images/2022_WDB_QL-writeup/image-20220828141834266.png"></p>
 <p>然后使用x64dbg的Scylla插件进行dump内存：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828142149592.png" alt="image-20220828142149592"></p>
+<p><img alt="image-20220828142149592" src="/images/2022_WDB_QL-writeup/image-20220828142149592.png"></p>
 <p>从当前位置进行dump即可，得到一个dump的程序。</p>
 <p>现在完成手动脱壳，进入到下一步，进行ida pro的静态分析：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828142350437.png" alt="image-20220828142350437"></p>
+<p><img alt="image-20220828142350437" src="/images/2022_WDB_QL-writeup/image-20220828142350437.png"></p>
 <p>使用F5插件来查看程序反编译的代码进行分析</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828142457029.png" alt="image-20220828142457029"></p>
+<p><img alt="image-20220828142457029" src="/images/2022_WDB_QL-writeup/image-20220828142457029.png"></p>
 <p>输入的数据存储到v4变量中，对v4变量处理的函数有两个，对这两个函数依次进行审计。</p>
 <p>首先分析第一个函数，这个函数要一直跟进跟进到和参数有关的位置</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828142835318.png" alt="image-20220828142835318"></p>
+<p><img alt="image-20220828142835318" src="/images/2022_WDB_QL-writeup/image-20220828142835318.png"></p>
 <p>第一个函数中，存在一个判断和一个异或运算。</p>
 <p>判断是对输入的数据进行了处理，猜测应该是进行长度判断，判断长度是否是20位。</p>
 <p>异或操作是单纯对于输入数据的运行对于程序运行流程没有太多影响</p>
 <p>分析第二个函数，和第一个函数的跟进方法类似</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828144648807.png" alt="image-20220828144648807"></p>
+<p><img alt="image-20220828144648807" src="/images/2022_WDB_QL-writeup/image-20220828144648807.png"></p>
 <p>第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828145157336.png" alt="image-20220828145157336"></p>
+<p><img alt="image-20220828145157336" src="/images/2022_WDB_QL-writeup/image-20220828145157336.png"></p>
 <p>发现判断的位置有密文，跟进密文查看：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828145310441.png" alt="image-20220828145310441"></p>
+<p><img alt="image-20220828145310441" src="/images/2022_WDB_QL-writeup/image-20220828145310441.png"></p>
 <p>使用<code>shift</code>+ <code>E</code>将数据提取出来，可以得到：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> ida_chars[] <span style="color:#f92672">=</span>
 </span></span><span style="display:flex;"><span>{
@@ -358,22 +370,22 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 </span></span></code></pre></div><h3 id="handmake">Handmake</h3>
 <p>这道题目是手工，应该是需要手工寻找一些内容</p>
 <p>题目给到了一个go程序的源码：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828150430370.png" alt="image-20220828150430370"></p>
+<p><img alt="image-20220828150430370" src="/images/2022_WDB_QL-writeup/image-20220828150430370.png"></p>
 <p>总共有大约15w行的代码，尝试编译运行：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828150855335.png" alt="image-20220828150855335"></p>
+<p><img alt="image-20220828150855335" src="/images/2022_WDB_QL-writeup/image-20220828150855335.png"></p>
 <p>应该是英文的阅读理解找函数的题目，理解这两句话的意思就可以求解。</p>
 <p><code>Input the first function, which has 6 parameters and the third named gLIhR: </code></p>
 <p>这句话就是找到一个有六个参数的函数而且第三个参数是<code>gLIhR</code></p>
 <p><code>Input the second function, which has 3 callers and invokes the function named cHZv5op8rOmlAkb6:</code></p>
 <p>这句话就是找到一个函数，这个函数被调用了3次并且调用了一个名为<code>cHZv5op8rOmlAkb6</code>函数。</p>
 <p>根据要求去寻找函数名：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828151548954.png" alt="image-20220828151548954"></p>
+<p><img alt="image-20220828151548954" src="/images/2022_WDB_QL-writeup/image-20220828151548954.png"></p>
 <p>然后进行程序的测试就可以得到flag：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828151706620.png" alt="image-20220828151706620"></p>
+<p><img alt="image-20220828151706620" src="/images/2022_WDB_QL-writeup/image-20220828151706620.png"></p>
 <h2 id="复现">复现</h2>
 <h3 id="crypto091">Crypto091</h3>
 <p>这道题目被队友解答，我就没有进行看了，赛后进行复现下</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828152017556.png" alt="image-20220828152017556"></p>
+<p><img alt="image-20220828152017556" src="/images/2022_WDB_QL-writeup/image-20220828152017556.png"></p>
 <p>这道题目要寻找到关键信息，本道题目的关键信息有：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>170号段首批放号的联通号码
 </span></span><span style="display:flex;"><span>
@@ -382,13 +394,13 @@ unsigned char ida_chars[] = { 0x4B, 0x00, 0x00, 0x00, 0x48, 0x00, 0x00, 0x00, 0x
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>flag格式：flag{13位电话号码（纯数字，含国家代码）}
 </span></span></code></pre></div><p>使用搜索引擎进行查找：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828153105747.png" alt="image-20220828153105747"></p>
+<p><img alt="image-20220828153105747" src="/images/2022_WDB_QL-writeup/image-20220828153105747.png"></p>
 <p>1709是首批号码段，下面是对hash的类型进行猜测，首先看看哈希的长度：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828153953231.png" alt="image-20220828153953231"></p>
+<p><img alt="image-20220828153953231" src="/images/2022_WDB_QL-writeup/image-20220828153953231.png"></p>
 <p>hash数据的长度是64位可能是sha256加密，可以使用hacker工具Hashcat进行爆破求解：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hashcat -m <span style="color:#ae81ff">1400</span> -a <span style="color:#ae81ff">3</span> c22a563acc2a587afbfaaaa6d67bc6e628872b00bd7e998873881f7c6fdc62fc 861709?d?d?d?d?d?d?d
 </span></span></code></pre></div><p>运行得到：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220828155215870.png" alt="image-20220828155215870"></p>
+<p><img alt="image-20220828155215870" src="/images/2022_WDB_QL-writeup/image-20220828155215870.png"></p>
 <p>由此可以得到tel是8617091733716，故flag是<code>flag{8617091733716}</code></p>
 <h3 id="grasshopper">grasshopper</h3>
 <blockquote>
@@ -507,7 +519,7 @@ $$
 </blockquote>
 <p>题目说到是一个线性代数的作业，应该是一个线性代码相关的问题求解。</p>
 <p>赛题给到的代码是一个含有递归的函数：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829095725043.png" alt="image-20220829095725043"></p>
+<p><img alt="image-20220829095725043" src="/images/2022_WDB_QL-writeup/image-20220829095725043.png"></p>
 <p>通过搜索引擎搜索关键信息</p>
 <ol>
 <li>搜索 <code>递归函数转线代</code> : <a href="https://blog.csdn.net/wdq347/article/details/8919645">(191条消息) 线性代数求解递推形式数列的通项公式_wdq347的博客-CSDN博客</a></li>
@@ -517,7 +529,7 @@ $$
 </ol>
 <p>找到文章：<a href="https://www.zhihu.com/question/426892843">怎么用递归法计算行列式? - 知乎 (zhihu.com)</a></p>
 <p>根据文章：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829101251970.png" alt="image-20220829101251970"></p>
+<p><img alt="image-20220829101251970" src="/images/2022_WDB_QL-writeup/image-20220829101251970.png"></p>
 <p>显然这道题目是要求求解出逆过程，首先需要抽象出递推函数的递归公式：</p>
 <p>$$
 f(x,cof) = \left\{
@@ -528,7 +540,7 @@ cof_2\cdot f(x-3) + cof_1\cdot f(x-2) + cof_0\cdot f(x-1) &amp; &amp; {x \geq 3}
 \right.
 $$</p>
 <p>根据查找到的一系列文章中的<a href="https://blog.csdn.net/u011815404/article/details/99621516">(191条消息) 线性代数 —— 线性递推关系_Alex_McAvoy的博客-CSDN博客_线性递推关系</a>，可以看到：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829102307637.png" alt="image-20220829102307637"></p>
+<p><img alt="image-20220829102307637" src="/images/2022_WDB_QL-writeup/image-20220829102307637.png"></p>
 <p>根据关系可以得到</p>
 <p>$$
 f(n) = A * f(n-1)
@@ -551,7 +563,7 @@ f(n-1) \\
 \right]
 $$</p>
 <p>紧接着根据这个：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829104119031.png" alt="image-20220829104119031"></p>
+<p><img alt="image-20220829104119031" src="/images/2022_WDB_QL-writeup/image-20220829104119031.png"></p>
 <p>可以得到：
 $$
 F(n) = A^{n-2}\cdot f(2)
@@ -573,7 +585,7 @@ f(2) \\
 \right]
 $$</p>
 <p>尝试使用sagemath求解，出现报错</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829113116331.png" alt="image-20220829113116331"></p>
+<p><img alt="image-20220829113116331" src="/images/2022_WDB_QL-writeup/image-20220829113116331.png"></p>
 <p>进行次方运算必须是一个方块矩阵，也就是矩阵的维度必须是2x2, 3x3 … n x n 的矩阵，进行运算推导下：
 $$
 f(n) = A * f(n-1) = \left[
@@ -715,26 +727,26 @@ $$</p>
 <p>这道题目当时是找到文章了但是当时去看密码学题目了，没有细看这道题目</p>
 </blockquote>
 <p>题目给到了一个apk程序文件，但是主程序里面没有程序的源代码：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829185549101.png" alt="image-20220829185549101"></p>
+<p><img alt="image-20220829185549101" src="/images/2022_WDB_QL-writeup/image-20220829185549101.png"></p>
 <p>感觉没有什么思路去处理，对程序的具体结构仔细分析：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829185730520.png" alt="image-20220829185730520"></p>
+<p><img alt="image-20220829185730520" src="/images/2022_WDB_QL-writeup/image-20220829185730520.png"></p>
 <p>发现有一个类似于壳的代码程序，尝试进行搜索找到了壳的相关博客和程序源码。</p>
 <p>dpt壳程序文章：<a href="https://www.cnblogs.com/luoyesiqiu/p/dpt.html">Android函数抽取壳的实现 - luoyesiqiu - 博客园 (cnblogs.com)</a></p>
 <p>dpt壳源码：<a href="https://github.com/luoyesiqiu/dpt-shell">luoyesiqiu/dpt-shell: Android函数抽取壳实现 (github.com)</a></p>
 <p>下载壳工具的release版本，进行反编译查看dpt.jar java包文件，可以使用jadx进行反编译查看内容，找到dpt函数进行代码逻辑的审计</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829190248720.png" alt="image-20220829190248720"></p>
+<p><img alt="image-20220829190248720" src="/images/2022_WDB_QL-writeup/image-20220829190248720.png"></p>
 <p>根据文章，这个壳是一个函数抽取壳会进行函数的抽取壳：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829190759843.png" alt="image-20220829190759843"></p>
+<p><img alt="image-20220829190759843" src="/images/2022_WDB_QL-writeup/image-20220829190759843.png"></p>
 <p>文章也把壳运行的整个流程逻辑写出来了：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829190732698.png" alt="image-20220829190732698"></p>
+<p><img alt="image-20220829190732698" src="/images/2022_WDB_QL-writeup/image-20220829190732698.png"></p>
 <p>根据文章的信息，这道题目首先的一个子任务就是脱壳，而脱壳目前来说的目标就是对整个壳程序的逻辑进行分析。对整个流程大致分析下，发现主要是对于Dex进行操作，首先可以在dpt函数中搜索Dex关键字来定位到函数位置：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829191309699.png" alt="image-20220829191309699"></p>
+<p><img alt="image-20220829191309699" src="/images/2022_WDB_QL-writeup/image-20220829191309699.png"></p>
 <p>找到一个关键的函数，跟进这个函数，可以找到些许信息</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829191405666.png" alt="image-20220829191405666"></p>
+<p><img alt="image-20220829191405666" src="/images/2022_WDB_QL-writeup/image-20220829191405666.png"></p>
 <p>这个函数打开了一个<code>OoooooOooo</code>的文件，这是一个关键的文件信息，可能依据文章中的逻辑找到原来字节码的存储位置。这个函数不长，简单来说就是对原有的Dex进行提取，然后将提取的Dex写入到这个文件中，主要是写入操作的具体实现</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829192021242.png" alt="image-20220829192021242"></p>
+<p><img alt="image-20220829192021242" src="/images/2022_WDB_QL-writeup/image-20220829192021242.png"></p>
 <p>跟进<code>writeMultiDexCode</code>查看内部实现情况：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220829192849282.png" alt="image-20220829192849282"></p>
+<p><img alt="image-20220829192849282" src="/images/2022_WDB_QL-writeup/image-20220829192849282.png"></p>
 <p>感觉是比较类似于pe结构的实现方式，也就是找到相应的位置进行求解</p>
 <p>应该就是类似的一种结构，知道相应的函数偏移位置和相应的数据大小来对dex文件的函数进行抽取，根据这个原理可以进行PE文件结构类似的操作方式进行处理。编写一个小的程序将抽取出来的数据重新填充到相应的位置中。</p>
 <p>可以编写一个python脚本进行脱壳处理：</p>
@@ -766,40 +778,40 @@ $$</p>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;./classes2_dump.dex&#39;</span>, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> f:
 </span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(data)
 </span></span></code></pre></div><p>脱壳后的程序，可以使用dex2jar程序进行解包，可以得到一个jar包程序：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830160534943.png" alt="image-20220830160534943"></p>
+<p><img alt="image-20220830160534943" src="/images/2022_WDB_QL-writeup/image-20220830160534943.png"></p>
 <p>可以直接解压得到一个文件夹，文件夹里面含有程序的class文件：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830160400390.png" alt="image-20220830160400390"></p>
+<p><img alt="image-20220830160400390" src="/images/2022_WDB_QL-writeup/image-20220830160400390.png"></p>
 <p>这个文件结构是Android程序包的文件结构，我们关注的点应该就是com文件夹，进入到com\example\nothingcode文件夹中：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830161024487.png" alt="image-20220830161024487"></p>
+<p><img alt="image-20220830161024487" src="/images/2022_WDB_QL-writeup/image-20220830161024487.png"></p>
 <p>这两个核心文件应该就是程序的主要文件，使用jd-gui工具进行java字节码文件的反编译来获取到java源码文件来看到程序的真实代码：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830161253724.png" alt="image-20220830161253724"></p>
+<p><img alt="image-20220830161253724" src="/images/2022_WDB_QL-writeup/image-20220830161253724.png"></p>
 <p>直接将程序保存成一个java源代码文件</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830161338787.png" alt="image-20220830161338787"></p>
+<p><img alt="image-20220830161338787" src="/images/2022_WDB_QL-writeup/image-20220830161338787.png"></p>
 <p>点击Save来保存反编译的源码</p>
 <p>使用java ide进行源码的审计，打开生成的源代码文件，一看多少会有些惊讶：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830161646007.png" alt="image-20220830161646007"></p>
+<p><img alt="image-20220830161646007" src="/images/2022_WDB_QL-writeup/image-20220830161646007.png"></p>
 <p>有很多混淆和switch，应该是控制流平坦化的方式进行代码混淆的。这种混淆方式主要是由于一个发生器来形成switch结构，来混淆整个程序的主要流程结构。这种混淆的解决方式主要是脚本去混淆和静态代码审计来获取到主要的程序流程。</p>
 <p>尝试寻找些未进行混淆的字符串，来确定大致的逻辑特征：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830162651236.png" alt="image-20220830162651236"></p>
+<p><img alt="image-20220830162651236" src="/images/2022_WDB_QL-writeup/image-20220830162651236.png"></p>
 <p>可以看出flag的数据应该是位于password的输入位置，往下继续寻找发现：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830224828585.png" alt="image-20220830224828585"></p>
+<p><img alt="image-20220830224828585" src="/images/2022_WDB_QL-writeup/image-20220830224828585.png"></p>
 <p>发现，check函数对str2和str3进行了处理，而str2和str3就对应的是两个输入框的内容，根据一般输入行的原理，应该是第一个输入行是用户名，而第二个输入行是密码。进入到check函数中一探究竟：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830225238183.png" alt="image-20220830225238183"></p>
+<p><img alt="image-20220830225238183" src="/images/2022_WDB_QL-writeup/image-20220830225238183.png"></p>
 <p>字符串str2有一个等于判断，判断str2是不是等于<code>“helloctf”</code> 这显然像是一个用户名，而不是密码。由于密码是flag这个设定，所以这个str2的形式显然不像是flag的形式。下面寻找字符串str3的操作：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830230118538.png" alt="image-20220830230118538"></p>
+<p><img alt="image-20220830230118538" src="/images/2022_WDB_QL-writeup/image-20220830230118538.png"></p>
 <p>找到str3的相关操作，并且找到一组数据，暂时不清楚这组数据有什么用。这个操作显然是把str3转成一个Int数组的操作，跟进函数查看具体操作情况：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830230758071.png" alt="image-20220830230758071"></p>
+<p><img alt="image-20220830230758071" src="/images/2022_WDB_QL-writeup/image-20220830230758071.png"></p>
 <p>函数内部有两个操作，一个是判断长度的操作，另一个是除法操作。应该是进行Int数组的初始化处理，继续探究后续操作：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830231328844.png" alt="image-20220830231328844"></p>
+<p><img alt="image-20220830231328844" src="/images/2022_WDB_QL-writeup/image-20220830231328844.png"></p>
 <p>进行大端序处理的操作，以及后面有迭代的操作，根据目前分析的情况。可以判断这个函数就是将字符串以大端序的方式转成Int数组。</p>
 <p>这个函数分析完毕继续探究以下的内容：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220830231925973.png" alt="image-20220830231925973"></p>
+<p><img alt="image-20220830231925973" src="/images/2022_WDB_QL-writeup/image-20220830231925973.png"></p>
 <p>发现非常有趣的特征，一个特征是<code>&lt;32</code>说明可能有32轮次，后面两个运算方程。这些特征和TEA加密算法的特征类似。尝试进行TEA算法的比对，TEA加密算法有32轮次加密并且每轮加密的算法也是相应的一致。由此可以判断这个加密算法应该就是TEA加密算法。</p>
 <p>现在找到了加密算法，一个加密算法应该有相应的密钥和相应的密文以及明文。由于我们输入的内容就是要加密的明文，因此找到密文和密钥就可能求解出此题。进行寻找相关信息：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220831113843486.png" alt="image-20220831113843486"></p>
+<p><img alt="image-20220831113843486" src="/images/2022_WDB_QL-writeup/image-20220831113843486.png"></p>
 <p>可以大致看出这个数据像是密文的，之前找到的四个成员的数组数据比较符号TEA加密算法的密钥形式，据此推断那个数据应该就是密钥。而且数据只对Int数组进行了加密前面两个成员。没有加密其他成员。</p>
 <p>可以大致总结下，加密的大致逻辑：</p>
-<p><img src="/images/2022_WDB_QL-writeup/image-20220831115650012.png" alt="image-20220831115650012"></p>
+<p><img alt="image-20220831115650012" src="/images/2022_WDB_QL-writeup/image-20220831115650012.png"></p>
 <p>根据整合的逻辑可以编写脚本进行求解：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> ctypes <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
 </span></span><span style="display:flex;"><span>
@@ -849,8 +861,8 @@ $$</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="tags/writeup/">writeup</a></span>
-        <span class="tag"><a href="tags/ctf/">ctf</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/writeup/">writeup</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/ctf/">ctf</a></span>
         
     </p>
 
@@ -858,7 +870,7 @@ $$</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="categories/challange/">challange</a></span>
+        <span class="tag"><a href="//localhost:1313/categories/challange/">challange</a></span>
         
     </p>
 
@@ -893,7 +905,7 @@ $$</p>
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -901,7 +913,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -910,7 +922,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;caption=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;canonicalUrl=%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;caption=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;canonicalUrl=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
   <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
     <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
@@ -919,7 +931,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;body=%2fposts%2f2022_wdb_ql-writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;body=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -927,7 +939,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2f2022_wdb_ql-writeup%2f&amp;media=%2fposts%2f2022_wdb_ql-writeup%2f;description=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f&amp;media=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f;description=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
   <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
     </div>
@@ -935,7 +947,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2f2022_wdb_ql-writeup%2f&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;summary=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;source=%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;summary=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;source=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -943,7 +955,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2f2022_wdb_ql-writeup%2f&amp;resubmit=true&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f&amp;resubmit=true&amp;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -951,7 +963,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2f2022_wdb_ql-writeup%2f;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f;title=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
   <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
     </div>
@@ -959,7 +971,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup%20%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup%20%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -967,7 +979,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2f2022_wdb_ql-writeup%2f&amp;t=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f&amp;t=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
@@ -975,7 +987,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;url=%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=2022%20%e7%bd%91%e9%bc%8e%e6%9d%af%20%e9%9d%92%e9%be%99%e7%bb%84%20Writeup&amp;url=%2f%2flocalhost%3a1313%2fposts%2f2022_wdb_ql-writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
   <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
     </div>
@@ -996,7 +1008,7 @@ $$</p>
         <div class="pagination__buttons">
             
             <span class="button previous">
-                <a href="/posts/xctf-reverse_daliy_002/">
+                <a href="//localhost:1313/posts/xctf-reverse_daliy_002/">
                     <span class="button__icon">←</span>
                     <span class="button__text">攻防世界 RE 日常练习 002</span>
                 </a>
@@ -1005,7 +1017,7 @@ $$</p>
 
             
             <span class="button next">
-                <a href="/posts/xctf-reverse-advanced_daliy_001/">
+                <a href="//localhost:1313/posts/xctf-reverse-advanced_daliy_001/">
                     <span class="button__text">攻防世界进阶区日常训练001</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -1014,6 +1026,8 @@ $$</p>
         </div>
     </div>
 
+
+    
 
     
 
@@ -1028,16 +1042,6 @@ $$</p>
     
     
 </footer>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-</script>
-
-<script src='https://cdn.jsdelivr.net/npm/mathjax@2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 
             
         </div>
@@ -1046,7 +1050,8 @@ $$</p>
 
 
 
-<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 

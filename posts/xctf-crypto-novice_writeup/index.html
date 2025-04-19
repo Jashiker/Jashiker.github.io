@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
@@ -29,11 +30,12 @@ base64题目
 附件文件
 文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9
 根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：
-# python3 脚本 import base64 cipher=&amp;#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&amp;#39; plainer= base64.b64decode(cipher) print(str(plainer,&amp;#39;utf-8&amp;#39;)) # python2 脚本 import base64 cipher=&amp;#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&amp;#39; plainer= base64." />
+# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(plainer) 然后运行python脚本进行解码：
+" />
 <meta name="keywords" content=", ctf, writeup, crypto" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/xctf-crypto-novice_writeup/" />
+<link rel="canonical" href="//localhost:1313/posts/xctf-crypto-novice_writeup/" />
 
 
     <title>
@@ -46,7 +48,9 @@ base64题目
 
 
 
-<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
 
 
 
@@ -59,8 +63,9 @@ base64题目
     <meta name="msapplication-TileColor" content="">
 
 
-<meta itemprop="name" content="XCTF CRYPTO novice_writeup">
-<meta itemprop="description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
+
+  <meta itemprop="name" content="XCTF CRYPTO novice_writeup">
+  <meta itemprop="description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
 首先先来一张XCTF的首页图片，来开启本次的writeup文章：
 xctf首页
 这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。
@@ -84,15 +89,17 @@ base64题目
 附件文件
 文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9
 根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：
-# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64."><meta itemprop="datePublished" content="2021-06-25T22:01:32+08:00" />
-<meta itemprop="dateModified" content="2021-06-25T22:01:32+08:00" />
-<meta itemprop="wordCount" content="1513"><meta itemprop="image" content=""/>
-<meta itemprop="keywords" content="ctf,writeup,crypto," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content=""/>
+# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(plainer) 然后运行python脚本进行解码：">
+  <meta itemprop="datePublished" content="2021-06-25T22:01:32+08:00">
+  <meta itemprop="dateModified" content="2021-06-25T22:01:32+08:00">
+  <meta itemprop="wordCount" content="1513">
+  <meta itemprop="image" content="//localhost:1313/">
+  <meta itemprop="keywords" content="Ctf,Writeup,Crypto">
 
-<meta name="twitter:title" content="XCTF CRYPTO novice_writeup"/>
-<meta name="twitter:description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="XCTF CRYPTO novice_writeup">
+  <meta name="twitter:description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
 首先先来一张XCTF的首页图片，来开启本次的writeup文章：
 xctf首页
 这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。
@@ -116,12 +123,14 @@ base64题目
 附件文件
 文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9
 根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：
-# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64."/>
+# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(plainer) 然后运行python脚本进行解码：">
 
 
 
-    <meta property="og:title" content="XCTF CRYPTO novice_writeup" />
-<meta property="og:description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
+    <meta property="og:url" content="//localhost:1313/posts/xctf-crypto-novice_writeup/">
+  <meta property="og:site_name" content="Jasmine❀Hiker">
+  <meta property="og:title" content="XCTF CRYPTO novice_writeup">
+  <meta property="og:description" content="这次又是XCTF平台，没错，我又来无聊谈谈解题了
 首先先来一张XCTF的首页图片，来开启本次的writeup文章：
 xctf首页
 这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。
@@ -145,11 +154,16 @@ base64题目
 附件文件
 文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9
 根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：
-# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/xctf-crypto-novice_writeup/" /><meta property="og:image" content=""/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-06-25T22:01:32+08:00" />
-<meta property="article:modified_time" content="2021-06-25T22:01:32+08:00" /><meta property="og:site_name" content="Jasmine❀Hiker" />
+# python3 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(str(plainer,&#39;utf-8&#39;)) # python2 脚本 import base64 cipher=&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39; plainer= base64.b64decode(cipher) print(plainer) 然后运行python脚本进行解码：">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-06-25T22:01:32+08:00">
+    <meta property="article:modified_time" content="2021-06-25T22:01:32+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Crypto">
+    <meta property="og:image" content="//localhost:1313/">
 
 
 
@@ -158,7 +172,8 @@ base64题目
 
 
 
-    <meta property="article:published_time" content="2021-06-25 22:01:32 &#43;0800 CST" />
+    <meta property="article:published_time" content="2021-06-25 22:01:32 &#43;0800 HKT" />
+
 
 
 
@@ -196,9 +211,8 @@ base64题目
 
 
         <span class="header__right">
-            
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/tags">Tags</a></li><li><a href="/link">Link</a></li><li><a href="/about">About</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/link">Link</a></li><li><a href="/tags">Tags</a></li>
     </ul>
 </nav>
 
@@ -208,7 +222,6 @@ base64题目
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -232,7 +245,7 @@ base64题目
 
     <article>
       <h1 class="post-title">
-        <a href="/posts/xctf-crypto-novice_writeup/">XCTF CRYPTO novice_writeup</a>
+        <a href="//localhost:1313/posts/xctf-crypto-novice_writeup/">XCTF CRYPTO novice_writeup</a>
       </h1>
 
       
@@ -274,10 +287,10 @@ base64题目
       <div class="post-content">
         <p>这次又是XCTF平台，没错，我又来无聊谈谈解题了</p>
 <p>首先先来一张XCTF的首页图片，来开启本次的writeup文章：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-86.png" alt="image-86"></p>
+<p><img alt="image-86" src="/images/XCTF-CRYPTO-novice_writeup/image-86.png"></p>
 <p>xctf首页</p>
 <p>这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-87.png" alt="image-87"></p>
+<p><img alt="image-87" src="/images/XCTF-CRYPTO-novice_writeup/image-87.png"></p>
 <p>crypto新手区题目</p>
 <p>题目数量不变，依然是12道题目：</p>
 <ul>
@@ -307,10 +320,10 @@ base64题目
 <h2 id="base64">base64</h2>
 <p>看到这道题目，猜想这道题目可能是考察base64编码方式的密码学题目</p>
 <p>进入道题目页面，看看是否可以得到一点tip：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image.png" alt="img">base64题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image.png">base64题目</p>
 <p>没有什么特别的tip，只是给题目一个情景化的描述，没有太多有用信息的描述。</p>
 <p>直接下载附件内容，并打开附件文件进行查看：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png" alt="img">附件文件</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png">附件文件</p>
 <p>文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9</p>
 <p>根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># python3 脚本</span>
@@ -330,7 +343,7 @@ base64题目
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>python3 base64_decode3.py <span style="color:#75715e"># 这里创建的python3脚本文件名是base64_decode3.py</span>
 </span></span></code></pre></div><p>执行命令后查看执行结果</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-2.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-2.png"></p>
 <p>成功拿到flag数据，这道题目是道签到题。</p>
 <p>这道题目主要考察base64编码知识，没有什么难度，就是一道签到题目。</p>
 <h2 id="caesar">Caesar</h2>
@@ -338,10 +351,10 @@ base64题目
 <p>所有解决这道题目的关键就是凯撒密码的密码逻辑了</p>
 <p>凯撒密码（英语：Caesar cipher），或称凯撒加密、凯撒变换、变换加密，是一种最简单且最广为人知的加密技术。凯撒密码是一种替换加密技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是3的时候，所有的字母A将被替换成D，B变成E，以此类推。这个加密方法是以罗马共和时期凯撒的名字命名的，据称当年凯撒曾用此方法与其将军们进行联系。[2]</p>
 <p>点开题目的页面，看看是否有些有用的信息</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-3-1024x301.png" alt="img">Caesar题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-3-1024x301.png">Caesar题目</p>
 <p>从题目描述中依旧获取不到更多的信息，没有太多有用的信息可以帮助解题</p>
 <p>直接下载附件并进行查看：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-4-1024x134.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-4-1024x134.png">附件内容</p>
 <p>附件内容中，只有一段加密文字：oknqdbqmoq{kag_tmhq_xqmdzqp_omqemd_qzodkbfuaz}</p>
 <p>根据题目这应该是凯撒加密算法，可以使用在线的工具进行解密，也可以使用python脚本进行解决，这里使用python脚本进行解密：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># python2脚本</span>
@@ -374,17 +387,17 @@ base64题目
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># python3</span>
 </span></span><span style="display:flex;"><span>python3 Caesar_decode3<span style="color:#f92672">.</span>py
 </span></span></code></pre></div><p>查看终端显示的运行结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-5.png" alt="img">运行结果</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-5.png">运行结果</p>
 <p>从运行结果发现：cyberpeace{you_have_learned_caesar_encryption} 应该是有明显含义的解密的文段，很可能是这道题目的flag。尝试进行提交，发现这段数据就是flag数据。</p>
 <p>这道题目解决，题目没有什么难度，算是签到题。</p>
 <p>题目主要考察凯撒密码的相关知识，非常直接的解密方法，没有什么难度。</p>
 <h2 id="morse">Morse</h2>
 <p>看到题目Morse，自然而然便联想到了摩尔斯电码。这道题目有可能是在考察摩尔斯电码。</p>
 <p>点开题目页面，看看题目描述中会有什么有用的信息：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-6-1024x280.png" alt="img">Morse题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-6-1024x280.png">Morse题目</p>
 <p>题目描述依然是大片无用的信息，但是最后提示了提交flag的格式和内容要求。</p>
 <p>直接打开附件并进行查看需要进行解密的内容：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-7-1024x101.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-7-1024x101.png">附件内容</p>
 <p>文件内容非常像bin方式的加密，但是考虑到题目Morse，应该是Morse电码方式的加密</p>
 <p>首先，需要了解什么摩尔斯电码：</p>
 <p>摩尔斯电码（英语：Morse code）是一种时通时断的信号代码，通过不同的排列顺序来表达不同的英文字母、数字和标点符号。是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。[3]</p>
@@ -478,13 +491,13 @@ base64题目
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(plainer)
 </span></span></code></pre></div><p>这道题目的python2和python3的求解脚本差别也不是非常大，执行脚本后直接查看执行结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-8.png" alt="img">执行结果</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-8.png">执行结果</p>
 <p>发现执行结果是一句有意义的句子，应该就是flag数据了。然后再利用题目描述所说的信息对执行出来的flag数据进行个加帽处理：cyberpeace{morsecodeissointeresting}</p>
 <p>题目解决，题目也是签到题，没有什么难度。</p>
 <p>题目主要考察了摩尔斯电码的解密方法，以及摩尔斯电码相关知识，签到题。</p>
 <h2 id="幂数加密">幂数加密</h2>
 <p>看到题目的时候有些懵逼，本菜鸡不太了解什么的是幂数加密，于是只能求助一下搜索引擎。</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-9.png" alt="img">二进制幂数加密-百度百科</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-9.png">二进制幂数加密-百度百科</p>
 <p>好像是一个加密方法，这种加密方法大致逻辑是：</p>
 <ol>
 <li>将明文对应字母序列</li>
@@ -493,10 +506,10 @@ base64题目
 <li>获得密文</li>
 </ol>
 <p>现在知道这种加密方法，点开题目的描述看看是否可以获取到更多的信息</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-10-1024x284.png" alt="img">幂数加密题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-10-1024x284.png">幂数加密题目</p>
 <p>题目描述中仅仅告诉了需要提交的flag格式，和flag数据类型。题目描述的其他信息都是无用的信息。</p>
 <p>将附件下载下来并查看附件中的密文信息内容：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-11-1024x69.png" alt="img">附件资料</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-11-1024x69.png">附件资料</p>
 <p>发现密文数据不太对劲呀，二进制幂数加密的数据都是01234的形式，这个密文的形式是01248的形式</p>
 <p>于是作为菜鸡的我只能去再次求助于搜索引擎了，查到了云影密码：</p>
 <h3 id="01248云影密码">01248云影密码</h3>
@@ -537,7 +550,7 @@ base64题目
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(flag)
 </span></span></code></pre></div><p>执行python脚本并查看终端输出的结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-12.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-12.png"></p>
 <p>获取到明文，然后对明文加个flag数据形式的帽子并进行字母大写：cyberpeace{WELLDONE}</p>
 <p>这道题目解决，题目属于签到题，没有什么难度</p>
 <p>这道题目主要考察幂数加密的知识，（云影密码的设计逻辑其实和幂数加密相似，只是在设计过程进行了修改。）题目难度比较低·，签到题。</p>
@@ -566,10 +579,10 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 <p>再按上下上下的顺序组合成一句话明文：</p>
 <p>THE LONGEST DAY MUST HAVE AN EN</p>
 <p>现在知识也大致了解了，点开题目揭开这道题目的真实面目吧！</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-13-1024x266.png" alt="img">Railfence题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-13-1024x266.png">Railfence题目</p>
 <p>题目描述中也暗示了是栅栏密码的信息</p>
 <p>于是直接下载附件，看看附件中的描述内容密文究竟是啥样：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-14-1024x120.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-14-1024x120.png">附件内容</p>
 <p>密文形式看样子像是解密出来直接就是flag数据。</p>
 <p>这道题目可以使用在线工具进行解密，也可以使用python脚本进行解密。这里还是一如既往，使用python脚本进行解密：（这道题目比较狗，是W型的栅栏密码解密）</p>
 <blockquote>
@@ -615,17 +628,17 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 </span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> decode(z,i)
 </span></span><span style="display:flex;"><span>    print(y) 
 </span></span></code></pre></div><p>这道题目是W型的栅栏密码，这里使用W型栅栏密码的脚本进行破解：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-15.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-15.png"></p>
 <p>成功跑出flag数据：cyberpeace{railfence_cipher_gogogo}</p>
 <p>题目解决，这道题目属于简单题目</p>
 <p>题目主要考察对栅栏密码的知识全面性考察，如果知识不全面可能会有一点绕，不容易解出。难度算是简单题目。</p>
 <h2 id="不仅仅是morse">不仅仅是Morse</h2>
 <p>看题目应该知道这道题目不是非常简单的样子，应该是一个复合加密的题目，就是涉及多种加密算法的加密。</p>
 <p>点开题目页面，希望可以获取到更多关于题目的tip：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-16-1024x205.png" alt="img">题目页面</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-16-1024x205.png">题目页面</p>
 <p>题目描述中有两个重要的tip信息：flag的数据格式和flag是一种食物的单词。对于解题有主要作用的是flag数据是一种食物的单词。</p>
 <p>下面打开附件，进行解密：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-17.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-17.png">附件内容</p>
 <p>看来是一个摩尔斯电码的加密：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>--/.-/-.--/..--.-/-..././..--.-/..../.-/...-/./..--.-/.-/-./---/-/...././.-./..--.-/-.././-.-./---/-.././..../..../..../..../.-/.-/.-/.-/.-/-.../.-/.-/-.../-.../-.../.-/.-/-.../-.../.-/.-/.-/.-/.-/.-/.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/.-/.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../-.../.-/.-/.-/-.../-.../.-/.-/-.../.-/.-/.-/.-/-.../.-/-.../.-/.-/-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/-.../-.../.-/.-/-.../-.../-.../.-/-.../.-/.-/.-/-.../.-/-.../.-/-.../-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../-.../.-/.-/-.../-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/-.../-.../.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/-.../-.../.-
 </span></span></code></pre></div><p>首先先编写一个摩尔斯电码的解密脚本：（当然也可以使用在线的摩尔斯电码解密工具进行解密）</p>
@@ -667,7 +680,7 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print plainer
 </span></span></code></pre></div><p>执行编写好的python脚本，并查看终端的返回结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-18.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-18.png"></p>
 <p>获得一段解密后的文段：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>may_be_have_another_decodehhhhaaaaabaabbbaabbaaaaaaaabaababaaaaaaabbabaaabbaaabbaabaaaababaabaaabbabaaabaaabaababbaabbbabaaabababbaaabbabaaabaabaabaaaabbabbaabbaabaabaaabaabaabaababaabbabaaaabbabaabba
 </span></span></code></pre></div><p>仔细看看文段，好像出题人想要我们去解密后面那段ab组成的密文</p>
@@ -725,7 +738,7 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 </span></span><span style="display:flex;"><span>	plainer <span style="color:#f92672">=</span>plainer<span style="color:#f92672">+</span>dict_list[i]
 </span></span><span style="display:flex;"><span>print plainer
 </span></span></code></pre></div><p>执行python脚本，并查看终端返回的结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-19.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-19.png"></p>
 <p>看来输出的结果应该就是未成熟的flag数据：attackanddefenceworldisinteresting</p>
 <p>对这个数据进行加帽处理：cyberpeace{attackanddefenceworldisinteresting}</p>
 <p>flag数据成功拿到</p>
@@ -733,14 +746,14 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 <h2 id="混合编码">混合编码</h2>
 <p>看到题目，这道题应该是考察编码相关的知识的内容</p>
 <p>点开题目页面，看看能得到什么关键信息：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-20-1024x293.png" alt="img">混合编码题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-20-1024x293.png">混合编码题目</p>
 <p>题目描述中就有一个关键信息，就是题目的要求提交的flag数据格式信息，没有其他关键性的信息了</p>
 <p>下载附件并打开查看密文：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-21-1024x150.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-21-1024x150.png">附件内容</p>
 <p>附件中的密文内容看样子像是base64编码格式的：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>JiM3NjsmIzEyMjsmIzY5OyYjMTIwOyYjNzk7JiM4MzsmIzU2OyYjMTIwOyYjNzc7JiM2ODsmIzY5OyYjMTE4OyYjNzc7JiM4NDsmIzY1OyYjNTI7JiM3NjsmIzEyMjsmIzEwNzsmIzUzOyYjNzY7JiMxMjI7JiM2OTsmIzEyMDsmIzc3OyYjODM7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiMxMDc7JiMxMTg7JiM3NzsmIzg0OyYjNjU7JiMxMjA7JiM3NjsmIzEyMjsmIzY5OyYjMTIwOyYjNzg7JiMxMDU7JiM1NjsmIzEyMDsmIzc3OyYjODQ7JiM2OTsmIzExODsmIzc5OyYjODQ7JiM5OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzUwOyYjNzY7JiMxMjI7JiM2OTsmIzEyMDsmIzc4OyYjMTA1OyYjNTY7JiM1MzsmIzc4OyYjMTIxOyYjNTY7JiM1MzsmIzc5OyYjODM7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiM5OTsmIzExODsmIzc5OyYjODQ7JiM5OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzExOTsmIzc2OyYjMTIyOyYjNjk7JiMxMTk7JiM3NzsmIzY3OyYjNTY7JiMxMjA7JiM3NzsmIzY4OyYjNjU7JiMxMTg7JiM3NzsmIzg0OyYjNjU7JiMxMjA7JiM3NjsmIzEyMjsmIzY5OyYjMTE5OyYjNzc7JiMxMDU7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiM2OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzExOTsmIzc2OyYjMTIyOyYjMTA3OyYjNTM7JiM3NjsmIzEyMjsmIzY5OyYjMTE5OyYjNzc7JiM4MzsmIzU2OyYjMTIwOyYjNzc7JiM4NDsmIzEwNzsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzEyMDsmIzc2OyYjMTIyOyYjNjk7JiMxMjA7JiM3ODsmIzY3OyYjNTY7JiMxMjA7JiM3NzsmIzY4OyYjMTAzOyYjMTE4OyYjNzc7JiM4NDsmIzY1OyYjMTE5Ow==
 </span></span></code></pre></div><p>使用在base64关卡中的python脚本进行base64解密（当然也可以使用在线工具进行base64解密）</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-22-1024x63.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-22-1024x63.png"></p>
 <p>接出来的数据好像又是一种编码格式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#52;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#69;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#50;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#53;&amp;#78;&amp;#121;&amp;#56;&amp;#53;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#99;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#65;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#103;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#119;
 </span></span></code></pre></div><p>看样子应该是ascii编码格式，可以使用在线的ascii编码工具进行解密，也可使用python脚本进行解密，一如既往，这里使用python脚本进行解密：</p>
@@ -752,11 +765,11 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 </span></span><span style="display:flex;"><span>	plainer <span style="color:#f92672">+=</span> chr(int(i))
 </span></span><span style="display:flex;"><span>print plainer
 </span></span></code></pre></div><p>执行编写好的python代码并查看终端输出情况：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-24-1024x51.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-24-1024x51.png"></p>
 <p>输出的解密信息像是base64格式的编码：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>LzExOS8xMDEvMTA4Lzk5LzExMS8xMDkvMTAxLzExNi8xMTEvOTcvMTE2LzExNi85Ny85OS8xMDcvOTcvMTEwLzEwMC8xMDAvMTAxLzEwMi8xMDEvMTEwLzk5LzEwMS8xMTkvMTExLzExNC8xMDgvMTAw
 </span></span></code></pre></div><p>可以再使用一次base64解码的python脚本进行base64解码（也可以使用在线base64工具进行解码）：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-25.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-25.png"></p>
 <p>解码后又是一段ascii的编码格式，这里还是编写一个ascii解码的python脚本：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># python2</span>
 </span></span><span style="display:flex;"><span>cipher <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/119/101/108/99/111/109/101/116/111/97/116/116/97/99/107/97/110/100/100/101/102/101/110/99/101/119/111/114/108/100&#34;</span>
@@ -766,7 +779,7 @@ TEOGSDYUTAENN HLNETAMSHVAED</li>
 </span></span><span style="display:flex;"><span>	plainer <span style="color:#f92672">+=</span> chr(int(i))
 </span></span><span style="display:flex;"><span>print plainer
 </span></span></code></pre></div><p>执行编写好的python代码并查看终端输出的结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-26.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-26.png"></p>
 <p>解码出来的数据应该就是flag数据：welcometoattackanddefenceworld</p>
 <p>根据题目要求，需要对这个flag数据进行加帽处理：cyberpeace{welcometoattackanddefenceworld}</p>
 <p>题目解决，题目属于简单题目，思路就是反复套娃操作：base64-&gt;ASCII-&gt;base64-&gt;ASCII</p>
@@ -838,10 +851,10 @@ $$</p>
 <p>实际应用中，公钥和私钥的数据都采用ASN.1格式表达。</p>
 <p>这些RSA加密算法的流程和重要的几个参数是解决RSA算法密码学题目的核心，只有清晰地了解RSA加密算法的每个细节，面对RSA题目才能胸有成竹、游刃有余。</p>
 <p>点开题目，看看题目描述能给出哪些提示吧：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-27-1024x280.png" alt="img">easy_RSA</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-27-1024x280.png">easy_RSA</p>
 <p>题目中只有提交格式的提示，除此之外，都是描述性的信息，但是对解题没有太多作用。</p>
 <p>下载附件，直接查看附件中的信息：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-28.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-28.png">附件内容</p>
 <p>这道题目应该是简单的计算，即根据RSA设计的算法过程进行逆向计算。这道题目可以使用rsatool工具进行直接求解，本菜鸡还是编写一个python脚本进行求解吧：（此脚本只能针对简单问题）</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># python2</span>
 </span></span><span style="display:flex;"><span>p<span style="color:#f92672">=</span><span style="color:#ae81ff">473398607161</span>
@@ -850,22 +863,22 @@ $$</p>
 </span></span><span style="display:flex;"><span>flag<span style="color:#f92672">=</span>(pn<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">/</span>e
 </span></span><span style="display:flex;"><span>print flag
 </span></span></code></pre></div><p>执行编写的脚本，查看终端输出的结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-29.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-29.png"></p>
 <p>这段输出的数据应该就是flag数据：125631357777427553</p>
 <p>给这段flag数据加个帽子：cyberpeace{125631357777427553}</p>
 <p>这道题目是RSA题目中的签到题，难度非常低，思路也非常简单</p>
 <p>题目主要考察RSA加密算法的过程，签到题。</p>
 <h2 id="easychallenge">easychallenge</h2>
 <p>这道题的题目似乎看不出什么门路来，于是只能点开题目描述的页面：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-30-1024x292.png" alt="img">easychallenge题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-30-1024x292.png">easychallenge题目</p>
 <p>这道题目应该是在说程序方面的问题，题目描述也得到不了太多有用的信息，于是下载附件来获取到这道题目的真实面目：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-31.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-31.png"></p>
 <p>发现附件是一个python的一个可以执行的文件，查看文件的属性：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-32.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-32.png"></p>
 <p>发现是一个pyc文件，本菜鸡不知道什么是pyc文件，于是通过互联网的搜索引擎求助一波：</p>
 <p>pyc是一种二进制文件，是由Python文件经过编译后所生成的文件，它是一种byte code，Python文件变成pyc文件后，加载的速度有所提高，而且pyc还是一种跨平台的字节码，由python的虚拟机来执行的，就类似于JAVA或者.NET的虚拟机的概念。pyc的内容与python的版本是相关的，不同版本编译后的pyc文件是不同的，例如2.5版本编译的是pyc文件，而2.4版本编译的python是无法执行的。[9]</p>
 <p>pyc文件是py文件经过编译的文件格式，文件内容是一种可执行字节码，尝试执行一下这个文件：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-33.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-33.png"></p>
 <p>发现需要执行一下这个文件，需要输入flag数据，看来flag数据很可能就在这个文件内部。这里就需要进行反编译，即把pyc文件打回原形。通过互联网的搜索引擎查询到python内置了一个uncompyle模块可以进行pyc反编译。</p>
 <p>于是可以使用<code>pip install uncompyle </code>命令安装一下uncompyle。</p>
 <p>在命令行中执行：<code>uncompyle6 -o test.py '.\42aa1a89e3ae48c38e8b713051557020 (1).pyc'</code></p>
@@ -930,10 +943,10 @@ $$</p>
 </span></span><span style="display:flex;"><span>plainer <span style="color:#f92672">=</span> decode3(decode2(decode1(cipher)))
 </span></span><span style="display:flex;"><span>print plainer
 </span></span></code></pre></div><p>执行一下编写好的代码，查看终端输出的结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-35.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-35.png"></p>
 <p>看输出结果，应该是flag数据没错了。</p>
 <p>再次执行以下pyc程序验证一下：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-36.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-36.png"></p>
 <p>看来是没错了，成功获取这道题目的flag数据：cyberpeace{interestinghhhhh}</p>
 <p>这道题目的难度上也是简单题，思路也是比较流畅的。</p>
 <p>题目主要考察pyc文件的反编译，以及编码和密码学的一些简单理论。简单题。</p>
@@ -942,7 +955,7 @@ $$</p>
 <p>转轮机是古典加密方法的集大成者，二战时轴心国普遍应用了该技术，可惜惨遭盟军攻破，德日还蒙在鼓里，一定程度上改变了最终的战局。</p>
 <p>转轮机的原理概括起来就是循环置换的多表代换技术，尤其是多筒转轮机，可重复使用数以万计的字母替换表。</p>
 <p>以三筒转轮机为例：</p>
-<p><img src="../../../../Note/Blog/post_5.assets/929265-20160422083905866-1151128365.jpg" alt="img"></p>
+<p><img alt="img" src="../../../../Note/Blog/post_5.assets/929265-20160422083905866-1151128365.jpg"></p>
 <p>有三个可以独立旋转的圆筒，每个圆筒内部有26个输入引脚和26个输出引脚，内部连线使得输入与输出唯一连接。</p>
 <p>每按一下输入键（旋转键），快速转子旋转一个引脚，当快速转子转满一轮（循环归位）时，带动中速转子旋转一个引脚，以此类推，类似钟表的秒分时。</p>
 <p>今天，转轮机的意义在于它曾经给目前最广泛使用的密码&ndash;数据加密标准DES指明了方向。[10]</p>
@@ -950,7 +963,7 @@ $$</p>
 <p>加密过程大致是：</p>
 <p>明文-&gt;分组处理（类似于栅栏密码处理方式）-&gt;文段内容位移+密文-&gt;多文段顺序重排+密钥-&gt;密文组</p>
 <p>下面点开题目描述，看看可以得到什么信息：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-37-1024x272.png" alt="img">转轮机加密题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-37-1024x272.png">转轮机加密题目</p>
 <p>根据题目描述的信息，可以获得以下几点提示：</p>
 <ol>
 <li>二战</li>
@@ -958,7 +971,7 @@ $$</p>
 <li>flag格式</li>
 </ol>
 <p>下面下载附件，并进行查看：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-38.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-38.png">附件内容</p>
 <p>要想获取到flag数据，应该就需要对附件内容的数据进行机密，这里编写一个python脚本来解密：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># python2</span>
 </span></span><span style="display:flex;"><span>dict_list <span style="color:#f92672">=</span> {            
@@ -983,7 +996,7 @@ $$</p>
 </span></span><span style="display:flex;"><span>    	str_get <span style="color:#f92672">+=</span> j[i]
 </span></span><span style="display:flex;"><span>print str_get<span style="color:#f92672">.</span>lower()
 </span></span></code></pre></div><p>执行刚刚编写好的python脚本，并在终端命令行中查看执行结果：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-39.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-39.png"></p>
 <p>得到了一个明文的列表：</p>
 <pre tabindex="0"><code>nfqksevoqofnpahgcxiusnwcbnctwpcubfotuvyzetmdrmezgkccdqhneyczuvtxjtgszrtqwtrezbrypqfawawsbqfxxywvsaxdcswzmpbxbbojczxedjlxygkigvqqrrqoiitjkdrkytuoczhydzljeipsykufhfgullzolhblrnhjbxmmiogdvlugxvkxjuqvmkamlpiiywyxsambkvlqsiaavfireintheholeuzaulcdkfprstwvfoomsyaupkairdtpxrppdldmkncsjzfnmnnjkpsegzphtyadfgbjojqqecgjvhheunvaonrhfhgilwjdwwymbbgmw
 </code></pre><p>列表中存在明文，这时候需要看看题目描述的3个tip：</p>
@@ -1000,33 +1013,33 @@ $$</p>
 <h2 id="normal_rsa">Normal_RSA</h2>
 <p>看到题目，感觉这道题目应该不简单，明显的一道RSA加密算法题目，估计也是考察RSA加密算法相关知识的题目。</p>
 <p>直接点开题目描述，看看可以获取到什么有用的tip</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-40-1024x273.png" alt="img">Normal_RSA题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-40-1024x273.png">Normal_RSA题目</p>
 <p>根据题目描述，这道题目应该是需要使用到工具的。RSA加密算法题目通常会使用到openssl，rsatool，factordb，sagemath工具进行rsa的公钥私钥的运算。</p>
 <p>下载附件，查看附件有什么东西吧：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-41.png" alt="img">附件</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-41.png">附件</p>
 <p>附件个压缩文件，我们对压缩文件进行解压获得一个文件夹：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-42.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-42.png"></p>
 <p>打开这个文件夹：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-43.png" alt="img">文件夹内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-43.png">文件夹内容</p>
 <p>发现有两个文件，一个是公钥，一个是密文。pem格式的文件应该是openssl的一种文件格式</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-44.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-44.png"></p>
 <p>这里使用openssl来获取到公钥文件的e和n，使用openssl的rsa功能之前可以先看看rsa功能的帮助：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-45.png" alt="img">openssl rsa帮助</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-45.png">openssl rsa帮助</p>
 <p>了解了大致参数，执行命令<code>rsa -pubin -text -modulus -in pubkey.pem</code> 来获取e和n的数据：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-46.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-46.png"></p>
 <p>exponent就是e，modulus就是n。</p>
 <p>这里的e是十进制的，n是十六进制的：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Exponent: 65537 (0x10001)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Modulus=C2636AE5C3D8E43FFB97AB09028F1AAC6C0BF6CD3D70EBCA281BFFE97FBE30DD
 </span></span></code></pre></div><p>需要进行转换，使用ipython交互求出十进制数值：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-48.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-48.png"></p>
 <p>现在得到：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>n=87924348264132406875276140514499937145050893665602592992418171647042491658461
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>e=65537
 </span></span></code></pre></div><p>下面需要求出p和q，这里需要进行大数分解，这里使用<a href="http://factordb.com/">focterdb</a>进行大数分解：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-49-1024x111.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-49-1024x111.png"></p>
 <p>现在得到的数据有：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>p=275127860351348928173285174381581152299
 </span></span><span style="display:flex;"><span>
@@ -1037,14 +1050,14 @@ $$</p>
 </span></span><span style="display:flex;"><span>e=65537
 </span></span></code></pre></div><p>现在这些数据可以求出参数d了，这里使用rsatool求解参数d、生成私钥文件：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python ~/rsatool/rsatool.py  -f PEM -o private.pem  -p <span style="color:#ae81ff">275127860351348928173285174381581152299</span> -q <span style="color:#ae81ff">319576316814478949870590164193048041239</span> -e <span style="color:#ae81ff">65537</span> 
-</span></span></code></pre></div><p><img src="/images/XCTF-CRYPTO-novice_writeup/image-53-1024x313.png" alt="img"></p>
+</span></span></code></pre></div><p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-53-1024x313.png"></p>
 <p>现在得到了私钥文件和公钥文件了，可以使用openssl进行解密了</p>
 <p>opensssl解密RSA加密算法的模块是rsautl，解密之前，先看看rsautl的帮助：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-51.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-51.png"></p>
 <p>了解大致参数后，执行命令开始进行求解：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> rsautl -in flag.enc -inkey private.pem -out flag.txt -decrypt
 </span></span></code></pre></div><p>然后查看生成的txt文件内容：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-54.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-54.png"></p>
 <p>成功获取到flag数据：PCTF{256b_i5_m3dium}</p>
 <p>题目解决，题目是比较常规的RSA题目，题目主要考察RSA知识的掌握以及RSA工具的使用。</p>
 <p>题目难度上，题目算是简单题目。</p>
@@ -1053,10 +1066,10 @@ $$</p>
 <p>椭圆曲线密码学（英语：Elliptic Curve Cryptography，缩写：ECC）是一种基于椭圆曲线数学的公开密钥加密算法。椭圆曲线在密码学中的使用是在1985年由Neal Koblitz（英语：Neal Koblitz）和Victor Miller（英语：Victor Miller）分别独立提出的。</p>
 <p>ECC的主要优势是它相比RSA加密算法使用较小的密钥长度并提供相当等级的安全性。ECC的另一个优势是可以定义群之间的双线性映射，基于Weil对或是Tate对；双线性映射已经在密码学中发现了大量的应用，例如基于身份的加密。[11]</p>
 <p>点开题目，看看题目能给我们什么有用的信息：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-55-1024x301.png" alt="img">easy_ECC题目</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-55-1024x301.png">easy_ECC题目</p>
 <p>题目的描述提示了ecc基本原理和提交的flag格式。这道题目解决的关键应该就是ecc基本原理。</p>
 <p>点开附件进行下载，查看附件内容：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-56.png" alt="img">附件内容</p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-56.png">附件内容</p>
 <p>本菜鸡现在实在是看不懂ecc加密算法的基本原理，这道题目直接搬大佬的脚本求解：[12]</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Gx <span style="color:#f92672">=</span> <span style="color:#ae81ff">6478678675</span>
 </span></span><span style="display:flex;"><span>Gy <span style="color:#f92672">=</span> <span style="color:#ae81ff">5636379357093</span>
@@ -1081,7 +1094,7 @@ $$</p>
 </span></span><span style="display:flex;"><span>    y <span style="color:#f92672">=</span> yr
 </span></span><span style="display:flex;"><span>print(x<span style="color:#f92672">+</span>y)
 </span></span></code></pre></div><p>执行脚本进行求解：</p>
-<p><img src="/images/XCTF-CRYPTO-novice_writeup/image-57.png" alt="img"></p>
+<p><img alt="img" src="/images/XCTF-CRYPTO-novice_writeup/image-57.png"></p>
 <p>解出来的数值：19477226185390。对解出来的数值加个帽子：cyberpeace{19477226185390}</p>
 <p>flag数据就是：cyberpeace{19477226185390}</p>
 <p>题目解决，难度适中，主要考察ecc基本原理（本菜鸡现在看不懂，嘤嘤嘤）</p>
@@ -1113,9 +1126,9 @@ $$</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="tags/ctf/">ctf</a></span>
-        <span class="tag"><a href="tags/writeup/">writeup</a></span>
-        <span class="tag"><a href="tags/crypto/">crypto</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/ctf/">ctf</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/writeup/">writeup</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/crypto/">crypto</a></span>
         
     </p>
 
@@ -1123,7 +1136,7 @@ $$</p>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="categories/practice/">practice</a></span>
+        <span class="tag"><a href="//localhost:1313/categories/practice/">practice</a></span>
         
     </p>
 
@@ -1158,7 +1171,7 @@ $$</p>
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -1166,7 +1179,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -1175,7 +1188,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=XCTF%20CRYPTO%20novice_writeup&amp;caption=XCTF%20CRYPTO%20novice_writeup&amp;canonicalUrl=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=XCTF%20CRYPTO%20novice_writeup&amp;caption=XCTF%20CRYPTO%20novice_writeup&amp;canonicalUrl=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
   <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
     <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
@@ -1184,7 +1197,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=XCTF%20CRYPTO%20novice_writeup&amp;body=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=XCTF%20CRYPTO%20novice_writeup&amp;body=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -1192,7 +1205,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2fxctf-crypto-novice_writeup%2f&amp;media=%2fposts%2fxctf-crypto-novice_writeup%2f;description=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f&amp;media=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f;description=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
   <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
     </div>
@@ -1200,7 +1213,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2fxctf-crypto-novice_writeup%2f&amp;title=XCTF%20CRYPTO%20novice_writeup&amp;summary=XCTF%20CRYPTO%20novice_writeup&amp;source=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f&amp;title=XCTF%20CRYPTO%20novice_writeup&amp;summary=XCTF%20CRYPTO%20novice_writeup&amp;source=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -1208,7 +1221,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2fxctf-crypto-novice_writeup%2f&amp;resubmit=true&amp;title=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f&amp;resubmit=true&amp;title=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -1216,7 +1229,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2fxctf-crypto-novice_writeup%2f;title=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f;title=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
   <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
     </div>
@@ -1224,7 +1237,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=XCTF%20CRYPTO%20novice_writeup%20%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=XCTF%20CRYPTO%20novice_writeup%20%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -1232,7 +1245,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2fxctf-crypto-novice_writeup%2f&amp;t=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f&amp;t=XCTF%20CRYPTO%20novice_writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
@@ -1240,7 +1253,7 @@ $$</p>
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=XCTF%20CRYPTO%20novice_writeup&amp;url=%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=XCTF%20CRYPTO%20novice_writeup&amp;url=%2f%2flocalhost%3a1313%2fposts%2fxctf-crypto-novice_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
   <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
     </div>
@@ -1261,7 +1274,7 @@ $$</p>
         <div class="pagination__buttons">
             
             <span class="button previous">
-                <a href="/posts/buuctf-crypto-1_writeup/">
+                <a href="//localhost:1313/posts/buuctf-crypto-1_writeup/">
                     <span class="button__icon">←</span>
                     <span class="button__text">BUUCTF CRYPTO (1) writeup</span>
                 </a>
@@ -1270,7 +1283,7 @@ $$</p>
 
             
             <span class="button next">
-                <a href="/posts/xctf-web-novice_writeup/">
+                <a href="//localhost:1313/posts/xctf-web-novice_writeup/">
                     <span class="button__text">XCTF WEB novice Writeup</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -1279,6 +1292,8 @@ $$</p>
         </div>
     </div>
 
+
+    
 
     
 
@@ -1293,16 +1308,6 @@ $$</p>
     
     
 </footer>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-</script>
-
-<script src='https://cdn.jsdelivr.net/npm/mathjax@2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 
             
         </div>
@@ -1311,7 +1316,8 @@ $$</p>
 
 
 
-<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 

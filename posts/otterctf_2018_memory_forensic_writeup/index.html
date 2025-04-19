@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
@@ -13,15 +14,16 @@ vol.py -f OtterCTF.vmem imageinfo 说明
 vol.py volatility程序 -f OtterCTF.vmem 加载OtterCTF.vmem内存镜像文件 imageinfo 查看内存镜像的基本信息 得到如下信息：
 可以看到大致的镜像系统是Win7系统
 What the password? 查看题目描述：
-you got a sample of rick&amp;#39;s PC&amp;#39;s memory. can you get his user password? 要得到用户名的密码，先获取到hash数据，使用获取hash的指令：
+you got a sample of rick&#39;s PC&#39;s memory. can you get his user password? 要得到用户名的密码，先获取到hash数据，使用获取hash的指令：
 vol.py -f OtterCTF.vmem --profile=Win7SP1x64 hashdump --profile=Win7SP1x64 设置配置为Win7SP1x64配置 hashdump 从内存中dump出密码的hash信息 得到hash信息：
 对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取
 使用如下指令使用mimikatz插件进行获取：
-vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：
+" />
 <meta name="keywords" content=", ctf, Forensics, writeup" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/otterctf_2018_memory_forensic_writeup/" />
+<link rel="canonical" href="//localhost:1313/posts/otterctf_2018_memory_forensic_writeup/" />
 
 
     <title>
@@ -34,7 +36,9 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
 
 
 
-<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
 
 
 
@@ -47,8 +51,9 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
     <meta name="msapplication-TileColor" content="">
 
 
-<meta itemprop="name" content="OtterCTF 2018 内存取证复现">
-<meta itemprop="description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
+
+  <meta itemprop="name" content="OtterCTF 2018 内存取证复现">
+  <meta itemprop="description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
 环境配置：Kali Linux 2022 工具配置：volatility &#43; mimikatz
 Info 题目附件就一个镜像，先查看下镜像的指纹数据：
 5b3d8a9f9c96581a821c19b71dd6aa80dd299fc674b818f443f3a6fb5495a872 OtterCTF.vmem 使用vol简单查看下镜像信息数据，查看数据的指令：
@@ -60,15 +65,17 @@ you got a sample of rick&#39;s PC&#39;s memory. can you get his user password? �
 vol.py -f OtterCTF.vmem --profile=Win7SP1x64 hashdump --profile=Win7SP1x64 设置配置为Win7SP1x64配置 hashdump 从内存中dump出密码的hash信息 得到hash信息：
 对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取
 使用如下指令使用mimikatz插件进行获取：
-vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息："><meta itemprop="datePublished" content="2022-10-04T23:18:37+08:00" />
-<meta itemprop="dateModified" content="2022-10-04T23:18:37+08:00" />
-<meta itemprop="wordCount" content="785"><meta itemprop="image" content=""/>
-<meta itemprop="keywords" content="ctf,Forensics,writeup," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content=""/>
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：">
+  <meta itemprop="datePublished" content="2022-10-04T23:18:37+08:00">
+  <meta itemprop="dateModified" content="2022-10-04T23:18:37+08:00">
+  <meta itemprop="wordCount" content="785">
+  <meta itemprop="image" content="//localhost:1313/">
+  <meta itemprop="keywords" content="Ctf,Forensics,Writeup">
 
-<meta name="twitter:title" content="OtterCTF 2018 内存取证复现"/>
-<meta name="twitter:description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="OtterCTF 2018 内存取证复现">
+  <meta name="twitter:description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
 环境配置：Kali Linux 2022 工具配置：volatility &#43; mimikatz
 Info 题目附件就一个镜像，先查看下镜像的指纹数据：
 5b3d8a9f9c96581a821c19b71dd6aa80dd299fc674b818f443f3a6fb5495a872 OtterCTF.vmem 使用vol简单查看下镜像信息数据，查看数据的指令：
@@ -80,12 +87,14 @@ you got a sample of rick&#39;s PC&#39;s memory. can you get his user password? �
 vol.py -f OtterCTF.vmem --profile=Win7SP1x64 hashdump --profile=Win7SP1x64 设置配置为Win7SP1x64配置 hashdump 从内存中dump出密码的hash信息 得到hash信息：
 对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取
 使用如下指令使用mimikatz插件进行获取：
-vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息："/>
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：">
 
 
 
-    <meta property="og:title" content="OtterCTF 2018 内存取证复现" />
-<meta property="og:description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
+    <meta property="og:url" content="//localhost:1313/posts/otterctf_2018_memory_forensic_writeup/">
+  <meta property="og:site_name" content="Jasmine❀Hiker">
+  <meta property="og:title" content="OtterCTF 2018 内存取证复现">
+  <meta property="og:description" content="OtterCTF 2018 Memory Forensic Reappearance 想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。 Volatility项目地址：https://github.com/volatilityfoundation/volatility Volatility3项目地址：https://github.com/volatilityfoundation/volatility3
 环境配置：Kali Linux 2022 工具配置：volatility &#43; mimikatz
 Info 题目附件就一个镜像，先查看下镜像的指纹数据：
 5b3d8a9f9c96581a821c19b71dd6aa80dd299fc674b818f443f3a6fb5495a872 OtterCTF.vmem 使用vol简单查看下镜像信息数据，查看数据的指令：
@@ -97,11 +106,16 @@ you got a sample of rick&#39;s PC&#39;s memory. can you get his user password? �
 vol.py -f OtterCTF.vmem --profile=Win7SP1x64 hashdump --profile=Win7SP1x64 设置配置为Win7SP1x64配置 hashdump 从内存中dump出密码的hash信息 得到hash信息：
 对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取
 使用如下指令使用mimikatz插件进行获取：
-vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/otterctf_2018_memory_forensic_writeup/" /><meta property="og:image" content=""/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-10-04T23:18:37+08:00" />
-<meta property="article:modified_time" content="2022-10-04T23:18:37+08:00" /><meta property="og:site_name" content="Jasmine❀Hiker" />
+vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-10-04T23:18:37+08:00">
+    <meta property="article:modified_time" content="2022-10-04T23:18:37+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Forensics">
+    <meta property="article:tag" content="Writeup">
+    <meta property="og:image" content="//localhost:1313/">
 
 
 
@@ -110,7 +124,8 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
 
 
 
-    <meta property="article:published_time" content="2022-10-04 23:18:37 &#43;0800 CST" />
+    <meta property="article:published_time" content="2022-10-04 23:18:37 &#43;0800 HKT" />
+
 
 
 
@@ -148,9 +163,8 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
 
 
         <span class="header__right">
-            
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/tags">Tags</a></li><li><a href="/link">Link</a></li><li><a href="/about">About</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/link">Link</a></li><li><a href="/tags">Tags</a></li>
     </ul>
 </nav>
 
@@ -160,7 +174,6 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -184,7 +197,7 @@ vol.py -f OtterCTF.vmem --profile=Win7SP1x64 mimikatz 得到如下信息：" />
 
     <article>
       <h1 class="post-title">
-        <a href="/posts/otterctf_2018_memory_forensic_writeup/">OtterCTF 2018 内存取证复现</a>
+        <a href="//localhost:1313/posts/otterctf_2018_memory_forensic_writeup/">OtterCTF 2018 内存取证复现</a>
       </h1>
 
       
@@ -247,7 +260,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>得到如下信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png" alt="image-20221002204848160"></p>
+<p><img alt="image-20221002204848160" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png"></p>
 <p>可以看到大致的镜像系统是Win7系统</p>
 <h2 id="what-the-password">What the password?</h2>
 <p>查看题目描述：</p>
@@ -261,12 +274,12 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>得到hash信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png" alt="image-20221002212051508"></p>
+<p><img alt="image-20221002212051508" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png"></p>
 <p>对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取</p>
 <p>使用如下指令使用mimikatz插件进行获取：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 mimikatz
 </span></span></code></pre></div><p>得到如下信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002214545148.png" alt="image-20221002214545148"></p>
+<p><img alt="image-20221002214545148" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002214545148.png"></p>
 <p>已经获取到了密码信息，提交flag，攻破此题：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CTF{MortyIsReallyAnOtter}
 </span></span></code></pre></div><h2 id="general-info">General Info</h2>
@@ -274,7 +287,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Let&#39;s start easy - whats the PC&#39;s name and IP address?
 </span></span></code></pre></div><p>需要获取PC’s name和IP， PC的名字已经很明确了，应该就是刚刚获取密码信息得到的<code>WIN-LO6FAF3DTFE</code></p>
 <p>下面需要获取的应该就是IP地址，使用网络扫描指令应该可以获取到相应的信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003001348636.png" alt="image-20221003001348636"></p>
+<p><img alt="image-20221003001348636" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003001348636.png"></p>
 <p>可以看出IP地址应该是：<code>192.168.202.131</code></p>
 <p>根据题目要求，flag应该是：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CTF{WIN-LO6FAF3DTFE}
@@ -287,10 +300,10 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </span></span></code></pre></div><p>玩游戏肯定会有进程的存储在内存中，扫描下进程情况，使用如下指令进行查看：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 psscan
 </span></span></code></pre></div><p>得到如下信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003002817020.png" alt="image-20221003002817020"></p>
+<p><img alt="image-20221003002817020" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003002817020.png"></p>
 <p>可以发现到了一个不熟悉的进程，猜测这个进程是游戏进程，也就是游戏名称是<code>LunarMS.exe</code></p>
 <p>再使用<code>netscan</code>查看下网络通信信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003003940157.png" alt="image-20221003003940157"></p>
+<p><img alt="image-20221003003940157" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003003940157.png"></p>
 <p>可以发现一个ip地址，应该是游戏下载的ip地址，可以得到flag：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CTF{LunarMS.exe}
 </span></span><span style="display:flex;"><span>CTF{77.102.199.102}
@@ -309,7 +322,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>运行指令得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003014902581.png" alt="image-20221003014902581"></p>
+<p><img alt="image-20221003014902581" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003014902581.png"></p>
 <p>尝试检索dump出来的文件的字符串，使用如下命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strings 708.dmp | grep Lunar-3
 </span></span></code></pre></div><blockquote>
@@ -321,7 +334,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>运行命令得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003015212113.png" alt="image-20221003015212113"></p>
+<p><img alt="image-20221003015212113" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003015212113.png"></p>
 <p>发现是存在相关字符串内容，增加点参数来获得字符串的上下文内容，执行如下命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strings 708.dmp | grep Lunar-3 -A <span style="color:#ae81ff">3</span> -B <span style="color:#ae81ff">3</span>
 </span></span></code></pre></div><blockquote>
@@ -332,7 +345,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>执行命令得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003020425640.png" alt="image-20221003020425640"></p>
+<p><img alt="image-20221003020425640" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003020425640.png"></p>
 <p>发现存在可疑字符串：<code>0tt3r8r33z3</code></p>
 <p>感觉这个字符串应该就是用户名，尝试提交成功</p>
 <p>故flag是：</p>
@@ -351,17 +364,17 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 <p>使用如下Linux命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hexdump -C 708.dmp | grep <span style="color:#e6db74">&#34;64&#34;</span> -A <span style="color:#ae81ff">5</span> -B <span style="color:#ae81ff">5</span> | grep <span style="color:#e6db74">&#34;40 06&#34;</span> -A <span style="color:#ae81ff">5</span> -B <span style="color:#ae81ff">5</span> | grep <span style="color:#e6db74">&#34;5a 0c 00 00&#34;</span> -A <span style="color:#ae81ff">5</span> -B <span style="color:#ae81ff">5</span>
 </span></span></code></pre></div><p>执行命令获得：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003113309491.png" alt="image-20221003113309491"></p>
+<p><img alt="image-20221003113309491" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003113309491.png"></p>
 <p>由于dump文件比较大，因此，这个命令可能需要执行4-5min才能执行出来结果，运行命令比较简单，但是运行时间相对比较长。</p>
 <p>运行得到的字符串就是<code>M0rtyL0L</code></p>
 <p>故此题的flag就是<code>CTF{M0rtyL0L}</code></p>
 <h3 id="method-2">Method 2</h3>
 <p>使用WinHex之类的工具进行查看搜索<code>5a0c0000</code></p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115058149.png" alt="image-20221003115058149"></p>
+<p><img alt="image-20221003115058149" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115058149.png"></p>
 <p>进行Hex value的搜索，依次对搜索列表进行比对和寻找：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115148926.png" alt="image-20221003115148926"></p>
+<p><img alt="image-20221003115148926" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115148926.png"></p>
 <p>最后找到目标位置：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115217012.png" alt="image-20221003115217012"></p>
+<p><img alt="image-20221003115217012" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003115217012.png"></p>
 <p>这种方式要进行查找比对，查找速度快的话是比Linux命令要快些，但是就是需要不断的人工比对和查看</p>
 <p>得到字符串<code>M0rtyL0L</code></p>
 <p>故此题的flag就是<code>CTF{M0rtyL0L}</code></p>
@@ -371,7 +384,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Silly rick always forgets his email&#39;s password, so he uses a Stored Password Services online to store his password. He always copy and paste the password so he will not get it wrong. whats rick&#39;s email password?
 </span></span></code></pre></div><p>根据题目描述，可以确定的关键语句<code>copy and paste</code>，说明邮箱地址应该是存储在粘贴板上面，可以查看下内存的粘贴板。</p>
 <p>使用vol的如下指令查看粘贴板信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003131135095.png" alt="image-20221003131135095"></p>
+<p><img alt="image-20221003131135095" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003131135095.png"></p>
 <p>可以发现的粘贴板信息：<code>M@il_Pr0vid0rs</code></p>
 <p>故此题的flag就是：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CTF{M@il_Pr0vid0rs}
@@ -381,70 +394,70 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </span></span></code></pre></div><p>根据题目描述，应该是需要寻找下恶意软件进程名称，vol这个软件功能非常强大，可以直接使用<code>malfind</code>的参数进行扫描，使用如下指令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 malfind | grep Process
 </span></span></code></pre></div><p>得到恶意进程信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003180849409.png" alt="image-20221003180849409"></p>
+<p><img alt="image-20221003180849409" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221003180849409.png"></p>
 <p>可以简单的归纳下恶意进程的信息：</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Pid</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>WmiPrvSE.exe</code></td>
-<td>2136</td>
-</tr>
-<tr>
-<td><code>explorer.exe</code></td>
-<td>2728</td>
-</tr>
-<tr>
-<td><code>BitTorrent.exe</code></td>
-<td>2836</td>
-</tr>
-<tr>
-<td><code>PresentationFo</code></td>
-<td>724</td>
-</tr>
-<tr>
-<td><code>mscorsvw.exe</code></td>
-<td>412</td>
-</tr>
-<tr>
-<td><code>mscorsvw.exe</code></td>
-<td>3124</td>
-</tr>
-<tr>
-<td><code>svchost.exe</code></td>
-<td>3196</td>
-</tr>
-<tr>
-<td><code>chrome.exe</code></td>
-<td>4076</td>
-</tr>
-<tr>
-<td><code>vmware-tray.ex</code></td>
-<td>3720</td>
-</tr>
-<tr>
-<td><code>WebCompanionIn</code></td>
-<td>3880</td>
-</tr>
-<tr>
-<td><code>Lavasoft.WCAss</code></td>
-<td>3496</td>
-</tr>
-<tr>
-<td><code>WebCompanion.e</code></td>
-<td>3856</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Pid</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>WmiPrvSE.exe</code></td>
+          <td>2136</td>
+      </tr>
+      <tr>
+          <td><code>explorer.exe</code></td>
+          <td>2728</td>
+      </tr>
+      <tr>
+          <td><code>BitTorrent.exe</code></td>
+          <td>2836</td>
+      </tr>
+      <tr>
+          <td><code>PresentationFo</code></td>
+          <td>724</td>
+      </tr>
+      <tr>
+          <td><code>mscorsvw.exe</code></td>
+          <td>412</td>
+      </tr>
+      <tr>
+          <td><code>mscorsvw.exe</code></td>
+          <td>3124</td>
+      </tr>
+      <tr>
+          <td><code>svchost.exe</code></td>
+          <td>3196</td>
+      </tr>
+      <tr>
+          <td><code>chrome.exe</code></td>
+          <td>4076</td>
+      </tr>
+      <tr>
+          <td><code>vmware-tray.ex</code></td>
+          <td>3720</td>
+      </tr>
+      <tr>
+          <td><code>WebCompanionIn</code></td>
+          <td>3880</td>
+      </tr>
+      <tr>
+          <td><code>Lavasoft.WCAss</code></td>
+          <td>3496</td>
+      </tr>
+      <tr>
+          <td><code>WebCompanion.e</code></td>
+          <td>3856</td>
+      </tr>
+  </tbody>
 </table>
 <p>这些是可能的恶意进程，需要找到题目要求的恶意进程，看看进程的cmd指令，使用如下指令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 cmdline
 </span></span></code></pre></div><p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004150006413.png" alt="image-20221004150006413"></p>
+<p><img alt="image-20221004150006413" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004150006413.png"></p>
 <p>可以看到有一个进程是在Temp目录下进行执行，这个进程应该就是恶意进程了，一般恶意进程会在Temp目录中运行。</p>
 <p>故恶意进程就是<code>vmware-tray.exe</code></p>
 <p>故此题的flag就是<code>CTF{vmware-tray.exe}</code></p>
@@ -461,11 +474,11 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004163351355.png" alt="image-20221004163351355"></p>
+<p><img alt="image-20221004163351355" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004163351355.png"></p>
 <p>发现一个torrent文件，可以猜测Rick应该平时会进行torrent种子文件的下载，而且这个种子文件的位置一般是在<code>Rick And Morty</code>文件夹下面。因此，进一步过滤查看相关信息，使用如下指令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 filescan | grep -i <span style="color:#e6db74">&#34;Rick And Morty&#34;</span>
 </span></span></code></pre></div><p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004164710378.png" alt="image-20221004164710378"></p>
+<p><img alt="image-20221004164710378" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004164710378.png"></p>
 <p>发现有一个文件的权限比较可疑，尝试将这个文件进行dump，来查看文件具体信息</p>
 <p>使用如下命令进行dump：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 dumpfiles -Q 0x000000007dae9350 -D ./
@@ -478,12 +491,12 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004170421613.png" alt="image-20221004170421613"></p>
+<p><img alt="image-20221004170421613" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004170421613.png"></p>
 <p>查看下dump文件中的可打印字符串数据</p>
 <p>执行如下命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strings file.None.0xfffffa801b42c9e0.dat
 </span></span></code></pre></div><p>得到可打印字符串信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004170725684.png" alt="image-20221004170725684"></p>
+<p><img alt="image-20221004170725684" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004170725684.png"></p>
 <p>故此题的flag应该是藏在<code>e7:website19:M3an_T0rren7_4_R!cke</code>这段字符串中，对这段字符串仔细观察，可以发现这段字符串是有一些明显特征的</p>
 <p>可以发现<code>e</code>是作为开头结尾的引用，中间的数据就是<code>7:website19:M3an_T0rren7_4_R!ck</code>，应该是三个对象显然最后一个对象应该是就是flag</p>
 <p>故此题的flag就是<code>CTF{M3an_T0rren7_4_R!ck}</code></p>
@@ -502,12 +515,12 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 <li><code>-D ./f/</code> dump内存文件<code>./f/</code>目录</li>
 </ul>
 </blockquote>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004201432915.png" alt="image-20221004201432915"></p>
+<p><img alt="image-20221004201432915" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004201432915.png"></p>
 <p>使用<code>strings</code>命令来获取内存文件的可打印字符串，并添加<code>download.exe.torrent</code>作为过滤，由于恶意文件名是<code>download.exe.torrent</code>，因此采用这种方式进行过滤</p>
 <p>使用如下指令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strings ./f/* | grep <span style="color:#e6db74">&#34;download\.exe\.torrent&#34;</span> -A <span style="color:#ae81ff">10</span> -B <span style="color:#ae81ff">10</span>
 </span></span></code></pre></div><p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004204205771.png" alt="image-20221004204205771"></p>
+<p><img alt="image-20221004204205771" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004204205771.png"></p>
 <p>这串字符看样子是挺奇怪的，应该就是flag信息</p>
 <p>尝试发现真正的flag数据是<code>Hum@n_I5_Th3_Weak3s7_Link_In_Th3_Ch@in</code></p>
 <p>故此题的flag是<code>CTF{Hum@n_I5_Th3_Weak3s7_Link_In_Th3_Ch@in}</code></p>
@@ -527,34 +540,34 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 </blockquote>
 <p>得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210324575.png" alt="image-20221004210324575"></p>
+<p><img alt="image-20221004210324575" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210324575.png"></p>
 <p>需要对文件进行分析，首先查看软件的相关信息：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210448989.png" alt="image-20221004210448989"></p>
+<p><img alt="image-20221004210448989" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210448989.png"></p>
 <p>发现恶意软件是一个.NET的文件，可以使用dnSpy进行查看，拖进dnSpy进行寻找发现：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210559036.png" alt="image-20221004210559036"></p>
+<p><img alt="image-20221004210559036" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004210559036.png"></p>
 <p>一个GUI绘制流，根据GUI的代码信息，使用PS绘制出GUI：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004211105657.png" alt="image-20221004211105657"></p>
+<p><img alt="image-20221004211105657" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004211105657.png"></p>
 <p>比特币地址显而易见就是：<code>1MmpEmebJkqXG8nQv4cjJSmxZQFVmFo63M</code></p>
 <p>故此题的flag就是<code>CTF{1MmpEmebJkqXG8nQv4cjJSmxZQFVmFo63M}</code></p>
 <h2 id="graphics-for-the-weak">Graphic’s For The Weak</h2>
 <p>查看题目描述：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>There&#39;s something fishy in the malware&#39;s graphics.
 </span></span></code></pre></div><p>使用dnSpy加载恶意软件，可以在资源目录中找到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004212217979.png" alt="image-20221004212217979"></p>
+<p><img alt="image-20221004212217979" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004212217979.png"></p>
 <p>故本题的flag就是<code>CTF{S0_Just_M0v3_Socy}</code></p>
 <h2 id="recovery">Recovery</h2>
 <p>查看题目描述：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Rick got to have his files recovered! What is the random password used to encrypt the files?
 </span></span></code></pre></div><p>对恶意软件进行审计，找到关键的密码发送函数：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004214117780.png" alt="image-20221004214117780"></p>
+<p><img alt="image-20221004214117780" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004214117780.png"></p>
 <p>发现密码是根据计算机名称和用户名以及密码一起发送的，要dump恶意软件的内存信息，使用如下指令进行dump：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 memdump -p <span style="color:#ae81ff">3720</span> -D ./
 </span></span></code></pre></div><p>执行命令得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004214626524.png" alt="image-20221004214626524"></p>
+<p><img alt="image-20221004214626524" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004214626524.png"></p>
 <p>使用<code>strings</code>命令进行检索，由于程序的数据是16字节小端序数据，.NET程序的用2字节表示一个字符串，所以是16字节小端序数据，因此使用如下命令进行过滤检索：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>strings -el 3720.dmp | grep WIN-LO6FAF3DTFE-Rick
 </span></span></code></pre></div><p>运行得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004215044513.png" alt="image-20221004215044513"></p>
+<p><img alt="image-20221004215044513" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004215044513.png"></p>
 <p>故此，密码就是<code>aDOBofVYUNVnmp7</code></p>
 <p>故此题的flag就是<code>CTF{aDOBofVYUNVnmp7}</code></p>
 <h2 id="closure">Closure</h2>
@@ -563,20 +576,20 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </span></span></code></pre></div><p>要找文件并且解密文件。猜测存在一个flag文件，使用如下指令进行文件扫描：</p>
 <pre tabindex="0"><code>vol.py -f OtterCTF.vmem --profile=Win7SP1x64 filescan | grep -i &#34;flag&#34;
 </code></pre><p>运行命令得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004215615853.png" alt="image-20221004215615853"></p>
+<p><img alt="image-20221004215615853" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004215615853.png"></p>
 <p>应该是桌面上的<code>Flag.txt</code>文件</p>
 <p>将文件进行dump，使用如下命令进行文件dump：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ol.py -f OtterCTF.vmem --profile<span style="color:#f92672">=</span>Win7SP1x64 dumpfiles -Q 0x000000007e410890 -D ./
 </span></span></code></pre></div><p>运行得到：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004220208957.png" alt="image-20221004220208957"></p>
+<p><img alt="image-20221004220208957" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004220208957.png"></p>
 <p>下面就需要对文件进行解密了</p>
 <p>首先对dnSpy反编译的代码进行审计可以看到是：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004225734265.png" alt="image-20221004225734265"></p>
+<p><img alt="image-20221004225734265" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004225734265.png"></p>
 <p>hidden tear的程序算法</p>
 <p>继续进行分析，可以发现一个AES的加密算法：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230040181.png" alt="image-20221004230040181"></p>
+<p><img alt="image-20221004230040181" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230040181.png"></p>
 <p>进行跟进分析可以发现一个加密文件的函数：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230149524.png" alt="image-20221004230149524"></p>
+<p><img alt="image-20221004230149524" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230149524.png"></p>
 <p>对这两个关键函数进行代码审计发现，核心的加密算法还是AES的算法</p>
 <p>根据目前的分析情况，如果要解密这个文件主要有两种思路</p>
 <ul>
@@ -585,12 +598,12 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </ul>
 <h3 id="hiddenteardecrypt工具解密">HiddenTearDecrypt工具解密</h3>
 <p>由于在文件中发现了HiddenTear的关键信息，可以直接去检索HiddenTearDecrypt:</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230418792.png" alt="image-20221004230418792"></p>
+<p><img alt="image-20221004230418792" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230418792.png"></p>
 <p>HiddenTearDecrypt工具在网络上都是可以进行下载的</p>
 <p>尝试使用工具进行解密发现不能成功求解。由于加密代码是采用CBC模式进行加密，会对文件进行填充，只要删除掉文件的填充应该就可以正常解密，使用winhex打开文件：</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230652451.png" alt="image-20221004230652451"></p>
+<p><img alt="image-20221004230652451" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230652451.png"></p>
 <p>可以发现有很多<code>00</code>字节的填充，只要删除<code>00</code>字节的填充就可以进行正常的解密，使用工具进行解密</p>
-<p><img src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230849821.png" alt="image-20221004230849821"></p>
+<p><img alt="image-20221004230849821" src="/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221004230849821.png"></p>
 <p>解密成功，打开文件得到flag：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CTF{Im_Th@_B3S7_RicK_0f_Th3m_4ll}
 </span></span></code></pre></div><h3 id="解密脚本解密">解密脚本解密</h3>
@@ -633,9 +646,9 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="tags/ctf/">ctf</a></span>
-        <span class="tag"><a href="tags/forensics/">Forensics</a></span>
-        <span class="tag"><a href="tags/writeup/">writeup</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/ctf/">ctf</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/forensics/">Forensics</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/writeup/">writeup</a></span>
         
     </p>
 
@@ -643,7 +656,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="categories/challange/">challange</a></span>
+        <span class="tag"><a href="//localhost:1313/categories/challange/">challange</a></span>
         
     </p>
 
@@ -678,7 +691,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -686,7 +699,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -695,7 +708,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;caption=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;canonicalUrl=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;caption=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;canonicalUrl=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
   <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
     <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
@@ -704,7 +717,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;body=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;body=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -712,7 +725,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;media=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f;description=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;media=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f;description=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
   <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
     </div>
@@ -720,7 +733,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;summary=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;source=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;summary=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;source=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -728,7 +741,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;resubmit=true&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;resubmit=true&amp;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -736,7 +749,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f;title=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on xing">
   <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
     </div>
@@ -744,7 +757,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0%20%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0%20%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -752,7 +765,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;t=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f&amp;t=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
@@ -760,7 +773,7 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;url=%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=OtterCTF%202018%20%e5%86%85%e5%ad%98%e5%8f%96%e8%af%81%e5%a4%8d%e7%8e%b0&amp;url=%2f%2flocalhost%3a1313%2fposts%2fotterctf_2018_memory_forensic_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
   <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
     </div>
@@ -780,10 +793,17 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 
         <div class="pagination__buttons">
             
+            <span class="button previous">
+                <a href="//localhost:1313/posts/sais_third_medicine_think/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">Sais_third_medicine_think</span>
+                </a>
+            </span>
+            
 
             
             <span class="button next">
-                <a href="/posts/xctf-reverse_daliy_002/">
+                <a href="//localhost:1313/posts/xctf-reverse_daliy_002/">
                     <span class="button__text">攻防世界 RE 日常练习 002</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -792,6 +812,8 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
         </div>
     </div>
 
+
+    
 
     
 
@@ -806,16 +828,6 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
     
     
 </footer>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-</script>
-
-<script src='https://cdn.jsdelivr.net/npm/mathjax@2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 
             
         </div>
@@ -824,7 +836,8 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 
 
 
-<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 

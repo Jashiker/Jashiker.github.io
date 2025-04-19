@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <meta name="description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
 0x0 [GWCTF 2019] pyre 应该是python逆向的题目
 果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码
-# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &amp;#39;Welcome to Re World!&amp;#39; print &amp;#39;Your input1 is your flag~&amp;#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&amp;#39;\x1f&amp;#39;, &amp;#39;\x12&amp;#39;, &amp;#39;\x1d&amp;#39;, &amp;#39;(&amp;#39;, &amp;#39;0&amp;#39;, &amp;#39;4&amp;#39;, &amp;#39;\x01&amp;#39;, &amp;#39;\x06&amp;#39;, &amp;#39;\x14&amp;#39;, &amp;#39;4&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;\x1b&amp;#39;, &amp;#39;U&amp;#39;, &amp;#39;?" />
+# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?&#39;, &#39;o&#39;, &#39;6&#39;, &#39;*&#39;, &#39;:&#39;, &#39;\x01&#39;, &#39;D&#39;, &#39;;&#39;, &#39;%&#39;, &#39;\x13&#39;] # okay decompiling .\attachment.pyc 对代码进行审计，发现input1的数值没有给到，感觉应该是在input1里面。根据代码进行逆推
+" />
 <meta name="keywords" content=", ctf, writeup, reverse" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/posts/buuctf-reverse-3_writeup/" />
+<link rel="canonical" href="//localhost:1313/posts/buuctf-reverse-3_writeup/" />
 
 
     <title>
@@ -25,7 +27,9 @@
 
 
 
-<link rel="stylesheet" href="/main.b78c3be9451dc4ca61ca377f3dc2cf2e6345a44c2bae46216a322ef366daa399.css" integrity="sha256-t4w76UUdxMphyjd/PcLPLmNFpEwrrkYhajIu82bao5k=">
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
 
 
 
@@ -38,34 +42,44 @@
     <meta name="msapplication-TileColor" content="">
 
 
-<meta itemprop="name" content="BUUCTF REVERSE [17~24]_Writeup">
-<meta itemprop="description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
+
+  <meta itemprop="name" content="BUUCTF REVERSE [17~24]_Writeup">
+  <meta itemprop="description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
 0x0 [GWCTF 2019] pyre 应该是python逆向的题目
 果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码
-# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?"><meta itemprop="datePublished" content="2022-01-28T19:24:35+08:00" />
-<meta itemprop="dateModified" content="2022-01-28T19:24:35+08:00" />
-<meta itemprop="wordCount" content="2555"><meta itemprop="image" content=""/>
-<meta itemprop="keywords" content="ctf,writeup,reverse," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content=""/>
+# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?&#39;, &#39;o&#39;, &#39;6&#39;, &#39;*&#39;, &#39;:&#39;, &#39;\x01&#39;, &#39;D&#39;, &#39;;&#39;, &#39;%&#39;, &#39;\x13&#39;] # okay decompiling .\attachment.pyc 对代码进行审计，发现input1的数值没有给到，感觉应该是在input1里面。根据代码进行逆推">
+  <meta itemprop="datePublished" content="2022-01-28T19:24:35+08:00">
+  <meta itemprop="dateModified" content="2022-01-28T19:24:35+08:00">
+  <meta itemprop="wordCount" content="2555">
+  <meta itemprop="image" content="//localhost:1313/">
+  <meta itemprop="keywords" content="Ctf,Writeup,Reverse">
 
-<meta name="twitter:title" content="BUUCTF REVERSE [17~24]_Writeup"/>
-<meta name="twitter:description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="BUUCTF REVERSE [17~24]_Writeup">
+  <meta name="twitter:description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
 0x0 [GWCTF 2019] pyre 应该是python逆向的题目
 果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码
-# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?"/>
+# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?&#39;, &#39;o&#39;, &#39;6&#39;, &#39;*&#39;, &#39;:&#39;, &#39;\x01&#39;, &#39;D&#39;, &#39;;&#39;, &#39;%&#39;, &#39;\x13&#39;] # okay decompiling .\attachment.pyc 对代码进行审计，发现input1的数值没有给到，感觉应该是在input1里面。根据代码进行逆推">
 
 
 
-    <meta property="og:title" content="BUUCTF REVERSE [17~24]_Writeup" />
-<meta property="og:description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
+    <meta property="og:url" content="//localhost:1313/posts/buuctf-reverse-3_writeup/">
+  <meta property="og:site_name" content="Jasmine❀Hiker">
+  <meta property="og:title" content="BUUCTF REVERSE [17~24]_Writeup">
+  <meta property="og:description" content="BUUCTF-REVERSE-3 writeup 8道练手的逆向题目，可以尝试做一做
 0x0 [GWCTF 2019] pyre 应该是python逆向的题目
 果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码
-# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/buuctf-reverse-3_writeup/" /><meta property="og:image" content=""/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-01-28T19:24:35+08:00" />
-<meta property="article:modified_time" content="2022-01-28T19:24:35+08:00" /><meta property="og:site_name" content="Jasmine❀Hiker" />
+# uncompyle6 version 3.7.4 # Python bytecode 2.7 (62211) # Decompiled from: Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)] # Embedded file name: encode.py # Compiled at: 2019-08-19 21:01:57 print &#39;Welcome to Re World!&#39; print &#39;Your input1 is your flag~&#39; l = len(input1) for i in range(l): num = ((input1[i] &#43; i) % 128 &#43; 128) % 128 code &#43;= num for i in range(l - 1): code[i] = code[i] ^ code[(i &#43; 1)] print code code = [&#39;\x1f&#39;, &#39;\x12&#39;, &#39;\x1d&#39;, &#39;(&#39;, &#39;0&#39;, &#39;4&#39;, &#39;\x01&#39;, &#39;\x06&#39;, &#39;\x14&#39;, &#39;4&#39;, &#39;,&#39;, &#39;\x1b&#39;, &#39;U&#39;, &#39;?&#39;, &#39;o&#39;, &#39;6&#39;, &#39;*&#39;, &#39;:&#39;, &#39;\x01&#39;, &#39;D&#39;, &#39;;&#39;, &#39;%&#39;, &#39;\x13&#39;] # okay decompiling .\attachment.pyc 对代码进行审计，发现input1的数值没有给到，感觉应该是在input1里面。根据代码进行逆推">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-01-28T19:24:35+08:00">
+    <meta property="article:modified_time" content="2022-01-28T19:24:35+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Reverse">
+    <meta property="og:image" content="//localhost:1313/">
 
 
 
@@ -74,7 +88,8 @@
 
 
 
-    <meta property="article:published_time" content="2022-01-28 19:24:35 &#43;0800 CST" />
+    <meta property="article:published_time" content="2022-01-28 19:24:35 &#43;0800 HKT" />
+
 
 
 
@@ -112,9 +127,8 @@
 
 
         <span class="header__right">
-            
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/tags">Tags</a></li><li><a href="/link">Link</a></li><li><a href="/about">About</a></li>
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/link">Link</a></li><li><a href="/tags">Tags</a></li>
     </ul>
 </nav>
 
@@ -124,7 +138,6 @@
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                     </svg>
                 </span>
-            
         </span>
     </span>
 </header>
@@ -148,7 +161,7 @@
 
     <article>
       <h1 class="post-title">
-        <a href="/posts/buuctf-reverse-3_writeup/">BUUCTF REVERSE [17~24]_Writeup</a>
+        <a href="//localhost:1313/posts/buuctf-reverse-3_writeup/">BUUCTF REVERSE [17~24]_Writeup</a>
       </h1>
 
       
@@ -177,7 +190,7 @@
       <div class="post-content">
         <h1 id="buuctf-reverse-3-writeup">BUUCTF-REVERSE-3 writeup</h1>
 <p>8道练手的逆向题目，可以尝试做一做</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png" alt="image-20210914212658475"></p>
+<p><img alt="image-20210914212658475" src="/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png"></p>
 <h2 id="0x0-gwctf-2019-pyre">0x0 [GWCTF 2019] pyre</h2>
 <p>应该是python逆向的题目</p>
 <p>果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码</p>
@@ -255,12 +268,12 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>flag{decrypt_256}
 </span></span></code></pre></div><h2 id="0x2-actf新生赛-easyre">0x2 [ACTF新生赛] easyre</h2>
 <p>走下流程，查下壳</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090016298.png" alt="image-20210915090016298"></p>
+<p><img alt="image-20210915090016298" src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090016298.png"></p>
 <p>发现有壳，需要进行脱壳</p>
 <p>使用UPX进行脱壳处理</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090432391.png" alt="image-20210915090432391"></p>
+<p><img alt="image-20210915090432391" src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090432391.png"></p>
 <p>然后再次查看信息</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090516027.png" alt="image-20210915090516027"></p>
+<p><img alt="image-20210915090516027" src="/images/BUUCTF-REVERSE-3_writeup/image-20210915090516027.png"></p>
 <p>32位程序，已经成功脱壳，可以丢进ida pro里面玩耍了</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#66d9ef">__cdecl</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">**</span>argv, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">**</span>envp)
 </span></span><span style="display:flex;"><span>{
@@ -306,7 +319,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>flag{U9X_1S_W6@T?}
 </span></span></code></pre></div><h2 id="0x3-crackrtf">0x3 CrackRTF</h2>
 <p>先查一下壳</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210915115948303.png" alt="image-20210915115948303"></p>
+<p><img alt="image-20210915115948303" src="/images/BUUCTF-REVERSE-3_writeup/image-20210915115948303.png"></p>
 <p>32位无壳的pe文件，使用ida pro打开文件</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#66d9ef">__cdecl</span> <span style="color:#a6e22e">main_0</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">**</span>argv, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">**</span>envp)
 </span></span><span style="display:flex;"><span>{
@@ -418,7 +431,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Flag{N0_M0re_Free_Bugs}
 </span></span></code></pre></div><h2 id="0x4-2019红帽杯-easyre">0x4 [2019红帽杯] easyRE</h2>
 <p>得到一个ELF文件，可以确定是Linux系统的文件，虽然Linux系统的大多数文件是不带壳的，但是为了以防万一还是查下程序信息：</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210918150158372.png" alt="image-20210918150158372"></p>
+<p><img alt="image-20210918150158372" src="/images/BUUCTF-REVERSE-3_writeup/image-20210918150158372.png"></p>
 <p>64位程序，果然是没有壳的程序。使用x64 IDA pro打开一下程序，看看程序内部</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">// positive sp value has been detected, the output may be wrong!
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#66d9ef">__fastcall</span> __noreturn <span style="color:#a6e22e">start</span>(<span style="color:#66d9ef">__int64</span> a1, <span style="color:#66d9ef">__int64</span> a2, <span style="color:#66d9ef">int</span> a3)
@@ -571,7 +584,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Info:The first four chars are `flag`
 </span></span></code></pre></div><p>然后走进下面一个坑：</p>
 <p>（”吾愿称之为base64之坑“ XD ）</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210918163713879.png" alt="image-20210918163713879"></p>
+<p><img alt="image-20210918163713879" src="/images/BUUCTF-REVERSE-3_writeup/image-20210918163713879.png"></p>
 <p>提取数据：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Vm0wd2VHUXhTWGhpUm1SWVYwZDRWVll3Wkc5WFJsbDNXa1pPVlUxV2NIcFhhMk0xVmpKS1NHVkdXbFpOYmtKVVZtcEtTMUl5VGtsaVJtUk9ZV3hhZVZadGVHdFRNVTVYVW01T2FGSnRVbGhhVjNoaFZWWmtWMXBFVWxSTmJFcElWbTAxVDJGV1NuTlhia0pXWWxob1dGUnJXbXRXTVZaeVdrWm9hVlpyV1hwV1IzaGhXVmRHVjFOdVVsWmlhMHBZV1ZSR1lWZEdVbFZTYlhSWFRWWndNRlZ0TVc5VWJGcFZWbXR3VjJKSFVYZFdha1pXWlZaT2NtRkhhRk5pVjJoWVYxZDBhMVV3TlhOalJscFlZbGhTY1ZsclduZGxiR1J5VmxSR1ZXSlZjRWhaTUZKaFZqSktWVkZZYUZkV1JWcFlWV3BHYTFkWFRrZFRiV3hvVFVoQ1dsWXhaRFJpTWtsM1RVaG9hbEpYYUhOVmJUVkRZekZhY1ZKcmRGTk5Wa3A2VjJ0U1ExWlhTbFpqUldoYVRVWndkbFpxUmtwbGJVWklZVVprYUdFeGNHOVhXSEJIWkRGS2RGSnJhR2hTYXpWdlZGVm9RMlJzV25STldHUlZUVlpXTlZadE5VOVdiVXBJVld4c1dtSllUWGhXTUZwell6RmFkRkpzVWxOaVNFSktWa1phVTFFeFduUlRhMlJxVWxad1YxWnRlRXRXTVZaSFVsUnNVVlZVTURrPQ==
 </span></span></code></pre></div><p>进行十次base64解密得到一个博客地址：https://bbs.pediy.com/thread-254172.htm</p>
@@ -586,7 +599,7 @@
 </span></span><span style="display:flex;"><span>要想带对手进沟 防守方必须首先透彻了解攻击方 特别是其人性弱点（知道为什么是马克思主义学院了吧） 
 </span></span></code></pre></div><p>Good, 现在知道自己掉坑里面了， 两个坑都掉了一遍所以flag在哪呢？</p>
 <p>我们去找下主函数</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210918173639284.png" alt="image-20210918173639284"></p>
+<p><img alt="image-20210918173639284" src="/images/BUUCTF-REVERSE-3_writeup/image-20210918173639284.png"></p>
 <p>发现周围存在一个奇奇怪怪的函数，会不会就是这个函数呢</p>
 <p>点开看看：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">__int64</span> <span style="color:#a6e22e">sub_400D35</span>()
@@ -640,7 +653,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>flag{Act1ve_Defen5e_Test}
 </span></span></code></pre></div><h2 id="0x5-actf新生赛2020-rome">0x5 [ACTF新生赛2020] rome</h2>
 <p>首先，查一下文件的信息</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210919081555684.png" alt="image-20210919081555684"></p>
+<p><img alt="image-20210919081555684" src="/images/BUUCTF-REVERSE-3_writeup/image-20210919081555684.png"></p>
 <p>32位程序，没有壳，丢进IDA prio里面看看：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">func</span>()
 </span></span><span style="display:flex;"><span>{
@@ -785,12 +798,12 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>flag{ClientSideLoginsAreEasy@flare-on.com}
 </span></span></code></pre></div><h2 id="0x7-guet-ctf2019-re">0x7 [GUET-CTF2019] re</h2>
 <p>拿到程序，先看看程序的信息：</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210919092405673.png" alt="image-20210919092405673"></p>
+<p><img alt="image-20210919092405673" src="/images/BUUCTF-REVERSE-3_writeup/image-20210919092405673.png"></p>
 <p>发现程序有壳，而且是一个64位的ELF程序</p>
 <p>需要进行脱壳处理，程序使用的是最基本的UPX的壳，可以使用UPX进行简单脱壳：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>upx -d re
 </span></span></code></pre></div><p>脱壳后，然后使用Exeinfo再次进行查看</p>
-<p><img src="/images/BUUCTF-REVERSE-3_writeup/image-20210919092939620.png" alt="image-20210919092939620"></p>
+<p><img alt="image-20210919092939620" src="/images/BUUCTF-REVERSE-3_writeup/image-20210919092939620.png"></p>
 <p>壳已经被脱掉，然后使用x64 IDA pro进行查看程序</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">// positive sp value has been detected, the output may be wrong!
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#66d9ef">__fastcall</span> __noreturn <span style="color:#a6e22e">start</span>(<span style="color:#66d9ef">__int64</span> a1, <span style="color:#66d9ef">__int64</span> a2, <span style="color:#66d9ef">int</span> a3)
@@ -960,9 +973,9 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="tags/ctf/">ctf</a></span>
-        <span class="tag"><a href="tags/writeup/">writeup</a></span>
-        <span class="tag"><a href="tags/reverse/">reverse</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/ctf/">ctf</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/writeup/">writeup</a></span>
+        <span class="tag"><a href="//localhost:1313/tags/reverse/">reverse</a></span>
         
     </p>
 
@@ -970,7 +983,7 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="categories/practice/">practice</a></span>
+        <span class="tag"><a href="//localhost:1313/categories/practice/">practice</a></span>
         
     </p>
 
@@ -1005,7 +1018,7 @@
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -1013,7 +1026,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -1022,7 +1035,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;caption=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;canonicalUrl=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;caption=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;canonicalUrl=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
   <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
     <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
@@ -1031,7 +1044,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;body=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;body=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -1039,7 +1052,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;media=%2fposts%2fbuuctf-reverse-3_writeup%2f;description=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;media=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f;description=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
   <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
     </div>
@@ -1047,7 +1060,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;summary=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;source=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;summary=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;source=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -1055,7 +1068,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;resubmit=true&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;resubmit=true&amp;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -1063,7 +1076,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2fposts%2fbuuctf-reverse-3_writeup%2f;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f;title=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on xing">
   <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
     </div>
@@ -1071,7 +1084,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup%20%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup%20%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -1079,7 +1092,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;t=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f&amp;t=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
@@ -1087,7 +1100,7 @@
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;url=%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=BUUCTF%20REVERSE%20%5b17~24%5d_Writeup&amp;url=%2f%2flocalhost%3a1313%2fposts%2fbuuctf-reverse-3_writeup%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
   <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
     </div>
@@ -1108,7 +1121,7 @@
         <div class="pagination__buttons">
             
             <span class="button previous">
-                <a href="/posts/xctf-reverse-expert-1_writeup/">
+                <a href="//localhost:1313/posts/xctf-reverse-expert-1_writeup/">
                     <span class="button__icon">←</span>
                     <span class="button__text">XCTF REVERSE Expert (1) Writeup</span>
                 </a>
@@ -1117,7 +1130,7 @@
 
             
             <span class="button next">
-                <a href="/posts/buuctf-reverse-2_writeup/">
+                <a href="//localhost:1313/posts/buuctf-reverse-2_writeup/">
                     <span class="button__text">BUUCTF REVERSE [9~16]_Writeup</span>
                     <span class="button__icon">→</span>
                 </a>
@@ -1126,6 +1139,8 @@
         </div>
     </div>
 
+
+    
 
     
 
@@ -1140,16 +1155,6 @@
     
     
 </footer>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-</script>
-
-<script src='https://cdn.jsdelivr.net/npm/mathjax@2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML' async></script>
 
             
         </div>
@@ -1158,7 +1163,8 @@
 
 
 
-<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
 
 
 

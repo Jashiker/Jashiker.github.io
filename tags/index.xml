@@ -2,155 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jasmine❀Hiker</title>
-    <link>/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Jasmine❀Hiker</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <generator>Hugo</generator>
+    <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 04 Oct 2022 23:18:37 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Apr 2025 21:16:56 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ctf</title>
-      <link>/tags/ctf/</link>
-      <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      
-      <guid>/tags/ctf/</guid>
+      <title>AI</title>
+      <link>//localhost:1313/tags/ai/</link>
+      <pubDate>Sat, 19 Apr 2025 21:16:56 +0800</pubDate>
+      <guid>//localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Ctf</title>
+      <link>//localhost:1313/tags/ctf/</link>
+      <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
+      <guid>//localhost:1313/tags/ctf/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Forensics</title>
-      <link>/tags/forensics/</link>
+      <link>//localhost:1313/tags/forensics/</link>
       <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      
-      <guid>/tags/forensics/</guid>
+      <guid>//localhost:1313/tags/forensics/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>writeup</title>
-      <link>/tags/writeup/</link>
+      <title>Writeup</title>
+      <link>//localhost:1313/tags/writeup/</link>
       <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      
-      <guid>/tags/writeup/</guid>
+      <guid>//localhost:1313/tags/writeup/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Reverse</title>
-      <link>/tags/reverse/</link>
+      <link>//localhost:1313/tags/reverse/</link>
       <pubDate>Sun, 04 Sep 2022 11:30:27 +0800</pubDate>
-      
-      <guid>/tags/reverse/</guid>
+      <guid>//localhost:1313/tags/reverse/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>note</title>
-      <link>/tags/note/</link>
-      <pubDate>Sat, 26 Feb 2022 11:36:23 +0800</pubDate>
-      
-      <guid>/tags/note/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>/tags/windows/</link>
-      <pubDate>Tue, 22 Feb 2022 18:30:22 +0800</pubDate>
-      
-      <guid>/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>/tags/css/</link>
-      <pubDate>Mon, 07 Feb 2022 16:17:59 +0800</pubDate>
-      
-      <guid>/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>website</title>
-      <link>/tags/website/</link>
-      <pubDate>Mon, 07 Feb 2022 16:17:59 +0800</pubDate>
-      
-      <guid>/tags/website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>/tags/html/</link>
-      <pubDate>Thu, 03 Feb 2022 16:39:07 +0800</pubDate>
-      
-      <guid>/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>assembly</title>
-      <link>/tags/assembly/</link>
-      <pubDate>Thu, 03 Feb 2022 09:56:53 +0800</pubDate>
-      
-      <guid>/tags/assembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>/tags/c/</link>
-      <pubDate>Tue, 01 Feb 2022 19:01:04 +0800</pubDate>
-      
-      <guid>/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>/tags/java/</link>
-      <pubDate>Sat, 29 Jan 2022 19:01:51 +0800</pubDate>
-      
-      <guid>/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>crypto</title>
-      <link>/tags/crypto/</link>
+      <title>Crypto</title>
+      <link>//localhost:1313/tags/crypto/</link>
       <pubDate>Sat, 29 Jan 2022 11:36:02 +0800</pubDate>
-      
-      <guid>/tags/crypto/</guid>
+      <guid>//localhost:1313/tags/crypto/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Think</title>
-      <link>/tags/think/</link>
+      <link>//localhost:1313/tags/think/</link>
       <pubDate>Sat, 29 Jan 2022 09:26:51 +0800</pubDate>
-      
-      <guid>/tags/think/</guid>
+      <guid>//localhost:1313/tags/think/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>system</title>
-      <link>/tags/system/</link>
+      <title>System</title>
+      <link>//localhost:1313/tags/system/</link>
       <pubDate>Sat, 29 Jan 2022 09:20:55 +0800</pubDate>
-      
-      <guid>/tags/system/</guid>
+      <guid>//localhost:1313/tags/system/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>web</title>
-      <link>/tags/web/</link>
+      <title>Web</title>
+      <link>//localhost:1313/tags/web/</link>
       <pubDate>Fri, 25 Jun 2021 21:08:13 +0800</pubDate>
-      
-      <guid>/tags/web/</guid>
+      <guid>//localhost:1313/tags/web/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
