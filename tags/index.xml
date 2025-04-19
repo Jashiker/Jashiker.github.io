@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jasmine❀Hiker</title>
-    <link>//localhost:1313/tags/</link>
+    <link>jashiker.github.io/tags/</link>
     <description>Recent content in Tags on Jasmine❀Hiker</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 19 Apr 2025 21:16:56 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="jashiker.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>//localhost:1313/tags/ai/</link>
+      <link>jashiker.github.io/tags/ai/</link>
       <pubDate>Sat, 19 Apr 2025 21:16:56 +0800</pubDate>
-      <guid>//localhost:1313/tags/ai/</guid>
+      <guid>jashiker.github.io/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Ctf</title>
-      <link>//localhost:1313/tags/ctf/</link>
+      <link>jashiker.github.io/tags/ctf/</link>
       <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      <guid>//localhost:1313/tags/ctf/</guid>
+      <guid>jashiker.github.io/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Forensics</title>
-      <link>//localhost:1313/tags/forensics/</link>
+      <link>jashiker.github.io/tags/forensics/</link>
       <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      <guid>//localhost:1313/tags/forensics/</guid>
+      <guid>jashiker.github.io/tags/forensics/</guid>
       <description></description>
     </item>
     <item>
       <title>Writeup</title>
-      <link>//localhost:1313/tags/writeup/</link>
+      <link>jashiker.github.io/tags/writeup/</link>
       <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
-      <guid>//localhost:1313/tags/writeup/</guid>
+      <guid>jashiker.github.io/tags/writeup/</guid>
       <description></description>
     </item>
     <item>
       <title>Reverse</title>
-      <link>//localhost:1313/tags/reverse/</link>
+      <link>jashiker.github.io/tags/reverse/</link>
       <pubDate>Sun, 04 Sep 2022 11:30:27 +0800</pubDate>
-      <guid>//localhost:1313/tags/reverse/</guid>
+      <guid>jashiker.github.io/tags/reverse/</guid>
       <description></description>
     </item>
     <item>
       <title>Crypto</title>
-      <link>//localhost:1313/tags/crypto/</link>
+      <link>jashiker.github.io/tags/crypto/</link>
       <pubDate>Sat, 29 Jan 2022 11:36:02 +0800</pubDate>
-      <guid>//localhost:1313/tags/crypto/</guid>
+      <guid>jashiker.github.io/tags/crypto/</guid>
       <description></description>
     </item>
     <item>
       <title>Think</title>
-      <link>//localhost:1313/tags/think/</link>
+      <link>jashiker.github.io/tags/think/</link>
       <pubDate>Sat, 29 Jan 2022 09:26:51 +0800</pubDate>
-      <guid>//localhost:1313/tags/think/</guid>
+      <guid>jashiker.github.io/tags/think/</guid>
       <description></description>
     </item>
     <item>
       <title>System</title>
-      <link>//localhost:1313/tags/system/</link>
+      <link>jashiker.github.io/tags/system/</link>
       <pubDate>Sat, 29 Jan 2022 09:20:55 +0800</pubDate>
-      <guid>//localhost:1313/tags/system/</guid>
+      <guid>jashiker.github.io/tags/system/</guid>
       <description></description>
     </item>
     <item>
       <title>Web</title>
-      <link>//localhost:1313/tags/web/</link>
+      <link>jashiker.github.io/tags/web/</link>
       <pubDate>Fri, 25 Jun 2021 21:08:13 +0800</pubDate>
-      <guid>//localhost:1313/tags/web/</guid>
+      <guid>jashiker.github.io/tags/web/</guid>
       <description></description>
     </item>
   </channel>

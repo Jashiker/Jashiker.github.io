@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Jasmine❀Hiker</title>
-        <link>//localhost:1313/posts/</link>
+        <link>jashiker.github.io/posts/</link>
         <description>Recent content in Posts on Jasmine❀Hiker</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 19 Apr 2025 21:16:56 +0800</lastBuildDate>
-        <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="jashiker.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Sais_third_medicine_think</title>
-            <link>//localhost:1313/posts/sais_third_medicine_think/</link>
+            <link>jashiker.github.io/posts/sais_third_medicine_think/</link>
             <pubDate>Sat, 19 Apr 2025 21:16:56 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/sais_third_medicine_think/</guid>
+            <guid>jashiker.github.io/posts/sais_third_medicine_think/</guid>
             <description>&lt;h1 id=&#34;第三届世界科学智能大赛参赛想法&#34;&gt;第三届世界科学智能大赛参赛想法&lt;/h1&gt;
 &lt;h2 id=&#34;赛题&#34;&gt;赛题&lt;/h2&gt;
 &lt;p&gt;赛题是比较挑战性，刚开始看赛题的时候还有点懵懵的。由于我之前所了解的RNA预测算法都是根据RNA的一级结构去预测RNA的二级结构，这个比赛的赛题是用RNA的二级结构预测一级结构，我个人认为是非常有挑战性。&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查看镜像的id，以便后续打标签推送&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker images
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出如下结果：
-&lt;img src=&#34;//localhost:1313/images/sais_third_medicine/Pasted_image_20250419224241.png&#34;&gt;
+&lt;img src=&#34;jashiker.github.io/images/sais_third_medicine/Pasted_image_20250419224241.png&#34;&gt;
 如果docker运行没有问题就可以进行打标签操作了，按照云镜像服务的说明，打标签：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker tag 8e232b63ce72 crpi-mesc8odxqa2miyzr.cn-hangzhou.personal.cr.aliyuncs.com/sais_thrid_jashacker/sais_medicine:v5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;推送到云镜像服务上：&lt;/p&gt;
@@ -90,10 +90,10 @@
         
         <item>
             <title>OtterCTF 2018 内存取证复现</title>
-            <link>//localhost:1313/posts/otterctf_2018_memory_forensic_writeup/</link>
+            <link>jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</link>
             <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/otterctf_2018_memory_forensic_writeup/</guid>
+            <guid>jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</guid>
             <description>&lt;h1 id=&#34;otterctf-2018-memory-forensic-reappearance&#34;&gt;OtterCTF 2018 Memory Forensic Reappearance&lt;/h1&gt;
 &lt;p&gt;想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。
 Volatility项目地址：&lt;a href=&#34;https://github.com/volatilityfoundation/volatility&#34;&gt;https://github.com/volatilityfoundation/volatility&lt;/a&gt;
@@ -114,7 +114,7 @@ Volatility3项目地址：&lt;a href=&#34;https://github.com/volatilityfoundatio
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;得到如下信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20221002204848160&#34; src=&#34;//localhost:1313/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20221002204848160&#34; src=&#34;jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;可以看到大致的镜像系统是Win7系统&lt;/p&gt;
 &lt;h2 id=&#34;what-the-password&#34;&gt;What the password?&lt;/h2&gt;
 &lt;p&gt;查看题目描述：&lt;/p&gt;
@@ -128,7 +128,7 @@ Volatility3项目地址：&lt;a href=&#34;https://github.com/volatilityfoundatio
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;得到hash信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20221002212051508&#34; src=&#34;//localhost:1313/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20221002212051508&#34; src=&#34;jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取&lt;/p&gt;
 &lt;p&gt;使用如下指令使用mimikatz插件进行获取：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vol.py -f OtterCTF.vmem --profile&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Win7SP1x64 mimikatz
@@ -533,39 +533,39 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
         
         <item>
             <title>攻防世界 RE 日常练习 002</title>
-            <link>//localhost:1313/posts/xctf-reverse_daliy_002/</link>
+            <link>jashiker.github.io/posts/xctf-reverse_daliy_002/</link>
             <pubDate>Sun, 04 Sep 2022 11:30:27 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse_daliy_002/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse_daliy_002/</guid>
             <description>&lt;h1 id=&#34;攻防世界-re-日常练习-002&#34;&gt;攻防世界 RE 日常练习 002&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;由于攻防世界界面改版，题目划分与之前的题目划分出现了差异，变成了难度划分形式，和之前的不太一样。为了之前形式一致，故更改为日常练习&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;新版攻防世界界面：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903161040700&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903161040700.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903161040700&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903161040700.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次把攻防世界难度为1的题目补了下，找下CTF题目的手感。不过攻防世界难度1的题目，难度真的很不一致。&lt;/p&gt;
 &lt;h2 id=&#34;xxxorrr&#34;&gt;xxxorrr&lt;/h2&gt;
 &lt;p&gt;这道题目应该是攻防世界的一道新题目，难度应该是比较低的。&lt;/p&gt;
-&lt;p&gt;首先使用die查看下程序信息：&lt;img alt=&#34;image-20220903163539118&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903163539118.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先使用die查看下程序信息：&lt;img alt=&#34;image-20220903163539118&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163539118.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;amd64架构的程序，无壳，使用ida pro直接看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903163849241&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903163849241.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903163849241&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163849241.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进入到主程序可以发现：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903163921702&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903163921702.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903163921702&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163921702.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;程序非常简单，仅仅只是进行了异或操作。觉得这个程序就是简单的异或操作。寻找关键的数据：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903164142513&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903164142513.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903164142513&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164142513.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;以为这样就结束了，使用脚本跑，结果跑不出来flag，于是只能继续分析程序代码，主程序前面有一个程序函数执行，可能有进行操作：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903164827415&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903164827415.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903164827415&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164827415.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;跟进这个函数发现返回了一个可能是系统函数的一个函数&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165048716&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903165048716.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165048716&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165048716.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用搜索引擎查找这个函数得到这个函数的功能描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165237194&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903165237194.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165237194&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165237194.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;说明这个函数会注册一个函数在主函数结束的时候进行调用，跟进注册的函数：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165937553&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903165937553.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165937553&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165937553.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现一个比较有意思的函数，应该就是进行判断的关键函数，中间进行了比较。&lt;/p&gt;
 &lt;p&gt;由于对s1变量的操作存在有一定的怀疑，于是查找s1变量的交叉引用来查看信息找到一个交叉引用，这个交叉引用对s1进行操作&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903170211040&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903170211040.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903170211040&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170211040.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;继续跟进交叉引用，发现这个函数在init函数内部进行调用&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903170302861&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903170302861.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903170302861&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170302861.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;因此，s1变量进行了两次操作，根据原理编写exp：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0x71&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x61&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x73&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x78&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x63&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x79&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x74&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x67&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x73&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x61&lt;/span&gt;, 
@@ -590,15 +590,15 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行得到flag：&lt;code&gt;flag{c0n5truct0r5_functi0n_in_41f}&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;happyctf&#34;&gt;happyctf&lt;/h2&gt;
 &lt;p&gt;题目给到了一个exe文件和一个pdb符号文件。使用die查看文件架构和文件信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171041190&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903171041190.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171041190&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171041190.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现是一个PE32的命令行程序，无壳，使用ida直接看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171221296&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903171221296.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171221296&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171221296.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;加载程序的时候，也要加载pdb查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171509446&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903171509446.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171509446&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171509446.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;看样子应该是一个C++的程序，很多程序名都已经被粉碎了，所在位置应该就是主函数的所在位置，直接F5来查看程序的伪代码：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171807207&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903171807207.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171807207&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171807207.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;寻找到关键信息来进行突围，进行简单的代码审计发现：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903172024279&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE_Daliy_002/image-20220903172024279.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image-20220903172024279&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903172024279.png&#34;&gt;&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h1 id="攻防世界-re-日常练习-002">攻防世界 RE 日常练习 002</h1>
 <blockquote>
 <p>由于攻防世界界面改版，题目划分与之前的题目划分出现了差异，变成了难度划分形式，和之前的不太一样。为了之前形式一致，故更改为日常练习</p>
@@ -800,10 +800,10 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
         
         <item>
             <title>2022 网鼎杯 青龙组 Writeup</title>
-            <link>//localhost:1313/posts/2022_wdb_ql-writeup/</link>
+            <link>jashiker.github.io/posts/2022_wdb_ql-writeup/</link>
             <pubDate>Wed, 31 Aug 2022 17:28:44 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/2022_wdb_ql-writeup/</guid>
+            <guid>jashiker.github.io/posts/2022_wdb_ql-writeup/</guid>
             <description>&lt;h1 id=&#34;2022-网鼎杯-青龙组-writeup&#34;&gt;2022 网鼎杯 青龙组 Writeup&lt;/h1&gt;
 &lt;p&gt;今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。&lt;/p&gt;
 &lt;p&gt;第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。&lt;/p&gt;
@@ -811,39 +811,39 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 &lt;h2 id=&#34;解出&#34;&gt;解出&lt;/h2&gt;
 &lt;h3 id=&#34;fakeshell&#34;&gt;fakeshell&lt;/h3&gt;
 &lt;p&gt;题目给到了一个exe文件，使用die查看该文件：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828123956402&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828123956402.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828123956402&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828123956402.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现是一个upx压缩壳加密的程序，尝试使用upx脱壳：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828133038392&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828133038392.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828133038392&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828133038392.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现壳可能被修改过，需要手动脱壳。先尝试运行下程序，寻找下可能存在的锚点字符串信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140533175&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828140533175.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140533175&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140533175.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;找到两个锚点字符串，一个是&lt;code&gt;&amp;lt;&amp;lt;Input your flag:&lt;/code&gt;，另一个是&lt;code&gt;Wrong.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;使用x64dbg进行手动脱壳，进行入口点的测试找到一个关键跳转地址0x1400276CB&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140317972&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828140317972.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140317972&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140317972.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这是一个长跳转指令，运行到这个指令的时候程序已经完成解密。可以对程序的内存引用进行查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140739058&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828140739058.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140739058&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140739058.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现程序的内存引用中已经出现了锚点字符串，说明此时的程序已经完成了解密。然后跟进到锚点字符串所在的函数位置：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140905779&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828140905779.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140905779&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140905779.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这个位置应该是主函数空间，在这个主函数空间中对函数开头位置下断点，然后让程序运行到断点位置&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828141834266&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828141834266.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828141834266&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828141834266.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后使用x64dbg的Scylla插件进行dump内存：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142149592&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828142149592.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142149592&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142149592.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;从当前位置进行dump即可，得到一个dump的程序。&lt;/p&gt;
 &lt;p&gt;现在完成手动脱壳，进入到下一步，进行ida pro的静态分析：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142350437&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828142350437.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142350437&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142350437.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用F5插件来查看程序反编译的代码进行分析&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142457029&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828142457029.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142457029&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142457029.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入的数据存储到v4变量中，对v4变量处理的函数有两个，对这两个函数依次进行审计。&lt;/p&gt;
 &lt;p&gt;首先分析第一个函数，这个函数要一直跟进跟进到和参数有关的位置&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142835318&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828142835318.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142835318&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142835318.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第一个函数中，存在一个判断和一个异或运算。&lt;/p&gt;
 &lt;p&gt;判断是对输入的数据进行了处理，猜测应该是进行长度判断，判断长度是否是20位。&lt;/p&gt;
 &lt;p&gt;异或操作是单纯对于输入数据的运行对于程序运行流程没有太多影响&lt;/p&gt;
 &lt;p&gt;分析第二个函数，和第一个函数的跟进方法类似&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828144648807&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828144648807.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828144648807&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828144648807.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828145157336&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828145157336.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828145157336&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145157336.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现判断的位置有密文，跟进密文查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828145310441&#34; src=&#34;//localhost:1313/images/2022_WDB_QL-writeup/image-20220828145310441.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828145310441&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145310441.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;shift&lt;/code&gt;+ &lt;code&gt;E&lt;/code&gt;将数据提取出来，可以得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; ida_chars[] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -1445,10 +1445,10 @@ $$</p>
         
         <item>
             <title>攻防世界进阶区日常训练001</title>
-            <link>//localhost:1313/posts/xctf-reverse-advanced_daliy_001/</link>
+            <link>jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</link>
             <pubDate>Sat, 23 Apr 2022 15:14:39 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse-advanced_daliy_001/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</guid>
             <description>&lt;h1 id=&#34;攻防世界-re-进阶区-日常练习-001&#34;&gt;攻防世界 RE 进阶区 日常练习 001&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;ISCC比赛临近，CTF比赛题目也要开始继续训练起来
@@ -1459,13 +1459,13 @@ $$</p>
 &lt;p&gt;这几道题目主要都是使用IDA pro的远程调试功能，使用虚拟机搭配IDA进行远程调试&lt;/p&gt;
 &lt;h2 id=&#34;re2-cpp-is-awesome&#34;&gt;re2-cpp-is-awesome&lt;/h2&gt;
 &lt;p&gt;先查看一些文件的简单信息
-&lt;img src=&#34;//localhost:1313/images/XCTF-REVERSE-DAILY/Pasted_image_20220420210740.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420210740.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ELF文件，GCC编译，无壳&lt;/p&gt;
 &lt;p&gt;IDA看下：
 C++编译的程序文件，看的心烦意乱基本上找不到关键的函数，和关键的位置。&lt;/p&gt;
 &lt;p&gt;尝试使用下IDA pro的动调寻找一下f关键位置(IDA pro的动态消失配置可以自己网络检索，有很多相关的内容)&lt;/p&gt;
 &lt;p&gt;先断在第一个跳转位置，即&lt;code&gt;jz short loc_400BD7&lt;/code&gt; 位置上&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/XCTF-REVERSE-DAILY/Pasted_image_20220420213518.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420213518.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进行几次调试，发现都直接退出，没有进行跳转
 也就是 &lt;code&gt;cmp [rbp+var_64], 2&lt;/code&gt; 的比较值没有改变ZF标志位
 对上面汇编代码进行审计：&lt;/p&gt;
@@ -2410,10 +2410,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>编码-编写你的快乐</title>
-            <link>//localhost:1313/posts/encode/</link>
+            <link>jashiker.github.io/posts/encode/</link>
             <pubDate>Sat, 29 Jan 2022 11:36:02 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/encode/</guid>
+            <guid>jashiker.github.io/posts/encode/</guid>
             <description>&lt;h1 id=&#34;编码&#34;&gt;编码&lt;/h1&gt;
 &lt;p&gt;编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。&lt;/p&gt;
 &lt;p&gt;编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。&lt;/p&gt;
@@ -5574,7 +5574,7 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 <p><img alt="查看源图像" src="/images/Encode/morse-code-4_ML.jpg"></p>
 <h3 id="jsfuck">JSFuck</h3>
 <p>jsfuck是一种非常有意思的编码方式，仅使用6个字符就可以书写任意的<code>JavaScript</code>代码。从直观上非常容易辨别出这种编码方式，只需要“()+[]!”这6个字符组成的字符串。jsfuck的编码和解码与morsecode类似，只不过其表示的是<code>JavaScript</code>的语句。jsfuck源于一门编程语言brainfuck，其主要的思想就是只使用8种特定的符号来编写代码。jsfuck也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是<code>()+[]!</code></p>
-<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href="/"></a>!+](<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a>)</p>
+<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href="jashiker.github.io/"></a>!+](<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a>)</p>
 <p>比如：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)
 </span></span></code></pre></div><p>就可以被jsfuck编码为：</p>
@@ -5651,7 +5651,7 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>BG4JgP4wUJqxmP4EV0U++
 </span></span></code></pre></div><h3 id="jjencode编码">JJencode编码</h3>
 <p>算是JSFuck编码的前身，是由18种字符组成的编码格式。是针对JavaScript进行设计的编码方式。</p>
-<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href="/"></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
+<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href="jashiker.github.io/"></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
 <p>比如：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>alert(&#34;Hello, JavaScript&#34; )
 </span></span></code></pre></div><p>进行jjencode编码，得到</p>
@@ -5667,10 +5667,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>现代密码-看尽如今的满目繁华</title>
-            <link>//localhost:1313/posts/modern_crypto/</link>
+            <link>jashiker.github.io/posts/modern_crypto/</link>
             <pubDate>Sat, 29 Jan 2022 11:31:41 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/modern_crypto/</guid>
+            <guid>jashiker.github.io/posts/modern_crypto/</guid>
             <description>&lt;h1 id=&#34;现代密码&#34;&gt;现代密码&lt;/h1&gt;
 &lt;p&gt;现代密码根据密钥的方式可以分为对称密码和非对称密码，这两类密码是现代密码的支柱，现代密码又可以根据加密的方式分为流密码和分组密码。流密码，分组密码在CTF中通常是以对称密码的方式进行而RSA、ECC、格密码通常是以非对称密码的方式进行。&lt;/p&gt;
 &lt;h2 id=&#34;流密码&#34;&gt;流密码&lt;/h2&gt;
@@ -5758,10 +5758,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>古典密码-探寻曾经的故事</title>
-            <link>//localhost:1313/posts/classic_crypto/</link>
+            <link>jashiker.github.io/posts/classic_crypto/</link>
             <pubDate>Sat, 29 Jan 2022 11:28:09 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/classic_crypto/</guid>
+            <guid>jashiker.github.io/posts/classic_crypto/</guid>
             <description>&lt;h1 id=&#34;古典密码&#34;&gt;古典密码&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;密码和编码最大的区别就是密码多了一个很关键的信息：密钥。&lt;/p&gt;
@@ -5804,9 +5804,9 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 &lt;p&gt;下面给出一个例子：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;明文：The quick brown fox jumps over the lazy dog
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;填入填入 5 行 7 列表（事先约定填充的行列数）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210719200647994&#34; src=&#34;//localhost:1313/images/Classic_Crypto/image-20210719200647994.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210719200647994&#34; src=&#34;jashiker.github.io/images/Classic_Crypto/image-20210719200647994.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;加密的回路线（事先约定填充的行列数）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210719200710292&#34; src=&#34;//localhost:1313/images/Classic_Crypto/image-20210719200710292.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210719200710292&#34; src=&#34;jashiker.github.io/images/Classic_Crypto/image-20210719200710292.png&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;密文：gesfc inpho dtmwu qoury zejre hbxva lookT
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;云影密码&#34;&gt;云影密码&lt;/h4&gt;
 &lt;p&gt;该密码又称为01248，使用 0，1，2，4，8 四个数字，其中 0 用来表示间隔，其他数字以加法可以表示出 如：28=10，124=7，18=9，再用 1-&amp;gt;26 表示 A-&amp;gt;Z。&lt;/p&gt;</description>
@@ -6177,411 +6177,11 @@ $$</p>
         </item>
         
         <item>
-            <title>2021 绿城杯 Crypto_writeup</title>
-            <link>//localhost:1313/posts/2021-greencitycup-crypto_writeup/</link>
-            <pubDate>Sat, 29 Jan 2022 10:57:34 +0800</pubDate>
-            
-            <guid>//localhost:1313/posts/2021-greencitycup-crypto_writeup/</guid>
-            <description>&lt;h1 id=&#34;2021-绿城杯-crypto-writeup&#34;&gt;2021 绿城杯 Crypto Writeup&lt;/h1&gt;
-&lt;p&gt;河南郑州的绿城杯，也是第一届绿城杯比赛。使用的比赛平台是安恒的比赛平台。比赛过程中出现了卡顿的问题。绿城杯的整体题目难度还是比较友好的，至少密码学方向是相对比较简单的一部分内容。&lt;/p&gt;
-&lt;p&gt;密码学题目有三道题目，一道古典密码学题目，两道RSA题目。本人太菜，仅仅做出了前两道题目。&lt;/p&gt;
-&lt;h2 id=&#34;0x0-warmup加密算法&#34;&gt;0x0 [warmup]加密算法&lt;/h2&gt;
-&lt;p&gt;直接看看题目的源码&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; Crypto.Util.number &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; flag &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; flag
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;assert&lt;/span&gt; flag[:&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;flag{&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;str1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;encode&lt;/span&gt;(plain_text, a, b, m):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; plain_text:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; str1:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			addr &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; str1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find(i)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; str1[(a&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;addr&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;b) &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; m]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; i
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	print(cipher_text)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;encode(flag,&lt;span style=&#34;color:#ae81ff&#34;&gt;37&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;52&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# cipher_text = &amp;#39;aoxL{XaaHKP_tHgwpc_hN_ToXnnht}&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;代码看样子是非常简单的，可以找到加密的关键代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;encode&lt;/span&gt;(plain_text, a, b, m):
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; plain_text:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; str1:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			addr &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; str1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;find(i)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; str1[(a&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;addr&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;b) &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; m]
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			cipher_text &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; i
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	print(cipher_text)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;对加密函数进行审计可以发现有一个比较明显的数学运算：&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<h1 id="2021-绿城杯-crypto-writeup">2021 绿城杯 Crypto Writeup</h1>
-<p>河南郑州的绿城杯，也是第一届绿城杯比赛。使用的比赛平台是安恒的比赛平台。比赛过程中出现了卡顿的问题。绿城杯的整体题目难度还是比较友好的，至少密码学方向是相对比较简单的一部分内容。</p>
-<p>密码学题目有三道题目，一道古典密码学题目，两道RSA题目。本人太菜，仅仅做出了前两道题目。</p>
-<h2 id="0x0-warmup加密算法">0x0 [warmup]加密算法</h2>
-<p>直接看看题目的源码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flag <span style="color:#f92672">import</span> flag
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span> flag[:<span style="color:#ae81ff">5</span>]<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;flag{&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encode</span>(plain_text, a, b, m):
-</span></span><span style="display:flex;"><span>	cipher_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> plain_text:
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> str1:
-</span></span><span style="display:flex;"><span>			addr <span style="color:#f92672">=</span> str1<span style="color:#f92672">.</span>find(i)
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> str1[(a<span style="color:#f92672">*</span>addr<span style="color:#f92672">+</span>b) <span style="color:#f92672">%</span> m]
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> i
-</span></span><span style="display:flex;"><span>	print(cipher_text)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>encode(flag,<span style="color:#ae81ff">37</span>,<span style="color:#ae81ff">23</span>,<span style="color:#ae81ff">52</span>)
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cipher_text = &#39;aoxL{XaaHKP_tHgwpc_hN_ToXnnht}&#39;</span>
-</span></span></code></pre></div><p>代码看样子是非常简单的，可以找到加密的关键代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encode</span>(plain_text, a, b, m):
-</span></span><span style="display:flex;"><span>	cipher_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> plain_text:
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> str1:
-</span></span><span style="display:flex;"><span>			addr <span style="color:#f92672">=</span> str1<span style="color:#f92672">.</span>find(i)
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> str1[(a<span style="color:#f92672">*</span>addr<span style="color:#f92672">+</span>b) <span style="color:#f92672">%</span> m]
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> i
-</span></span><span style="display:flex;"><span>	print(cipher_text)
-</span></span></code></pre></div><p>对加密函数进行审计可以发现有一个比较明显的数学运算：</p>
-<p>$$
-cipher\underline{~~}text \equiv a \times addr + b\ \text{mod}\ m
-$$</p>
-<p>看到这个数学运算，应该可以自然而然的想到是仿射加密，对应的解密函数也就是该运算的逆运算：</p>
-<p>$$
-plain\underline{~~} text \equiv {addr}^{-1} \times (a-b)\  \text{mod}\ m
-$$</p>
-<p>根据运算构造解密函数：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> libnum
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decode</span>(cipher_text,a,b,m):
-</span></span><span style="display:flex;"><span>    plain_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    a_inv <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>invmod(a,m)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> cipher_text:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> str1:
-</span></span><span style="display:flex;"><span>            addr <span style="color:#f92672">=</span> str1<span style="color:#f92672">.</span>find(i)
-</span></span><span style="display:flex;"><span>            plain_text <span style="color:#f92672">+=</span> str1[(a_inv<span style="color:#f92672">*</span>(addr<span style="color:#f92672">-</span>b))<span style="color:#f92672">%</span>m]
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            plain_text <span style="color:#f92672">+=</span> i
-</span></span><span style="display:flex;"><span>    print(plain_text)
-</span></span></code></pre></div><p>根据解密函数进行求解即可求解</p>
-<p>完整exp：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> libnum
-</span></span><span style="display:flex;"><span>str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encode</span>(plain_text, a, b, m):
-</span></span><span style="display:flex;"><span>	cipher_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> plain_text:
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> str1:
-</span></span><span style="display:flex;"><span>			addr <span style="color:#f92672">=</span> str1<span style="color:#f92672">.</span>find(i)
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> str1[(a<span style="color:#f92672">*</span>addr<span style="color:#f92672">+</span>b) <span style="color:#f92672">%</span> m]
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>			cipher_text <span style="color:#f92672">+=</span> i
-</span></span><span style="display:flex;"><span>	print(cipher_text)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decode</span>(cipher_text,a,b,m):
-</span></span><span style="display:flex;"><span>    plain_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
-</span></span><span style="display:flex;"><span>    a_inv <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>invmod(a,m)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> cipher_text:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> str1:
-</span></span><span style="display:flex;"><span>            addr <span style="color:#f92672">=</span> str1<span style="color:#f92672">.</span>find(i)
-</span></span><span style="display:flex;"><span>            plain_text <span style="color:#f92672">+=</span> str1[(a_inv<span style="color:#f92672">*</span>(addr<span style="color:#f92672">-</span>b))<span style="color:#f92672">%</span>m]
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>            plain_text <span style="color:#f92672">+=</span> i
-</span></span><span style="display:flex;"><span>    print(plain_text)
-</span></span><span style="display:flex;"><span>cipher_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;aoxL</span><span style="color:#e6db74">{XaaHKP_tHgwpc_hN_ToXnnht}</span><span style="color:#e6db74">&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>decode(cipher_text,<span style="color:#ae81ff">37</span>,<span style="color:#ae81ff">23</span>,<span style="color:#ae81ff">52</span>)
-</span></span></code></pre></div><h2 id="0x1-rsa-1">0x1 RSA-1</h2>
-<p>RSA的题目，康康题目源码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> gmpy2
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flag <span style="color:#f92672">import</span> flag
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span> flag[:<span style="color:#ae81ff">5</span>]<span style="color:#f92672">==</span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;flag{&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>m <span style="color:#f92672">=</span> bytes_to_long(flag)
-</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>q <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> p <span style="color:#f92672">*</span> q
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;n =&#39;</span>,n)
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>M <span style="color:#f92672">=</span> <span style="color:#ae81ff">2021</span> <span style="color:#f92672">*</span> m <span style="color:#f92672">*</span> <span style="color:#ae81ff">1001</span> <span style="color:#f92672">*</span> p 
-</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> pow(M,e,n)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;c =&#39;</span>,c)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#n = 17365231154926348364478276872558492775911760603002394353723603461898405740234715001820111548600914907617003806652492391686710256274156677887101997175692277729648456087534987616743724646598234466094779540729413583826355145277980479040157075453694250572316638348121571218759769533738721506811175866990851972838466307594226293836934116659685215775643285465895317755892754473332034234495795936183610569571016400535362762699517686781602302045048532131426035260878979892169441059467623523060569285570577199236309888155833013721997933960457784653262076135561769838704166810384309655788983073376941843467117256002645962737847</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#c = 6944967108815437735428941286784119403138319713455732155925055928646536962597672941805831312130689338014913452081296400272862710447207265099750401657828165836013122848656839100854719965188680097375491193249127725599660383746827031803066026497989298856420216250206035068180963797454792151191071433645946245914916732637007117085199442894495667455544517483404006536607121480678688000420422281380539368519807162175099763891988648117937777951069899975260190018995834904541447562718307433906592021226666885638877020304005614450763081337082838608414756162253825697420493509914578546951634127502393647068722995363753321912676</span>
-</span></span></code></pre></div><p>进行代码审计，可以发现前面的加密过程是RSA的基本加密过程和步骤，但是到了后面的步骤，发现加密过程出现了异样，这很有可能就是我们的攻击点。找到题目源码中的可疑运算：
-$$
-M = 2021 \times m \times 1001 \times p
-$$
-观察这个等式可以得出一些微妙的关系：
-$$
-c \equiv M^e \ \text{mod}\ n \
-n  = p \cdot q
-$$
-根据这个关系进一步推到可以得到
-$$
-c \equiv {(2021 \times m \times 1001 \times p)}^e\ \text{mod}\ n
-$$
-观察这个等式可以显然发现 c 和 n 存在着有着微妙的关系，利用这个微妙的关系可以得到攻击这个密码体制的钥匙，即
-$$
-p = \gcd (c,n)
-$$
-利用这个关系即可求解本题</p>
-<p>完整exp：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> gmpy2
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> <span style="color:#ae81ff">17365231154926348364478276872558492775911760603002394353723603461898405740234715001820111548600914907617003806652492391686710256274156677887101997175692277729648456087534987616743724646598234466094779540729413583826355145277980479040157075453694250572316638348121571218759769533738721506811175866990851972838466307594226293836934116659685215775643285465895317755892754473332034234495795936183610569571016400535362762699517686781602302045048532131426035260878979892169441059467623523060569285570577199236309888155833013721997933960457784653262076135561769838704166810384309655788983073376941843467117256002645962737847</span>
-</span></span><span style="display:flex;"><span>c <span style="color:#f92672">=</span> <span style="color:#ae81ff">6944967108815437735428941286784119403138319713455732155925055928646536962597672941805831312130689338014913452081296400272862710447207265099750401657828165836013122848656839100854719965188680097375491193249127725599660383746827031803066026497989298856420216250206035068180963797454792151191071433645946245914916732637007117085199442894495667455544517483404006536607121480678688000420422281380539368519807162175099763891988648117937777951069899975260190018995834904541447562718307433906592021226666885638877020304005614450763081337082838608414756162253825697420493509914578546951634127502393647068722995363753321912676</span>
-</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>gcd(c,n)
-</span></span><span style="display:flex;"><span>q <span style="color:#f92672">=</span> n <span style="color:#f92672">//</span> p
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span>(n <span style="color:#f92672">==</span> p<span style="color:#f92672">*</span>q)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>phi <span style="color:#f92672">=</span> (p<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(q<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>invert(e,phi)
-</span></span><span style="display:flex;"><span>M <span style="color:#f92672">=</span> pow(c,d,n)
-</span></span><span style="display:flex;"><span>m <span style="color:#f92672">=</span> M<span style="color:#f92672">//</span>(<span style="color:#ae81ff">2021</span><span style="color:#f92672">*</span>p<span style="color:#f92672">*</span><span style="color:#ae81ff">1001</span>)
-</span></span><span style="display:flex;"><span>flag <span style="color:#f92672">=</span> long_to_bytes(m)
-</span></span><span style="display:flex;"><span>print(flag)
-</span></span></code></pre></div><h2 id="0x2-rsa-2">0x2 RSA-2</h2>
-<p>当时没做出来，没有认真进行数学分析，是本菜狗没错了，后来看大佬的Writeup发现是一道原题，大佬的博客：<a href="https://jsur.in/post/2019-07-01-isitdtu-2019-quals-ctf-writeups">ISITDTU 2019 Quals CTF Writeups | Joseph Surin | joseph&rsquo;s blog (jsur.in)</a></p>
-<p>这道题目，我根据对博客的学习和理解进行简单地复现，这道题目其实也就是数学的推导和猜测，又是暴力的美学和优雅地求解。</p>
-<p>看看题目源码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> gmpy2
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> flag <span style="color:#f92672">import</span> flag
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">assert</span> flag[:<span style="color:#ae81ff">5</span>]<span style="color:#f92672">==</span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;flag{&#39;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>m1 <span style="color:#f92672">=</span> bytes_to_long(flag[:<span style="color:#ae81ff">20</span>])
-</span></span><span style="display:flex;"><span>p  <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">512</span>)
-</span></span><span style="display:flex;"><span>p1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(p)
-</span></span><span style="display:flex;"><span>q  <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">512</span>)
-</span></span><span style="display:flex;"><span>q1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(q)
-</span></span><span style="display:flex;"><span>n1 <span style="color:#f92672">=</span> p<span style="color:#f92672">*</span>q<span style="color:#f92672">*</span>p1<span style="color:#f92672">*</span>q1
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;n1 =&#39;</span>,n1)
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>c1 <span style="color:#f92672">=</span> pow(m1,e,n1)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;c1 =&#39;</span>,c1)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>m2 <span style="color:#f92672">=</span> bytes_to_long(flag[<span style="color:#ae81ff">20</span>:])
-</span></span><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>q2 <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;p2+q2 =&#39;</span>,p2<span style="color:#f92672">+</span>q2)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;q2*q2 =&#39;</span>,p2<span style="color:#f92672">*</span>q2)
-</span></span><span style="display:flex;"><span>n2 <span style="color:#f92672">=</span> p2<span style="color:#f92672">*</span>p2<span style="color:#f92672">*</span>q2<span style="color:#f92672">*</span>q2<span style="color:#f92672">*</span>q2
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;n2 =&#39;</span>,n2)
-</span></span><span style="display:flex;"><span>c2 <span style="color:#f92672">=</span> pow(m2,e,n2)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;c2 =&#39;</span>,c2)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#n1 = 6348779979606280884589422188738902470575876294643492831465947360363568026280963989291591157710389629216109615274754718329987990551836115660879103234129921943824061416396264358110216047994331119920503431491509529604742468032906950984256964560405062345280120526771439940278606226153077959057882262745273394986607004406770035459301695806378598890589432538916219821477777021460189140081521779103226953544426441823244765828342973086422949017937701261348963541035128661464068769033772390320426795044617751909787914185985911277628404632533530390761257251552073493697518547350246993679844132297414094727147161169548160586911</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#c1 = 6201882078995455673376327652982610102807874783073703018551044780440620679217833227711395689114659144506630609087600915116940111002026241056808189658969089532597757995423694966667948250438579639890580690392400661711864264184444018345499567505424672090632235109624193289954785503512742400960515331371813467034511130432319427185134018830006918682733848618201088649690422818940385123599468595766345668931882249779415788129316594083269412221804774856038796248038700275509397599351533280014908894068141056694660319816046357462684688942519849441237878018480036145051967731081582598773076490918572392784684372694103015244826</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#p2+q2 = 274773146761138462708137582309097386437793891793691383033856524303010811294101933454824485010521468914846151819876043508541879637544444256520741418495479393777132830985856522008561088410862815913292288683761657919121930016956916865849261153721097671315883469348972925757078089715102032241818526925988645578778</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#q2*q2 = 18514724270030962172566965941723224386374076294232652258701085781018776172843355920566035157331579524980108190739141959926523082142273672741849552475156278397131571360099018592018959785627785130126477982765210498547680367230723634424036009539347854344573537848628061468892166199866227984167843139793429682559241317072979374002912607549039431398267184818771503468116379618249319324788996321340764624593443106354104274472601170229835219638093242557547840060892527576940077162990069687019966946826210112318408269749294366586682732614372434218768720577917368726530200897558912687470088583774711767599580037663378929000217</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#n2 = 40588227045595304080360385041082238507044292731344465815296032905633525556943787610712651675460810768762763493579129831271018141591546207557410817432455139315527674932933085299277599173971912445226532235814580879585317211349524406424200622675880992390782025158621241499693400288031658194434641718026910652327933253877313106112861283314274635124734817398465059373562194694957841264834312640926278890386089611103714990646541470577351599526904458342660444968591197606820361364761648205241041444681145820799054413179462285509661124362074093583494932706249461954240408827087015525507173082129412234486228092002841868365895837463699200959915782767657258729794037776401995309244941171415842403617486719492483671490834562579225506831496881542530519595438932482796867853234159664409420977526102480385193101883785161080269573707156626838551506024455480650224305894501968583442346807126920740779780593650871645915149689424292912611578291912721896864772950410266629045542480009266574096080138709683466489568290569363478444349563498507530805502511051165160827192795520182720802422213364247355775222858214648603034743679187470844212529134374975737510982287957316878179964602394749601431823167982157434890459245394370728942790117156485268116758052636794417268680901420193002289035538753620555488506926366624641291881353268617130968991258983002165300186971963661666476600998389048880565199317280428349802824448329898502788492233381873026217202981921654673840142095839603360666049476100561268336225902504932800605464136192275593886736746497955270280541423593</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#c2 = 25591090168544821761746024178724660839590948190451329227481168576490717242294520739865602061082558759751196452117720647426598261568572440942370039702932821941366792140173428488344932203576334292648255551171274828821657097667106792872200082579319963310503721435500623146012954474613150848083425126987554594651797477741828655238243550266972216752593788734836373144363217639612492397228808215205862281278774096317615918854403992620720969173788151215489908812749179861803144937169587452008097008940710091361183942268245271154461872102813602754439939747566507116519362821255724179093051041994730856401493996771276172343313045755916751082693149885922105491818225012844519264933137622929024918619477538521533548551789739698933067212305578480416163609137189891797209277557411169643568540392303036719952140554435338851671440952865151077383220305295001632816442144022437763089133141886924265774247290306669825085862351732336395617276100374237159580759999593028756939354840677333467281632435767033150052439262501059299035212928041546259933118564251119588970009016873855478556588250138969938599988198494567241172399453741709840486953189764289118312870580993115636710724139809708256360212728127786394411676427828431569046279687481368215137561500777480380501551616577832499521295655237360184159889151837766353116185320317774645294201044772828099074917077896631909654671612557207653830344897644115936322128351494551004652981550758791285434809816872381900401440743578104582305215488888563166054568802145921399726673752722820646807494657299104190123945675647</span>
-</span></span></code></pre></div><p>题目源码分为两个部分，将flag进行分割了，分成两个部分进行加密。</p>
-<p>第一部分需要使用暴力的美学进行求解。</p>
-<p>第二部分需要使用优雅的运算进行求解。</p>
-<p>首先，看一下第一部分的加密代码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m1 <span style="color:#f92672">=</span> bytes_to_long(flag[:<span style="color:#ae81ff">20</span>])
-</span></span><span style="display:flex;"><span>p  <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">512</span>)
-</span></span><span style="display:flex;"><span>p1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(p)
-</span></span><span style="display:flex;"><span>q  <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">512</span>)
-</span></span><span style="display:flex;"><span>q1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(q)
-</span></span><span style="display:flex;"><span>n1 <span style="color:#f92672">=</span> p<span style="color:#f92672">*</span>q<span style="color:#f92672">*</span>p1<span style="color:#f92672">*</span>q1
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;n1 =&#39;</span>,n1)
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>c1 <span style="color:#f92672">=</span> pow(m1,e,n1)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;c1 =&#39;</span>,c1)
-</span></span></code></pre></div><p>多素因子进行加密的，但是这几个素因子的生成是非常有意思的，有着微妙的关系，可以根据这个关系来寻找可能存在的漏洞
-$$
-p_1 = p + \epsilon \
-q_1 = q + \delta
-$$
-根据这种关系可以进行发现：
-$$
-\begin{aligned}
-p \cdot q_1 - q \cdot p_1 &amp;= p \cdot (q+\delta) - q \cdot (p+\epsilon) \
-&amp;= p \cdot q + p \cdot \delta - p \cdot q - q\cdot \epsilon \
-&amp;= p \cdot \delta - q \cdot \epsilon
-\end{aligned}
-$$
-根据运算可以发现 pq1 和 qp1 之间相差不是非常大，可以使用 <a href="https://www.alpertron.com.ar/ECM.HTM">Alpertron&rsquo;s Integer Factorization Calculator</a>算法进行求解得到 pq1 和 qp1的数值</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>t1 = 79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217345099706517900079260617448298874437193769061144201311929792287772928471712053565834702260975126852624433945451405258351557569670978748727663718174543709899747
-</span></span><span style="display:flex;"><span>t2 = 79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217341753594180007984204016274224280609480494305040439035855109422239942522968468133274883986349646765947317076885918174299537297351936448296784166003890345486613
-</span></span></code></pre></div><p>现在得到了一部分信息，继续进行求解：
-$$
-\begin{aligned}
-t_1 &amp;= p\cdot q_1 \
-&amp;= p \cdot (q+\delta) \
-\Rightarrow p &amp;= \frac{t_1}{q+\delta}
-\end{aligned}
-$$</p>
-<p>$$
-\begin{aligned}
-t_2 &amp;= q\cdot p_1 \
-&amp;= q \cdot (p+\epsilon) \
-\Rightarrow p &amp;= \frac{t_2-q \cdot \epsilon}{q}
-\end{aligned}
-$$</p>
-<p>组合这两个等式有
-$$
-\begin{aligned}
-\frac{t_2 - q \cdot \epsilon}{q} &amp;= \frac{t_1}{q+\delta}  \
-(q+\delta) \cdot (t_2 - q\cdot \epsilon)  &amp;= t_1 \cdot q  \
-\epsilon \cdot q^2 + (\epsilon \cdot \delta+t_1-t_2)\cdot q - \delta\cdot t_2 &amp;= 0
-\end{aligned}
-$$
-下面就是需要进行小素数的爆破求解以及，方程的求解</p>
-<p>根据式子可以写个程序进行求解，求解得到q然后可以根究q求出p1和q1，然后再根据求出的q1求出p，这道题目的前半部分就算是求解完成了</p>
-<p>前半部分的exp：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">quadratic</span>(a, b, c):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>        (d, _) <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>iroot(b<span style="color:#f92672">*</span>b <span style="color:#f92672">-</span> (<span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>a<span style="color:#f92672">*</span>c),<span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ((<span style="color:#f92672">-</span>b<span style="color:#f92672">-</span>d)<span style="color:#f92672">//</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>a), (<span style="color:#f92672">-</span>b<span style="color:#f92672">+</span>d)<span style="color:#f92672">//</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>a))
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># flag[:20]</span>
-</span></span><span style="display:flex;"><span>n1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6348779979606280884589422188738902470575876294643492831465947360363568026280963989291591157710389629216109615274754718329987990551836115660879103234129921943824061416396264358110216047994331119920503431491509529604742468032906950984256964560405062345280120526771439940278606226153077959057882262745273394986607004406770035459301695806378598890589432538916219821477777021460189140081521779103226953544426441823244765828342973086422949017937701261348963541035128661464068769033772390320426795044617751909787914185985911277628404632533530390761257251552073493697518547350246993679844132297414094727147161169548160586911</span>
-</span></span><span style="display:flex;"><span>c1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6201882078995455673376327652982610102807874783073703018551044780440620679217833227711395689114659144506630609087600915116940111002026241056808189658969089532597757995423694966667948250438579639890580690392400661711864264184444018345499567505424672090632235109624193289954785503512742400960515331371813467034511130432319427185134018830006918682733848618201088649690422818940385123599468595766345668931882249779415788129316594083269412221804774856038796248038700275509397599351533280014908894068141056694660319816046357462684688942519849441237878018480036145051967731081582598773076490918572392784684372694103015244826</span>
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>t2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217341753594180007984204016274224280609480494305040439035855109422239942522968468133274883986349646765947317076885918174299537297351936448296784166003890345486613</span>
-</span></span><span style="display:flex;"><span>t1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217345099706517900079260617448298874437193769061144201311929792287772928471712053565834702260975126852624433945451405258351557569670978748727663718174543709899747</span>
-</span></span><span style="display:flex;"><span>q <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>epsilon <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>delta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (epsilon, delta) <span style="color:#f92672">in</span> ((epsilon, delta) <span style="color:#66d9ef">for</span> epsilon <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5000</span>) <span style="color:#66d9ef">for</span> delta <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5000</span>)):
-</span></span><span style="display:flex;"><span>    q1 <span style="color:#f92672">=</span> quadratic(epsilon, epsilon<span style="color:#f92672">*</span>delta<span style="color:#f92672">+</span>t1<span style="color:#f92672">-</span>t2, <span style="color:#f92672">-</span>delta<span style="color:#f92672">*</span>t2)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> q1 <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>        q1 <span style="color:#f92672">=</span> q1[<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>    res <span style="color:#f92672">=</span> q1<span style="color:#f92672">*</span>q1<span style="color:#f92672">*</span>epsilon <span style="color:#f92672">+</span> q1<span style="color:#f92672">*</span>(epsilon<span style="color:#f92672">*</span>delta<span style="color:#f92672">+</span>t1<span style="color:#f92672">-</span>t2)<span style="color:#f92672">-</span>delta<span style="color:#f92672">*</span>t2
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> res <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> isPrime(q1):
-</span></span><span style="display:flex;"><span>        q <span style="color:#f92672">=</span> q1
-</span></span><span style="display:flex;"><span>        epsilon <span style="color:#f92672">=</span> epsilon
-</span></span><span style="display:flex;"><span>        delta <span style="color:#f92672">=</span> delta
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>q1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(q)
-</span></span><span style="display:flex;"><span>p1<span style="color:#f92672">=</span> t2 <span style="color:#f92672">//</span> q
-</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> t1<span style="color:#f92672">//</span>q1
-</span></span><span style="display:flex;"><span>phi1 <span style="color:#f92672">=</span> (p<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(q<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(p1<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(q1<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>d1 <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>invmod(e,phi1)
-</span></span><span style="display:flex;"><span>m1 <span style="color:#f92672">=</span> pow(c1,d1,n1)
-</span></span><span style="display:flex;"><span>flag1 <span style="color:#f92672">=</span> long_to_bytes(m1)
-</span></span></code></pre></div><p>然后，看一下第二部分的代码，第二部分是非常优雅的进行求解的</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>m2 <span style="color:#f92672">=</span> bytes_to_long(flag[<span style="color:#ae81ff">20</span>:])
-</span></span><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>q2 <span style="color:#f92672">=</span> getPrime(<span style="color:#ae81ff">1024</span>)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;p2+q2 =&#39;</span>,p2<span style="color:#f92672">+</span>q2)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;q2*q2 =&#39;</span>,p2<span style="color:#f92672">*</span>q2)
-</span></span><span style="display:flex;"><span>n2 <span style="color:#f92672">=</span> p2<span style="color:#f92672">*</span>p2<span style="color:#f92672">*</span>q2<span style="color:#f92672">*</span>q2<span style="color:#f92672">*</span>q2
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;n2 =&#39;</span>,n2)
-</span></span><span style="display:flex;"><span>c2 <span style="color:#f92672">=</span> pow(m2,e,n2)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;c2 =&#39;</span>,c2)
-</span></span></code></pre></div><p>对第二部分进行审计可以发现，第二部分就是一个解方程和Euler定理的应用，构造方程和Euler定理进行求解：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>Symbol(<span style="color:#e6db74">&#39;p2&#39;</span>)
-</span></span><span style="display:flex;"><span>q2 <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>Symbol(<span style="color:#e6db74">&#39;q2&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>solve([p2<span style="color:#f92672">+</span>q2<span style="color:#f92672">-</span><span style="color:#ae81ff">274773146761138462708137582309097386437793891793691383033856524303010811294101933454824485010521468914846151819876043508541879637544444256520741418495479393777132830985856522008561088410862815913292288683761657919121930016956916865849261153721097671315883469348972925757078089715102032241818526925988645578778</span>,p2<span style="color:#f92672">*</span>q2<span style="color:#f92672">-</span><span style="color:#ae81ff">18514724270030962172566965941723224386374076294232652258701085781018776172843355920566035157331579524980108190739141959926523082142273672741849552475156278397131571360099018592018959785627785130126477982765210498547680367230723634424036009539347854344573537848628061468892166199866227984167843139793429682559241317072979374002912607549039431398267184818771503468116379618249319324788996321340764624593443106354104274472601170229835219638093242557547840060892527576940077162990069687019966946826210112318408269749294366586682732614372434218768720577917368726530200897558912687470088583774711767599580037663378929000217</span>],p2,q2)
-</span></span><span style="display:flex;"><span>n2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">40588227045595304080360385041082238507044292731344465815296032905633525556943787610712651675460810768762763493579129831271018141591546207557410817432455139315527674932933085299277599173971912445226532235814580879585317211349524406424200622675880992390782025158621241499693400288031658194434641718026910652327933253877313106112861283314274635124734817398465059373562194694957841264834312640926278890386089611103714990646541470577351599526904458342660444968591197606820361364761648205241041444681145820799054413179462285509661124362074093583494932706249461954240408827087015525507173082129412234486228092002841868365895837463699200959915782767657258729794037776401995309244941171415842403617486719492483671490834562579225506831496881542530519595438932482796867853234159664409420977526102480385193101883785161080269573707156626838551506024455480650224305894501968583442346807126920740779780593650871645915149689424292912611578291912721896864772950410266629045542480009266574096080138709683466489568290569363478444349563498507530805502511051165160827192795520182720802422213364247355775222858214648603034743679187470844212529134374975737510982287957316878179964602394749601431823167982157434890459245394370728942790117156485268116758052636794417268680901420193002289035538753620555488506926366624641291881353268617130968991258983002165300186971963661666476600998389048880565199317280428349802824448329898502788492233381873026217202981921654673840142095839603360666049476100561268336225902504932800605464136192275593886736746497955270280541423593</span>
-</span></span><span style="display:flex;"><span>c2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">25591090168544821761746024178724660839590948190451329227481168576490717242294520739865602061082558759751196452117720647426598261568572440942370039702932821941366792140173428488344932203576334292648255551171274828821657097667106792872200082579319963310503721435500623146012954474613150848083425126987554594651797477741828655238243550266972216752593788734836373144363217639612492397228808215205862281278774096317615918854403992620720969173788151215489908812749179861803144937169587452008097008940710091361183942268245271154461872102813602754439939747566507116519362821255724179093051041994730856401493996771276172343313045755916751082693149885922105491818225012844519264933137622929024918619477538521533548551789739698933067212305578480416163609137189891797209277557411169643568540392303036719952140554435338851671440952865151077383220305295001632816442144022437763089133141886924265774247290306669825085862351732336395617276100374237159580759999593028756939354840677333467281632435767033150052439262501059299035212928041546259933118564251119588970009016873855478556588250138969938599988198494567241172399453741709840486953189764289118312870580993115636710724139809708256360212728127786394411676427828431569046279687481368215137561500777480380501551616577832499521295655237360184159889151837766353116185320317774645294201044772828099074917077896631909654671612557207653830344897644115936322128351494551004652981550758791285434809816872381900401440743578104582305215488888563166054568802145921399726673752722820646807494657299104190123945675647</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Q2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> test <span style="color:#f92672">in</span> result:
-</span></span><span style="display:flex;"><span>    _p2 <span style="color:#f92672">=</span> test[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>    _q2 <span style="color:#f92672">=</span> test[<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n2 <span style="color:#f92672">==</span> _p2<span style="color:#f92672">*</span>_p2<span style="color:#f92672">*</span>_q2<span style="color:#f92672">*</span>_q2<span style="color:#f92672">*</span>_q2:
-</span></span><span style="display:flex;"><span>        P2 <span style="color:#f92672">=</span> _p2
-</span></span><span style="display:flex;"><span>        Q2 <span style="color:#f92672">=</span> _q2
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>phi2 <span style="color:#f92672">=</span> P2<span style="color:#f92672">*</span>(P2<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>pow(Q2,<span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>(Q2<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">=</span> int(libnum<span style="color:#f92672">.</span>invmod(e,phi2))
-</span></span><span style="display:flex;"><span>m2 <span style="color:#f92672">=</span> pow(c2,d2,n2)
-</span></span><span style="display:flex;"><span>flag2 <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>n2s(m2)
-</span></span></code></pre></div><p>完整exp：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> libnum
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sympy
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> gmpy2
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Util.number <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">quadratic</span>(a, b, c):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
-</span></span><span style="display:flex;"><span>        (d, _) <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>iroot(b<span style="color:#f92672">*</span>b <span style="color:#f92672">-</span> (<span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>a<span style="color:#f92672">*</span>c),<span style="color:#ae81ff">2</span>)
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ((<span style="color:#f92672">-</span>b<span style="color:#f92672">-</span>d)<span style="color:#f92672">//</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>a), (<span style="color:#f92672">-</span>b<span style="color:#f92672">+</span>d)<span style="color:#f92672">//</span>(<span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>a))
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># flag[:20]</span>
-</span></span><span style="display:flex;"><span>n1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6348779979606280884589422188738902470575876294643492831465947360363568026280963989291591157710389629216109615274754718329987990551836115660879103234129921943824061416396264358110216047994331119920503431491509529604742468032906950984256964560405062345280120526771439940278606226153077959057882262745273394986607004406770035459301695806378598890589432538916219821477777021460189140081521779103226953544426441823244765828342973086422949017937701261348963541035128661464068769033772390320426795044617751909787914185985911277628404632533530390761257251552073493697518547350246993679844132297414094727147161169548160586911</span>
-</span></span><span style="display:flex;"><span>c1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">6201882078995455673376327652982610102807874783073703018551044780440620679217833227711395689114659144506630609087600915116940111002026241056808189658969089532597757995423694966667948250438579639890580690392400661711864264184444018345499567505424672090632235109624193289954785503512742400960515331371813467034511130432319427185134018830006918682733848618201088649690422818940385123599468595766345668931882249779415788129316594083269412221804774856038796248038700275509397599351533280014908894068141056694660319816046357462684688942519849441237878018480036145051967731081582598773076490918572392784684372694103015244826</span>
-</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x10001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>t2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217341753594180007984204016274224280609480494305040439035855109422239942522968468133274883986349646765947317076885918174299537297351936448296784166003890345486613</span>
-</span></span><span style="display:flex;"><span>t1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">79679231796035037354449627487236220201878797729093909877127396750043503300636464774059752126148617367251988043645511172901030621825575172979048675217345099706517900079260617448298874437193769061144201311929792287772928471712053565834702260975126852624433945451405258351557569670978748727663718174543709899747</span>
-</span></span><span style="display:flex;"><span>q <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>epsilon <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>delta <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (epsilon, delta) <span style="color:#f92672">in</span> ((epsilon, delta) <span style="color:#66d9ef">for</span> epsilon <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5000</span>) <span style="color:#66d9ef">for</span> delta <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5000</span>)):
-</span></span><span style="display:flex;"><span>    q1 <span style="color:#f92672">=</span> quadratic(epsilon, epsilon<span style="color:#f92672">*</span>delta<span style="color:#f92672">+</span>t1<span style="color:#f92672">-</span>t2, <span style="color:#f92672">-</span>delta<span style="color:#f92672">*</span>t2)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> q1 <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>        q1 <span style="color:#f92672">=</span> q1[<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>    res <span style="color:#f92672">=</span> q1<span style="color:#f92672">*</span>q1<span style="color:#f92672">*</span>epsilon <span style="color:#f92672">+</span> q1<span style="color:#f92672">*</span>(epsilon<span style="color:#f92672">*</span>delta<span style="color:#f92672">+</span>t1<span style="color:#f92672">-</span>t2)<span style="color:#f92672">-</span>delta<span style="color:#f92672">*</span>t2
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> res <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> isPrime(q1):
-</span></span><span style="display:flex;"><span>        q <span style="color:#f92672">=</span> q1
-</span></span><span style="display:flex;"><span>        epsilon <span style="color:#f92672">=</span> epsilon
-</span></span><span style="display:flex;"><span>        delta <span style="color:#f92672">=</span> delta
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>q1 <span style="color:#f92672">=</span> gmpy2<span style="color:#f92672">.</span>next_prime(q)
-</span></span><span style="display:flex;"><span>p1<span style="color:#f92672">=</span> t2 <span style="color:#f92672">//</span> q
-</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> t1<span style="color:#f92672">//</span>q1
-</span></span><span style="display:flex;"><span>phi1 <span style="color:#f92672">=</span> (p<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(q<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(p1<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>(q1<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>d1 <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>invmod(e,phi1)
-</span></span><span style="display:flex;"><span>m1 <span style="color:#f92672">=</span> pow(c1,d1,n1)
-</span></span><span style="display:flex;"><span>flag1 <span style="color:#f92672">=</span> long_to_bytes(m1)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># flag[20:]</span>
-</span></span><span style="display:flex;"><span>p2 <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>Symbol(<span style="color:#e6db74">&#39;p2&#39;</span>)
-</span></span><span style="display:flex;"><span>q2 <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>Symbol(<span style="color:#e6db74">&#39;q2&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> sympy<span style="color:#f92672">.</span>solve([p2<span style="color:#f92672">+</span>q2<span style="color:#f92672">-</span><span style="color:#ae81ff">274773146761138462708137582309097386437793891793691383033856524303010811294101933454824485010521468914846151819876043508541879637544444256520741418495479393777132830985856522008561088410862815913292288683761657919121930016956916865849261153721097671315883469348972925757078089715102032241818526925988645578778</span>,p2<span style="color:#f92672">*</span>q2<span style="color:#f92672">-</span><span style="color:#ae81ff">18514724270030962172566965941723224386374076294232652258701085781018776172843355920566035157331579524980108190739141959926523082142273672741849552475156278397131571360099018592018959785627785130126477982765210498547680367230723634424036009539347854344573537848628061468892166199866227984167843139793429682559241317072979374002912607549039431398267184818771503468116379618249319324788996321340764624593443106354104274472601170229835219638093242557547840060892527576940077162990069687019966946826210112318408269749294366586682732614372434218768720577917368726530200897558912687470088583774711767599580037663378929000217</span>],p2,q2)
-</span></span><span style="display:flex;"><span>n2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">40588227045595304080360385041082238507044292731344465815296032905633525556943787610712651675460810768762763493579129831271018141591546207557410817432455139315527674932933085299277599173971912445226532235814580879585317211349524406424200622675880992390782025158621241499693400288031658194434641718026910652327933253877313106112861283314274635124734817398465059373562194694957841264834312640926278890386089611103714990646541470577351599526904458342660444968591197606820361364761648205241041444681145820799054413179462285509661124362074093583494932706249461954240408827087015525507173082129412234486228092002841868365895837463699200959915782767657258729794037776401995309244941171415842403617486719492483671490834562579225506831496881542530519595438932482796867853234159664409420977526102480385193101883785161080269573707156626838551506024455480650224305894501968583442346807126920740779780593650871645915149689424292912611578291912721896864772950410266629045542480009266574096080138709683466489568290569363478444349563498507530805502511051165160827192795520182720802422213364247355775222858214648603034743679187470844212529134374975737510982287957316878179964602394749601431823167982157434890459245394370728942790117156485268116758052636794417268680901420193002289035538753620555488506926366624641291881353268617130968991258983002165300186971963661666476600998389048880565199317280428349802824448329898502788492233381873026217202981921654673840142095839603360666049476100561268336225902504932800605464136192275593886736746497955270280541423593</span>
-</span></span><span style="display:flex;"><span>c2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">25591090168544821761746024178724660839590948190451329227481168576490717242294520739865602061082558759751196452117720647426598261568572440942370039702932821941366792140173428488344932203576334292648255551171274828821657097667106792872200082579319963310503721435500623146012954474613150848083425126987554594651797477741828655238243550266972216752593788734836373144363217639612492397228808215205862281278774096317615918854403992620720969173788151215489908812749179861803144937169587452008097008940710091361183942268245271154461872102813602754439939747566507116519362821255724179093051041994730856401493996771276172343313045755916751082693149885922105491818225012844519264933137622929024918619477538521533548551789739698933067212305578480416163609137189891797209277557411169643568540392303036719952140554435338851671440952865151077383220305295001632816442144022437763089133141886924265774247290306669825085862351732336395617276100374237159580759999593028756939354840677333467281632435767033150052439262501059299035212928041546259933118564251119588970009016873855478556588250138969938599988198494567241172399453741709840486953189764289118312870580993115636710724139809708256360212728127786394411676427828431569046279687481368215137561500777480380501551616577832499521295655237360184159889151837766353116185320317774645294201044772828099074917077896631909654671612557207653830344897644115936322128351494551004652981550758791285434809816872381900401440743578104582305215488888563166054568802145921399726673752722820646807494657299104190123945675647</span>
-</span></span><span style="display:flex;"><span>P2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Q2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> test <span style="color:#f92672">in</span> result:
-</span></span><span style="display:flex;"><span>    _p2 <span style="color:#f92672">=</span> test[<span style="color:#ae81ff">0</span>]
-</span></span><span style="display:flex;"><span>    _q2 <span style="color:#f92672">=</span> test[<span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n2 <span style="color:#f92672">==</span> _p2<span style="color:#f92672">*</span>_p2<span style="color:#f92672">*</span>_q2<span style="color:#f92672">*</span>_q2<span style="color:#f92672">*</span>_q2:
-</span></span><span style="display:flex;"><span>        P2 <span style="color:#f92672">=</span> _p2
-</span></span><span style="display:flex;"><span>        Q2 <span style="color:#f92672">=</span> _q2
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>phi2 <span style="color:#f92672">=</span> P2<span style="color:#f92672">*</span>(P2<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>pow(Q2,<span style="color:#ae81ff">2</span>)<span style="color:#f92672">*</span>(Q2<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-</span></span><span style="display:flex;"><span>d2 <span style="color:#f92672">=</span> int(libnum<span style="color:#f92672">.</span>invmod(e,phi2))
-</span></span><span style="display:flex;"><span>m2 <span style="color:#f92672">=</span> pow(c2,d2,n2)
-</span></span><span style="display:flex;"><span>flag2 <span style="color:#f92672">=</span> libnum<span style="color:#f92672">.</span>n2s(m2)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>flag <span style="color:#f92672">=</span> flag1<span style="color:#f92672">+</span>flag2
-</span></span><span style="display:flex;"><span>print(flag)
-</span></span></code></pre></div>]]></content>
-        </item>
-        
-        <item>
             <title>2021 鹤城杯 Crypto_Writeup</title>
-            <link>//localhost:1313/posts/2021-cranecitycup-crypto_writeup/</link>
+            <link>jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:57:12 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/2021-cranecitycup-crypto_writeup/</guid>
+            <guid>jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-鹤城杯-crypto-writeup&#34;&gt;2021-鹤城杯-Crypto Writeup&lt;/h1&gt;
 &lt;p&gt;鹤城杯的密码学题目，难度相对较低。但是也挺有意思的，可以学习点小知识。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easy_crypto&#34;&gt;0x0 easy_Crypto&lt;/h2&gt;
@@ -6595,7 +6195,7 @@ $$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用&lt;code&gt;python&lt;/code&gt;的&lt;code&gt;ciphey&lt;/code&gt;库进行求解就好&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 -m ciphey -t &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;4O595954494Q32515046324757595N534R52415653334357474R4N575955544R4O5N4Q46434S4O59474253464Q5N444R4Q51334557524O5N4S424944473542554O595N44534O324R49565746515532464O49345649564O464R4R494543504N35&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;大约2s左右就能抛出flag了&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211008200334880&#34; src=&#34;//localhost:1313/images/2021-%E9%B9%A4%E5%9F%8E%E6%9D%AF-Crypto_Writeup/image-20211008200334880.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211008200334880&#34; src=&#34;jashiker.github.io/images/2021-%E9%B9%A4%E5%9F%8E%E6%9D%AF-Crypto_Writeup/image-20211008200334880.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;直接求解出传统密码学套娃题目的flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{W0w_y0u_c4n_rea11y_enc0d1ng!}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x2-babyrsa&#34;&gt;0x2 babyrsa&lt;/h2&gt;
@@ -6755,15 +6355,15 @@ $$
         
         <item>
             <title>2021_美团_MT CTF_Writeup</title>
-            <link>//localhost:1313/posts/2021_meituan_mt-ctf_writeup/</link>
+            <link>jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:56:47 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/2021_meituan_mt-ctf_writeup/</guid>
+            <guid>jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-美团网络安全-mt-ctf-writup&#34;&gt;2021 美团网络安全 MT-CTF writup&lt;/h1&gt;
 &lt;p&gt;本菜鸡比较菜，有些安详，仅仅只搞出了两道题目。两道简单的密码学题目：&lt;/p&gt;
 &lt;h2 id=&#34;symbol&#34;&gt;Symbol&lt;/h2&gt;
 &lt;p&gt;非常奇怪的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Symbols&#34; src=&#34;//localhost:1313/images/2021_%E7%BE%8E%E5%9B%A2_MT-CTF_Writeup/Symbols.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Symbols&#34; src=&#34;jashiker.github.io/images/2021_%E7%BE%8E%E5%9B%A2_MT-CTF_Writeup/Symbols.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目是一堆奇奇怪怪的符号，对字符进行搜索找到其内涵含义后发现找到了&lt;code&gt;LaTex&lt;/code&gt;关键字&lt;/p&gt;
 &lt;p&gt;于是想起了写个人简历和公式会经常用到的LaTeX语言，查找一下LaTeX的字符表得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
@@ -6899,10 +6499,10 @@ $$
         
         <item>
             <title>2021 羊城杯 Crypto部分_Writeup</title>
-            <link>//localhost:1313/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</link>
+            <link>jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:56:25 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</guid>
+            <guid>jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-羊城杯-crypto部分-writeup&#34;&gt;2021 羊城杯 Crypto部分 Writeup&lt;/h1&gt;
 &lt;p&gt;菜鸡Crypto手，就解出来了两道题，都是相对比较简单的密码学题目，供各位大佬参考&lt;/p&gt;
 &lt;h2 id=&#34;bigrsa&#34;&gt;BigRSA&lt;/h2&gt;
@@ -7065,15 +6665,15 @@ $$
         
         <item>
             <title>Jarvisoj Basic_writeup</title>
-            <link>//localhost:1313/posts/jarvisoj-basic_writeup/</link>
+            <link>jashiker.github.io/posts/jarvisoj-basic_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:49:20 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/jarvisoj-basic_writeup/</guid>
+            <guid>jashiker.github.io/posts/jarvisoj-basic_writeup/</guid>
             <description>&lt;h1 id=&#34;jarvisoj-basic-writeup&#34;&gt;Jarvisoj-Basic writeup&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JarvisOJ是浙江大学系统安全实验室(USS  Lab.)学生Jarvis所开发的一个CTF在线答题系统。题目形式与各大CTF比赛相同。目的主要是为自己整理历次比赛题目供以后查阅以及测试的作用，同时开放给广大爱好信息安全的朋友，可以在这里一起学习，一起进步。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211018145837413&#34; src=&#34;//localhost:1313/images/Jarvisoj-Basic_writeup/image-20211018145837413.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211018145837413&#34; src=&#34;jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018145837413.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;浙江大学的CTF刷题平台，使用起来还是比较不错的。界面简洁易用。&lt;/p&gt;
 &lt;p&gt;Basic模块的题目都是非常简单的练手题，刷一刷，玩一玩。顺便学习一些奇淫技巧，:smirk:&lt;/p&gt;
 &lt;h2 id=&#34;0x00-base64&#34;&gt;0x00 base64?&lt;/h2&gt;
@@ -7085,7 +6685,7 @@ $$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x01-关于uss-lab&#34;&gt;0x01 关于USS Lab&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USS的英文全称是什么，请全部小写并使用下划线连接_，并在外面加上PCTF{}之后提交
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;USS Lab是Jarvis OJ的主要承办单位，在刷题平台就能找到相关的信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211018160449136&#34; src=&#34;//localhost:1313/images/Jarvisoj-Basic_writeup/image-20211018160449136.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211018160449136&#34; src=&#34;jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018160449136.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;flag已经显而易见了，非常简单&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PCTF{UBIQUITOUS_SYSTEM_SECURITY}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x02-veryeasy&#34;&gt;0x02 veryeasy&lt;/h2&gt;
@@ -7579,10 +7179,10 @@ $$
         
         <item>
             <title>CTF整体规划</title>
-            <link>//localhost:1313/posts/ctf_totalplan/</link>
+            <link>jashiker.github.io/posts/ctf_totalplan/</link>
             <pubDate>Sat, 29 Jan 2022 09:29:15 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/ctf_totalplan/</guid>
+            <guid>jashiker.github.io/posts/ctf_totalplan/</guid>
             <description>&lt;h1 id=&#34;ctf整体规划&#34;&gt;CTF整体规划&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;CTF&lt;/strong&gt;（Capture The Flag，夺旗赛）起源于 1996 年 &lt;strong&gt;DEFCON&lt;/strong&gt; 全球黑客大会，是网络安全爱好者之间的竞技游戏。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CTF&lt;/strong&gt; 竞赛涉及众多领域，内容繁杂。与此同时，安全技术的发展速度越来越快，&lt;strong&gt;CTF&lt;/strong&gt; 题目的难度越来越高，初学者面对的门槛越来越高。&lt;/p&gt;
@@ -7884,10 +7484,10 @@ $$
         
         <item>
             <title>大学,未来</title>
-            <link>//localhost:1313/posts/university_future/</link>
+            <link>jashiker.github.io/posts/university_future/</link>
             <pubDate>Sat, 29 Jan 2022 09:26:51 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/university_future/</guid>
+            <guid>jashiker.github.io/posts/university_future/</guid>
             <description>&lt;h1 id=&#34;大学未来&#34;&gt;大学，未来&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;大学是一个知识分子的聚集地，是一个自由的学术殿堂。但是大学也有着很多限制和禁锢，大学生往往也在承受着社会的诸多压力。以上是我对于大学最基本的一种认识和一种观念上的思考。&lt;/p&gt;
@@ -8013,10 +7613,10 @@ $$
         
         <item>
             <title>数学之美,程序之巧</title>
-            <link>//localhost:1313/posts/math_and_program/</link>
+            <link>jashiker.github.io/posts/math_and_program/</link>
             <pubDate>Sat, 29 Jan 2022 09:25:11 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/math_and_program/</guid>
+            <guid>jashiker.github.io/posts/math_and_program/</guid>
             <description>&lt;h1 id=&#34;数学之美程序之巧&#34;&gt;数学之美，程序之巧&lt;/h1&gt;
 &lt;p&gt;计算机程序，简单来说，就是指令和数据的组合。程序可以通过算法组成相应的逻辑系统，逻辑系统可以根据编写者需求来完成各种各样的事情。&lt;/p&gt;
 &lt;p&gt;计算机内部数据处理方式是什么样？&lt;/p&gt;
@@ -8086,10 +7686,10 @@ $$</p>
         
         <item>
             <title>浅谈椭圆曲线加密算法(ECC)</title>
-            <link>//localhost:1313/posts/ecc_startup/</link>
+            <link>jashiker.github.io/posts/ecc_startup/</link>
             <pubDate>Sat, 29 Jan 2022 09:22:23 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/ecc_startup/</guid>
+            <guid>jashiker.github.io/posts/ecc_startup/</guid>
             <description>&lt;h1 id=&#34;浅谈椭圆曲线加密算法ecc&#34;&gt;浅谈椭圆曲线加密算法（ECC）&lt;/h1&gt;
 &lt;p&gt;椭圆曲线加密算法是近十年提出的一个非对称加密算法，这个加密算法非常复杂，加密的数据具有良好的保密性。加密效果比RSA加密算法都高。这次不可能全部将ECC加密算法讲完，只能简单聊聊ECC加密算法的基本概念和ECC加密算法的数学基础了。&lt;/p&gt;
 &lt;p&gt;什么是ECC加密算法？&lt;/p&gt;
@@ -8170,10 +7770,10 @@ $$</p>
         
         <item>
             <title>进程与线程</title>
-            <link>//localhost:1313/posts/process_and_threads/</link>
+            <link>jashiker.github.io/posts/process_and_threads/</link>
             <pubDate>Sat, 29 Jan 2022 09:20:55 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/process_and_threads/</guid>
+            <guid>jashiker.github.io/posts/process_and_threads/</guid>
             <description>&lt;h1 id=&#34;进程与线程的理解&#34;&gt;进程与线程的理解&lt;/h1&gt;
 &lt;p&gt;个人对于进程和线程概念的理解，可能会有些偏差&lt;/p&gt;
 &lt;blockquote&gt;
@@ -8333,10 +7933,10 @@ $$</p>
         
         <item>
             <title>杯茗藏香，君闻几何</title>
-            <link>//localhost:1313/posts/crypto_startup/</link>
+            <link>jashiker.github.io/posts/crypto_startup/</link>
             <pubDate>Sat, 29 Jan 2022 08:07:30 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/crypto_startup/</guid>
+            <guid>jashiker.github.io/posts/crypto_startup/</guid>
             <description>&lt;h1 id=&#34;杯茗藏香君闻几何&#34;&gt;杯茗藏香，君闻几何&lt;/h1&gt;
 &lt;h2 id=&#34;浅谈密码学&#34;&gt;“浅谈密码学”&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -8402,10 +8002,10 @@ $$</p>
         
         <item>
             <title>一花一世界，一码一千秋</title>
-            <link>//localhost:1313/posts/reverse_startup/</link>
+            <link>jashiker.github.io/posts/reverse_startup/</link>
             <pubDate>Sat, 29 Jan 2022 08:02:58 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/reverse_startup/</guid>
+            <guid>jashiker.github.io/posts/reverse_startup/</guid>
             <description>&lt;h1 id=&#34;一花一世界一码一千秋&#34;&gt;一花一世界，一码一千秋&lt;/h1&gt;
 &lt;h2 id=&#34;逆向工程初步&#34;&gt;”逆向工程初步“&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -8547,20 +8147,20 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (3) Writeup</title>
-            <link>//localhost:1313/posts/xctf-reverse-expert-3_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:34:08 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse-expert-3_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-3-writeup&#34;&gt;XCTF-REVERSE-高手区-3 writeup&lt;/h1&gt;
 &lt;p&gt;继续玩一玩逆向的题目，感觉还是蛮有意思的。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-srm-50&#34;&gt;0x0 srm-50&lt;/h2&gt;
 &lt;p&gt;使用DIE进行探测：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103093725322&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-3_writeup/image-20211103093725322.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103093725322&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093725322.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;32位PE程序，无壳。可以尝试运行一下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103093811981&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-3_writeup/image-20211103093811981.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103093811981&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093811981.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;应该是一个邮箱破解的程序，终于有点稍微有意思的题目了&lt;/p&gt;
 &lt;p&gt;首先进行静态分析看代码：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103094139950&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-3_writeup/image-20211103094139950.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103094139950&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103094139950.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;根据WIN32的编程基础，关键函数应该是在&lt;code&gt;DialogFunc&lt;/code&gt;中，登录的细节应该是在&lt;code&gt;DialogFunc&lt;/code&gt;中。&lt;/p&gt;
 &lt;p&gt;跟进&lt;code&gt;DialogFunc&lt;/code&gt;函数，来寻找更多的细节&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INT_PTR &lt;span style=&#34;color:#66d9ef&#34;&gt;__stdcall&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;DialogFunc&lt;/span&gt;(HWND hDlg, UINT a2, WPARAM a3, LPARAM a4)
@@ -9298,15 +8898,15 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (2) Writeup</title>
-            <link>//localhost:1313/posts/xctf-reverse-expert-2_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:33:59 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse-expert-2_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-2-writeup&#34;&gt;XCTF-REVERSE-高手区-2 writeup&lt;/h1&gt;
 &lt;p&gt;感觉攻防世界的逆向题目还是蛮有意思的，刷着玩玩，就当作闯关游戏一样！&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easyre&#34;&gt;0x0 EasyRE&lt;/h2&gt;
 &lt;p&gt;使用DIE查看一下程序信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211101090530961&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-2_writeup/image-20211101090530961.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211101090530961&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-2_writeup/image-20211101090530961.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;无壳32位程序，直接静态分析走起！&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; argc, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;argv, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;envp)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -9858,17 +9458,17 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (1) Writeup</title>
-            <link>//localhost:1313/posts/xctf-reverse-expert-1_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:33:49 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse-expert-1_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-1-writeup&#34;&gt;XCTF-REVERSE-高手区-1 writeup&lt;/h1&gt;
 &lt;p&gt;有段时间没有刷题了，刷刷题找找手感&lt;/p&gt;
 &lt;h2 id=&#34;0x0-answer_to_everything&#34;&gt;0x0 answer_to_everything&lt;/h2&gt;
 &lt;p&gt;使用DIE查看程序信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031104627471&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-1_writeup/image-20211031104627471.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031104627471&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104627471.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;程序没有壳，而且是64位。然后看看文件长什么样，静态分析的时刻来临：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031104740182&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-1_writeup/image-20211031104740182.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031104740182&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104740182.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现关键函数，跟进这个函数&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;__int64&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__fastcall&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;not_the_flag&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a1)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -9885,7 +9485,7 @@ $$</p>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{80ee2a3fe31da904c596d993f7f1de4827c1450a}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-elrond32&#34;&gt;0x1 elrond32&lt;/h2&gt;
 &lt;p&gt;使用DIE查询一下文件信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031105318823&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-expert-1_writeup/image-20211031105318823.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031105318823&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031105318823.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;32位的exec文件，使用IDA pro打开&lt;/p&gt;
 &lt;p&gt;定位到main函数的位置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a1, &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;a2)
@@ -10288,13 +9888,13 @@ $$</p>
         
         <item>
             <title>BUUCTF REVERSE [17~24]_Writeup</title>
-            <link>//localhost:1313/posts/buuctf-reverse-3_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-reverse-3_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:24:35 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-reverse-3_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-reverse-3_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-3-writeup&#34;&gt;BUUCTF-REVERSE-3 writeup&lt;/h1&gt;
 &lt;p&gt;8道练手的逆向题目，可以尝试做一做&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210914212658475&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210914212658475&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-gwctf-2019-pyre&#34;&gt;0x0 [GWCTF 2019] pyre&lt;/h2&gt;
 &lt;p&gt;应该是python逆向的题目&lt;/p&gt;
 &lt;p&gt;果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码&lt;/p&gt;
@@ -11096,19 +10696,19 @@ $$</p>
         
         <item>
             <title>BUUCTF REVERSE [9~16]_Writeup</title>
-            <link>//localhost:1313/posts/buuctf-reverse-2_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-reverse-2_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:18:38 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-reverse-2_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-reverse-2_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-2-writeup&#34;&gt;BUUCTF-REVERSE-2 writeup&lt;/h1&gt;
 &lt;p&gt;8道逆向工程的小题目，re真是越来越有意思了&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210808095050806&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-2_writeup/image-20210808095050806.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210808095050806&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808095050806.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-不一样的flag&#34;&gt;0x0 不一样的flag&lt;/h2&gt;
 &lt;p&gt;简单看看题目描述&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;是不是做习惯了常规的逆向题目？试试这道题，看你在能不能在程序中找到真正的flag！注意：flag并非是flag{XXX}形式，就是一个’字符串‘，考验眼力的时候到了！ 注意：得到的 flag 请包上 flag{} 提交
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;应该会是一道非常有趣的题目，非常有意思的题目。&lt;/p&gt;
 &lt;p&gt;首先还是先查询一下程序信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210808211004969&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-2_writeup/image-20210808211004969.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210808211004969&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808211004969.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;没有壳，是一个32位的PE程序，丢进Cutter里面看个究竟吧&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdint.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
@@ -12303,21 +11903,21 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE novice_writeup</title>
-            <link>//localhost:1313/posts/xctf-reverse-novice_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-reverse-novice_writeup/</link>
             <pubDate>Thu, 14 Oct 2021 13:27:13 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-reverse-novice_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-reverse-novice_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-新手区-writeup&#34;&gt;XCTF-REVERSE-新手区 writeup&lt;/h1&gt;
 &lt;p&gt;来XCTF平台，做做Re练练手&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902134256690&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-novice_writeup/image-20210902134256690.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902134256690&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134256690.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;XCTF平台有十道题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902134352010&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-novice_writeup/image-20210902134352010.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902134352010&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134352010.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;十道题目应该是涵盖了逆向方向的主要内容，带着好奇心去探索逆向的世界吧&lt;/p&gt;
 &lt;h2 id=&#34;0x0-insanity&#34;&gt;0x0 insanity&lt;/h2&gt;
 &lt;p&gt;往往第一道题目都不是很难，下载附件，看看是个什么东西。&lt;/p&gt;
 &lt;p&gt;文件没有扩展名，可能是个ELF文件，走个流程&lt;/p&gt;
 &lt;p&gt;首先查一下壳&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902135713948&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-novice_writeup/image-20210902135713948.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902135713948&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902135713948.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;果然是ELF格式的文件，不过不是x64格式的ELF文件&lt;/p&gt;
 &lt;p&gt;使用IDA pro打开文件，查看主函数的反编译代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; argc, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;argv, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;envp)
@@ -12334,9 +11934,9 @@ $$</p>
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;跟进strs的数据&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902145813017&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-novice_writeup/image-20210902145813017.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902145813017&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145813017.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;继续跟进strs的数据&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902145852653&#34; src=&#34;//localhost:1313/images/XCTF-REVERSE-novice_writeup/image-20210902145852653.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902145852653&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145852653.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;get到了flag&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;9447{This_is_a_flag}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-python-trade&#34;&gt;0x1 python-trade&lt;/h2&gt;
@@ -13263,32 +12863,32 @@ jz      short loc_804879C
         
         <item>
             <title>BUUCTF REVERSE [1~8]_writeup</title>
-            <link>//localhost:1313/posts/buuctf-reverse-1_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-reverse-1_writeup/</link>
             <pubDate>Thu, 14 Oct 2021 13:03:43 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-reverse-1_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-reverse-1_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-1-writeup&#34;&gt;BUUCTF-REVERSE-1 writeup&lt;/h1&gt;
 &lt;p&gt;逆向工程让密码学更加灵动，让密码学不再抽象。初步试水逆向工程题目，嘤嘤嘤！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806103313499&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806103313499.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806103313499&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806103313499.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easyre&#34;&gt;0x0 easyre&lt;/h2&gt;
 &lt;p&gt;非常简单的逆向题目，这道题目解决方法很多，基本思路就使用静态调试工具进行反汇编，然后检索字符串得到flag。这里使用一个开源的工具Cutter来逆向玩玩。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806113422474&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806113422474.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806113422474&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806113422474.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;直接点击下面的Strings&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806114025621&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806114025621.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806114025621&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114025621.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用过滤器，快速检索flag就能得到flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806114828778&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806114828778.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806114828778&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114828778.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;得到flag&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{this_Is_a_EaSyRe}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-reverse1&#34;&gt;0x1 reverse1&lt;/h2&gt;
 &lt;p&gt;先丢进IDA pro里面看看，会有什么神奇的反应和效果！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806192321775&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806192321775.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806192321775&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806192321775.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后我们需要定位到主函数，定位到主函数的方法有很多，目前，我大致有两种，首先是检索字符串，其次就 是检索函数来快速定位主函数。&lt;/p&gt;
 &lt;p&gt;通过检索字符串来定位主函数，直接检索flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806195615915&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806195615915.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806195615915&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195615915.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后通过检索结果定位到主函数&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806195708832&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806195708832.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806195708832&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195708832.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用F5看到反编译的代码&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806200411241&#34; src=&#34;//localhost:1313/images/BUUCTF-REVERSE-1_writeup/image-20210806200411241.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806200411241&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806200411241.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;代码非常清晰，找到关键的代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ( j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; ; &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;j )
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {
@@ -13913,14 +13513,14 @@ jz      short loc_804879C
         
         <item>
             <title>BUUCTF CRYPTO (6) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-6_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-6_writeup/</link>
             <pubDate>Thu, 08 Jul 2021 16:26:32 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-6_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-6_writeup/</guid>
             <description>&lt;p&gt;百题计划，冲呀！冲呀！冲呀！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210701110042258&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-6_writeup/image-20210701110042258.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210701110042258&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110042258.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次16道题目，难度开始逐渐上升，越来越有挑战性喽！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210701110832867&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-6_writeup/image-20210701110832867.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210701110832867&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110832867.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-rsa--what&#34;&gt;0x0 RSA &amp;amp; what&lt;/h2&gt;
 &lt;p&gt;开场就是一道RSA题目，真是不错！&lt;/p&gt;
 &lt;p&gt;附件有四个文件，一个&lt;code&gt;README.txt&lt;/code&gt;文件，一个&lt;code&gt;rsa.py&lt;/code&gt;算法文件，一个&lt;code&gt;HUB1&lt;/code&gt;输出文件和一个&lt;code&gt;HUB2&lt;/code&gt;输出文件。看看这些文件都是些什么内容吧！&lt;/p&gt;
@@ -15061,14 +14661,14 @@ $$
         
         <item>
             <title>BUUCTF CRYPTO (5) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-5_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-5_writeup/</link>
             <pubDate>Thu, 01 Jul 2021 10:14:15 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-5_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-5_writeup/</guid>
             <description>&lt;p&gt;密码学百题计划启动！进行勇往直前！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210628200701835&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-5_writeup/image-20210628200701835.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210628200701835&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200701835.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次的16道题目，也是非常有意思的呢！各种各样的呢……&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210628200448759&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-5_writeup/image-20210628200448759.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210628200448759&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200448759.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-浪里淘沙&#34;&gt;0x0 浪里淘沙&lt;/h2&gt;
 &lt;p&gt;看样子，应该是个脑洞题没错了&lt;/p&gt;
 &lt;p&gt;来康康这题的题目：&lt;/p&gt;
@@ -16281,28 +15881,28 @@ $$</p>
         
         <item>
             <title>BUUCTF CRYPTO (4) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-4_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-4_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 17:20:25 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-4_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-4_writeup/</guid>
             <description>&lt;p&gt;沉浸在密码学的世界里面，缓缓浸入题目的海洋，16道crypto题目！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/image-17-1024x673.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-17-1024x673.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这次的题目，难度也开始逐渐上来咯！当然不仅仅只有难度，还有脑洞！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/image-18.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-18.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-古典密码知多少&#34;&gt;0x0 古典密码知多少&lt;/h2&gt;
 &lt;p&gt;应该是考察古典密码的题目，点开题目下载附件，瞧一瞧&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/image-19.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-19.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;打开图片就察觉到这题可能会非常草……，果然古典的恶心，应该是三种古典密码的组合，可以清晰地看出有猪圈密码和变种圣堂武士密码，至于剩下那一种密码实在是找不到……，只能无奈地去瞧一瞧&lt;a href=&#34;https://blog.ysneko.com/archives/115/&#34;&gt;大佬的wp&lt;/a&gt;，发现是标准银河字母。根据得到的信息进行比对，蓝色的是猪圈密码，橙色的是圣堂武士密码，黑色的是标准银河字母。根据信息，进行解密得：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FGCPFLIRTUASYON
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;看样子应该还有一层加密，最常见的古典加密方法就是凯撒加密和栅栏密码，经过尝试发现是栅栏密码，使用栅栏密码进行解密得到flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FLAGISCRYPTOFUN
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;猪圈密码对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/20201019010012173.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20201019010012173.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;圣堂武士密码对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;此图像的alt属性为空；文件名为20200325180259577.jpg&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/20200325180259577.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;此图像的alt属性为空；文件名为20200325180259577.jpg&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20200325180259577.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;标准银河字母对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;查看源图像&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-4_writeup/t01cf49fe8b6c515f04.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;查看源图像&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/t01cf49fe8b6c515f04.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x1-hdctf2019bbbbbbrsa&#34;&gt;0x1 [HDCTF2019]bbbbbbrsa&lt;/h2&gt;
 &lt;p&gt;看来又是熟悉的RSA题目，嘤嘤嘤~&lt;/p&gt;
 &lt;p&gt;下载附件，打开发现有两个文件，一个enc文件，一个encode.py文件&lt;/p&gt;
@@ -17017,10 +16617,10 @@ $$</p>
         
         <item>
             <title>BJDCTF 2nd CRYPTO_writeup</title>
-            <link>//localhost:1313/posts/bjdctf-2nd-crypto_writeup/</link>
+            <link>jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 17:01:41 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/bjdctf-2nd-crypto_writeup/</guid>
+            <guid>jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</guid>
             <description>&lt;p&gt;BJDCTF 2nd的密码学题目有8道题目可以尝试做一做，都挺有意思的。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-签到-y1ng&#34;&gt;0x0 签到-y1ng&lt;/h2&gt;
 &lt;p&gt;来康康题目：&lt;/p&gt;
@@ -17039,8 +16639,8 @@ $$</p>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;BJD{淛匶襫黼瀬鎶軄鶛驕鳓哵}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x2-cat_flag&#34;&gt;0x2 cat_flag&lt;/h2&gt;
 &lt;p&gt;下载附件，康康有什么有趣的内容：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;//localhost:1313/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;//localhost:1313/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;哇哦！一个gif图片，仔细康康图片，发现猫猫挺像二进制编码的，尝试写个小脚本解决一下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; libnum
@@ -17231,12 +16831,12 @@ flag=??????
         
         <item>
             <title>GKCTF2020 CRYPTO_writeup</title>
-            <link>//localhost:1313/posts/gkctf2020-crypto_writeup/</link>
+            <link>jashiker.github.io/posts/gkctf2020-crypto_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 16:53:12 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/gkctf2020-crypto_writeup/</guid>
+            <guid>jashiker.github.io/posts/gkctf2020-crypto_writeup/</guid>
             <description>&lt;p&gt;GKCTF2020的密码学题目相对而言比较简单，古典密码学题目偏多。而且密码学题目也只有四道题目&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/GKCTF2020-Crypto_writeup/WechatIMG1350.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/GKCTF2020-Crypto_writeup/WechatIMG1350.jpeg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-小学生的密码学&#34;&gt;0x0 小学生的密码学&lt;/h2&gt;
 &lt;p&gt;打开题目描述，查看题目描述内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;e(x)=11x+6(mod26)
@@ -17560,14 +17160,14 @@ flag=??????
         
         <item>
             <title>BUUCTF CRYPTO (3) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-3_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-3_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 16:29:54 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-3_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-3_writeup/</guid>
             <description>&lt;p&gt;同样的味道，同样的感觉，再看密码的世界！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-3_writeup/image-136.png&#34;&gt;BUUCTF&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-136.png&#34;&gt;BUUCTF&lt;/p&gt;
 &lt;p&gt;来审视一下，本次的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-3_writeup/image-15.png&#34;&gt;题目列表&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-15.png&#34;&gt;题目列表&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Morse&lt;/li&gt;
 &lt;li&gt;Cipher&lt;/li&gt;
@@ -17593,7 +17193,7 @@ flag=??????
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接解密摩斯密码得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;61666374667B317327745F73305F333435797D
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;得到的16进制密文，对密文进行解密：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-3_writeup/image-6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;成功得到flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;afctf{1s&amp;#39;t_s0_345y}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;flag：afctf{1s&amp;rsquo;t_s0_345y}&lt;/p&gt;
@@ -17601,7 +17201,7 @@ flag=??????
 &lt;p&gt;打开题目描述：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;还能提示什么呢？公平的玩吧（密钥自己找） Dncnoqqfliqrpgeklwmppu 注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;看的非常懵，考察古典密码的题目，唯一的提示就是“公平的玩吧（密钥自己找）”，实在是找不到头绪，看了大佬的WP发现是playfair加密，在网上找到了一个&lt;a href=&#34;http://rumkin.com/tools/cipher/playfair.php&#34;&gt;在线工具&lt;/a&gt;可以求解playfair加密，这里就使用在线工具进行解密&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-3_writeup/image-7-1024x516.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-7-1024x516.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;得到解密结果：Itisnotaproblemhavefun&lt;/p&gt;
 &lt;p&gt;故得flag: flag{itisnotaproblemhavefun}&lt;/p&gt;
 &lt;h2 id=&#34;0x2-dangerous-rsa&#34;&gt;0x2 Dangerous RSA&lt;/h2&gt;
@@ -18292,14 +17892,14 @@ $$</p>
         
         <item>
             <title>BUUCTF CRYPTO (2) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-2_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-2_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 10:34:27 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-2_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-2_writeup/</guid>
             <description>&lt;p&gt;还是BUUCTF的题目，熟悉的感觉，再来一次！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-2_writeup/image-136.png&#34;&gt;BUUCTF首页&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-136.png&#34;&gt;BUUCTF首页&lt;/p&gt;
 &lt;p&gt;本次的题目大致如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-2_writeup/image-137.png&#34;&gt;CTF题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-137.png&#34;&gt;CTF题目&lt;/p&gt;
 &lt;p&gt;题目是16道密码学题目：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;传统知识+古典密码&lt;/li&gt;
@@ -18323,11 +17923,11 @@ $$</p>
 &lt;p&gt;题目都还比较简单，正常来做就好。&lt;/p&gt;
 &lt;h3 id=&#34;0x0-传统知识古典密码&#34;&gt;0x0 传统知识+古典密码&lt;/h3&gt;
 &lt;p&gt;下载附件，得到题目&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-2_writeup/image-138.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-138.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目信息&lt;/p&gt;
 &lt;p&gt;应该是考察古典密码的题目，是考察六十甲子顺序纳音表的题目&lt;/p&gt;
 &lt;p&gt;这里列出六十顺序纳音表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-2_writeup/image-139.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-139.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;六十甲子顺序表&lt;/p&gt;
 &lt;p&gt;根据六十甲子顺序表编写python脚本：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C_sky &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;甲乙丙丁戊己庚辛壬癸&amp;#34;&lt;/span&gt;
@@ -18920,10 +18520,10 @@ $$ n = p \cdot q $$</p>
         
         <item>
             <title>尽沾手襟 淋满眼眶</title>
-            <link>//localhost:1313/posts/crypto_rsa_attack/</link>
+            <link>jashiker.github.io/posts/crypto_rsa_attack/</link>
             <pubDate>Sat, 26 Jun 2021 08:24:32 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/crypto_rsa_attack/</guid>
+            <guid>jashiker.github.io/posts/crypto_rsa_attack/</guid>
             <description>&lt;h2 id=&#34;再论rsa加密算法&#34;&gt;“再论RSA加密算法”&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;优美的数，自然的码&lt;/p&gt;
@@ -19098,10 +18698,10 @@ $$</p>
         
         <item>
             <title>清茶一盏 公杯斟茗</title>
-            <link>//localhost:1313/posts/crypto_rsa_startup/</link>
+            <link>jashiker.github.io/posts/crypto_rsa_startup/</link>
             <pubDate>Sat, 26 Jun 2021 08:20:02 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/crypto_rsa_startup/</guid>
+            <guid>jashiker.github.io/posts/crypto_rsa_startup/</guid>
             <description>&lt;h1 id=&#34;清茶一盏-公杯斟茗&#34;&gt;清茶一盏 公杯斟茗&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;上下运杯，左右轻斟&lt;/p&gt;
@@ -19291,15 +18891,15 @@ f = (a*c) % 12
         
         <item>
             <title>BUUCTF CRYPTO (1) writeup</title>
-            <link>//localhost:1313/posts/buuctf-crypto-1_writeup/</link>
+            <link>jashiker.github.io/posts/buuctf-crypto-1_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 08:12:56 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/buuctf-crypto-1_writeup/</guid>
+            <guid>jashiker.github.io/posts/buuctf-crypto-1_writeup/</guid>
             <description>&lt;p&gt;日常刷题喝茶的平时生活，整理一下题目的思路，捋一捋密码学。&lt;/p&gt;
 &lt;p&gt;BUUCTF是国内另一个比较不错的CTF的刷题平台，是由北京联合大学创建并维护的CTF大型同性交流沟通的平台，页面制作还是蛮美观滴！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-58-1024x717.png&#34;&gt;BUUCTF页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-58-1024x717.png&#34;&gt;BUUCTF页面&lt;/p&gt;
 &lt;p&gt;BUUCTF的整体难度是由简单变难的一个过程，前面的题目通常都是比较简单的题目，来看看这次日常的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-59.png&#34;&gt;题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-59.png&#34;&gt;题目&lt;/p&gt;
 &lt;p&gt;这次是16道题目：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MD5&lt;/li&gt;
@@ -19326,15 +18926,15 @@ f = (a*c) % 12
 &lt;p&gt;将数据（如一段文字）运算变为另一固定长度值，是散列算法的基础原理。&lt;/p&gt;
 &lt;p&gt;1996年后被证实存在弱点，可以被加以破解，对于需要高度安全性的资料，专家一般建议改用其他算法，如SHA-2。2004年，证实MD5算法无法防止碰撞攻击（英语：Collision_attack），因此不适用于安全性认证，如SSL公开密钥认证或是数字签名等用途。[1]&lt;/p&gt;
 &lt;p&gt;看看题目描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-60.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-60.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目描述&lt;/p&gt;
 &lt;p&gt;下载附件，查看附件内容：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-61.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-61.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;附件中给出一段加密数据：e00cf25ad42683b3df678c61f42c6bda&lt;/p&gt;
 &lt;p&gt;根据题目，应该是MD5加密，去&lt;a href=&#34;https://www.cmd5.com/&#34;&gt;解密网站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;进行解密。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-62.png&#34;&gt;cmd5&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-62.png&#34;&gt;cmd5&lt;/p&gt;
 &lt;p&gt;题目描述中，要求以flag{}形式进行提交，故flag就是flag{admin1}&lt;/p&gt;
 &lt;p&gt;这道题目考察md5加密的相关知识，签到题。&lt;/p&gt;
 &lt;h2 id=&#34;url编码&#34;&gt;Url编码&lt;/h2&gt;
@@ -19342,10 +18942,10 @@ f = (a*c) % 12
 &lt;p&gt;什么是Url编码？&lt;/p&gt;
 &lt;p&gt;百分号编码（英语：Percent-encoding），又称：URL编码（URL encoding）是特定上下文的统一资源定位符 （URL）的编码机制，实际上也适用于统一资源标志符（URI）的编码。也用于为 application/x-www-form-urlencoded MIME准备数据，因为它用于通过HTTP的请求操作（request）提交HTML表单数据。[2]&lt;/p&gt;
 &lt;p&gt;看看题目描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-63.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-63.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目描述&lt;/p&gt;
 &lt;p&gt;下载附件，查看附件内容：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/BUUCTF-CRYPTO-1_writeup/image-64.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-64.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;一段编码的字段：%66%6c%61%67%7b%61%6e%64%20%31%3d%31%7d&lt;/p&gt;
 &lt;p&gt;使用url解码工具解码，也可以使用python进行解码。我个人习惯使用python脚本进行url编码解码：&lt;/p&gt;
@@ -19967,16 +19567,16 @@ iloveyou
         
         <item>
             <title>XCTF CRYPTO novice_writeup</title>
-            <link>//localhost:1313/posts/xctf-crypto-novice_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-crypto-novice_writeup/</link>
             <pubDate>Fri, 25 Jun 2021 22:01:32 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-crypto-novice_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-crypto-novice_writeup/</guid>
             <description>&lt;p&gt;这次又是XCTF平台，没错，我又来无聊谈谈解题了&lt;/p&gt;
 &lt;p&gt;首先先来一张XCTF的首页图片，来开启本次的writeup文章：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-86&#34; src=&#34;//localhost:1313/images/XCTF-CRYPTO-novice_writeup/image-86.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-86&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-86.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;xctf首页&lt;/p&gt;
 &lt;p&gt;这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-87&#34; src=&#34;//localhost:1313/images/XCTF-CRYPTO-novice_writeup/image-87.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-87&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-87.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;crypto新手区题目&lt;/p&gt;
 &lt;p&gt;题目数量不变，依然是12道题目：&lt;/p&gt;
 &lt;ul&gt;
@@ -20006,10 +19606,10 @@ iloveyou
 &lt;h2 id=&#34;base64&#34;&gt;base64&lt;/h2&gt;
 &lt;p&gt;看到这道题目，猜想这道题目可能是考察base64编码方式的密码学题目&lt;/p&gt;
 &lt;p&gt;进入道题目页面，看看是否可以得到一点tip：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/XCTF-CRYPTO-novice_writeup/image.png&#34;&gt;base64题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image.png&#34;&gt;base64题目&lt;/p&gt;
 &lt;p&gt;没有什么特别的tip，只是给题目一个情景化的描述，没有太多有用信息的描述。&lt;/p&gt;
 &lt;p&gt;直接下载附件内容，并打开附件文件进行查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;//localhost:1313/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png&#34;&gt;附件文件&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png&#34;&gt;附件文件&lt;/p&gt;
 &lt;p&gt;文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&lt;/p&gt;
 &lt;p&gt;根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# python3 脚本&lt;/span&gt;
@@ -20860,16 +20460,16 @@ $$</p>
         
         <item>
             <title>XCTF WEB novice Writeup</title>
-            <link>//localhost:1313/posts/xctf-web-novice_writeup/</link>
+            <link>jashiker.github.io/posts/xctf-web-novice_writeup/</link>
             <pubDate>Fri, 25 Jun 2021 21:08:13 +0800</pubDate>
             
-            <guid>//localhost:1313/posts/xctf-web-novice_writeup/</guid>
+            <guid>jashiker.github.io/posts/xctf-web-novice_writeup/</guid>
             <description>&lt;p&gt;来点时效性的文章，不能总闲聊吧？&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://adworld.xctf.org.cn/&#34;&gt;XCTF&lt;/a&gt;是一个国内比较常用的CTF的刷题网站，网站页面如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-1&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-1.png&#34;&gt;XCTF攻防世界页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-1&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-1.png&#34;&gt;XCTF攻防世界页面&lt;/p&gt;
 &lt;p&gt;初次写writeup，解题思路可能不是很明确。&lt;/p&gt;
 &lt;p&gt;本次要解决的题目如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-2&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-2.png&#34;&gt;XCTF WEB新手区题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-2&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-2.png&#34;&gt;XCTF WEB新手区题目&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;view source&lt;/li&gt;
 &lt;li&gt;robots&lt;/li&gt;
@@ -20886,10 +20486,10 @@ $$</p>
 &lt;/ul&gt;
 &lt;h2 id=&#34;view_source&#34;&gt;view_source&lt;/h2&gt;
 &lt;p&gt;进入到题目页面中，获取与解题相关的信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-3&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-3.png&#34;&gt;view_source题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-3&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-3.png&#34;&gt;view_source题目&lt;/p&gt;
 &lt;p&gt;根据题目要求可知，鼠标右键不可用了。&lt;/p&gt;
 &lt;p&gt;我们进入环境来一探究竟&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-4&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-4.png&#34;&gt;靶机环境&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-4&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-4.png&#34;&gt;靶机环境&lt;/p&gt;
 &lt;p&gt;靶机展示的页面非常简单，说flag不在这儿，我不大相信，尝试使用右键查看源代码&lt;/p&gt;
 &lt;p&gt;发现右键不能使用。看来靶机的代码把浏览器的右键给禁用了，解决方法有两个：&lt;/p&gt;
 &lt;ol&gt;
@@ -20897,35 +20497,35 @@ $$</p>
 &lt;li&gt;开启浏览器禁用js模式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这里使用F12进行查看源代码（开启禁用js模式比较麻烦）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-5&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-5&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-5.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;页面源代码&lt;/p&gt;
 &lt;p&gt;F12成功打开页面源代码调试，可以看到flag就在源代码的注释中，简单题&lt;/p&gt;
 &lt;p&gt;本题主要考察对浏览器调试器的使用技巧，没有什么难度。&lt;/p&gt;
 &lt;h2 id=&#34;robots&#34;&gt;robots&lt;/h2&gt;
 &lt;p&gt;进入到题目页面环境中，查看题目信息和相关描述。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-6&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-6.png&#34;&gt;robots题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-6&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-6.png&#34;&gt;robots题目&lt;/p&gt;
 &lt;p&gt;题目描述中提到了robots协议，本菜鸡不知道什么是robots协议，但是可以肯定robots协议就是本题的突破点，我去搜索查找一下有关robots协议的相关信息。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-7&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-7.png&#34;&gt;robots协议相关信息&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-7&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-7.png&#34;&gt;robots协议相关信息&lt;/p&gt;
 &lt;p&gt;根据百度百科的说明，其实robots协议就是网站目录下的robots.txt文件&lt;/p&gt;
 &lt;p&gt;预备的知识信息获取到了，下面进入到靶机环境，去拿flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-8&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-8.png&#34;&gt;靶机页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-8&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-8.png&#34;&gt;靶机页面&lt;/p&gt;
 &lt;p&gt;靶机页面是个空白页面，在靶机地址后面输入/robots.txt尝试找到flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-9&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-9&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-9.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进入到robots.txt页面寻找有关flag的相关信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-10&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-10&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-10.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;robots.txt页面信息&lt;/p&gt;
 &lt;p&gt;根据robots.txt展示的页面信息，可知flag就在flag_1s_h3re.php文件中&lt;/p&gt;
 &lt;p&gt;那就进入到这个文件中&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-11&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-11.png&#34;&gt;flag_1s_h3re.php文件页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-11&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-11.png&#34;&gt;flag_1s_h3re.php文件页面&lt;/p&gt;
 &lt;p&gt;成功拿到flag数据信息，题目也是简单题&lt;/p&gt;
 &lt;p&gt;这道题目主要考察robots协议的相关知识以及网站目录的部分知识，也是简单题，思路非常明确&lt;/p&gt;
 &lt;h2 id=&#34;backup&#34;&gt;backup&lt;/h2&gt;
 &lt;p&gt;进入到题目页面中，寻找有用的题目突破信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-12-1024x292&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-12-1024x292.png&#34;&gt;backup题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-12-1024x292&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-12-1024x292.png&#34;&gt;backup题目&lt;/p&gt;
 &lt;p&gt;根据题目描述，这道题目是在考察备份文件，备份文件是解题的关键&lt;/p&gt;
 &lt;p&gt;根据备份文件的相关信息可知，备份文件通常都是后缀名.bak的文件&lt;/p&gt;
 &lt;p&gt;已有知识准备好了，现在进入到靶机环境中拿flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-13&#34; src=&#34;//localhost:1313/images/XCTF-WEB-novice_writeup/image-13.png&#34;&gt;靶机页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-13&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-13.png&#34;&gt;靶机页面&lt;/p&gt;
 &lt;p&gt;靶机直接就把提示摆到页面上面了，直接访问index.php.bak文件就可以了&lt;/p&gt;
 &lt;p&gt;一般来说index.php的备份文件就是index.php.bak文件&lt;/p&gt;
 &lt;p&gt;访问url/index.php.bak，备份文件成功被下载下来&lt;/p&gt;</description>
