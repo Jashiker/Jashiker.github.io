@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Jasmine❀Hiker</title>
-        <link>jashiker.github.io/posts/</link>
+        <link>https://jashiker.github.io/posts/</link>
         <description>Recent content in Posts on Jasmine❀Hiker</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
         <lastBuildDate>Sat, 19 Apr 2025 21:16:56 +0800</lastBuildDate>
-        <atom:link href="jashiker.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://jashiker.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>Sais_third_medicine_think</title>
-            <link>jashiker.github.io/posts/sais_third_medicine_think/</link>
+            <link>https://jashiker.github.io/posts/sais_third_medicine_think/</link>
             <pubDate>Sat, 19 Apr 2025 21:16:56 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/sais_third_medicine_think/</guid>
+            <guid>https://jashiker.github.io/posts/sais_third_medicine_think/</guid>
             <description>&lt;h1 id=&#34;第三届世界科学智能大赛参赛想法&#34;&gt;第三届世界科学智能大赛参赛想法&lt;/h1&gt;
 &lt;h2 id=&#34;赛题&#34;&gt;赛题&lt;/h2&gt;
 &lt;p&gt;赛题是比较挑战性，刚开始看赛题的时候还有点懵懵的。由于我之前所了解的RNA预测算法都是根据RNA的一级结构去预测RNA的二级结构，这个比赛的赛题是用RNA的二级结构预测一级结构，我个人认为是非常有挑战性。&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;查看镜像的id，以便后续打标签推送&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker images
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;输出如下结果：
-&lt;img src=&#34;jashiker.github.io/images/sais_third_medicine/Pasted_image_20250419224241.png&#34;&gt;
+&lt;img src=&#34;https://jashiker.github.io/images/sais_third_medicine/Pasted_image_20250419224241.png&#34;&gt;
 如果docker运行没有问题就可以进行打标签操作了，按照云镜像服务的说明，打标签：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker tag 8e232b63ce72 crpi-mesc8odxqa2miyzr.cn-hangzhou.personal.cr.aliyuncs.com/sais_thrid_jashacker/sais_medicine:v5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;推送到云镜像服务上：&lt;/p&gt;
@@ -90,10 +90,10 @@
         
         <item>
             <title>OtterCTF 2018 内存取证复现</title>
-            <link>jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</link>
+            <link>https://jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</link>
             <pubDate>Tue, 04 Oct 2022 23:18:37 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/otterctf_2018_memory_forensic_writeup/</guid>
             <description>&lt;h1 id=&#34;otterctf-2018-memory-forensic-reappearance&#34;&gt;OtterCTF 2018 Memory Forensic Reappearance&lt;/h1&gt;
 &lt;p&gt;想学习并练习下电子取证技术，经过网络上的一番搜索发现OtterCTF的取证题目非常有意思，这次尝试练习下内存取证的题目顺便学习下内存取证的相关内容和技能点。内存取证主要使用的工具是Volatility，githu上面有相关项目。Volatility有两个版本分别是用python2和python3进行构建的，目前主要的组件还是以python2为主。
 Volatility项目地址：&lt;a href=&#34;https://github.com/volatilityfoundation/volatility&#34;&gt;https://github.com/volatilityfoundation/volatility&lt;/a&gt;
@@ -114,7 +114,7 @@ Volatility3项目地址：&lt;a href=&#34;https://github.com/volatilityfoundatio
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;得到如下信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20221002204848160&#34; src=&#34;jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20221002204848160&#34; src=&#34;https://jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002204848160.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;可以看到大致的镜像系统是Win7系统&lt;/p&gt;
 &lt;h2 id=&#34;what-the-password&#34;&gt;What the password?&lt;/h2&gt;
 &lt;p&gt;查看题目描述：&lt;/p&gt;
@@ -128,7 +128,7 @@ Volatility3项目地址：&lt;a href=&#34;https://github.com/volatilityfoundatio
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;得到hash信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20221002212051508&#34; src=&#34;jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20221002212051508&#34; src=&#34;https://jashiker.github.io/images/OtterCTF_2018_Memory_Forensic_writeup/image-20221002212051508.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;对于这种hash信息可以使用mimikatz插件，或者使用hashcat也可以，这里使用mimikatz进行获取&lt;/p&gt;
 &lt;p&gt;使用如下指令使用mimikatz插件进行获取：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vol.py -f OtterCTF.vmem --profile&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Win7SP1x64 mimikatz
@@ -533,39 +533,39 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
         
         <item>
             <title>攻防世界 RE 日常练习 002</title>
-            <link>jashiker.github.io/posts/xctf-reverse_daliy_002/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse_daliy_002/</link>
             <pubDate>Sun, 04 Sep 2022 11:30:27 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse_daliy_002/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse_daliy_002/</guid>
             <description>&lt;h1 id=&#34;攻防世界-re-日常练习-002&#34;&gt;攻防世界 RE 日常练习 002&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;由于攻防世界界面改版，题目划分与之前的题目划分出现了差异，变成了难度划分形式，和之前的不太一样。为了之前形式一致，故更改为日常练习&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;新版攻防世界界面：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903161040700&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903161040700.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903161040700&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903161040700.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次把攻防世界难度为1的题目补了下，找下CTF题目的手感。不过攻防世界难度1的题目，难度真的很不一致。&lt;/p&gt;
 &lt;h2 id=&#34;xxxorrr&#34;&gt;xxxorrr&lt;/h2&gt;
 &lt;p&gt;这道题目应该是攻防世界的一道新题目，难度应该是比较低的。&lt;/p&gt;
-&lt;p&gt;首先使用die查看下程序信息：&lt;img alt=&#34;image-20220903163539118&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163539118.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先使用die查看下程序信息：&lt;img alt=&#34;image-20220903163539118&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163539118.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;amd64架构的程序，无壳，使用ida pro直接看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903163849241&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163849241.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903163849241&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163849241.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进入到主程序可以发现：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903163921702&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163921702.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903163921702&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903163921702.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;程序非常简单，仅仅只是进行了异或操作。觉得这个程序就是简单的异或操作。寻找关键的数据：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903164142513&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164142513.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903164142513&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164142513.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;以为这样就结束了，使用脚本跑，结果跑不出来flag，于是只能继续分析程序代码，主程序前面有一个程序函数执行，可能有进行操作：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903164827415&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164827415.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903164827415&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903164827415.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;跟进这个函数发现返回了一个可能是系统函数的一个函数&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165048716&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165048716.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165048716&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165048716.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用搜索引擎查找这个函数得到这个函数的功能描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165237194&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165237194.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165237194&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165237194.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;说明这个函数会注册一个函数在主函数结束的时候进行调用，跟进注册的函数：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903165937553&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165937553.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903165937553&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903165937553.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现一个比较有意思的函数，应该就是进行判断的关键函数，中间进行了比较。&lt;/p&gt;
 &lt;p&gt;由于对s1变量的操作存在有一定的怀疑，于是查找s1变量的交叉引用来查看信息找到一个交叉引用，这个交叉引用对s1进行操作&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903170211040&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170211040.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903170211040&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170211040.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;继续跟进交叉引用，发现这个函数在init函数内部进行调用&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903170302861&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170302861.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903170302861&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903170302861.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;因此，s1变量进行了两次操作，根据原理编写exp：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;s1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;0x71&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x61&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x73&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x78&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x63&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x79&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x74&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x67&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x73&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0x61&lt;/span&gt;, 
@@ -590,15 +590,15 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;运行得到flag：&lt;code&gt;flag{c0n5truct0r5_functi0n_in_41f}&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;happyctf&#34;&gt;happyctf&lt;/h2&gt;
 &lt;p&gt;题目给到了一个exe文件和一个pdb符号文件。使用die查看文件架构和文件信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171041190&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171041190.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171041190&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171041190.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现是一个PE32的命令行程序，无壳，使用ida直接看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171221296&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171221296.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171221296&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171221296.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;加载程序的时候，也要加载pdb查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171509446&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171509446.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171509446&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171509446.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;看样子应该是一个C++的程序，很多程序名都已经被粉碎了，所在位置应该就是主函数的所在位置，直接F5来查看程序的伪代码：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903171807207&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171807207.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220903171807207&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903171807207.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;寻找到关键信息来进行突围，进行简单的代码审计发现：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220903172024279&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903172024279.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;image-20220903172024279&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE_Daliy_002/image-20220903172024279.png&#34;&gt;&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h1 id="攻防世界-re-日常练习-002">攻防世界 RE 日常练习 002</h1>
 <blockquote>
 <p>由于攻防世界界面改版，题目划分与之前的题目划分出现了差异，变成了难度划分形式，和之前的不太一样。为了之前形式一致，故更改为日常练习</p>
@@ -800,10 +800,10 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
         
         <item>
             <title>2022 网鼎杯 青龙组 Writeup</title>
-            <link>jashiker.github.io/posts/2022_wdb_ql-writeup/</link>
+            <link>https://jashiker.github.io/posts/2022_wdb_ql-writeup/</link>
             <pubDate>Wed, 31 Aug 2022 17:28:44 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/2022_wdb_ql-writeup/</guid>
+            <guid>https://jashiker.github.io/posts/2022_wdb_ql-writeup/</guid>
             <description>&lt;h1 id=&#34;2022-网鼎杯-青龙组-writeup&#34;&gt;2022 网鼎杯 青龙组 Writeup&lt;/h1&gt;
 &lt;p&gt;今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。&lt;/p&gt;
 &lt;p&gt;第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。&lt;/p&gt;
@@ -811,39 +811,39 @@ Volatility3项目地址：<a href="https://github.com/volatilityfoundation/volat
 &lt;h2 id=&#34;解出&#34;&gt;解出&lt;/h2&gt;
 &lt;h3 id=&#34;fakeshell&#34;&gt;fakeshell&lt;/h3&gt;
 &lt;p&gt;题目给到了一个exe文件，使用die查看该文件：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828123956402&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828123956402.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828123956402&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828123956402.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现是一个upx压缩壳加密的程序，尝试使用upx脱壳：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828133038392&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828133038392.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828133038392&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828133038392.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现壳可能被修改过，需要手动脱壳。先尝试运行下程序，寻找下可能存在的锚点字符串信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140533175&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140533175.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140533175&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140533175.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;找到两个锚点字符串，一个是&lt;code&gt;&amp;lt;&amp;lt;Input your flag:&lt;/code&gt;，另一个是&lt;code&gt;Wrong.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;使用x64dbg进行手动脱壳，进行入口点的测试找到一个关键跳转地址0x1400276CB&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140317972&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140317972.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140317972&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140317972.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这是一个长跳转指令，运行到这个指令的时候程序已经完成解密。可以对程序的内存引用进行查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140739058&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140739058.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140739058&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140739058.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现程序的内存引用中已经出现了锚点字符串，说明此时的程序已经完成了解密。然后跟进到锚点字符串所在的函数位置：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828140905779&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140905779.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828140905779&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828140905779.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这个位置应该是主函数空间，在这个主函数空间中对函数开头位置下断点，然后让程序运行到断点位置&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828141834266&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828141834266.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828141834266&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828141834266.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后使用x64dbg的Scylla插件进行dump内存：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142149592&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142149592.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142149592&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142149592.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;从当前位置进行dump即可，得到一个dump的程序。&lt;/p&gt;
 &lt;p&gt;现在完成手动脱壳，进入到下一步，进行ida pro的静态分析：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142350437&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142350437.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142350437&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142350437.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用F5插件来查看程序反编译的代码进行分析&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142457029&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142457029.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142457029&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142457029.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;输入的数据存储到v4变量中，对v4变量处理的函数有两个，对这两个函数依次进行审计。&lt;/p&gt;
 &lt;p&gt;首先分析第一个函数，这个函数要一直跟进跟进到和参数有关的位置&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828142835318&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142835318.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828142835318&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828142835318.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第一个函数中，存在一个判断和一个异或运算。&lt;/p&gt;
 &lt;p&gt;判断是对输入的数据进行了处理，猜测应该是进行长度判断，判断长度是否是20位。&lt;/p&gt;
 &lt;p&gt;异或操作是单纯对于输入数据的运行对于程序运行流程没有太多影响&lt;/p&gt;
 &lt;p&gt;分析第二个函数，和第一个函数的跟进方法类似&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828144648807&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828144648807.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828144648807&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828144648807.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828145157336&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145157336.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828145157336&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145157336.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现判断的位置有密文，跟进密文查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20220828145310441&#34; src=&#34;jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145310441.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20220828145310441&#34; src=&#34;https://jashiker.github.io/images/2022_WDB_QL-writeup/image-20220828145310441.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用&lt;code&gt;shift&lt;/code&gt;+ &lt;code&gt;E&lt;/code&gt;将数据提取出来，可以得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; ida_chars[] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -1445,10 +1445,10 @@ $$</p>
         
         <item>
             <title>攻防世界进阶区日常训练001</title>
-            <link>jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</link>
             <pubDate>Sat, 23 Apr 2022 15:14:39 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/</guid>
             <description>&lt;h1 id=&#34;攻防世界-re-进阶区-日常练习-001&#34;&gt;攻防世界 RE 进阶区 日常练习 001&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;ISCC比赛临近，CTF比赛题目也要开始继续训练起来
@@ -1459,13 +1459,13 @@ $$</p>
 &lt;p&gt;这几道题目主要都是使用IDA pro的远程调试功能，使用虚拟机搭配IDA进行远程调试&lt;/p&gt;
 &lt;h2 id=&#34;re2-cpp-is-awesome&#34;&gt;re2-cpp-is-awesome&lt;/h2&gt;
 &lt;p&gt;先查看一些文件的简单信息
-&lt;img src=&#34;jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420210740.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420210740.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;ELF文件，GCC编译，无壳&lt;/p&gt;
 &lt;p&gt;IDA看下：
 C++编译的程序文件，看的心烦意乱基本上找不到关键的函数，和关键的位置。&lt;/p&gt;
 &lt;p&gt;尝试使用下IDA pro的动调寻找一下f关键位置(IDA pro的动态消失配置可以自己网络检索，有很多相关的内容)&lt;/p&gt;
 &lt;p&gt;先断在第一个跳转位置，即&lt;code&gt;jz short loc_400BD7&lt;/code&gt; 位置上&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420213518.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-DAILY/Pasted_image_20220420213518.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进行几次调试，发现都直接退出，没有进行跳转
 也就是 &lt;code&gt;cmp [rbp+var_64], 2&lt;/code&gt; 的比较值没有改变ZF标志位
 对上面汇编代码进行审计：&lt;/p&gt;
@@ -2410,10 +2410,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>编码-编写你的快乐</title>
-            <link>jashiker.github.io/posts/encode/</link>
+            <link>https://jashiker.github.io/posts/encode/</link>
             <pubDate>Sat, 29 Jan 2022 11:36:02 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/encode/</guid>
+            <guid>https://jashiker.github.io/posts/encode/</guid>
             <description>&lt;h1 id=&#34;编码&#34;&gt;编码&lt;/h1&gt;
 &lt;p&gt;编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。&lt;/p&gt;
 &lt;p&gt;编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。&lt;/p&gt;
@@ -5574,7 +5574,7 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 <p><img alt="查看源图像" src="/images/Encode/morse-code-4_ML.jpg"></p>
 <h3 id="jsfuck">JSFuck</h3>
 <p>jsfuck是一种非常有意思的编码方式，仅使用6个字符就可以书写任意的<code>JavaScript</code>代码。从直观上非常容易辨别出这种编码方式，只需要“()+[]!”这6个字符组成的字符串。jsfuck的编码和解码与morsecode类似，只不过其表示的是<code>JavaScript</code>的语句。jsfuck源于一门编程语言brainfuck，其主要的思想就是只使用8种特定的符号来编写代码。jsfuck也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是<code>()+[]!</code></p>
-<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href="jashiker.github.io/"></a>!+](<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a>)</p>
+<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href="/"></a>!+](<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a>)</p>
 <p>比如：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)
 </span></span></code></pre></div><p>就可以被jsfuck编码为：</p>
@@ -5651,7 +5651,7 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>BG4JgP4wUJqxmP4EV0U++
 </span></span></code></pre></div><h3 id="jjencode编码">JJencode编码</h3>
 <p>算是JSFuck编码的前身，是由18种字符组成的编码格式。是针对JavaScript进行设计的编码方式。</p>
-<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href="jashiker.github.io/"></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
+<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href="/"></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
 <p>比如：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>alert(&#34;Hello, JavaScript&#34; )
 </span></span></code></pre></div><p>进行jjencode编码，得到</p>
@@ -5667,10 +5667,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>现代密码-看尽如今的满目繁华</title>
-            <link>jashiker.github.io/posts/modern_crypto/</link>
+            <link>https://jashiker.github.io/posts/modern_crypto/</link>
             <pubDate>Sat, 29 Jan 2022 11:31:41 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/modern_crypto/</guid>
+            <guid>https://jashiker.github.io/posts/modern_crypto/</guid>
             <description>&lt;h1 id=&#34;现代密码&#34;&gt;现代密码&lt;/h1&gt;
 &lt;p&gt;现代密码根据密钥的方式可以分为对称密码和非对称密码，这两类密码是现代密码的支柱，现代密码又可以根据加密的方式分为流密码和分组密码。流密码，分组密码在CTF中通常是以对称密码的方式进行而RSA、ECC、格密码通常是以非对称密码的方式进行。&lt;/p&gt;
 &lt;h2 id=&#34;流密码&#34;&gt;流密码&lt;/h2&gt;
@@ -5758,10 +5758,10 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
         
         <item>
             <title>古典密码-探寻曾经的故事</title>
-            <link>jashiker.github.io/posts/classic_crypto/</link>
+            <link>https://jashiker.github.io/posts/classic_crypto/</link>
             <pubDate>Sat, 29 Jan 2022 11:28:09 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/classic_crypto/</guid>
+            <guid>https://jashiker.github.io/posts/classic_crypto/</guid>
             <description>&lt;h1 id=&#34;古典密码&#34;&gt;古典密码&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;密码和编码最大的区别就是密码多了一个很关键的信息：密钥。&lt;/p&gt;
@@ -5804,9 +5804,9 @@ loc_600BA9:                             ; CODE XREF: judge+7E↑j
 &lt;p&gt;下面给出一个例子：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;明文：The quick brown fox jumps over the lazy dog
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;填入填入 5 行 7 列表（事先约定填充的行列数）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210719200647994&#34; src=&#34;jashiker.github.io/images/Classic_Crypto/image-20210719200647994.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210719200647994&#34; src=&#34;https://jashiker.github.io/images/Classic_Crypto/image-20210719200647994.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;加密的回路线（事先约定填充的行列数）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210719200710292&#34; src=&#34;jashiker.github.io/images/Classic_Crypto/image-20210719200710292.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210719200710292&#34; src=&#34;https://jashiker.github.io/images/Classic_Crypto/image-20210719200710292.png&#34;&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;密文：gesfc inpho dtmwu qoury zejre hbxva lookT
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;云影密码&#34;&gt;云影密码&lt;/h4&gt;
 &lt;p&gt;该密码又称为01248，使用 0，1，2，4，8 四个数字，其中 0 用来表示间隔，其他数字以加法可以表示出 如：28=10，124=7，18=9，再用 1-&amp;gt;26 表示 A-&amp;gt;Z。&lt;/p&gt;</description>
@@ -6178,10 +6178,10 @@ $$</p>
         
         <item>
             <title>2021 鹤城杯 Crypto_Writeup</title>
-            <link>jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</link>
+            <link>https://jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:57:12 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/2021-cranecitycup-crypto_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-鹤城杯-crypto-writeup&#34;&gt;2021-鹤城杯-Crypto Writeup&lt;/h1&gt;
 &lt;p&gt;鹤城杯的密码学题目，难度相对较低。但是也挺有意思的，可以学习点小知识。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easy_crypto&#34;&gt;0x0 easy_Crypto&lt;/h2&gt;
@@ -6195,7 +6195,7 @@ $$</p>
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用&lt;code&gt;python&lt;/code&gt;的&lt;code&gt;ciphey&lt;/code&gt;库进行求解就好&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 -m ciphey -t &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;4O595954494Q32515046324757595N534R52415653334357474R4N575955544R4O5N4Q46434S4O59474253464Q5N444R4Q51334557524O5N4S424944473542554O595N44534O324R49565746515532464O49345649564O464R4R494543504N35&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;大约2s左右就能抛出flag了&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211008200334880&#34; src=&#34;jashiker.github.io/images/2021-%E9%B9%A4%E5%9F%8E%E6%9D%AF-Crypto_Writeup/image-20211008200334880.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211008200334880&#34; src=&#34;https://jashiker.github.io/images/2021-%E9%B9%A4%E5%9F%8E%E6%9D%AF-Crypto_Writeup/image-20211008200334880.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;直接求解出传统密码学套娃题目的flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{W0w_y0u_c4n_rea11y_enc0d1ng!}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x2-babyrsa&#34;&gt;0x2 babyrsa&lt;/h2&gt;
@@ -6355,15 +6355,15 @@ $$
         
         <item>
             <title>2021_美团_MT CTF_Writeup</title>
-            <link>jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</link>
+            <link>https://jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:56:47 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/2021_meituan_mt-ctf_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-美团网络安全-mt-ctf-writup&#34;&gt;2021 美团网络安全 MT-CTF writup&lt;/h1&gt;
 &lt;p&gt;本菜鸡比较菜，有些安详，仅仅只搞出了两道题目。两道简单的密码学题目：&lt;/p&gt;
 &lt;h2 id=&#34;symbol&#34;&gt;Symbol&lt;/h2&gt;
 &lt;p&gt;非常奇怪的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Symbols&#34; src=&#34;jashiker.github.io/images/2021_%E7%BE%8E%E5%9B%A2_MT-CTF_Writeup/Symbols.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Symbols&#34; src=&#34;https://jashiker.github.io/images/2021_%E7%BE%8E%E5%9B%A2_MT-CTF_Writeup/Symbols.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目是一堆奇奇怪怪的符号，对字符进行搜索找到其内涵含义后发现找到了&lt;code&gt;LaTex&lt;/code&gt;关键字&lt;/p&gt;
 &lt;p&gt;于是想起了写个人简历和公式会经常用到的LaTeX语言，查找一下LaTeX的字符表得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
@@ -6499,10 +6499,10 @@ $$
         
         <item>
             <title>2021 羊城杯 Crypto部分_Writeup</title>
-            <link>jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</link>
+            <link>https://jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:56:25 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/</guid>
             <description>&lt;h1 id=&#34;2021-羊城杯-crypto部分-writeup&#34;&gt;2021 羊城杯 Crypto部分 Writeup&lt;/h1&gt;
 &lt;p&gt;菜鸡Crypto手，就解出来了两道题，都是相对比较简单的密码学题目，供各位大佬参考&lt;/p&gt;
 &lt;h2 id=&#34;bigrsa&#34;&gt;BigRSA&lt;/h2&gt;
@@ -6665,15 +6665,15 @@ $$
         
         <item>
             <title>Jarvisoj Basic_writeup</title>
-            <link>jashiker.github.io/posts/jarvisoj-basic_writeup/</link>
+            <link>https://jashiker.github.io/posts/jarvisoj-basic_writeup/</link>
             <pubDate>Sat, 29 Jan 2022 10:49:20 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/jarvisoj-basic_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/jarvisoj-basic_writeup/</guid>
             <description>&lt;h1 id=&#34;jarvisoj-basic-writeup&#34;&gt;Jarvisoj-Basic writeup&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JarvisOJ是浙江大学系统安全实验室(USS  Lab.)学生Jarvis所开发的一个CTF在线答题系统。题目形式与各大CTF比赛相同。目的主要是为自己整理历次比赛题目供以后查阅以及测试的作用，同时开放给广大爱好信息安全的朋友，可以在这里一起学习，一起进步。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211018145837413&#34; src=&#34;jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018145837413.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211018145837413&#34; src=&#34;https://jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018145837413.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;浙江大学的CTF刷题平台，使用起来还是比较不错的。界面简洁易用。&lt;/p&gt;
 &lt;p&gt;Basic模块的题目都是非常简单的练手题，刷一刷，玩一玩。顺便学习一些奇淫技巧，:smirk:&lt;/p&gt;
 &lt;h2 id=&#34;0x00-base64&#34;&gt;0x00 base64?&lt;/h2&gt;
@@ -6685,7 +6685,7 @@ $$
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x01-关于uss-lab&#34;&gt;0x01 关于USS Lab&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USS的英文全称是什么，请全部小写并使用下划线连接_，并在外面加上PCTF{}之后提交
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;USS Lab是Jarvis OJ的主要承办单位，在刷题平台就能找到相关的信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211018160449136&#34; src=&#34;jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018160449136.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211018160449136&#34; src=&#34;https://jashiker.github.io/images/Jarvisoj-Basic_writeup/image-20211018160449136.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;flag已经显而易见了，非常简单&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PCTF{UBIQUITOUS_SYSTEM_SECURITY}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x02-veryeasy&#34;&gt;0x02 veryeasy&lt;/h2&gt;
@@ -7179,10 +7179,10 @@ $$
         
         <item>
             <title>CTF整体规划</title>
-            <link>jashiker.github.io/posts/ctf_totalplan/</link>
+            <link>https://jashiker.github.io/posts/ctf_totalplan/</link>
             <pubDate>Sat, 29 Jan 2022 09:29:15 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/ctf_totalplan/</guid>
+            <guid>https://jashiker.github.io/posts/ctf_totalplan/</guid>
             <description>&lt;h1 id=&#34;ctf整体规划&#34;&gt;CTF整体规划&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;CTF&lt;/strong&gt;（Capture The Flag，夺旗赛）起源于 1996 年 &lt;strong&gt;DEFCON&lt;/strong&gt; 全球黑客大会，是网络安全爱好者之间的竞技游戏。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;CTF&lt;/strong&gt; 竞赛涉及众多领域，内容繁杂。与此同时，安全技术的发展速度越来越快，&lt;strong&gt;CTF&lt;/strong&gt; 题目的难度越来越高，初学者面对的门槛越来越高。&lt;/p&gt;
@@ -7484,10 +7484,10 @@ $$
         
         <item>
             <title>大学,未来</title>
-            <link>jashiker.github.io/posts/university_future/</link>
+            <link>https://jashiker.github.io/posts/university_future/</link>
             <pubDate>Sat, 29 Jan 2022 09:26:51 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/university_future/</guid>
+            <guid>https://jashiker.github.io/posts/university_future/</guid>
             <description>&lt;h1 id=&#34;大学未来&#34;&gt;大学，未来&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;大学是一个知识分子的聚集地，是一个自由的学术殿堂。但是大学也有着很多限制和禁锢，大学生往往也在承受着社会的诸多压力。以上是我对于大学最基本的一种认识和一种观念上的思考。&lt;/p&gt;
@@ -7613,10 +7613,10 @@ $$
         
         <item>
             <title>数学之美,程序之巧</title>
-            <link>jashiker.github.io/posts/math_and_program/</link>
+            <link>https://jashiker.github.io/posts/math_and_program/</link>
             <pubDate>Sat, 29 Jan 2022 09:25:11 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/math_and_program/</guid>
+            <guid>https://jashiker.github.io/posts/math_and_program/</guid>
             <description>&lt;h1 id=&#34;数学之美程序之巧&#34;&gt;数学之美，程序之巧&lt;/h1&gt;
 &lt;p&gt;计算机程序，简单来说，就是指令和数据的组合。程序可以通过算法组成相应的逻辑系统，逻辑系统可以根据编写者需求来完成各种各样的事情。&lt;/p&gt;
 &lt;p&gt;计算机内部数据处理方式是什么样？&lt;/p&gt;
@@ -7686,10 +7686,10 @@ $$</p>
         
         <item>
             <title>浅谈椭圆曲线加密算法(ECC)</title>
-            <link>jashiker.github.io/posts/ecc_startup/</link>
+            <link>https://jashiker.github.io/posts/ecc_startup/</link>
             <pubDate>Sat, 29 Jan 2022 09:22:23 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/ecc_startup/</guid>
+            <guid>https://jashiker.github.io/posts/ecc_startup/</guid>
             <description>&lt;h1 id=&#34;浅谈椭圆曲线加密算法ecc&#34;&gt;浅谈椭圆曲线加密算法（ECC）&lt;/h1&gt;
 &lt;p&gt;椭圆曲线加密算法是近十年提出的一个非对称加密算法，这个加密算法非常复杂，加密的数据具有良好的保密性。加密效果比RSA加密算法都高。这次不可能全部将ECC加密算法讲完，只能简单聊聊ECC加密算法的基本概念和ECC加密算法的数学基础了。&lt;/p&gt;
 &lt;p&gt;什么是ECC加密算法？&lt;/p&gt;
@@ -7770,10 +7770,10 @@ $$</p>
         
         <item>
             <title>进程与线程</title>
-            <link>jashiker.github.io/posts/process_and_threads/</link>
+            <link>https://jashiker.github.io/posts/process_and_threads/</link>
             <pubDate>Sat, 29 Jan 2022 09:20:55 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/process_and_threads/</guid>
+            <guid>https://jashiker.github.io/posts/process_and_threads/</guid>
             <description>&lt;h1 id=&#34;进程与线程的理解&#34;&gt;进程与线程的理解&lt;/h1&gt;
 &lt;p&gt;个人对于进程和线程概念的理解，可能会有些偏差&lt;/p&gt;
 &lt;blockquote&gt;
@@ -7933,10 +7933,10 @@ $$</p>
         
         <item>
             <title>杯茗藏香，君闻几何</title>
-            <link>jashiker.github.io/posts/crypto_startup/</link>
+            <link>https://jashiker.github.io/posts/crypto_startup/</link>
             <pubDate>Sat, 29 Jan 2022 08:07:30 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/crypto_startup/</guid>
+            <guid>https://jashiker.github.io/posts/crypto_startup/</guid>
             <description>&lt;h1 id=&#34;杯茗藏香君闻几何&#34;&gt;杯茗藏香，君闻几何&lt;/h1&gt;
 &lt;h2 id=&#34;浅谈密码学&#34;&gt;“浅谈密码学”&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -8002,10 +8002,10 @@ $$</p>
         
         <item>
             <title>一花一世界，一码一千秋</title>
-            <link>jashiker.github.io/posts/reverse_startup/</link>
+            <link>https://jashiker.github.io/posts/reverse_startup/</link>
             <pubDate>Sat, 29 Jan 2022 08:02:58 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/reverse_startup/</guid>
+            <guid>https://jashiker.github.io/posts/reverse_startup/</guid>
             <description>&lt;h1 id=&#34;一花一世界一码一千秋&#34;&gt;一花一世界，一码一千秋&lt;/h1&gt;
 &lt;h2 id=&#34;逆向工程初步&#34;&gt;”逆向工程初步“&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -8147,20 +8147,20 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (3) Writeup</title>
-            <link>jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:34:08 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse-expert-3_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-3-writeup&#34;&gt;XCTF-REVERSE-高手区-3 writeup&lt;/h1&gt;
 &lt;p&gt;继续玩一玩逆向的题目，感觉还是蛮有意思的。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-srm-50&#34;&gt;0x0 srm-50&lt;/h2&gt;
 &lt;p&gt;使用DIE进行探测：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103093725322&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093725322.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103093725322&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093725322.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;32位PE程序，无壳。可以尝试运行一下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103093811981&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093811981.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103093811981&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103093811981.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;应该是一个邮箱破解的程序，终于有点稍微有意思的题目了&lt;/p&gt;
 &lt;p&gt;首先进行静态分析看代码：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211103094139950&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103094139950.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211103094139950&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-3_writeup/image-20211103094139950.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;根据WIN32的编程基础，关键函数应该是在&lt;code&gt;DialogFunc&lt;/code&gt;中，登录的细节应该是在&lt;code&gt;DialogFunc&lt;/code&gt;中。&lt;/p&gt;
 &lt;p&gt;跟进&lt;code&gt;DialogFunc&lt;/code&gt;函数，来寻找更多的细节&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INT_PTR &lt;span style=&#34;color:#66d9ef&#34;&gt;__stdcall&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;DialogFunc&lt;/span&gt;(HWND hDlg, UINT a2, WPARAM a3, LPARAM a4)
@@ -8898,15 +8898,15 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (2) Writeup</title>
-            <link>jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:33:59 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse-expert-2_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-2-writeup&#34;&gt;XCTF-REVERSE-高手区-2 writeup&lt;/h1&gt;
 &lt;p&gt;感觉攻防世界的逆向题目还是蛮有意思的，刷着玩玩，就当作闯关游戏一样！&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easyre&#34;&gt;0x0 EasyRE&lt;/h2&gt;
 &lt;p&gt;使用DIE查看一下程序信息：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211101090530961&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-2_writeup/image-20211101090530961.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211101090530961&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-2_writeup/image-20211101090530961.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;无壳32位程序，直接静态分析走起！&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; argc, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;argv, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;envp)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -9458,17 +9458,17 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE Expert (1) Writeup</title>
-            <link>jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:33:49 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse-expert-1_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-高手区-1-writeup&#34;&gt;XCTF-REVERSE-高手区-1 writeup&lt;/h1&gt;
 &lt;p&gt;有段时间没有刷题了，刷刷题找找手感&lt;/p&gt;
 &lt;h2 id=&#34;0x0-answer_to_everything&#34;&gt;0x0 answer_to_everything&lt;/h2&gt;
 &lt;p&gt;使用DIE查看程序信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031104627471&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104627471.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031104627471&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104627471.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;程序没有壳，而且是64位。然后看看文件长什么样，静态分析的时刻来临：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031104740182&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104740182.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031104740182&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031104740182.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;发现关键函数，跟进这个函数&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;__int64&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__fastcall&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;not_the_flag&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a1)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
@@ -9485,7 +9485,7 @@ $$</p>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{80ee2a3fe31da904c596d993f7f1de4827c1450a}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-elrond32&#34;&gt;0x1 elrond32&lt;/h2&gt;
 &lt;p&gt;使用DIE查询一下文件信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20211031105318823&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031105318823.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20211031105318823&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-expert-1_writeup/image-20211031105318823.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;32位的exec文件，使用IDA pro打开&lt;/p&gt;
 &lt;p&gt;定位到main函数的位置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a1, &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;a2)
@@ -9888,13 +9888,13 @@ $$</p>
         
         <item>
             <title>BUUCTF REVERSE [17~24]_Writeup</title>
-            <link>jashiker.github.io/posts/buuctf-reverse-3_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-reverse-3_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:24:35 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-reverse-3_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-reverse-3_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-3-writeup&#34;&gt;BUUCTF-REVERSE-3 writeup&lt;/h1&gt;
 &lt;p&gt;8道练手的逆向题目，可以尝试做一做&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210914212658475&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210914212658475&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-3_writeup/image-20210914212658475.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-gwctf-2019-pyre&#34;&gt;0x0 [GWCTF 2019] pyre&lt;/h2&gt;
 &lt;p&gt;应该是python逆向的题目&lt;/p&gt;
 &lt;p&gt;果然是一个pyc文件，使用pyc的逆向工具进行处理得到python的代码&lt;/p&gt;
@@ -10696,19 +10696,19 @@ $$</p>
         
         <item>
             <title>BUUCTF REVERSE [9~16]_Writeup</title>
-            <link>jashiker.github.io/posts/buuctf-reverse-2_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-reverse-2_writeup/</link>
             <pubDate>Fri, 28 Jan 2022 19:18:38 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-reverse-2_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-reverse-2_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-2-writeup&#34;&gt;BUUCTF-REVERSE-2 writeup&lt;/h1&gt;
 &lt;p&gt;8道逆向工程的小题目，re真是越来越有意思了&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210808095050806&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808095050806.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210808095050806&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808095050806.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-不一样的flag&#34;&gt;0x0 不一样的flag&lt;/h2&gt;
 &lt;p&gt;简单看看题目描述&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;是不是做习惯了常规的逆向题目？试试这道题，看你在能不能在程序中找到真正的flag！注意：flag并非是flag{XXX}形式，就是一个’字符串‘，考验眼力的时候到了！ 注意：得到的 flag 请包上 flag{} 提交
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;应该会是一道非常有趣的题目，非常有意思的题目。&lt;/p&gt;
 &lt;p&gt;首先还是先查询一下程序信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210808211004969&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808211004969.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210808211004969&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-2_writeup/image-20210808211004969.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;没有壳，是一个32位的PE程序，丢进Cutter里面看个究竟吧&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;stdint.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt; 
@@ -11903,21 +11903,21 @@ $$</p>
         
         <item>
             <title>XCTF REVERSE novice_writeup</title>
-            <link>jashiker.github.io/posts/xctf-reverse-novice_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-reverse-novice_writeup/</link>
             <pubDate>Thu, 14 Oct 2021 13:27:13 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-reverse-novice_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-reverse-novice_writeup/</guid>
             <description>&lt;h1 id=&#34;xctf-reverse-新手区-writeup&#34;&gt;XCTF-REVERSE-新手区 writeup&lt;/h1&gt;
 &lt;p&gt;来XCTF平台，做做Re练练手&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902134256690&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134256690.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902134256690&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134256690.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;XCTF平台有十道题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902134352010&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134352010.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902134352010&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902134352010.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;十道题目应该是涵盖了逆向方向的主要内容，带着好奇心去探索逆向的世界吧&lt;/p&gt;
 &lt;h2 id=&#34;0x0-insanity&#34;&gt;0x0 insanity&lt;/h2&gt;
 &lt;p&gt;往往第一道题目都不是很难，下载附件，看看是个什么东西。&lt;/p&gt;
 &lt;p&gt;文件没有扩展名，可能是个ELF文件，走个流程&lt;/p&gt;
 &lt;p&gt;首先查一下壳&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902135713948&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902135713948.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902135713948&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902135713948.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;果然是ELF格式的文件，不过不是x64格式的ELF文件&lt;/p&gt;
 &lt;p&gt;使用IDA pro打开文件，查看主函数的反编译代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;__cdecl&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; argc, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;argv, &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;char&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;**&lt;/span&gt;envp)
@@ -11934,9 +11934,9 @@ $$</p>
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;跟进strs的数据&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902145813017&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145813017.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902145813017&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145813017.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;继续跟进strs的数据&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210902145852653&#34; src=&#34;jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145852653.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210902145852653&#34; src=&#34;https://jashiker.github.io/images/XCTF-REVERSE-novice_writeup/image-20210902145852653.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;get到了flag&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;9447{This_is_a_flag}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-python-trade&#34;&gt;0x1 python-trade&lt;/h2&gt;
@@ -12863,32 +12863,32 @@ jz      short loc_804879C
         
         <item>
             <title>BUUCTF REVERSE [1~8]_writeup</title>
-            <link>jashiker.github.io/posts/buuctf-reverse-1_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-reverse-1_writeup/</link>
             <pubDate>Thu, 14 Oct 2021 13:03:43 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-reverse-1_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-reverse-1_writeup/</guid>
             <description>&lt;h1 id=&#34;buuctf-reverse-1-writeup&#34;&gt;BUUCTF-REVERSE-1 writeup&lt;/h1&gt;
 &lt;p&gt;逆向工程让密码学更加灵动，让密码学不再抽象。初步试水逆向工程题目，嘤嘤嘤！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806103313499&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806103313499.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806103313499&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806103313499.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-easyre&#34;&gt;0x0 easyre&lt;/h2&gt;
 &lt;p&gt;非常简单的逆向题目，这道题目解决方法很多，基本思路就使用静态调试工具进行反汇编，然后检索字符串得到flag。这里使用一个开源的工具Cutter来逆向玩玩。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806113422474&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806113422474.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806113422474&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806113422474.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;直接点击下面的Strings&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806114025621&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114025621.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806114025621&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114025621.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用过滤器，快速检索flag就能得到flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806114828778&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114828778.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806114828778&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806114828778.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;得到flag&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flag{this_Is_a_EaSyRe}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x1-reverse1&#34;&gt;0x1 reverse1&lt;/h2&gt;
 &lt;p&gt;先丢进IDA pro里面看看，会有什么神奇的反应和效果！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806192321775&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806192321775.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806192321775&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806192321775.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后我们需要定位到主函数，定位到主函数的方法有很多，目前，我大致有两种，首先是检索字符串，其次就 是检索函数来快速定位主函数。&lt;/p&gt;
 &lt;p&gt;通过检索字符串来定位主函数，直接检索flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806195615915&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195615915.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806195615915&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195615915.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;然后通过检索结果定位到主函数&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806195708832&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195708832.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806195708832&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806195708832.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;使用F5看到反编译的代码&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210806200411241&#34; src=&#34;jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806200411241.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210806200411241&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-REVERSE-1_writeup/image-20210806200411241.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;代码非常清晰，找到关键的代码&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ( j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;; ; &lt;span style=&#34;color:#f92672&#34;&gt;++&lt;/span&gt;j )
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {
@@ -13513,14 +13513,14 @@ jz      short loc_804879C
         
         <item>
             <title>BUUCTF CRYPTO (6) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-6_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-6_writeup/</link>
             <pubDate>Thu, 08 Jul 2021 16:26:32 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-6_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-6_writeup/</guid>
             <description>&lt;p&gt;百题计划，冲呀！冲呀！冲呀！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210701110042258&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110042258.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210701110042258&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110042258.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次16道题目，难度开始逐渐上升，越来越有挑战性喽！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210701110832867&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110832867.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210701110832867&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-6_writeup/image-20210701110832867.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-rsa--what&#34;&gt;0x0 RSA &amp;amp; what&lt;/h2&gt;
 &lt;p&gt;开场就是一道RSA题目，真是不错！&lt;/p&gt;
 &lt;p&gt;附件有四个文件，一个&lt;code&gt;README.txt&lt;/code&gt;文件，一个&lt;code&gt;rsa.py&lt;/code&gt;算法文件，一个&lt;code&gt;HUB1&lt;/code&gt;输出文件和一个&lt;code&gt;HUB2&lt;/code&gt;输出文件。看看这些文件都是些什么内容吧！&lt;/p&gt;
@@ -14661,14 +14661,14 @@ $$
         
         <item>
             <title>BUUCTF CRYPTO (5) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-5_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-5_writeup/</link>
             <pubDate>Thu, 01 Jul 2021 10:14:15 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-5_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-5_writeup/</guid>
             <description>&lt;p&gt;密码学百题计划启动！进行勇往直前！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210628200701835&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200701835.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210628200701835&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200701835.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;本次的16道题目，也是非常有意思的呢！各种各样的呢……&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20210628200448759&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200448759.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20210628200448759&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-5_writeup/image-20210628200448759.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-浪里淘沙&#34;&gt;0x0 浪里淘沙&lt;/h2&gt;
 &lt;p&gt;看样子，应该是个脑洞题没错了&lt;/p&gt;
 &lt;p&gt;来康康这题的题目：&lt;/p&gt;
@@ -15881,28 +15881,28 @@ $$</p>
         
         <item>
             <title>BUUCTF CRYPTO (4) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-4_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-4_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 17:20:25 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-4_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-4_writeup/</guid>
             <description>&lt;p&gt;沉浸在密码学的世界里面，缓缓浸入题目的海洋，16道crypto题目！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-17-1024x673.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-17-1024x673.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这次的题目，难度也开始逐渐上来咯！当然不仅仅只有难度，还有脑洞！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-18.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-18.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-古典密码知多少&#34;&gt;0x0 古典密码知多少&lt;/h2&gt;
 &lt;p&gt;应该是考察古典密码的题目，点开题目下载附件，瞧一瞧&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-19.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/image-19.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;打开图片就察觉到这题可能会非常草……，果然古典的恶心，应该是三种古典密码的组合，可以清晰地看出有猪圈密码和变种圣堂武士密码，至于剩下那一种密码实在是找不到……，只能无奈地去瞧一瞧&lt;a href=&#34;https://blog.ysneko.com/archives/115/&#34;&gt;大佬的wp&lt;/a&gt;，发现是标准银河字母。根据得到的信息进行比对，蓝色的是猪圈密码，橙色的是圣堂武士密码，黑色的是标准银河字母。根据信息，进行解密得：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FGCPFLIRTUASYON
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;看样子应该还有一层加密，最常见的古典加密方法就是凯撒加密和栅栏密码，经过尝试发现是栅栏密码，使用栅栏密码进行解密得到flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FLAGISCRYPTOFUN
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;猪圈密码对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20201019010012173.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20201019010012173.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;圣堂武士密码对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;此图像的alt属性为空；文件名为20200325180259577.jpg&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20200325180259577.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;此图像的alt属性为空；文件名为20200325180259577.jpg&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/20200325180259577.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;标准银河字母对照表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;查看源图像&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/t01cf49fe8b6c515f04.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;查看源图像&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-4_writeup/t01cf49fe8b6c515f04.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x1-hdctf2019bbbbbbrsa&#34;&gt;0x1 [HDCTF2019]bbbbbbrsa&lt;/h2&gt;
 &lt;p&gt;看来又是熟悉的RSA题目，嘤嘤嘤~&lt;/p&gt;
 &lt;p&gt;下载附件，打开发现有两个文件，一个enc文件，一个encode.py文件&lt;/p&gt;
@@ -16617,10 +16617,10 @@ $$</p>
         
         <item>
             <title>BJDCTF 2nd CRYPTO_writeup</title>
-            <link>jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</link>
+            <link>https://jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 17:01:41 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/bjdctf-2nd-crypto_writeup/</guid>
             <description>&lt;p&gt;BJDCTF 2nd的密码学题目有8道题目可以尝试做一做，都挺有意思的。&lt;/p&gt;
 &lt;h2 id=&#34;0x0-签到-y1ng&#34;&gt;0x0 签到-y1ng&lt;/h2&gt;
 &lt;p&gt;来康康题目：&lt;/p&gt;
@@ -16639,8 +16639,8 @@ $$</p>
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;BJD{淛匶襫黼瀬鎶軄鶛驕鳓哵}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;0x2-cat_flag&#34;&gt;0x2 cat_flag&lt;/h2&gt;
 &lt;p&gt;下载附件，康康有什么有趣的内容：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/image-13.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BJDCTF-2nd-CRYPTO_writeup/cat.gif&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;哇哦！一个gif图片，仔细康康图片，发现猫猫挺像二进制编码的，尝试写个小脚本解决一下：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; libnum
@@ -16831,12 +16831,12 @@ flag=??????
         
         <item>
             <title>GKCTF2020 CRYPTO_writeup</title>
-            <link>jashiker.github.io/posts/gkctf2020-crypto_writeup/</link>
+            <link>https://jashiker.github.io/posts/gkctf2020-crypto_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 16:53:12 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/gkctf2020-crypto_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/gkctf2020-crypto_writeup/</guid>
             <description>&lt;p&gt;GKCTF2020的密码学题目相对而言比较简单，古典密码学题目偏多。而且密码学题目也只有四道题目&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/GKCTF2020-Crypto_writeup/WechatIMG1350.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/GKCTF2020-Crypto_writeup/WechatIMG1350.jpeg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;0x0-小学生的密码学&#34;&gt;0x0 小学生的密码学&lt;/h2&gt;
 &lt;p&gt;打开题目描述，查看题目描述内容：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;e(x)=11x+6(mod26)
@@ -17160,14 +17160,14 @@ flag=??????
         
         <item>
             <title>BUUCTF CRYPTO (3) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-3_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-3_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 16:29:54 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-3_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-3_writeup/</guid>
             <description>&lt;p&gt;同样的味道，同样的感觉，再看密码的世界！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-136.png&#34;&gt;BUUCTF&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-136.png&#34;&gt;BUUCTF&lt;/p&gt;
 &lt;p&gt;来审视一下，本次的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-15.png&#34;&gt;题目列表&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-15.png&#34;&gt;题目列表&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Morse&lt;/li&gt;
 &lt;li&gt;Cipher&lt;/li&gt;
@@ -17193,7 +17193,7 @@ flag=??????
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接解密摩斯密码得到：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;61666374667B317327745F73305F333435797D
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;得到的16进制密文，对密文进行解密：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-6.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;成功得到flag：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;afctf{1s&amp;#39;t_s0_345y}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;flag：afctf{1s&amp;rsquo;t_s0_345y}&lt;/p&gt;
@@ -17201,7 +17201,7 @@ flag=??????
 &lt;p&gt;打开题目描述：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;还能提示什么呢？公平的玩吧（密钥自己找） Dncnoqqfliqrpgeklwmppu 注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;看的非常懵，考察古典密码的题目，唯一的提示就是“公平的玩吧（密钥自己找）”，实在是找不到头绪，看了大佬的WP发现是playfair加密，在网上找到了一个&lt;a href=&#34;http://rumkin.com/tools/cipher/playfair.php&#34;&gt;在线工具&lt;/a&gt;可以求解playfair加密，这里就使用在线工具进行解密&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-7-1024x516.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-3_writeup/image-7-1024x516.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;得到解密结果：Itisnotaproblemhavefun&lt;/p&gt;
 &lt;p&gt;故得flag: flag{itisnotaproblemhavefun}&lt;/p&gt;
 &lt;h2 id=&#34;0x2-dangerous-rsa&#34;&gt;0x2 Dangerous RSA&lt;/h2&gt;
@@ -17892,14 +17892,14 @@ $$</p>
         
         <item>
             <title>BUUCTF CRYPTO (2) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-2_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-2_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 10:34:27 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-2_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-2_writeup/</guid>
             <description>&lt;p&gt;还是BUUCTF的题目，熟悉的感觉，再来一次！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-136.png&#34;&gt;BUUCTF首页&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-136.png&#34;&gt;BUUCTF首页&lt;/p&gt;
 &lt;p&gt;本次的题目大致如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-137.png&#34;&gt;CTF题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-137.png&#34;&gt;CTF题目&lt;/p&gt;
 &lt;p&gt;题目是16道密码学题目：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;传统知识+古典密码&lt;/li&gt;
@@ -17923,11 +17923,11 @@ $$</p>
 &lt;p&gt;题目都还比较简单，正常来做就好。&lt;/p&gt;
 &lt;h3 id=&#34;0x0-传统知识古典密码&#34;&gt;0x0 传统知识+古典密码&lt;/h3&gt;
 &lt;p&gt;下载附件，得到题目&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-138.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-138.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目信息&lt;/p&gt;
 &lt;p&gt;应该是考察古典密码的题目，是考察六十甲子顺序纳音表的题目&lt;/p&gt;
 &lt;p&gt;这里列出六十顺序纳音表：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-139.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-2_writeup/image-139.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;六十甲子顺序表&lt;/p&gt;
 &lt;p&gt;根据六十甲子顺序表编写python脚本：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C_sky &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;甲乙丙丁戊己庚辛壬癸&amp;#34;&lt;/span&gt;
@@ -18520,10 +18520,10 @@ $$ n = p \cdot q $$</p>
         
         <item>
             <title>尽沾手襟 淋满眼眶</title>
-            <link>jashiker.github.io/posts/crypto_rsa_attack/</link>
+            <link>https://jashiker.github.io/posts/crypto_rsa_attack/</link>
             <pubDate>Sat, 26 Jun 2021 08:24:32 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/crypto_rsa_attack/</guid>
+            <guid>https://jashiker.github.io/posts/crypto_rsa_attack/</guid>
             <description>&lt;h2 id=&#34;再论rsa加密算法&#34;&gt;“再论RSA加密算法”&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;优美的数，自然的码&lt;/p&gt;
@@ -18698,10 +18698,10 @@ $$</p>
         
         <item>
             <title>清茶一盏 公杯斟茗</title>
-            <link>jashiker.github.io/posts/crypto_rsa_startup/</link>
+            <link>https://jashiker.github.io/posts/crypto_rsa_startup/</link>
             <pubDate>Sat, 26 Jun 2021 08:20:02 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/crypto_rsa_startup/</guid>
+            <guid>https://jashiker.github.io/posts/crypto_rsa_startup/</guid>
             <description>&lt;h1 id=&#34;清茶一盏-公杯斟茗&#34;&gt;清茶一盏 公杯斟茗&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;上下运杯，左右轻斟&lt;/p&gt;
@@ -18891,15 +18891,15 @@ f = (a*c) % 12
         
         <item>
             <title>BUUCTF CRYPTO (1) writeup</title>
-            <link>jashiker.github.io/posts/buuctf-crypto-1_writeup/</link>
+            <link>https://jashiker.github.io/posts/buuctf-crypto-1_writeup/</link>
             <pubDate>Sat, 26 Jun 2021 08:12:56 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/buuctf-crypto-1_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/buuctf-crypto-1_writeup/</guid>
             <description>&lt;p&gt;日常刷题喝茶的平时生活，整理一下题目的思路，捋一捋密码学。&lt;/p&gt;
 &lt;p&gt;BUUCTF是国内另一个比较不错的CTF的刷题平台，是由北京联合大学创建并维护的CTF大型同性交流沟通的平台，页面制作还是蛮美观滴！&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-58-1024x717.png&#34;&gt;BUUCTF页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-58-1024x717.png&#34;&gt;BUUCTF页面&lt;/p&gt;
 &lt;p&gt;BUUCTF的整体难度是由简单变难的一个过程，前面的题目通常都是比较简单的题目，来看看这次日常的题目：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-59.png&#34;&gt;题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-59.png&#34;&gt;题目&lt;/p&gt;
 &lt;p&gt;这次是16道题目：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MD5&lt;/li&gt;
@@ -18926,15 +18926,15 @@ f = (a*c) % 12
 &lt;p&gt;将数据（如一段文字）运算变为另一固定长度值，是散列算法的基础原理。&lt;/p&gt;
 &lt;p&gt;1996年后被证实存在弱点，可以被加以破解，对于需要高度安全性的资料，专家一般建议改用其他算法，如SHA-2。2004年，证实MD5算法无法防止碰撞攻击（英语：Collision_attack），因此不适用于安全性认证，如SSL公开密钥认证或是数字签名等用途。[1]&lt;/p&gt;
 &lt;p&gt;看看题目描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-60.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-60.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目描述&lt;/p&gt;
 &lt;p&gt;下载附件，查看附件内容：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-61.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-61.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;附件中给出一段加密数据：e00cf25ad42683b3df678c61f42c6bda&lt;/p&gt;
 &lt;p&gt;根据题目，应该是MD5加密，去&lt;a href=&#34;https://www.cmd5.com/&#34;&gt;解密网站&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;进行解密。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-62.png&#34;&gt;cmd5&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-62.png&#34;&gt;cmd5&lt;/p&gt;
 &lt;p&gt;题目描述中，要求以flag{}形式进行提交，故flag就是flag{admin1}&lt;/p&gt;
 &lt;p&gt;这道题目考察md5加密的相关知识，签到题。&lt;/p&gt;
 &lt;h2 id=&#34;url编码&#34;&gt;Url编码&lt;/h2&gt;
@@ -18942,10 +18942,10 @@ f = (a*c) % 12
 &lt;p&gt;什么是Url编码？&lt;/p&gt;
 &lt;p&gt;百分号编码（英语：Percent-encoding），又称：URL编码（URL encoding）是特定上下文的统一资源定位符 （URL）的编码机制，实际上也适用于统一资源标志符（URI）的编码。也用于为 application/x-www-form-urlencoded MIME准备数据，因为它用于通过HTTP的请求操作（request）提交HTML表单数据。[2]&lt;/p&gt;
 &lt;p&gt;看看题目描述：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-63.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-63.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;题目描述&lt;/p&gt;
 &lt;p&gt;下载附件，查看附件内容：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-64.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/BUUCTF-CRYPTO-1_writeup/image-64.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;附件内容&lt;/p&gt;
 &lt;p&gt;一段编码的字段：%66%6c%61%67%7b%61%6e%64%20%31%3d%31%7d&lt;/p&gt;
 &lt;p&gt;使用url解码工具解码，也可以使用python进行解码。我个人习惯使用python脚本进行url编码解码：&lt;/p&gt;
@@ -19567,16 +19567,16 @@ iloveyou
         
         <item>
             <title>XCTF CRYPTO novice_writeup</title>
-            <link>jashiker.github.io/posts/xctf-crypto-novice_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-crypto-novice_writeup/</link>
             <pubDate>Fri, 25 Jun 2021 22:01:32 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-crypto-novice_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-crypto-novice_writeup/</guid>
             <description>&lt;p&gt;这次又是XCTF平台，没错，我又来无聊谈谈解题了&lt;/p&gt;
 &lt;p&gt;首先先来一张XCTF的首页图片，来开启本次的writeup文章：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-86&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-86.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-86&#34; src=&#34;https://jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-86.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;xctf首页&lt;/p&gt;
 &lt;p&gt;这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-87&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-87.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-87&#34; src=&#34;https://jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-87.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;crypto新手区题目&lt;/p&gt;
 &lt;p&gt;题目数量不变，依然是12道题目：&lt;/p&gt;
 &lt;ul&gt;
@@ -19606,10 +19606,10 @@ iloveyou
 &lt;h2 id=&#34;base64&#34;&gt;base64&lt;/h2&gt;
 &lt;p&gt;看到这道题目，猜想这道题目可能是考察base64编码方式的密码学题目&lt;/p&gt;
 &lt;p&gt;进入道题目页面，看看是否可以得到一点tip：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image.png&#34;&gt;base64题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image.png&#34;&gt;base64题目&lt;/p&gt;
 &lt;p&gt;没有什么特别的tip，只是给题目一个情景化的描述，没有太多有用信息的描述。&lt;/p&gt;
 &lt;p&gt;直接下载附件内容，并打开附件文件进行查看：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png&#34;&gt;附件文件&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;img&#34; src=&#34;https://jashiker.github.io/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png&#34;&gt;附件文件&lt;/p&gt;
 &lt;p&gt;文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&lt;/p&gt;
 &lt;p&gt;根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# python3 脚本&lt;/span&gt;
@@ -20460,16 +20460,16 @@ $$</p>
         
         <item>
             <title>XCTF WEB novice Writeup</title>
-            <link>jashiker.github.io/posts/xctf-web-novice_writeup/</link>
+            <link>https://jashiker.github.io/posts/xctf-web-novice_writeup/</link>
             <pubDate>Fri, 25 Jun 2021 21:08:13 +0800</pubDate>
             
-            <guid>jashiker.github.io/posts/xctf-web-novice_writeup/</guid>
+            <guid>https://jashiker.github.io/posts/xctf-web-novice_writeup/</guid>
             <description>&lt;p&gt;来点时效性的文章，不能总闲聊吧？&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://adworld.xctf.org.cn/&#34;&gt;XCTF&lt;/a&gt;是一个国内比较常用的CTF的刷题网站，网站页面如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-1&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-1.png&#34;&gt;XCTF攻防世界页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-1&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-1.png&#34;&gt;XCTF攻防世界页面&lt;/p&gt;
 &lt;p&gt;初次写writeup，解题思路可能不是很明确。&lt;/p&gt;
 &lt;p&gt;本次要解决的题目如下：&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-2&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-2.png&#34;&gt;XCTF WEB新手区题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-2&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-2.png&#34;&gt;XCTF WEB新手区题目&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;view source&lt;/li&gt;
 &lt;li&gt;robots&lt;/li&gt;
@@ -20486,10 +20486,10 @@ $$</p>
 &lt;/ul&gt;
 &lt;h2 id=&#34;view_source&#34;&gt;view_source&lt;/h2&gt;
 &lt;p&gt;进入到题目页面中，获取与解题相关的信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-3&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-3.png&#34;&gt;view_source题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-3&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-3.png&#34;&gt;view_source题目&lt;/p&gt;
 &lt;p&gt;根据题目要求可知，鼠标右键不可用了。&lt;/p&gt;
 &lt;p&gt;我们进入环境来一探究竟&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-4&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-4.png&#34;&gt;靶机环境&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-4&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-4.png&#34;&gt;靶机环境&lt;/p&gt;
 &lt;p&gt;靶机展示的页面非常简单，说flag不在这儿，我不大相信，尝试使用右键查看源代码&lt;/p&gt;
 &lt;p&gt;发现右键不能使用。看来靶机的代码把浏览器的右键给禁用了，解决方法有两个：&lt;/p&gt;
 &lt;ol&gt;
@@ -20497,35 +20497,35 @@ $$</p>
 &lt;li&gt;开启浏览器禁用js模式&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这里使用F12进行查看源代码（开启禁用js模式比较麻烦）&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-5&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-5&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-5.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;页面源代码&lt;/p&gt;
 &lt;p&gt;F12成功打开页面源代码调试，可以看到flag就在源代码的注释中，简单题&lt;/p&gt;
 &lt;p&gt;本题主要考察对浏览器调试器的使用技巧，没有什么难度。&lt;/p&gt;
 &lt;h2 id=&#34;robots&#34;&gt;robots&lt;/h2&gt;
 &lt;p&gt;进入到题目页面环境中，查看题目信息和相关描述。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-6&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-6.png&#34;&gt;robots题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-6&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-6.png&#34;&gt;robots题目&lt;/p&gt;
 &lt;p&gt;题目描述中提到了robots协议，本菜鸡不知道什么是robots协议，但是可以肯定robots协议就是本题的突破点，我去搜索查找一下有关robots协议的相关信息。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-7&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-7.png&#34;&gt;robots协议相关信息&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-7&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-7.png&#34;&gt;robots协议相关信息&lt;/p&gt;
 &lt;p&gt;根据百度百科的说明，其实robots协议就是网站目录下的robots.txt文件&lt;/p&gt;
 &lt;p&gt;预备的知识信息获取到了，下面进入到靶机环境，去拿flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-8&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-8.png&#34;&gt;靶机页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-8&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-8.png&#34;&gt;靶机页面&lt;/p&gt;
 &lt;p&gt;靶机页面是个空白页面，在靶机地址后面输入/robots.txt尝试找到flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-9&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-9&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-9.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;进入到robots.txt页面寻找有关flag的相关信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-10&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-10.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-10&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-10.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;robots.txt页面信息&lt;/p&gt;
 &lt;p&gt;根据robots.txt展示的页面信息，可知flag就在flag_1s_h3re.php文件中&lt;/p&gt;
 &lt;p&gt;那就进入到这个文件中&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-11&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-11.png&#34;&gt;flag_1s_h3re.php文件页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-11&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-11.png&#34;&gt;flag_1s_h3re.php文件页面&lt;/p&gt;
 &lt;p&gt;成功拿到flag数据信息，题目也是简单题&lt;/p&gt;
 &lt;p&gt;这道题目主要考察robots协议的相关知识以及网站目录的部分知识，也是简单题，思路非常明确&lt;/p&gt;
 &lt;h2 id=&#34;backup&#34;&gt;backup&lt;/h2&gt;
 &lt;p&gt;进入到题目页面中，寻找有用的题目突破信息&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-12-1024x292&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-12-1024x292.png&#34;&gt;backup题目&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-12-1024x292&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-12-1024x292.png&#34;&gt;backup题目&lt;/p&gt;
 &lt;p&gt;根据题目描述，这道题目是在考察备份文件，备份文件是解题的关键&lt;/p&gt;
 &lt;p&gt;根据备份文件的相关信息可知，备份文件通常都是后缀名.bak的文件&lt;/p&gt;
 &lt;p&gt;已有知识准备好了，现在进入到靶机环境中拿flag&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-13&#34; src=&#34;jashiker.github.io/images/XCTF-WEB-novice_writeup/image-13.png&#34;&gt;靶机页面&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-13&#34; src=&#34;https://jashiker.github.io/images/XCTF-WEB-novice_writeup/image-13.png&#34;&gt;靶机页面&lt;/p&gt;
 &lt;p&gt;靶机直接就把提示摆到页面上面了，直接访问index.php.bak文件就可以了&lt;/p&gt;
 &lt;p&gt;一般来说index.php的备份文件就是index.php.bak文件&lt;/p&gt;
 &lt;p&gt;访问url/index.php.bak，备份文件成功被下载下来&lt;/p&gt;</description>
