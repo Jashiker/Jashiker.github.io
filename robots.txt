@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jashiker.github.io/sitemap.xml

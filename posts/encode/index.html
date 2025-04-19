@@ -1,219 +1,575 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="">
-<meta name="description" content="编码 编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。
-编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。
-历史 编码的演变源于人对计算机需求的改变。
-编码的萌芽——控制码 ASCII码的出现 ASCII码的发展——扩展字符集 编码的中国化——GBK家族 编码的国家化——百家争鸣的编码时代 编码的国际化——Unicode编码 编码的互联网化——UTF家族 从本质上讲，编码/解码是在做将一种形式的数据翻译为另一种形式的数据的工作。
-编码类型 ASCII码 ASCII码是最常见的编码类型。ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言。它是最通用的信息交换标准，并等同于国际标准ISO/IEC 646。ASCII第一次以规范标准的类型发表是在1967年，最后一次更新则是在1986年，到目前为止共定义了128个字符。
-ASCII码现在也经常出现在计算编码运输过程中，进行编码，而且在很多编程语言中也经常有用到。
-Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解释 0000 0000 00 0 0x00 NUL(null) 空字符 0000 0001 01 1 0x01 SOH(start of headline) 标题开始 0000 0010 02 2 0x02 STX (start of text) 正文开始 0000 0011 03 3 0x03 ETX (end of text) 正文结束 0000 0100 04 4 0x04 EOT (end of transmission) 传输结束 0000 0101 05 5 0x05 ENQ (enquiry) 请求 0000 0110 06 6 0x06 ACK (acknowledge) 收到通知 0000 0111 07 7 0x07 BEL (bell) 响铃 0000 1000 010 8 0x08 BS (backspace) 退格 0000 1001 011 9 0x09 HT (horizontal tab) 水平制表符 0000 1010 012 10 0x0A LF (NL line feed, new line) 换行键 0000 1011 013 11 0x0B VT (vertical tab) 垂直制表符 0000 1100 014 12 0x0C FF (NP form feed, new page) 换页键 0000 1101 015 13 0x0D CR (carriage return) 回车键 0000 1110 016 14 0x0E SO (shift out) 不用切换 0000 1111 017 15 0x0F SI (shift in) 启用切换 0001 0000 020 16 0x10 DLE (data link escape) 数据链路转义 0001 0001 021 17 0x11 DC1 (device control 1) 设备控制1 0001 0010 022 18 0x12 DC2 (device control 2) 设备控制2 0001 0011 023 19 0x13 DC3 (device control 3) 设备控制3 0001 0100 024 20 0x14 DC4 (device control 4) 设备控制4 0001 0101 025 21 0x15 NAK (negative acknowledge) 拒绝接收 0001 0110 026 22 0x16 SYN (synchronous idle) 同步空闲 0001 0111 027 23 0x17 ETB (end of trans. block) 结束传输块 0001 1000 030 24 0x18 CAN (cancel) 取消 0001 1001 031 25 0x19 EM (end of medium) 媒介结束 0001 1010 032 26 0x1A SUB (substitute) 代替 0001 1011 033 27 0x1B ESC (escape) 换码(溢出) 0001 1100 034 28 0x1C FS (file separator) 文件分隔符 0001 1101 035 29 0x1D GS (group separator) 分组符 0001 1110 036 30 0x1E RS (record separator) 记录分隔符 0001 1111 037 31 0x1F US (unit separator) 单元分隔符 0010 0000 040 32 0x20 (space) 空格 0010 0001 041 33 0x21 ! 叹号 0010 0010 042 34 0x22 &quot; 双引号 0010 0011 043 35 0x23 # 井号 0010 0100 044 36 0x24 $ 美元符 0010 0101 045 37 0x25 % 百分号 0010 0110 046 38 0x26 &amp; 和号 0010 0111 047 39 0x27 &#39; 闭单引号 0010 1000 050 40 0x28 ( 开括号 0010 1001 051 41 0x29 ) 闭括号 0010 1010 052 42 0x2A * 星号 0010 1011 053 43 0x2B &#43; 加号 0010 1100 054 44 0x2C , 逗号 0010 1101 055 45 0x2D - 减号/破折号 0010 1110 056 46 0x2E . 句号 0010 1111 057 47 0x2F / 斜杠 0011 0000 060 48 0x30 0 字符0 0011 0001 061 49 0x31 1 字符1 0011 0010 062 50 0x32 2 字符2 0011 0011 063 51 0x33 3 字符3 0011 0100 064 52 0x34 4 字符4 0011 0101 065 53 0x35 5 字符5 0011 0110 066 54 0x36 6 字符6 0011 0111 067 55 0x37 7 字符7 0011 1000 070 56 0x38 8 字符8 0011 1001 071 57 0x39 9 字符9 0011 1010 072 58 0x3A : 冒号 0011 1011 073 59 0x3B ; 分号 0011 1100 074 60 0x3C &lt; 小于 0011 1101 075 61 0x3D = 等号 0011 1110 076 62 0x3E &gt; 大于 0011 1111 077 63 0x3F ? 问号 0100 0000 0100 64 0x40 @ 电子邮件符号 0100 0001 0101 65 0x41 A 大写字母A 0100 0010 0102 66 0x42 B 大写字母B 0100 0011 0103 67 0x43 C 大写字母C 0100 0100 0104 68 0x44 D 大写字母D 0100 0101 0105 69 0x45 E 大写字母E 0100 0110 0106 70 0x46 F 大写字母F 0100 0111 0107 71 0x47 G 大写字母G 0100 1000 0110 72 0x48 H 大写字母H 0100 1001 0111 73 0x49 I 大写字母I 01001010 0112 74 0x4A J 大写字母J 0100 1011 0113 75 0x4B K 大写字母K 0100 1100 0114 76 0x4C L 大写字母L 0100 1101 0115 77 0x4D M 大写字母M 0100 1110 0116 78 0x4E N 大写字母N 0100 1111 0117 79 0x4F O 大写字母O 0101 0000 0120 80 0x50 P 大写字母P 0101 0001 0121 81 0x51 Q 大写字母Q 0101 0010 0122 82 0x52 R 大写字母R 0101 0011 0123 83 0x53 S 大写字母S 0101 0100 0124 84 0x54 T 大写字母T 0101 0101 0125 85 0x55 U 大写字母U 0101 0110 0126 86 0x56 V 大写字母V 0101 0111 0127 87 0x57 W 大写字母W 0101 1000 0130 88 0x58 X 大写字母X 0101 1001 0131 89 0x59 Y 大写字母Y 0101 1010 0132 90 0x5A Z 大写字母Z 0101 1011 0133 91 0x5B [ 开方括号 0101 1100 0134 92 0x5C \ 反斜杠 0101 1101 0135 93 0x5D ] 闭方括号 0101 1110 0136 94 0x5E ^ 脱字符 0101 1111 0137 95 0x5F _ 下划线 0110 0000 0140 96 0x60 ` 开单引号 0110 0001 0141 97 0x61 a 小写字母a 0110 0010 0142 98 0x62 b 小写字母b 0110 0011 0143 99 0x63 c 小写字母c 0110 0100 0144 100 0x64 d 小写字母d 0110 0101 0145 101 0x65 e 小写字母e 0110 0110 0146 102 0x66 f 小写字母f 0110 0111 0147 103 0x67 g 小写字母g 0110 1000 0150 104 0x68 h 小写字母h 0110 1001 0151 105 0x69 i 小写字母i 0110 1010 0152 106 0x6A j 小写字母j 0110 1011 0153 107 0x6B k 小写字母k 0110 1100 0154 108 0x6C l 小写字母l 0110 1101 0155 109 0x6D m 小写字母m 0110 1110 0156 110 0x6E n 小写字母n 0110 1111 0157 111 0x6F o 小写字母o 0111 0000 0160 112 0x70 p 小写字母p 0111 0001 0161 113 0x71 q 小写字母q 0111 0010 0162 114 0x72 r 小写字母r 0111 0011 0163 115 0x73 s 小写字母s 0111 0100 0164 116 0x74 t 小写字母t 0111 0101 0165 117 0x75 u 小写字母u 0111 0110 0166 118 0x76 v 小写字母v 0111 0111 0167 119 0x77 w 小写字母w 0111 1000 0170 120 0x78 x 小写字母x 0111 1001 0171 121 0x79 y 小写字母y 0111 1010 0172 122 0x7A z 小写字母z 0111 1011 0173 123 0x7B { 开花括号 0111 1100 0174 124 0x7C | 垂线 0111 1101 0175 125 0x7D } 闭花括号 0111 1110 0176 126 0x7E ~ 波浪号 0111 1111 0177 127 0x7F DEL (delete) 删除 hex编码 hex是最常用的编码方式之一，这一点非常容易理解，就是将信息转化为十六进制。要进行各类编码的转化，或者是要将信息在计算机存储中最为本质的一面表现出来的时候，都可以使用hex编码方式。Hex编码就是把一个8位的字节数据用两个十六进制数展示出来，编码时，将8位二进制码重新分组成两个4位的字节，其中一个字节的低4位是原字节的高四位，另一个字节的低4位是原数据的低4位，高4位都补0，然后输出这两个字节对应十六进制数字作为编码。Hex编码后的长度是源数据的2倍。
-" />
-<meta name="keywords" content=", crypto" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="https://jashiker.github.io/posts/encode/" />
-
-
-    <title>
-        
-            编码-编写你的快乐 :: Jasmine❀Hiker 
-        
-    </title>
-
-
-
-
-
-  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
-
-
-
-
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="">
-
-
-
-  <meta itemprop="name" content="编码-编写你的快乐">
-  <meta itemprop="description" content="编码 编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。
-编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。
-历史 编码的演变源于人对计算机需求的改变。
-编码的萌芽——控制码 ASCII码的出现 ASCII码的发展——扩展字符集 编码的中国化——GBK家族 编码的国家化——百家争鸣的编码时代 编码的国际化——Unicode编码 编码的互联网化——UTF家族 从本质上讲，编码/解码是在做将一种形式的数据翻译为另一种形式的数据的工作。
-编码类型 ASCII码 ASCII码是最常见的编码类型。ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言。它是最通用的信息交换标准，并等同于国际标准ISO/IEC 646。ASCII第一次以规范标准的类型发表是在1967年，最后一次更新则是在1986年，到目前为止共定义了128个字符。
-ASCII码现在也经常出现在计算编码运输过程中，进行编码，而且在很多编程语言中也经常有用到。
-Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解释 0000 0000 00 0 0x00 NUL(null) 空字符 0000 0001 01 1 0x01 SOH(start of headline) 标题开始 0000 0010 02 2 0x02 STX (start of text) 正文开始 0000 0011 03 3 0x03 ETX (end of text) 正文结束 0000 0100 04 4 0x04 EOT (end of transmission) 传输结束 0000 0101 05 5 0x05 ENQ (enquiry) 请求 0000 0110 06 6 0x06 ACK (acknowledge) 收到通知 0000 0111 07 7 0x07 BEL (bell) 响铃 0000 1000 010 8 0x08 BS (backspace) 退格 0000 1001 011 9 0x09 HT (horizontal tab) 水平制表符 0000 1010 012 10 0x0A LF (NL line feed, new line) 换行键 0000 1011 013 11 0x0B VT (vertical tab) 垂直制表符 0000 1100 014 12 0x0C FF (NP form feed, new page) 换页键 0000 1101 015 13 0x0D CR (carriage return) 回车键 0000 1110 016 14 0x0E SO (shift out) 不用切换 0000 1111 017 15 0x0F SI (shift in) 启用切换 0001 0000 020 16 0x10 DLE (data link escape) 数据链路转义 0001 0001 021 17 0x11 DC1 (device control 1) 设备控制1 0001 0010 022 18 0x12 DC2 (device control 2) 设备控制2 0001 0011 023 19 0x13 DC3 (device control 3) 设备控制3 0001 0100 024 20 0x14 DC4 (device control 4) 设备控制4 0001 0101 025 21 0x15 NAK (negative acknowledge) 拒绝接收 0001 0110 026 22 0x16 SYN (synchronous idle) 同步空闲 0001 0111 027 23 0x17 ETB (end of trans. block) 结束传输块 0001 1000 030 24 0x18 CAN (cancel) 取消 0001 1001 031 25 0x19 EM (end of medium) 媒介结束 0001 1010 032 26 0x1A SUB (substitute) 代替 0001 1011 033 27 0x1B ESC (escape) 换码(溢出) 0001 1100 034 28 0x1C FS (file separator) 文件分隔符 0001 1101 035 29 0x1D GS (group separator) 分组符 0001 1110 036 30 0x1E RS (record separator) 记录分隔符 0001 1111 037 31 0x1F US (unit separator) 单元分隔符 0010 0000 040 32 0x20 (space) 空格 0010 0001 041 33 0x21 ! 叹号 0010 0010 042 34 0x22 &#34; 双引号 0010 0011 043 35 0x23 # 井号 0010 0100 044 36 0x24 $ 美元符 0010 0101 045 37 0x25 % 百分号 0010 0110 046 38 0x26 &amp; 和号 0010 0111 047 39 0x27 &#39; 闭单引号 0010 1000 050 40 0x28 ( 开括号 0010 1001 051 41 0x29 ) 闭括号 0010 1010 052 42 0x2A * 星号 0010 1011 053 43 0x2B &#43; 加号 0010 1100 054 44 0x2C , 逗号 0010 1101 055 45 0x2D - 减号/破折号 0010 1110 056 46 0x2E . 句号 0010 1111 057 47 0x2F / 斜杠 0011 0000 060 48 0x30 0 字符0 0011 0001 061 49 0x31 1 字符1 0011 0010 062 50 0x32 2 字符2 0011 0011 063 51 0x33 3 字符3 0011 0100 064 52 0x34 4 字符4 0011 0101 065 53 0x35 5 字符5 0011 0110 066 54 0x36 6 字符6 0011 0111 067 55 0x37 7 字符7 0011 1000 070 56 0x38 8 字符8 0011 1001 071 57 0x39 9 字符9 0011 1010 072 58 0x3A : 冒号 0011 1011 073 59 0x3B ; 分号 0011 1100 074 60 0x3C &lt; 小于 0011 1101 075 61 0x3D = 等号 0011 1110 076 62 0x3E &gt; 大于 0011 1111 077 63 0x3F ? 问号 0100 0000 0100 64 0x40 @ 电子邮件符号 0100 0001 0101 65 0x41 A 大写字母A 0100 0010 0102 66 0x42 B 大写字母B 0100 0011 0103 67 0x43 C 大写字母C 0100 0100 0104 68 0x44 D 大写字母D 0100 0101 0105 69 0x45 E 大写字母E 0100 0110 0106 70 0x46 F 大写字母F 0100 0111 0107 71 0x47 G 大写字母G 0100 1000 0110 72 0x48 H 大写字母H 0100 1001 0111 73 0x49 I 大写字母I 01001010 0112 74 0x4A J 大写字母J 0100 1011 0113 75 0x4B K 大写字母K 0100 1100 0114 76 0x4C L 大写字母L 0100 1101 0115 77 0x4D M 大写字母M 0100 1110 0116 78 0x4E N 大写字母N 0100 1111 0117 79 0x4F O 大写字母O 0101 0000 0120 80 0x50 P 大写字母P 0101 0001 0121 81 0x51 Q 大写字母Q 0101 0010 0122 82 0x52 R 大写字母R 0101 0011 0123 83 0x53 S 大写字母S 0101 0100 0124 84 0x54 T 大写字母T 0101 0101 0125 85 0x55 U 大写字母U 0101 0110 0126 86 0x56 V 大写字母V 0101 0111 0127 87 0x57 W 大写字母W 0101 1000 0130 88 0x58 X 大写字母X 0101 1001 0131 89 0x59 Y 大写字母Y 0101 1010 0132 90 0x5A Z 大写字母Z 0101 1011 0133 91 0x5B [ 开方括号 0101 1100 0134 92 0x5C \ 反斜杠 0101 1101 0135 93 0x5D ] 闭方括号 0101 1110 0136 94 0x5E ^ 脱字符 0101 1111 0137 95 0x5F _ 下划线 0110 0000 0140 96 0x60 ` 开单引号 0110 0001 0141 97 0x61 a 小写字母a 0110 0010 0142 98 0x62 b 小写字母b 0110 0011 0143 99 0x63 c 小写字母c 0110 0100 0144 100 0x64 d 小写字母d 0110 0101 0145 101 0x65 e 小写字母e 0110 0110 0146 102 0x66 f 小写字母f 0110 0111 0147 103 0x67 g 小写字母g 0110 1000 0150 104 0x68 h 小写字母h 0110 1001 0151 105 0x69 i 小写字母i 0110 1010 0152 106 0x6A j 小写字母j 0110 1011 0153 107 0x6B k 小写字母k 0110 1100 0154 108 0x6C l 小写字母l 0110 1101 0155 109 0x6D m 小写字母m 0110 1110 0156 110 0x6E n 小写字母n 0110 1111 0157 111 0x6F o 小写字母o 0111 0000 0160 112 0x70 p 小写字母p 0111 0001 0161 113 0x71 q 小写字母q 0111 0010 0162 114 0x72 r 小写字母r 0111 0011 0163 115 0x73 s 小写字母s 0111 0100 0164 116 0x74 t 小写字母t 0111 0101 0165 117 0x75 u 小写字母u 0111 0110 0166 118 0x76 v 小写字母v 0111 0111 0167 119 0x77 w 小写字母w 0111 1000 0170 120 0x78 x 小写字母x 0111 1001 0171 121 0x79 y 小写字母y 0111 1010 0172 122 0x7A z 小写字母z 0111 1011 0173 123 0x7B { 开花括号 0111 1100 0174 124 0x7C | 垂线 0111 1101 0175 125 0x7D } 闭花括号 0111 1110 0176 126 0x7E ~ 波浪号 0111 1111 0177 127 0x7F DEL (delete) 删除 hex编码 hex是最常用的编码方式之一，这一点非常容易理解，就是将信息转化为十六进制。要进行各类编码的转化，或者是要将信息在计算机存储中最为本质的一面表现出来的时候，都可以使用hex编码方式。Hex编码就是把一个8位的字节数据用两个十六进制数展示出来，编码时，将8位二进制码重新分组成两个4位的字节，其中一个字节的低4位是原字节的高四位，另一个字节的低4位是原数据的低4位，高4位都补0，然后输出这两个字节对应十六进制数字作为编码。Hex编码后的长度是源数据的2倍。">
-  <meta itemprop="datePublished" content="2022-01-29T11:36:02+08:00">
-  <meta itemprop="dateModified" content="2022-01-29T11:36:02+08:00">
-  <meta itemprop="wordCount" content="2357">
-  <meta itemprop="image" content="https://jashiker.github.io/">
-  <meta itemprop="keywords" content="Crypto">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://jashiker.github.io/">
-  <meta name="twitter:title" content="编码-编写你的快乐">
-  <meta name="twitter:description" content="编码 编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。
-编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。
-历史 编码的演变源于人对计算机需求的改变。
-编码的萌芽——控制码 ASCII码的出现 ASCII码的发展——扩展字符集 编码的中国化——GBK家族 编码的国家化——百家争鸣的编码时代 编码的国际化——Unicode编码 编码的互联网化——UTF家族 从本质上讲，编码/解码是在做将一种形式的数据翻译为另一种形式的数据的工作。
-编码类型 ASCII码 ASCII码是最常见的编码类型。ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言。它是最通用的信息交换标准，并等同于国际标准ISO/IEC 646。ASCII第一次以规范标准的类型发表是在1967年，最后一次更新则是在1986年，到目前为止共定义了128个字符。
-ASCII码现在也经常出现在计算编码运输过程中，进行编码，而且在很多编程语言中也经常有用到。
-Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解释 0000 0000 00 0 0x00 NUL(null) 空字符 0000 0001 01 1 0x01 SOH(start of headline) 标题开始 0000 0010 02 2 0x02 STX (start of text) 正文开始 0000 0011 03 3 0x03 ETX (end of text) 正文结束 0000 0100 04 4 0x04 EOT (end of transmission) 传输结束 0000 0101 05 5 0x05 ENQ (enquiry) 请求 0000 0110 06 6 0x06 ACK (acknowledge) 收到通知 0000 0111 07 7 0x07 BEL (bell) 响铃 0000 1000 010 8 0x08 BS (backspace) 退格 0000 1001 011 9 0x09 HT (horizontal tab) 水平制表符 0000 1010 012 10 0x0A LF (NL line feed, new line) 换行键 0000 1011 013 11 0x0B VT (vertical tab) 垂直制表符 0000 1100 014 12 0x0C FF (NP form feed, new page) 换页键 0000 1101 015 13 0x0D CR (carriage return) 回车键 0000 1110 016 14 0x0E SO (shift out) 不用切换 0000 1111 017 15 0x0F SI (shift in) 启用切换 0001 0000 020 16 0x10 DLE (data link escape) 数据链路转义 0001 0001 021 17 0x11 DC1 (device control 1) 设备控制1 0001 0010 022 18 0x12 DC2 (device control 2) 设备控制2 0001 0011 023 19 0x13 DC3 (device control 3) 设备控制3 0001 0100 024 20 0x14 DC4 (device control 4) 设备控制4 0001 0101 025 21 0x15 NAK (negative acknowledge) 拒绝接收 0001 0110 026 22 0x16 SYN (synchronous idle) 同步空闲 0001 0111 027 23 0x17 ETB (end of trans. block) 结束传输块 0001 1000 030 24 0x18 CAN (cancel) 取消 0001 1001 031 25 0x19 EM (end of medium) 媒介结束 0001 1010 032 26 0x1A SUB (substitute) 代替 0001 1011 033 27 0x1B ESC (escape) 换码(溢出) 0001 1100 034 28 0x1C FS (file separator) 文件分隔符 0001 1101 035 29 0x1D GS (group separator) 分组符 0001 1110 036 30 0x1E RS (record separator) 记录分隔符 0001 1111 037 31 0x1F US (unit separator) 单元分隔符 0010 0000 040 32 0x20 (space) 空格 0010 0001 041 33 0x21 ! 叹号 0010 0010 042 34 0x22 &#34; 双引号 0010 0011 043 35 0x23 # 井号 0010 0100 044 36 0x24 $ 美元符 0010 0101 045 37 0x25 % 百分号 0010 0110 046 38 0x26 &amp; 和号 0010 0111 047 39 0x27 &#39; 闭单引号 0010 1000 050 40 0x28 ( 开括号 0010 1001 051 41 0x29 ) 闭括号 0010 1010 052 42 0x2A * 星号 0010 1011 053 43 0x2B &#43; 加号 0010 1100 054 44 0x2C , 逗号 0010 1101 055 45 0x2D - 减号/破折号 0010 1110 056 46 0x2E . 句号 0010 1111 057 47 0x2F / 斜杠 0011 0000 060 48 0x30 0 字符0 0011 0001 061 49 0x31 1 字符1 0011 0010 062 50 0x32 2 字符2 0011 0011 063 51 0x33 3 字符3 0011 0100 064 52 0x34 4 字符4 0011 0101 065 53 0x35 5 字符5 0011 0110 066 54 0x36 6 字符6 0011 0111 067 55 0x37 7 字符7 0011 1000 070 56 0x38 8 字符8 0011 1001 071 57 0x39 9 字符9 0011 1010 072 58 0x3A : 冒号 0011 1011 073 59 0x3B ; 分号 0011 1100 074 60 0x3C &lt; 小于 0011 1101 075 61 0x3D = 等号 0011 1110 076 62 0x3E &gt; 大于 0011 1111 077 63 0x3F ? 问号 0100 0000 0100 64 0x40 @ 电子邮件符号 0100 0001 0101 65 0x41 A 大写字母A 0100 0010 0102 66 0x42 B 大写字母B 0100 0011 0103 67 0x43 C 大写字母C 0100 0100 0104 68 0x44 D 大写字母D 0100 0101 0105 69 0x45 E 大写字母E 0100 0110 0106 70 0x46 F 大写字母F 0100 0111 0107 71 0x47 G 大写字母G 0100 1000 0110 72 0x48 H 大写字母H 0100 1001 0111 73 0x49 I 大写字母I 01001010 0112 74 0x4A J 大写字母J 0100 1011 0113 75 0x4B K 大写字母K 0100 1100 0114 76 0x4C L 大写字母L 0100 1101 0115 77 0x4D M 大写字母M 0100 1110 0116 78 0x4E N 大写字母N 0100 1111 0117 79 0x4F O 大写字母O 0101 0000 0120 80 0x50 P 大写字母P 0101 0001 0121 81 0x51 Q 大写字母Q 0101 0010 0122 82 0x52 R 大写字母R 0101 0011 0123 83 0x53 S 大写字母S 0101 0100 0124 84 0x54 T 大写字母T 0101 0101 0125 85 0x55 U 大写字母U 0101 0110 0126 86 0x56 V 大写字母V 0101 0111 0127 87 0x57 W 大写字母W 0101 1000 0130 88 0x58 X 大写字母X 0101 1001 0131 89 0x59 Y 大写字母Y 0101 1010 0132 90 0x5A Z 大写字母Z 0101 1011 0133 91 0x5B [ 开方括号 0101 1100 0134 92 0x5C \ 反斜杠 0101 1101 0135 93 0x5D ] 闭方括号 0101 1110 0136 94 0x5E ^ 脱字符 0101 1111 0137 95 0x5F _ 下划线 0110 0000 0140 96 0x60 ` 开单引号 0110 0001 0141 97 0x61 a 小写字母a 0110 0010 0142 98 0x62 b 小写字母b 0110 0011 0143 99 0x63 c 小写字母c 0110 0100 0144 100 0x64 d 小写字母d 0110 0101 0145 101 0x65 e 小写字母e 0110 0110 0146 102 0x66 f 小写字母f 0110 0111 0147 103 0x67 g 小写字母g 0110 1000 0150 104 0x68 h 小写字母h 0110 1001 0151 105 0x69 i 小写字母i 0110 1010 0152 106 0x6A j 小写字母j 0110 1011 0153 107 0x6B k 小写字母k 0110 1100 0154 108 0x6C l 小写字母l 0110 1101 0155 109 0x6D m 小写字母m 0110 1110 0156 110 0x6E n 小写字母n 0110 1111 0157 111 0x6F o 小写字母o 0111 0000 0160 112 0x70 p 小写字母p 0111 0001 0161 113 0x71 q 小写字母q 0111 0010 0162 114 0x72 r 小写字母r 0111 0011 0163 115 0x73 s 小写字母s 0111 0100 0164 116 0x74 t 小写字母t 0111 0101 0165 117 0x75 u 小写字母u 0111 0110 0166 118 0x76 v 小写字母v 0111 0111 0167 119 0x77 w 小写字母w 0111 1000 0170 120 0x78 x 小写字母x 0111 1001 0171 121 0x79 y 小写字母y 0111 1010 0172 122 0x7A z 小写字母z 0111 1011 0173 123 0x7B { 开花括号 0111 1100 0174 124 0x7C | 垂线 0111 1101 0175 125 0x7D } 闭花括号 0111 1110 0176 126 0x7E ~ 波浪号 0111 1111 0177 127 0x7F DEL (delete) 删除 hex编码 hex是最常用的编码方式之一，这一点非常容易理解，就是将信息转化为十六进制。要进行各类编码的转化，或者是要将信息在计算机存储中最为本质的一面表现出来的时候，都可以使用hex编码方式。Hex编码就是把一个8位的字节数据用两个十六进制数展示出来，编码时，将8位二进制码重新分组成两个4位的字节，其中一个字节的低4位是原字节的高四位，另一个字节的低4位是原数据的低4位，高4位都补0，然后输出这两个字节对应十六进制数字作为编码。Hex编码后的长度是源数据的2倍。">
-
-
-
-    <meta property="og:url" content="https://jashiker.github.io/posts/encode/">
-  <meta property="og:site_name" content="Jasmine❀Hiker">
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>编码-编写你的快乐 &middot; (,,・ω・,,)</title>
+  <meta name="title" content="编码-编写你的快乐 &middot; (,,・ω・,,)" />
+  
+  <meta name="description" content="My awesome website" />
+  <meta name="keywords" content="crypto, " />
+  
+  
+  <link rel="canonical" href="https://jashiker.github.io/posts/encode/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.446a8b9c076e66da0e80c76714e26dd9ec36f07c75a6f91f2ed5b9140c8f48bf53e431c5e426df98e3e593b9b3c6266a60d611aa69cce9f4811297f4d5772c6d.css"
+    integrity="sha512-RGqLnAduZtoOgMdnFOJt2ew28Hx1pvkfLtW5FAyPSL9T5DHF5CbfmOPlk7mzxiZqYNYRqmnM6fSBEpf01XcsbQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.52b8d61b061c90a738102a0eac69eaa1479fdf5de882a0b0741d7515240617156a6c4477fcc91f9c962062804fe62d2932bb9f57d0aded208c762c2e1ed2e202.js"
+    integrity="sha512-UrjWGwYckKc4ECoOrGnqoUef313ogqCwdB11FSQGFxVqbER3/MkfnJYgYoBP5i0pMrufV9Ct7SCMdiwuHtLiAg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.f592a181a15d2a5b042daa7f746c3721acf9063f8b6acd175d989129865a37d400ae0e85b640f9ad42cd98d1f8ad30931718cf8811abdcc5fcb264400d1a2b0c.js" integrity="sha512-9ZKhgaFdKlsELap/dGw3Iaz5Bj&#43;Las0XXZiRKYZaN9QArg6FtkD5rULNmNH4rTCTFxjPiBGr3MX8smRADRorDA=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://jashiker.github.io/posts/encode/">
+  <meta property="og:site_name" content="(,,・ω・,,)">
   <meta property="og:title" content="编码-编写你的快乐">
-  <meta property="og:description" content="编码 编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。
-编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。
-历史 编码的演变源于人对计算机需求的改变。
-编码的萌芽——控制码 ASCII码的出现 ASCII码的发展——扩展字符集 编码的中国化——GBK家族 编码的国家化——百家争鸣的编码时代 编码的国际化——Unicode编码 编码的互联网化——UTF家族 从本质上讲，编码/解码是在做将一种形式的数据翻译为另一种形式的数据的工作。
-编码类型 ASCII码 ASCII码是最常见的编码类型。ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言。它是最通用的信息交换标准，并等同于国际标准ISO/IEC 646。ASCII第一次以规范标准的类型发表是在1967年，最后一次更新则是在1986年，到目前为止共定义了128个字符。
-ASCII码现在也经常出现在计算编码运输过程中，进行编码，而且在很多编程语言中也经常有用到。
-Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解释 0000 0000 00 0 0x00 NUL(null) 空字符 0000 0001 01 1 0x01 SOH(start of headline) 标题开始 0000 0010 02 2 0x02 STX (start of text) 正文开始 0000 0011 03 3 0x03 ETX (end of text) 正文结束 0000 0100 04 4 0x04 EOT (end of transmission) 传输结束 0000 0101 05 5 0x05 ENQ (enquiry) 请求 0000 0110 06 6 0x06 ACK (acknowledge) 收到通知 0000 0111 07 7 0x07 BEL (bell) 响铃 0000 1000 010 8 0x08 BS (backspace) 退格 0000 1001 011 9 0x09 HT (horizontal tab) 水平制表符 0000 1010 012 10 0x0A LF (NL line feed, new line) 换行键 0000 1011 013 11 0x0B VT (vertical tab) 垂直制表符 0000 1100 014 12 0x0C FF (NP form feed, new page) 换页键 0000 1101 015 13 0x0D CR (carriage return) 回车键 0000 1110 016 14 0x0E SO (shift out) 不用切换 0000 1111 017 15 0x0F SI (shift in) 启用切换 0001 0000 020 16 0x10 DLE (data link escape) 数据链路转义 0001 0001 021 17 0x11 DC1 (device control 1) 设备控制1 0001 0010 022 18 0x12 DC2 (device control 2) 设备控制2 0001 0011 023 19 0x13 DC3 (device control 3) 设备控制3 0001 0100 024 20 0x14 DC4 (device control 4) 设备控制4 0001 0101 025 21 0x15 NAK (negative acknowledge) 拒绝接收 0001 0110 026 22 0x16 SYN (synchronous idle) 同步空闲 0001 0111 027 23 0x17 ETB (end of trans. block) 结束传输块 0001 1000 030 24 0x18 CAN (cancel) 取消 0001 1001 031 25 0x19 EM (end of medium) 媒介结束 0001 1010 032 26 0x1A SUB (substitute) 代替 0001 1011 033 27 0x1B ESC (escape) 换码(溢出) 0001 1100 034 28 0x1C FS (file separator) 文件分隔符 0001 1101 035 29 0x1D GS (group separator) 分组符 0001 1110 036 30 0x1E RS (record separator) 记录分隔符 0001 1111 037 31 0x1F US (unit separator) 单元分隔符 0010 0000 040 32 0x20 (space) 空格 0010 0001 041 33 0x21 ! 叹号 0010 0010 042 34 0x22 &#34; 双引号 0010 0011 043 35 0x23 # 井号 0010 0100 044 36 0x24 $ 美元符 0010 0101 045 37 0x25 % 百分号 0010 0110 046 38 0x26 &amp; 和号 0010 0111 047 39 0x27 &#39; 闭单引号 0010 1000 050 40 0x28 ( 开括号 0010 1001 051 41 0x29 ) 闭括号 0010 1010 052 42 0x2A * 星号 0010 1011 053 43 0x2B &#43; 加号 0010 1100 054 44 0x2C , 逗号 0010 1101 055 45 0x2D - 减号/破折号 0010 1110 056 46 0x2E . 句号 0010 1111 057 47 0x2F / 斜杠 0011 0000 060 48 0x30 0 字符0 0011 0001 061 49 0x31 1 字符1 0011 0010 062 50 0x32 2 字符2 0011 0011 063 51 0x33 3 字符3 0011 0100 064 52 0x34 4 字符4 0011 0101 065 53 0x35 5 字符5 0011 0110 066 54 0x36 6 字符6 0011 0111 067 55 0x37 7 字符7 0011 1000 070 56 0x38 8 字符8 0011 1001 071 57 0x39 9 字符9 0011 1010 072 58 0x3A : 冒号 0011 1011 073 59 0x3B ; 分号 0011 1100 074 60 0x3C &lt; 小于 0011 1101 075 61 0x3D = 等号 0011 1110 076 62 0x3E &gt; 大于 0011 1111 077 63 0x3F ? 问号 0100 0000 0100 64 0x40 @ 电子邮件符号 0100 0001 0101 65 0x41 A 大写字母A 0100 0010 0102 66 0x42 B 大写字母B 0100 0011 0103 67 0x43 C 大写字母C 0100 0100 0104 68 0x44 D 大写字母D 0100 0101 0105 69 0x45 E 大写字母E 0100 0110 0106 70 0x46 F 大写字母F 0100 0111 0107 71 0x47 G 大写字母G 0100 1000 0110 72 0x48 H 大写字母H 0100 1001 0111 73 0x49 I 大写字母I 01001010 0112 74 0x4A J 大写字母J 0100 1011 0113 75 0x4B K 大写字母K 0100 1100 0114 76 0x4C L 大写字母L 0100 1101 0115 77 0x4D M 大写字母M 0100 1110 0116 78 0x4E N 大写字母N 0100 1111 0117 79 0x4F O 大写字母O 0101 0000 0120 80 0x50 P 大写字母P 0101 0001 0121 81 0x51 Q 大写字母Q 0101 0010 0122 82 0x52 R 大写字母R 0101 0011 0123 83 0x53 S 大写字母S 0101 0100 0124 84 0x54 T 大写字母T 0101 0101 0125 85 0x55 U 大写字母U 0101 0110 0126 86 0x56 V 大写字母V 0101 0111 0127 87 0x57 W 大写字母W 0101 1000 0130 88 0x58 X 大写字母X 0101 1001 0131 89 0x59 Y 大写字母Y 0101 1010 0132 90 0x5A Z 大写字母Z 0101 1011 0133 91 0x5B [ 开方括号 0101 1100 0134 92 0x5C \ 反斜杠 0101 1101 0135 93 0x5D ] 闭方括号 0101 1110 0136 94 0x5E ^ 脱字符 0101 1111 0137 95 0x5F _ 下划线 0110 0000 0140 96 0x60 ` 开单引号 0110 0001 0141 97 0x61 a 小写字母a 0110 0010 0142 98 0x62 b 小写字母b 0110 0011 0143 99 0x63 c 小写字母c 0110 0100 0144 100 0x64 d 小写字母d 0110 0101 0145 101 0x65 e 小写字母e 0110 0110 0146 102 0x66 f 小写字母f 0110 0111 0147 103 0x67 g 小写字母g 0110 1000 0150 104 0x68 h 小写字母h 0110 1001 0151 105 0x69 i 小写字母i 0110 1010 0152 106 0x6A j 小写字母j 0110 1011 0153 107 0x6B k 小写字母k 0110 1100 0154 108 0x6C l 小写字母l 0110 1101 0155 109 0x6D m 小写字母m 0110 1110 0156 110 0x6E n 小写字母n 0110 1111 0157 111 0x6F o 小写字母o 0111 0000 0160 112 0x70 p 小写字母p 0111 0001 0161 113 0x71 q 小写字母q 0111 0010 0162 114 0x72 r 小写字母r 0111 0011 0163 115 0x73 s 小写字母s 0111 0100 0164 116 0x74 t 小写字母t 0111 0101 0165 117 0x75 u 小写字母u 0111 0110 0166 118 0x76 v 小写字母v 0111 0111 0167 119 0x77 w 小写字母w 0111 1000 0170 120 0x78 x 小写字母x 0111 1001 0171 121 0x79 y 小写字母y 0111 1010 0172 122 0x7A z 小写字母z 0111 1011 0173 123 0x7B { 开花括号 0111 1100 0174 124 0x7C | 垂线 0111 1101 0175 125 0x7D } 闭花括号 0111 1110 0176 126 0x7E ~ 波浪号 0111 1111 0177 127 0x7F DEL (delete) 删除 hex编码 hex是最常用的编码方式之一，这一点非常容易理解，就是将信息转化为十六进制。要进行各类编码的转化，或者是要将信息在计算机存储中最为本质的一面表现出来的时候，都可以使用hex编码方式。Hex编码就是把一个8位的字节数据用两个十六进制数展示出来，编码时，将8位二进制码重新分组成两个4位的字节，其中一个字节的低4位是原字节的高四位，另一个字节的低4位是原数据的低4位，高4位都补0，然后输出这两个字节对应十六进制数字作为编码。Hex编码后的长度是源数据的2倍。">
+  <meta property="og:description" content="My awesome website">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2022-01-29T11:36:02+08:00">
     <meta property="article:modified_time" content="2022-01-29T11:36:02+08:00">
     <meta property="article:tag" content="Crypto">
-    <meta property="og:image" content="https://jashiker.github.io/">
 
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="编码-编写你的快乐">
+  <meta name="twitter:description" content="My awesome website">
 
-
-
-    <meta property="article:section" content="wiki" />
-
-
-
-    <meta property="article:published_time" content="2022-01-29 11:36:02 &#43;0800 HKT" />
-
-
-
-
-
-
-
-
-
-
-
-
-    </head>
-
-    
-        <body>
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "编码-编写你的快乐",
+    "headline": "编码-编写你的快乐",
     
     
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text ">
-                gdb -q Binary</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
+    "inLanguage": "en",
+    "url" : "https:\/\/jashiker.github.io\/posts\/encode\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jasmine❄Hiker"
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-01-29T11:36:02\u002b08:00",
+    "datePublished": "2022-01-29T11:36:02\u002b08:00",
+    
+    "dateModified": "2022-01-29T11:36:02\u002b08:00",
+    
+    "keywords": ["crypto"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2375"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Jasmine❄Hiker" />
+  
+  
+  
+  <link href="https://github.com/jashiker" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+    
+    
+    
+    <div>
+        <a href="/" class="flex">
+            <span class="sr-only">(,,・ω・,,)</span>
+
+            
+            <img src="/img/logo.png" width="16" height="16"
+                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="(,,・ω・,,)" />
+            
+
+        </a>
     </div>
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">(,,・ω・,,)</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Blog
+    </p>
 </a>
 
 
-        <span class="header__right">
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/link">Link</a></li><li><a href="/tags">Tags</a></li>
-    </ul>
-</nav>
 
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-        </span>
-    </span>
-</header>
+            
+            
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        About
+    </p>
+</a>
 
 
-            <div class="content">
+
+            
+            
+  <a href="/link/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Link
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
                 
-  <main class="post">
 
-    <div class="post-info">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
-          <circle cx="12" cy="12" r="10"></circle>
-          <polyline points="12 6 12 12 16 14"></polyline>
-        </svg>
-        12 minutes
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
 
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class=" flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 ltr:mr-1 rtl:ml-1">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-      </p>
+        <p class="text-bg font-bg" title="">
+            Blog
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/link/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Link
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      编码-编写你的快乐
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2022-01-29T11:36:02&#43;08:00">29 January 2022</time><span class="px-2 text-primary-500">&middot;</span><span>2375 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">12 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="views_posts/Encode.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+
     </div>
 
-    <article>
-      <h1 class="post-title">
-        <a href="https://jashiker.github.io/posts/encode/">编码-编写你的快乐</a>
-      </h1>
+    
+    
+    
+    
+    
 
+    
+
+    
+      
       
 
       
-        <hr />
-        <aside id="toc">
-          <div class="toc-title">Table of Contents</div>
-          <nav id="TableOfContents">
-  <ul>
-    <li><a href="#历史">历史</a></li>
-    <li><a href="#编码类型">编码类型</a>
-      <ul>
-        <li><a href="#ascii码">ASCII码</a></li>
-        <li><a href="#hex编码">hex编码</a></li>
-        <li><a href="#base家族">Base家族</a></li>
-        <li><a href="#url编码">URL编码</a></li>
-        <li><a href="#html编码">HTML编码</a></li>
-        <li><a href="#unicode编码">Unicode编码</a></li>
-        <li><a href="#morse电码">Morse电码</a></li>
-        <li><a href="#jsfuck">JSFuck</a></li>
-        <li><a href="#quoted-printable编码">Quoted-Printable编码</a></li>
-        <li><a href="#brainfuck编码">BrainFuck编码</a></li>
-        <li><a href="#ook编码">Ook编码</a></li>
-        <li><a href="#uuencode编码">UUencode编码</a></li>
-        <li><a href="#xxencode编码">XXencode编码</a></li>
-        <li><a href="#jjencode编码">JJencode编码</a></li>
-        <li><a href="#aaencode编码">AAencode编码</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        </aside>
-        <hr />
 
       
 
-      <div class="post-content">
-        <h1 id="编码">编码</h1>
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+    
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<h1 class="relative group">编码 
+    <div id="%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h1>
 <p>编码是将信息从一种形式转换位另一种形式的过程。它用预先规定的方法将文字、数字或其他对象编成数码，或者将信息、数据转换成规定的电脉冲信号。编码被广泛应用于电子计算机、电视、遥控和通信等方面。解码是编码的逆过程。</p>
 <p>编码和解码是个相当广泛的话题，涉及计算机对信息处理的根本方式。编码的目的不是为了让别人看到后解不出来，而是代表信息的另一种表达方式。将原始信息转化为编码信息进行传输，可以解决一些特殊字符、不可见字符的传输问题。接收者将编码信息再转化成原始信息，转化的过程称之为解码。</p>
-<h2 id="历史">历史</h2>
+
+
+<h2 class="relative group">历史 
+    <div id="%E5%8E%86%E5%8F%B2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8E%86%E5%8F%B2" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
 <p>编码的演变源于人对计算机需求的改变。</p>
 <ol>
 <li>编码的萌芽——控制码</li>
@@ -225,8 +581,30 @@ Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解
 <li>编码的互联网化——UTF家族</li>
 </ol>
 <p>从本质上讲，编码/解码是在做将一种形式的数据翻译为另一种形式的数据的工作。</p>
-<h2 id="编码类型">编码类型</h2>
-<h3 id="ascii码">ASCII码</h3>
+
+
+<h2 class="relative group">编码类型 
+    <div id="%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">ASCII码 
+    <div id="ascii%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ascii%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>ASCII码是最常见的编码类型。ASCII ((American Standard Code for Information Interchange): 美国信息交换标准代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言。它是最通用的信息交换标准，并等同于国际标准ISO/IEC 646。ASCII第一次以规范标准的类型发表是在1967年，最后一次更新则是在1986年，到目前为止共定义了128个字符。</p>
 <p>ASCII码现在也经常出现在计算编码运输过程中，进行编码，而且在很多编程语言中也经常有用到。</p>
 <table>
@@ -1267,16 +1645,49 @@ Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解
       </tr>
   </tbody>
 </table>
-<h3 id="hex编码">hex编码</h3>
+
+
+<h3 class="relative group">hex编码 
+    <div id="hex%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#hex%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>hex是最常用的编码方式之一，这一点非常容易理解，就是将信息转化为十六进制。要进行各类编码的转化，或者是要将信息在计算机存储中最为本质的一面表现出来的时候，都可以使用hex编码方式。Hex编码就是把一个8位的字节数据用两个十六进制数展示出来，编码时，将8位二进制码重新分组成两个4位的字节，其中一个字节的低4位是原字节的高四位，另一个字节的低4位是原数据的低4位，高4位都补0，然后输出这两个字节对应十六进制数字作为编码。Hex编码后的长度是源数据的2倍。</p>
-<h3 id="base家族">Base家族</h3>
+
+
+<h3 class="relative group">Base家族 
+    <div id="base%E5%AE%B6%E6%97%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#base%E5%AE%B6%E6%97%8F" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Base家族，最著名的就是Base64编码，在计算机的数据传输过程中也经常用到，Base64编码在RSA签名算法也都有用到，是一种比较基础的编码方式。Base家族的编码实质上就是进制的转换。</p>
 <p>Base编码是怎么来的呢？</p>
 <p>1970~1980 年代，DEC（和其他公司）生产的“微型计算机”使用的字符编码为 ASCII。 每个字节使用 7 位，给出 128 个可用值。 这足以满足大写和小写拉丁字母，数字，标点，一些常见的数学符号，货币符号和控制字符的需要。此后 ASCII 变得非常流行，并在很长一段时间内占主导地位。ASCII 规定了范围在 [0,127] 之间的字符编码，其中 [0, 31] 以及 127 (del) 这 33 个属于不可打印的控制字符（可以使用 man ascii 查证）。互联网的杀手级应用——电子邮件系统当初是为了传输 7 位 ASCII 文本而设计的，于是在传输信息时，有些邮件网关会把 [0,31] 这些控制字符给清除，而有些会替换 10 (newline 或 \n）和 13 (carrige 或 \r) 字符，有些更加粗暴地将二进制的最高位清空，还有的程序在收到 [128, 255 ] 之间的国际字符会发生错误。</p>
-<p>如何在不同邮件网关之间安全地传输控制字符、国际字符和二进制文件呢？作为 MIME（<a href="https://link.zhihu.com/?target=https%3A//tools.ietf.org/html/rfc2045%23page-24">RFC 2045</a> 和 <a href="https://link.zhihu.com/?target=https%3A//tools.ietf.org/html/rfc3548">RFC 3548</a>）多媒体电子邮件标准的一部分的 Base64 编码就被开发出来了。</p>
+<p>如何在不同邮件网关之间安全地传输控制字符、国际字符和二进制文件呢？作为 MIME（<a href="https://link.zhihu.com/?target=https%3A//tools.ietf.org/html/rfc2045%23page-24" target="_blank">RFC 2045</a> 和 <a href="https://link.zhihu.com/?target=https%3A//tools.ietf.org/html/rfc3548" target="_blank">RFC 3548</a>）多媒体电子邮件标准的一部分的 Base64 编码就被开发出来了。</p>
 <p>Base64 用于编码邮件内容、网页图片，意在减少传输过程中可能出现的错误；Base58 是比特币地址使用的编码方法，旨在提高地址的辨识度；Base32 用在一些对大小写不敏感的文件系统中。每种 Base-x 的编码都有适合它们的应用场景。</p>
 <p>Base编码从底层来说就是对数据进行进制转换，Base64是64进制，Base32是32进制，Base16是16进制。而中间的过程是为了更好地进行传输数据。</p>
-<h3 id="url编码">URL编码</h3>
+
+
+<h3 class="relative group">URL编码 
+    <div id="url%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#url%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>url编码是一种浏览器用来打包表单输入的格式。浏览器从表单中获取所有的name和其中的值 ，将它们以name/value参数编码（移去那些不能传送的字符，将数据排行等等）作为URL的一部分或者分离地发给服务器。</p>
 <p>URL编码是比较常见的编码类型，在浏览器进行数据传输的过程中会经常使用到，可以用于构造反序列化对象、SQL注入绕过、文件包含绕过等等。</p>
 <p>URL编码参考手册：</p>
@@ -2186,11 +2597,22 @@ Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解
       </tr>
   </tbody>
 </table>
-<h3 id="html编码">HTML编码</h3>
+
+
+<h3 class="relative group">HTML编码 
+    <div id="html%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#html%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>HTML编码在HTML文件中经常会使用到，在信息传输过程中并不是非常常见。HTML编码也叫HTML字符实体。是HTML编写过程中使用特殊的编码符号来进行网页页面符号的正确显示，是网页上面的一种编码格式。</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTML">HTML</a> 实体是一段以连字号（<code>&amp;</code>）开头、以分号（<code>;</code>）结尾的文本（字符串）。实体常常用于显示保留字符（这些字符会被解析为 HTML 代码）和不可见的字符（如“不换行空格”）。你也可以用实体来代替其他难以用标准键盘键入的字符。</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTML" target="_blank">HTML</a> 实体是一段以连字号（<code>&amp;</code>）开头、以分号（<code>;</code>）结尾的文本（字符串）。实体常常用于显示保留字符（这些字符会被解析为 HTML 代码）和不可见的字符（如“不换行空格”）。你也可以用实体来代替其他难以用标准键盘键入的字符。</p>
 <blockquote>
-<p>很多字符都有易于记忆的实体。例如版权符号 (<code>©</code>) 的实体是 <code>©</code>。对于没那么容易记住的字符，例如 <code>—</code> 或 <code>—</code>，你可以查看 <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">参考表</a> 或使用 <a href="https://mothereff.in/html-entities">解码工具 </a>。</p>
+<p>很多字符都有易于记忆的实体。例如版权符号 (<code>©</code>) 的实体是 <code>©</code>。对于没那么容易记住的字符，例如 <code>—</code> 或 <code>—</code>，你可以查看 <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references" target="_blank">参考表</a> 或使用 <a href="https://mothereff.in/html-entities" target="_blank">解码工具 </a>。</p>
 </blockquote>
 <table>
   <thead>
@@ -2300,308 +2722,429 @@ Bin(二进制) Oct(八进制) Dec(十进制) Hex(十六进制) 缩写/字符 解
       </tr>
   </tbody>
 </table>
-<h3 id="unicode编码">Unicode编码</h3>
-<p>Unicode 是一种<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/character_set">字符集</a>标准，用于对来自世界上不同语言、文字系统和符号进行编号和<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Character">字符</a>定义。通过给每个字符分配一个编号，程序员可以创建<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/character_encoding">字符编码</a>，让计算机在同一个文件或程序中存储、处理和传输任何语言组合。</p>
-<p>在 Unicode 定义之前，在同一数据中混合使用不同的语言是很困难的，而且容易出错。例如，一个字符集存储的是日文字符，而另一个字符集存储的是阿拉伯字母。如果没有明确标明数据的哪些部分属于哪个字符集，其他程序和计算机就会错误地显示文本，或者在处理过程中损坏文本。如果你曾经见过像 (<code>“”</code>) 被替换为胡言乱语 <code>Ã‚Â£</code>，那么你就已经看到过这个被称为 <a href="https://zh.wikipedia.org/wiki/Mojibake">Mojibake</a> 的问题。</p>
-<p>网络上最常见的 Unicode 字符编码是<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/UTF-8">UTF-8</a>。还存在一些其他编码，如 UTF-16或过时的 UCS-2，但推荐使用 UTF-8。</p>
+
+
+<h3 class="relative group">Unicode编码 
+    <div id="unicode%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#unicode%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Unicode 是一种<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/character_set" target="_blank">字符集</a>标准，用于对来自世界上不同语言、文字系统和符号进行编号和<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Character" target="_blank">字符</a>定义。通过给每个字符分配一个编号，程序员可以创建<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/character_encoding" target="_blank">字符编码</a>，让计算机在同一个文件或程序中存储、处理和传输任何语言组合。</p>
+<p>在 Unicode 定义之前，在同一数据中混合使用不同的语言是很困难的，而且容易出错。例如，一个字符集存储的是日文字符，而另一个字符集存储的是阿拉伯字母。如果没有明确标明数据的哪些部分属于哪个字符集，其他程序和计算机就会错误地显示文本，或者在处理过程中损坏文本。如果你曾经见过像 (<code>“”</code>) 被替换为胡言乱语 <code>Ã‚Â£</code>，那么你就已经看到过这个被称为 <a href="https://zh.wikipedia.org/wiki/Mojibake" target="_blank">Mojibake</a> 的问题。</p>
+<p>网络上最常见的 Unicode 字符编码是<a href="https://developer.mozilla.org/zh-CN/docs/Glossary/UTF-8" target="_blank">UTF-8</a>。还存在一些其他编码，如 UTF-16或过时的 UCS-2，但推荐使用 UTF-8。</p>
 <p>Unicode编码也被称为万国码，是比较常见的编码格式，在计算机中经常会使用到Unicode编码进行互联网上应用的传输和编写。</p>
-<h3 id="morse电码">Morse电码</h3>
+
+
+<h3 class="relative group">Morse电码 
+    <div id="morse%E7%94%B5%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#morse%E7%94%B5%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Morse电码也叫Morsecode，是大家耳熟能详的编码方式，很多人都误认为它是一种加密方式，但其实它是一种编码，因为它并不存在密钥。</p>
 <p>Morsecode的编码形式非常容易识别，就是<code>.---</code> <code>.-.--</code>等类似的形式，非常容易识别并进行解码。</p>
-<p><img alt="查看源图像" src="/images/Encode/morse-code-4_ML.jpg"></p>
-<h3 id="jsfuck">JSFuck</h3>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Encode/morse-code-4_ML.jpg" alt="查看源图像" />
+      
+    </figure>
+</p>
+
+
+<h3 class="relative group">JSFuck 
+    <div id="jsfuck" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#jsfuck" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>jsfuck是一种非常有意思的编码方式，仅使用6个字符就可以书写任意的<code>JavaScript</code>代码。从直观上非常容易辨别出这种编码方式，只需要“()+[]!”这6个字符组成的字符串。jsfuck的编码和解码与morsecode类似，只不过其表示的是<code>JavaScript</code>的语句。jsfuck源于一门编程语言brainfuck，其主要的思想就是只使用8种特定的符号来编写代码。jsfuck也是沿用了这个思想，它仅仅使用6种符号来编写代码。它们分别是<code>()+[]!</code></p>
-<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href="/"></a>!+](<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a>)</p>
+<p>JSFuck可以使用jsfuck官方的网站进行解密：[JSFuck - Write any JavaScript with 6 Characters: <a href=""></a>!+](<a href="http://www.jsfuck.com/" target="_blank">http://www.jsfuck.com/</a>)</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#ae81ff">1</span>)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </span></span></code></pre></div><p>就可以被jsfuck编码为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]][([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]]((<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">+</span>[<span style="color:#f92672">!</span>[]]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+!+</span>[]]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">+</span>(<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+!+</span>[]]))[(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>([]<span style="color:#f92672">+</span>[])[([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]][([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>((<span style="color:#f92672">+</span>[])[([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>([][[]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+!+</span>[]]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]]](<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]])<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]])()((<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>([][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+!+</span>[]]]<span style="color:#f92672">+</span>[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>([<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+!</span>[]<span style="color:#f92672">+</span>[][(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+!+</span>[]]<span style="color:#f92672">+</span>(<span style="color:#f92672">!!</span>[]<span style="color:#f92672">+</span>[])[<span style="color:#f92672">+</span>[]]])[<span style="color:#f92672">!+</span>[]<span style="color:#f92672">+!+</span>[]<span style="color:#f92672">+</span>[<span style="color:#f92672">+</span>[]]])
-</span></span></code></pre></div><h3 id="quoted-printable编码">Quoted-Printable编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]][([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]]((</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">+</span><span class="p">[</span><span class="o">!</span><span class="p">[]]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+!+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">+</span><span class="p">(</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+!+</span><span class="p">[]]))[(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">([]</span><span class="o">+</span><span class="p">[])[([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]][([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">((</span><span class="o">+</span><span class="p">[])[([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][[]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+!+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]]](</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]])</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]])()((</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]]</span><span class="o">+</span><span class="p">[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">([</span><span class="o">+</span><span class="p">[]]</span><span class="o">+!</span><span class="p">[]</span><span class="o">+</span><span class="p">[][(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+!+</span><span class="p">[]]</span><span class="o">+</span><span class="p">(</span><span class="o">!!</span><span class="p">[]</span><span class="o">+</span><span class="p">[])[</span><span class="o">+</span><span class="p">[]]])[</span><span class="o">!+</span><span class="p">[]</span><span class="o">+!+</span><span class="p">[]</span><span class="o">+</span><span class="p">[</span><span class="o">+</span><span class="p">[]]])</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">Quoted-Printable编码 
+    <div id="quoted-printable%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#quoted-printable%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Quoted-printable 可译为“可打印字符引用编码”、“使用可打印字符的编码”，我们收邮件，查看信件原始信息，经常会看到这种类型的编码！</p>
 <p>Quoted-printable或QP encoding，没有规范的中文译名，可译为可打印字符引用编码或使用可打印字符的编码。Quoted-printable是使用可打印的ASCII字符（如字母、数字与“=”）表示各种编码格式下的字符，以便能在7-bit数据通路上传输8-bit数据, 或者更一般地说在非8-bit clean媒体上正确处理数据。这被定义为MIME content transfer encoding，用于e-mail。QP使用“=”开头的转义字符. 一般限制行宽为76，因为有些软件限制了行宽.</p>
 <p>MIME定义了在e-mail中发送各种信息的方法, 包括非英语的其它语言文本信息, 使用非ASCII的其它字符编码。这些编码常常使用ASCII范围以外的值来编码字符，因此需要进一步被编码以便适用于non-8-bit-clean环境。Quoted-printable编码就是把任意字节序列映射为ASCII字符序列。Quoted-printable自身并不是一种字符编码方案, 而是一种在面向字节的编码时的数据编码布置（data coding layer），即由编码的字符序列如何表示为字节流QP是可逆的，即可以由原来的非ASCII字符流与QP编码后的字节流来回转换而不失信息。</p>
 <p>Quoted-printable与Base64是两种基本的MIME内容传输编码, 如果通常的“8bit”编码不适用。如果文本不含很多非ASCII字符，quoted-printable编码的结果的可读性相当好[注 2]而且紧凑。但是，如果输入的大多数是非ASCII字符，那么quoted-printable编码将变得既不可读又非常低效。Base64并不是人可读的，但对于所有数据其成本均匀，适用于二进制数据与非拉丁字母语言文本。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>密码学
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">密码学
 </span></span></code></pre></div><p>可以使用Quoted-printable编码为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>=E5=AF=86=E7=A0=81=E5=AD=A6=0A=09=09=09=09=09
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">=E5=AF=86=E7=A0=81=E5=AD=A6=0A=09=09=09=09=09
 </span></span></code></pre></div><p>Quoted-printable的编码形式也比较容易辨认，基本上就是字符加等于号构成编码文段格式。</p>
-<h3 id="brainfuck编码">BrainFuck编码</h3>
+
+
+<h3 class="relative group">BrainFuck编码 
+    <div id="brainfuck%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#brainfuck%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>BrainFuck是一种编程语言，也可以作为一种编码的手段进行编码，对文本进行BrainFuck编码然后进行快速传输。</p>
 <p>Brainfuck，是一种极小化的程序语言，它是由Urban Müller在1993年创造的。由于fuck在英语中是脏话，这种语言有时被称为Brainf*ck或Brainf***，或被简称为BF。</p>
 <p>Müller的目标是创建一种简单的、可以用最小的编译器来实现的、符合图灵完全思想的编程语言。这种语言由八种运算符构成，为Amiga机器编写的编译器（第二版）只有240个字节大小。就像它的名字所暗示的，Brainfuck程序很难读懂。尽管如此，Brainfuck图灵机一样可以完成任何计算任务。虽然Brainfuck的计算方式如此与众不同，但它确实能够正确运行。这种语言基于一个简单的机器模型，除了指令，这个机器还包括：一个以字节为单位、被初始化为零的数组、一个指向该数组的指针（初始时指向数组的第一个字节）、以及用于输入输出的两个字节流。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello world!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Hello world!
 </span></span></code></pre></div><p>使用BrainFuck进行编码就会得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>+++++ +++[- &gt;++++ ++++&lt; ]&gt;+++ +++++ .&lt;+++ ++[-&gt; +++++ &lt;]&gt;++ ++.++ +++++
-</span></span><span style="display:flex;"><span>..+++ .&lt;+++ +++++ [-&gt;-- ----- -&lt;]&gt;- ----- ----- ----. &lt;++++ +++[- &gt;++++
-</span></span><span style="display:flex;"><span>+++&lt;] &gt;++++ ++.&lt;+ +++[- &gt;++++ &lt;]&gt;++ +++++ +.+++ .---- --.-- ----- -.&lt;++
-</span></span><span style="display:flex;"><span>+++++ +[-&gt;- ----- --&lt;]&gt; ---.&lt; 
-</span></span></code></pre></div><p>可以使用<a href="https://www.splitbrain.org/services/ook">Brainfuck/Ook! Obfuscation/Encoding</a> 这个网站进行编码和解码</p>
-<h3 id="ook编码">Ook编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">+++++ +++[- &gt;++++ ++++&lt; ]&gt;+++ +++++ .&lt;+++ ++[-&gt; +++++ &lt;]&gt;++ ++.++ +++++
+</span></span><span class="line"><span class="cl">..+++ .&lt;+++ +++++ [-&gt;-- ----- -&lt;]&gt;- ----- ----- ----. &lt;++++ +++[- &gt;++++
+</span></span><span class="line"><span class="cl">+++&lt;] &gt;++++ ++.&lt;+ +++[- &gt;++++ &lt;]&gt;++ +++++ +.+++ .---- --.-- ----- -.&lt;++
+</span></span><span class="line"><span class="cl">+++++ +[-&gt;- ----- --&lt;]&gt; ---.&lt; 
+</span></span></code></pre></div><p>可以使用<a href="https://www.splitbrain.org/services/ook" target="_blank">Brainfuck/Ook! Obfuscation/Encoding</a> 这个网站进行编码和解码</p>
+
+
+<h3 class="relative group">Ook编码 
+    <div id="ook%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ook%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>Ook也是一种小型的编程语言，Ook是为红毛猩猩设计的编程语言，设计思路和BrainFuck的设计思路基本类似，但是Ook采用了更少的元素进行编程，语句更加简单。由于Ook的特点，因此Ook也可以设计为一种特殊的编码方式。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello world!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Hello world!
 </span></span></code></pre></div><p>使用Ook编码后，得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook. Ook? Ook! Ook. Ook? Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook!
-</span></span><span style="display:flex;"><span>Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook? Ook. Ook? Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook!
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook! Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook? Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook! Ook? Ook! Ook! Ook. Ook? Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook? Ook. Ook? Ook! Ook. Ook? Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook.
-</span></span><span style="display:flex;"><span>Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook?
-</span></span><span style="display:flex;"><span>Ook. Ook? Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook.
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
-</span></span><span style="display:flex;"><span>Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook! Ook! Ook! Ook!
-</span></span><span style="display:flex;"><span>Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook? Ook. Ook?
-</span></span><span style="display:flex;"><span>Ook! Ook. Ook? Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook? Ook. 
-</span></span></code></pre></div><p>非常长，进行Ook编码和解码的网站也是<a href="https://www.splitbrain.org/services/ook">Brainfuck/Ook! Obfuscation/Encoding</a></p>
-<h3 id="uuencode编码">UUencode编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook? Ook. Ook? Ook! Ook. Ook? Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook!
+</span></span><span class="line"><span class="cl">Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook? Ook. Ook? Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook!
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook! Ook. Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook. Ook? Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook! Ook? Ook! Ook! Ook. Ook? Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook? Ook. Ook? Ook! Ook. Ook? Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook.
+</span></span><span class="line"><span class="cl">Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook?
+</span></span><span class="line"><span class="cl">Ook. Ook? Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook! Ook. Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook! Ook.
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook. Ook? Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook.
+</span></span><span class="line"><span class="cl">Ook. Ook. Ook. Ook. Ook. Ook! Ook? Ook! Ook! Ook. Ook? Ook! Ook! Ook! Ook!
+</span></span><span class="line"><span class="cl">Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook? Ook. Ook?
+</span></span><span class="line"><span class="cl">Ook! Ook. Ook? Ook! Ook! Ook! Ook! Ook! Ook! Ook! Ook. Ook? Ook. 
+</span></span></code></pre></div><p>非常长，进行Ook编码和解码的网站也是<a href="https://www.splitbrain.org/services/ook" target="_blank">Brainfuck/Ook! Obfuscation/Encoding</a></p>
+
+
+<h3 class="relative group">UUencode编码 
+    <div id="uuencode%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#uuencode%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>一种逐渐退出历史舞台的编码方式，编码的文段中有许多特殊的字符。</p>
 <p>uuencode这个名字是衍生自&quot;Unix-to-Unix encoding&quot;，原先是Unix系统下将二进制的资料借由uucp邮件系统传输的一个编码程式，是一种二进制到文字的编码。uudecode是与uuencode搭配的解码程式，uuencode/decode常见于电子邮件中的档案传送以及usenet新闻组和BBS的贴文等等。近来已被MIME所大量取代。</p>
 <p>UUencode的编码原理和Base64的编码原理非常相似。</p>
-<p><img alt="image-20210713141225018" src="/images/Encode/image-20210713141225018.png"></p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Encode/image-20210713141225018.png" alt="image-20210713141225018" />
+      
+    </figure>
+</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello World!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Hello World!
 </span></span></code></pre></div><p>进行编码后得到：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>,2&amp;5L;&amp;\@5V]R;&amp;0A
-</span></span></code></pre></div><h3 id="xxencode编码">XXencode编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">,2&amp;5L;&amp;\@5V]R;&amp;0A
+</span></span></code></pre></div>
+
+<h3 class="relative group">XXencode编码 
+    <div id="xxencode%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#xxencode%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>XXencode编码和base64编码类似，只不过是使用的转换表不同。</p>
 <p>Xxencode编码，也是一个二进制字符转换为普通打印字符方法。跟UUencode编码原理方法很相似，唯独不同的是可打印字符不同。通个UUencode编码，我们知道它有个缺点就是，64个可打印字符中，有很多的特殊字符。而XXencode编码方法，对64个原字符有做规范。这里它有跟Base64类型了。都有指定可打印字符范围、及编号。Xxencode编码在上世纪后期，IBM大型机中得到很广泛的应用。现在逐渐被Base64编码转换方法所取代了。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Hello World!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Hello World!
 </span></span></code></pre></div><p>进行XXencode编码后，得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>BG4JgP4wUJqxmP4EV0U++
-</span></span></code></pre></div><h3 id="jjencode编码">JJencode编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">BG4JgP4wUJqxmP4EV0U++
+</span></span></code></pre></div>
+
+<h3 class="relative group">JJencode编码 
+    <div id="jjencode%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#jjencode%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>算是JSFuck编码的前身，是由18种字符组成的编码格式。是针对JavaScript进行设计的编码方式。</p>
-<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href="/"></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
+<p>长谷川阳介（Yosuke Hasegawa）于2009年7月创建了一个名为“jjencode”的网络应用程序，可将一切的JavaScript代码混淆为<a href=""></a>!+,&quot;$.:;_{}~=这十八个字符的排列组合。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>alert(&#34;Hello, JavaScript&#34; )
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">alert(&#34;Hello, JavaScript&#34; )
 </span></span></code></pre></div><p>进行jjencode编码，得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>$=~[];$={___:++$,$$$$:(![]+&#34;&#34;)[$],__$:++$,$_$_:(![]+&#34;&#34;)[$],_$_:++$,$_$$:({}+&#34;&#34;)[$],$$_$:($[$]+&#34;&#34;)[$],_$$:++$,$$$_:(!&#34;&#34;+&#34;&#34;)[$],$__:++$,$_$:++$,$$__:({}+&#34;&#34;)[$],$$_:++$,$$$:++$,$___:++$,$__$:++$};$.$_=($.$_=$+&#34;&#34;)[$.$_$]+($._$=$.$_[$.__$])+($.$$=($.$+&#34;&#34;)[$.__$])+((!$)+&#34;&#34;)[$._$$]+($.__=$.$_[$.$$_])+($.$=(!&#34;&#34;+&#34;&#34;)[$.__$])+($._=(!&#34;&#34;+&#34;&#34;)[$._$_])+$.$_[$.$_$]+$.__+$._$+$.$;$.$$=$.$+(!&#34;&#34;+&#34;&#34;)[$._$$]+$.__+$._+$.$+$.$$;$.$=($.___)[$.$_][$.$_];$.$($.$($.$$+&#34;\&#34;&#34;+$.$_$_+(![]+&#34;&#34;)[$._$_]+$.$$$_+&#34;\\&#34;+$.__$+$.$$_+$._$_+$.__+&#34;(\\\&#34;\\&#34;+$.__$+$.__$+$.___+$.$$$_+(![]+&#34;&#34;)[$._$_]+(![]+&#34;&#34;)[$._$_]+$._$+&#34;,\\&#34;+$.$__+$.___+&#34;\\&#34;+$.__$+$.__$+$._$_+$.$_$_+&#34;\\&#34;+$.__$+$.$$_+$.$$_+$.$_$_+&#34;\\&#34;+$.__$+$._$_+$._$$+$.$$__+&#34;\\&#34;+$.__$+$.$$_+$._$_+&#34;\\&#34;+$.__$+$.$_$+$.__$+&#34;\\&#34;+$.__$+$.$$_+$.___+$.__+&#34;\\\&#34;\\&#34;+$.$__+$.___+&#34;)&#34;+&#34;\&#34;&#34;)())();
-</span></span></code></pre></div><h3 id="aaencode编码">AAencode编码</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">$=~[];$={___:++$,$$$$:(![]+&#34;&#34;)[$],__$:++$,$_$_:(![]+&#34;&#34;)[$],_$_:++$,$_$$:({}+&#34;&#34;)[$],$$_$:($[$]+&#34;&#34;)[$],_$$:++$,$$$_:(!&#34;&#34;+&#34;&#34;)[$],$__:++$,$_$:++$,$$__:({}+&#34;&#34;)[$],$$_:++$,$$$:++$,$___:++$,$__$:++$};$.$_=($.$_=$+&#34;&#34;)[$.$_$]+($._$=$.$_[$.__$])+($.$$=($.$+&#34;&#34;)[$.__$])+((!$)+&#34;&#34;)[$._$$]+($.__=$.$_[$.$$_])+($.$=(!&#34;&#34;+&#34;&#34;)[$.__$])+($._=(!&#34;&#34;+&#34;&#34;)[$._$_])+$.$_[$.$_$]+$.__+$._$+$.$;$.$$=$.$+(!&#34;&#34;+&#34;&#34;)[$._$$]+$.__+$._+$.$+$.$$;$.$=($.___)[$.$_][$.$_];$.$($.$($.$$+&#34;\&#34;&#34;+$.$_$_+(![]+&#34;&#34;)[$._$_]+$.$$$_+&#34;\\&#34;+$.__$+$.$$_+$._$_+$.__+&#34;(\\\&#34;\\&#34;+$.__$+$.__$+$.___+$.$$$_+(![]+&#34;&#34;)[$._$_]+(![]+&#34;&#34;)[$._$_]+$._$+&#34;,\\&#34;+$.$__+$.___+&#34;\\&#34;+$.__$+$.__$+$._$_+$.$_$_+&#34;\\&#34;+$.__$+$.$$_+$.$$_+$.$_$_+&#34;\\&#34;+$.__$+$._$_+$._$$+$.$$__+&#34;\\&#34;+$.__$+$.$$_+$._$_+&#34;\\&#34;+$.__$+$.$_$+$.__$+&#34;\\&#34;+$.__$+$.$$_+$.___+$.__+&#34;\\\&#34;\\&#34;+$.$__+$.___+&#34;)&#34;+&#34;\&#34;&#34;)())();
+</span></span></code></pre></div>
+
+<h3 class="relative group">AAencode编码 
+    <div id="aaencode%E7%BC%96%E7%A0%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#aaencode%E7%BC%96%E7%A0%81" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
 <p>aaencode编码是一个比较有意思的编码形式，同样也是对于JavaScript语言设计的编码方式，是把JavaScript的代码编码成日本的表情包。</p>
 <p>比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>alert(&#34;Hello, JavaScript&#34;)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">alert(&#34;Hello, JavaScript&#34;)
 </span></span></code></pre></div><p>通过aaencode编码，得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ﾟωﾟﾉ= /｀ｍ´）ﾉ ~┻━┻   //*´∇｀*/ [&#39;_&#39;]; o=(ﾟｰﾟ)  =_=3; c=(ﾟΘﾟ) =(ﾟｰﾟ)-(ﾟｰﾟ); (ﾟДﾟ) =(ﾟΘﾟ)= (o^_^o)/ (o^_^o);(ﾟДﾟ)={ﾟΘﾟ: &#39;_&#39; ,ﾟωﾟﾉ : ((ﾟωﾟﾉ==3) +&#39;_&#39;) [ﾟΘﾟ] ,ﾟｰﾟﾉ :(ﾟωﾟﾉ+ &#39;_&#39;)[o^_^o -(ﾟΘﾟ)] ,ﾟДﾟﾉ:((ﾟｰﾟ==3) +&#39;_&#39;)[ﾟｰﾟ] }; (ﾟДﾟ) [ﾟΘﾟ] =((ﾟωﾟﾉ==3) +&#39;_&#39;) [c^_^o];(ﾟДﾟ) [&#39;c&#39;] = ((ﾟДﾟ)+&#39;_&#39;) [ (ﾟｰﾟ)+(ﾟｰﾟ)-(ﾟΘﾟ) ];(ﾟДﾟ) [&#39;o&#39;] = ((ﾟДﾟ)+&#39;_&#39;) [ﾟΘﾟ];(ﾟoﾟ)=(ﾟДﾟ) [&#39;c&#39;]+(ﾟДﾟ) [&#39;o&#39;]+(ﾟωﾟﾉ +&#39;_&#39;)[ﾟΘﾟ]+ ((ﾟωﾟﾉ==3) +&#39;_&#39;) [ﾟｰﾟ] + ((ﾟДﾟ) +&#39;_&#39;) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ ((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+((ﾟｰﾟ==3) +&#39;_&#39;) [(ﾟｰﾟ) - (ﾟΘﾟ)]+(ﾟДﾟ) [&#39;c&#39;]+((ﾟДﾟ)+&#39;_&#39;) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ (ﾟДﾟ) [&#39;o&#39;]+((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ];(ﾟДﾟ) [&#39;_&#39;] =(o^_^o) [ﾟoﾟ] [ﾟoﾟ];(ﾟεﾟ)=((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+ (ﾟДﾟ) .ﾟДﾟﾉ+((ﾟДﾟ)+&#39;_&#39;) [(ﾟｰﾟ) + (ﾟｰﾟ)]+((ﾟｰﾟ==3) +&#39;_&#39;) [o^_^o -ﾟΘﾟ]+((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+ (ﾟωﾟﾉ +&#39;_&#39;) [ﾟΘﾟ]; (ﾟｰﾟ)+=(ﾟΘﾟ); (ﾟДﾟ)[ﾟεﾟ]=&#39;\\&#39;; (ﾟДﾟ).ﾟΘﾟﾉ=(ﾟДﾟ+ ﾟｰﾟ)[o^_^o -(ﾟΘﾟ)];(oﾟｰﾟo)=(ﾟωﾟﾉ +&#39;_&#39;)[c^_^o];(ﾟДﾟ) [ﾟoﾟ]=&#39;\&#34;&#39;;(ﾟДﾟ) [&#39;_&#39;] ( (ﾟДﾟ) [&#39;_&#39;] (ﾟεﾟ+(ﾟДﾟ)[ﾟoﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟΘﾟ)+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟΘﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) +(o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (o^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (o^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟoﾟ]) (ﾟΘﾟ)) (&#39;_&#39;);
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ﾟωﾟﾉ= /｀ｍ´）ﾉ ~┻━┻   //*´∇｀*/ [&#39;_&#39;]; o=(ﾟｰﾟ)  =_=3; c=(ﾟΘﾟ) =(ﾟｰﾟ)-(ﾟｰﾟ); (ﾟДﾟ) =(ﾟΘﾟ)= (o^_^o)/ (o^_^o);(ﾟДﾟ)={ﾟΘﾟ: &#39;_&#39; ,ﾟωﾟﾉ : ((ﾟωﾟﾉ==3) +&#39;_&#39;) [ﾟΘﾟ] ,ﾟｰﾟﾉ :(ﾟωﾟﾉ+ &#39;_&#39;)[o^_^o -(ﾟΘﾟ)] ,ﾟДﾟﾉ:((ﾟｰﾟ==3) +&#39;_&#39;)[ﾟｰﾟ] }; (ﾟДﾟ) [ﾟΘﾟ] =((ﾟωﾟﾉ==3) +&#39;_&#39;) [c^_^o];(ﾟДﾟ) [&#39;c&#39;] = ((ﾟДﾟ)+&#39;_&#39;) [ (ﾟｰﾟ)+(ﾟｰﾟ)-(ﾟΘﾟ) ];(ﾟДﾟ) [&#39;o&#39;] = ((ﾟДﾟ)+&#39;_&#39;) [ﾟΘﾟ];(ﾟoﾟ)=(ﾟДﾟ) [&#39;c&#39;]+(ﾟДﾟ) [&#39;o&#39;]+(ﾟωﾟﾉ +&#39;_&#39;)[ﾟΘﾟ]+ ((ﾟωﾟﾉ==3) +&#39;_&#39;) [ﾟｰﾟ] + ((ﾟДﾟ) +&#39;_&#39;) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ ((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+((ﾟｰﾟ==3) +&#39;_&#39;) [(ﾟｰﾟ) - (ﾟΘﾟ)]+(ﾟДﾟ) [&#39;c&#39;]+((ﾟДﾟ)+&#39;_&#39;) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ (ﾟДﾟ) [&#39;o&#39;]+((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ];(ﾟДﾟ) [&#39;_&#39;] =(o^_^o) [ﾟoﾟ] [ﾟoﾟ];(ﾟεﾟ)=((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+ (ﾟДﾟ) .ﾟДﾟﾉ+((ﾟДﾟ)+&#39;_&#39;) [(ﾟｰﾟ) + (ﾟｰﾟ)]+((ﾟｰﾟ==3) +&#39;_&#39;) [o^_^o -ﾟΘﾟ]+((ﾟｰﾟ==3) +&#39;_&#39;) [ﾟΘﾟ]+ (ﾟωﾟﾉ +&#39;_&#39;) [ﾟΘﾟ]; (ﾟｰﾟ)+=(ﾟΘﾟ); (ﾟДﾟ)[ﾟεﾟ]=&#39;\\&#39;; (ﾟДﾟ).ﾟΘﾟﾉ=(ﾟДﾟ+ ﾟｰﾟ)[o^_^o -(ﾟΘﾟ)];(oﾟｰﾟo)=(ﾟωﾟﾉ +&#39;_&#39;)[c^_^o];(ﾟДﾟ) [ﾟoﾟ]=&#39;\&#34;&#39;;(ﾟДﾟ) [&#39;_&#39;] ( (ﾟДﾟ) [&#39;_&#39;] (ﾟεﾟ+(ﾟДﾟ)[ﾟoﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟΘﾟ)+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟΘﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) +(o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (o^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (o^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o^_^o) +(o^_^o))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟoﾟ]) (ﾟΘﾟ)) (&#39;_&#39;);
 </span></span></code></pre></div>
+          
+          
+          
+        </div>
+        
+        
+
+        
+        
+
+          
       </div>
-    </article>
-
-    <hr />
-
-    <div class="post-info">
+     
       
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
-
-        <span class="tag"><a href="https://jashiker.github.io/tags/crypto/">crypto</a></span>
-        
-    </p>
-
       
-    <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-
-        <span class="tag"><a href="https://jashiker.github.io/categories/wiki/">wiki</a></span>
         
-    </p>
-
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        2357 Words
-      </p>
-
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
         
-          2022-01-29 11:36
-        
-
-         
+          
           
         
-      </p>
-    </div>
-      <hr />
-      <div class="sharing-buttons">
-        
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
-  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-    </div>
-  </div>
-</a>
+      <script>
+        var oid = "views_posts\/Encode.md"
+        var oid_likes = "likes_posts\/Encode.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
 
-
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
-  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;caption=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;canonicalUrl=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
-  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
-    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="mailto:?subject=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;body=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
-  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f&amp;media=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f;description=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
-  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f&amp;title=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;summary=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;source=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
-  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f&amp;resubmit=true&amp;title=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
-  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f;title=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90" target="_blank" rel="noopener" aria-label="" title="Share on xing">
-  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="whatsapp://send?text=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90%20https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
-  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f&amp;t=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
-  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
-    </div>
-  </div>
-</a>
-
-
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=%e7%bc%96%e7%a0%81-%e7%bc%96%e5%86%99%e4%bd%a0%e7%9a%84%e5%bf%ab%e4%b9%90&amp;url=https%3a%2f%2fjashiker.github.io%2fposts%2fencode%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
-  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-    </div>
-  </div>
-</a>
-
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/modern_crypto/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >现代密码-看尽如今的满目繁华</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-01-29T11:31:41&#43;08:00">29 January 2022</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/xctf-reverse-advanced_daliy_001/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >攻防世界进阶区日常训练001</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2022-04-23T15:14:39&#43;08:00">23 April 2022</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
       </div>
-
-    
-    <div class="pagination">
-        
-        <div class="pagination__title">
-            <span class="pagination__title-h">Read other posts</span>
-            <hr />
-        </div>
-        
-
-        <div class="pagination__buttons">
-            
-            <span class="button previous">
-                <a href="https://jashiker.github.io/posts/xctf-reverse-advanced_daliy_001/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">攻防世界进阶区日常训练001</span>
-                </a>
-            </span>
-            
-
-            
-            <span class="button next">
-                <a href="https://jashiker.github.io/posts/modern_crypto/">
-                    <span class="button__text">现代密码-看尽如今的满目繁华</span>
-                    <span class="button__icon">→</span>
-                </a>
-            </span>
-            
-        </div>
     </div>
+  
 
 
     
+  </footer>
+</article>
 
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2025
+      Jasmine❄Hiker
+    </p>
     
 
     
-
-  </main>
-
-            </div>
-
-            
-                <footer class="footer">
     
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
     
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
 </footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://jashiker.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
 
-            
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
         </div>
-
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
         
 
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
 
 
-<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
 
+  </div>
+</body>
 
-
-
-    </body>
 </html>
