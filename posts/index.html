@@ -45,8 +45,11 @@
   
   
   
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.52b8d61b061c90a738102a0eac69eaa1479fdf5de882a0b0741d7515240617156a6c4477fcc91f9c962062804fe62d2932bb9f57d0aded208c762c2e1ed2e202.js"
-    integrity="sha512-UrjWGwYckKc4ECoOrGnqoUef313ogqCwdB11FSQGFxVqbER3/MkfnJYgYoBP5i0pMrufV9Ct7SCMdiwuHtLiAg==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.65b5de43825ad54a420102c9ddccece1f1015665fe76e5b399ba259e1de29f6c83ac1b3cf77beed3d29e26604dfebf561a8e1db523cb6add0d6acccc9e8f1307.js"
+    integrity="sha512-ZbXeQ4Ja1UpCAQLJ3czs4fEBVmX&#43;duWzmbolnh3in2yDrBs893vu09KeJmBN/r9WGo4dtSPLat0NaszMno8TBw==" data-copy="" data-copied=""></script>
   
   
   
@@ -136,7 +139,12 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 min-h-[130px] opacity-65 pl-[24px] pr-[24px] bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal" style="z-index:80"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
     
     
@@ -388,6 +396,16 @@
 
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -450,50 +468,30 @@
 
     
 
-    <section class="space-y-10 w-full">
+      
+
       
         
-        
-        <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-          2025
-        </h2>
-        
-        
-        
+          <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+            2025
+          </h2>
+        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 ">
+          
+          
 
+  <a href="/posts/sais_third_medicine_think/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/sais_third_medicine_think/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/sais_third_medicine_think/">Sais_third_medicine_think</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -570,54 +568,41 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
+          
+        </section>
         
+      
         
-        
-        <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-          2022
-        </h2>
-        
-        
-        
+          <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+            2022
+          </h2>
+        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 ">
+          
+          
 
+  <a href="/posts/otterctf_2018_memory_forensic_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/otterctf_2018_memory_forensic_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/otterctf_2018_memory_forensic_writeup/">OtterCTF 2018 内存取证复现</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -694,47 +679,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-reverse_daliy_002/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse_daliy_002/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse_daliy_002/">攻防世界 RE 日常练习 002</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -811,47 +781,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/2022_wdb_ql-writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/2022_wdb_ql-writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/2022_wdb_ql-writeup/">2022 网鼎杯 青龙组 Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -928,47 +883,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-reverse-advanced_daliy_001/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse-advanced_daliy_001/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse-advanced_daliy_001/">攻防世界进阶区日常训练001</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1045,47 +985,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/encode/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/encode/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/encode/">编码-编写你的快乐</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1162,47 +1087,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/modern_crypto/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/modern_crypto/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/modern_crypto/">现代密码-看尽如今的满目繁华</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1279,47 +1189,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/classic_crypto/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/classic_crypto/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/classic_crypto/">古典密码-探寻曾经的故事</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1396,47 +1291,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/2021-cranecitycup-crypto_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/2021-cranecitycup-crypto_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/2021-cranecitycup-crypto_writeup/">2021 鹤城杯 Crypto_Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1513,47 +1393,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/2021_meituan_mt-ctf_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/2021_meituan_mt-ctf_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/2021_meituan_mt-ctf_writeup/">2021_美团_MT CTF_Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1630,47 +1495,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/2021-sheepcitycup-crypto%E9%83%A8%E5%88%86_writeup/">2021 羊城杯 Crypto部分_Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1747,47 +1597,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/jarvisoj-basic_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/jarvisoj-basic_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/jarvisoj-basic_writeup/">Jarvisoj Basic_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1864,47 +1699,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/ctf_totalplan/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/ctf_totalplan/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/ctf_totalplan/">CTF整体规划</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -1981,47 +1801,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/university_future/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/university_future/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/university_future/">大学,未来</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2098,47 +1903,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/math_and_program/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/math_and_program/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/math_and_program/">数学之美,程序之巧</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2215,47 +2005,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/ecc_startup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/ecc_startup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/ecc_startup/">浅谈椭圆曲线加密算法(ECC)</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2332,47 +2107,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/process_and_threads/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/process_and_threads/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/process_and_threads/">进程与线程</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2449,47 +2209,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/crypto_startup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/crypto_startup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/crypto_startup/">杯茗藏香，君闻几何</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2566,47 +2311,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/reverse_startup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/reverse_startup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/reverse_startup/">一花一世界，一码一千秋</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2683,47 +2413,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-reverse-expert-3_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse-expert-3_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse-expert-3_writeup/">XCTF REVERSE Expert (3) Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2800,47 +2515,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-reverse-expert-2_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse-expert-2_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse-expert-2_writeup/">XCTF REVERSE Expert (2) Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -2917,47 +2617,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-reverse-expert-1_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse-expert-1_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse-expert-1_writeup/">XCTF REVERSE Expert (1) Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3034,47 +2719,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-reverse-3_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-reverse-3_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-reverse-3_writeup/">BUUCTF REVERSE [17~24]_Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3151,47 +2821,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-reverse-2_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-reverse-2_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-reverse-2_writeup/">BUUCTF REVERSE [9~16]_Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3268,54 +2923,41 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
+          
+        </section>
         
+      
         
-        
-        <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-          2021
-        </h2>
-        
-        
-        
+          <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
+            2021
+          </h2>
+        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 ">
+          
+          
 
+  <a href="/posts/xctf-reverse-novice_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-reverse-novice_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-reverse-novice_writeup/">XCTF REVERSE novice_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3392,47 +3034,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-reverse-1_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-reverse-1_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-reverse-1_writeup/">BUUCTF REVERSE [1~8]_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3509,47 +3136,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-6_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-6_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-6_writeup/">BUUCTF CRYPTO (6) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3626,47 +3238,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-5_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-5_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-5_writeup/">BUUCTF CRYPTO (5) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3743,47 +3340,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-4_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-4_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-4_writeup/">BUUCTF CRYPTO (4) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3860,47 +3442,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/bjdctf-2nd-crypto_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/bjdctf-2nd-crypto_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/bjdctf-2nd-crypto_writeup/">BJDCTF 2nd CRYPTO_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -3977,47 +3544,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/gkctf2020-crypto_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/gkctf2020-crypto_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/gkctf2020-crypto_writeup/">GKCTF2020 CRYPTO_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4094,47 +3646,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-3_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-3_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-3_writeup/">BUUCTF CRYPTO (3) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4211,47 +3748,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-2_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-2_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-2_writeup/">BUUCTF CRYPTO (2) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4328,47 +3850,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/crypto_rsa_attack/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/crypto_rsa_attack/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/crypto_rsa_attack/">尽沾手襟 淋满眼眶</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4445,47 +3952,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/crypto_rsa_startup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/crypto_rsa_startup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/crypto_rsa_startup/">清茶一盏 公杯斟茗</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4562,47 +4054,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/buuctf-crypto-1_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/buuctf-crypto-1_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/buuctf-crypto-1_writeup/">BUUCTF CRYPTO (1) writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4679,47 +4156,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-crypto-novice_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-crypto-novice_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-crypto-novice_writeup/">XCTF CRYPTO novice_writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4796,47 +4258,32 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
-        
+          
+          
 
+  <a href="/posts/xctf-web-novice_writeup/" class="min-w-full">
+    
+    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
 
+      <div class="px-6 py-4">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="flex flex-wrap article " href="/posts/xctf-web-novice_writeup/">
-    <div class=" mt-3 md:mt-0">
-      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/xctf-web-novice_writeup/">XCTF WEB novice Writeup</div>
         
-        
-        
-      </div>
-      <div class="text-sm text-neutral-500 dark:text-neutral-400">
-        
+
+        <div class="text-sm text-neutral-500 dark:text-neutral-400">
+          
 
 
 
@@ -4913,15 +4360,22 @@
 
 
 
+        </div>
+
+        
       </div>
-      
+      <div class="px-6 pt-4 pb-2">
+
+      </div>
     </div>
   </a>
 
-        
+          
+        </section>
         
       
-    </section>
+
+      
 
     
 
