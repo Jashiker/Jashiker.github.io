@@ -1,0 +1,2113 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>攻防世界进阶区日常训练001 &middot; (,,・ω・,,)</title>
+    <meta name="title" content="攻防世界进阶区日常训练001 &middot; (,,・ω・,,)">
+  
+
+  
+  
+    <meta name="description" content="My awesome website">
+  
+  
+    <meta name="keywords" content="ctf,writeup,reverse,">
+  
+  
+  
+  <link rel="canonical" href="https://jashiker.github.io/posts/posts/xctf-reverse-advanced_daliy_001/">
+  
+
+  
+  
+    <meta name="author" content="Jasmine❄Hiker">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jashiker" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="https://jashiker.github.io/posts/posts/xctf-reverse-advanced_daliy_001/">
+  <meta property="og:site_name" content="(,,・ω・,,)">
+  <meta property="og:title" content="攻防世界进阶区日常训练001">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-04-23T15:14:39+08:00">
+    <meta property="article:modified_time" content="2022-04-23T15:14:39+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Reverse">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="攻防世界进阶区日常训练001">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.2028a88cfced6d5b344415a33ade070dc2df1b25ff170e8024bedc3074c0e07c6b5307558a78c2705c69e4ec42c7e8880eb7d2d87880470577c388a821481e89.css"
+    integrity="sha512-ICiojPztbVs0RBWjOt4HDcLfGyX/Fw6AJL7cMHTA4HxrUwdVinjCcFxp5OxCx&#43;iIDrfS2HiARwV3w4ioIUgeiQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.9cc802d09f28c6af56ceee7bc6e320a39251fdae98243f2a9942f221ac57a9f49c51609699a91794a7b2580ee1deaa8e4d794a68ffa94aa317c66e893ce51e02.js"
+      integrity="sha512-nMgC0J8oxq9Wzu57xuMgo5JR/a6YJD8qmULyIaxXqfScUWCWmakXlKeyWA7h3qqOTXlKaP&#43;pSqMXxm6JPOUeAg=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "攻防世界进阶区日常训练001",
+    "headline": "攻防世界进阶区日常训练001",
+    
+    
+    "inLanguage": "en",
+    "url" : "https:\/\/jashiker.github.io\/posts\/posts\/xctf-reverse-advanced_daliy_001\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jasmine❄Hiker"
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-04-23T15:14:39\u002b08:00",
+    "datePublished": "2022-04-23T15:14:39\u002b08:00",
+    
+    "dateModified": "2022-04-23T15:14:39\u002b08:00",
+    
+    "keywords": ["ctf","writeup","reverse"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2899"
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div
+  class="fixed inset-x-0 min-h-[130px] opacity-65 bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal z-80"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          (,,・ω・,,)
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/posts/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Blog"
+  title="Posts">
+  
+  
+    <p class="text-base font-medium">
+      Blog
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/about/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="About"
+  title="About">
+  
+  
+    <p class="text-base font-medium">
+      About
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/link/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Link"
+  title="Link">
+  
+  
+    <p class="text-base font-medium">
+      Link
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Blog"
+    title="Posts">
+    
+    
+      <p class="text-bg font-bg">
+        Blog
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="About"
+    title="About">
+    
+    
+      <p class="text-bg font-bg">
+        About
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/link/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Link"
+    title="Link">
+    
+    
+      <p class="text-bg font-bg">
+        Link
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
+  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        攻防世界进阶区日常训练001
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2022-04-23T15:14:39&#43;08:00">23 April 2022</time><span class="px-2 text-primary-500">&middot;</span><span>2899 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">14 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts/posts/XCTF-REVERSE-Advanced_Daliy_001.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="Jasmine❄Hiker"
+        src="/img/profile_hu_2b75c06d2f9c96f6.jpg"
+        data-zoom-src="/img/profile.jpg">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        Author
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        Jasmine❄Hiker
+      </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jashiker"
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#re2-cpp-is-awesome">re2-cpp-is-awesome</a></li>
+    <li><a href="#easyre1">easyRE1</a></li>
+    <li><a href="#reversing-x64elf-100">Reversing-x64Elf-100</a>
+      <ul>
+        <li><a href="#算法分析">算法分析</a></li>
+        <li><a href="#求解">求解</a></li>
+      </ul>
+    </li>
+    <li><a href="#babyre">BABYRE</a>
+      <ul>
+        <li><a href="#问题分析">问题分析</a></li>
+        <li><a href="#静态解决方案">静态解决方案</a></li>
+        <li><a href="#动态解决方案">动态解决方案</a></li>
+        <li><a href="#judge函数分析">judge函数分析</a></li>
+        <li><a href="#求解-1">求解</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#re2-cpp-is-awesome">re2-cpp-is-awesome</a></li>
+    <li><a href="#easyre1">easyRE1</a></li>
+    <li><a href="#reversing-x64elf-100">Reversing-x64Elf-100</a>
+      <ul>
+        <li><a href="#算法分析">算法分析</a></li>
+        <li><a href="#求解">求解</a></li>
+      </ul>
+    </li>
+    <li><a href="#babyre">BABYRE</a>
+      <ul>
+        <li><a href="#问题分析">问题分析</a></li>
+        <li><a href="#静态解决方案">静态解决方案</a></li>
+        <li><a href="#动态解决方案">动态解决方案</a></li>
+        <li><a href="#judge函数分析">judge函数分析</a></li>
+        <li><a href="#求解-1">求解</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h1 class="relative group">攻防世界 RE 进阶区 日常练习 001
+    <div id="攻防世界-re-进阶区-日常练习-001" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%94%bb%e9%98%b2%e4%b8%96%e7%95%8c-re-%e8%bf%9b%e9%98%b6%e5%8c%ba-%e6%97%a5%e5%b8%b8%e7%bb%83%e4%b9%a0-001" aria-label="Anchor">#</a>
+    </span>
+    
+</h1>
+<blockquote>
+<p>ISCC比赛临近，CTF比赛题目也要开始继续训练起来
+前段时间，由于准备升学相关的事宜，没有进行比赛的训练
+手感相对而言，有些生疏
+简单从攻防世界平台找几道逆向的题目进行简单的练习下</p></blockquote>
+<p>这几道题目主要都是使用IDA pro的远程调试功能，使用虚拟机搭配IDA进行远程调试</p>
+
+<h2 class="relative group">re2-cpp-is-awesome
+    <div id="re2-cpp-is-awesome" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#re2-cpp-is-awesome" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>先查看一些文件的简单信息
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220420210740.png"
+    ></figure>
+</p>
+<p>ELF文件，GCC编译，无壳</p>
+<p>IDA看下：
+C++编译的程序文件，看的心烦意乱基本上找不到关键的函数，和关键的位置。</p>
+<p>尝试使用下IDA pro的动调寻找一下f关键位置(IDA pro的动态消失配置可以自己网络检索，有很多相关的内容)</p>
+<p>先断在第一个跳转位置，即<code>jz short loc_400BD7</code> 位置上</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220420213518.png"
+    ></figure>
+<p>进行几次调试，发现都直接退出，没有进行跳转
+也就是 <code>cmp [rbp+var_64], 2</code> 的比较值没有改变ZF标志位
+对上面汇编代码进行审计：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">main proc near                       
+var_70= qword ptr -70h
+var_64= dword ptr -64h
+var_60= qword ptr -60h
+var_50= byte ptr -50h
+var_21= byte ptr -21h
+var_20= qword ptr -20h
+var_14= dword ptr -14h
+
+push    rbp
+mov     rbp, rsp
+push    rbx
+sub     rsp, 68h
+mov     [rbp+var_64], edi
+mov     [rbp+var_70], rsi
+cmp     [rbp+var_64], 2
+</code></pre><p>指令<code>cmp [rbp+var_64], 2</code>是一个条件判断，根据这个语句寻找下变量</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">rbp+64 = edi
+</code></pre><p>根据Linux x64 fastcall的调用约定，可以知道<code>edi</code>寄存器存储着函数的第一个参数，<code>main</code>函数的第一参数是运行程序附加的参数。所以根据条件，应该是程序运行的时候要携带一个参数进行运行。</p>
+<p>因此，尝试使用传参调用来进行寻找关键的函数（当然也可以使用修改ZF标志位）。现在进入下一步的探索：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220421000556.png"
+    ></figure>
+<p>一路F8寻找退出位置，找到退出位置是在<code>call sub_400B56</code>位置
+点开函数看下</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">sub_400B56      proc near       ; CODE XREF: main+F5↓p
+push    rbp
+mov     rbp, rsp
+mov     esi, offset aBetterLuckNext ; &#34;Better luck next time\n&#34;
+mov     edi, offset _ZSt4cout ; std::cout
+call    __ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; std::operator&lt;&lt;&lt;std::char_traits&lt;char&gt;&gt;(std::ostream &amp;,char const*)
+mov     edi, 0          ; status
+call    _exit
+</code></pre><p>简单审计下，发现函数，就是一个错误输出的函数，应该不是关键判断的位置。因此，需要往上继续寻找。</p>
+<p>退出函数上面有<code>jz short loc_400C83</code>跳转，说明应该是存在条件判断，进行向上寻找条件判断的语句。</p>
+<p>找到<code>cmp dl al</code>指令这个应该是核心的条件判断指令
+指令比较的是dl寄存器和al寄存器存储的值
+dl寄存器是dx寄存器的低位，al寄存器是ax寄存器的低位。相应地，寻找下对eax或rax、edx或rdx的操作</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">lea     rax, [rbp+var_50]
+mov     rdi, rax
+call    __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv ; std::__cxx11::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt;&gt;::end(void)
+mov     [rbp+var_20], rax
+lea     rdx, [rbp+var_20]
+lea     rax, [rbp+var_60]
+mov     rsi, rdx
+mov     rdi, rax
+call    sub_400D3D
+test    al, al
+jz      short loc_400C95
+lea     rax, [rbp+var_60]
+mov     rdi, rax
+call    sub_400D9A
+movzx   edx, byte ptr [rax]
+mov     rcx, cs:off_6020A0 ; &#34;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{&#34;...
+mov     eax, [rbp+var_14]
+cdqe
+mov     eax, dword_6020C0[rax*4]
+cdqe
+add     rax, rcx
+movzx   eax, byte ptr [rax]
+</code></pre><p>可以寻找到相应的关系，由于C++面向对象STL反汇编实在是比较难搞懂，经过反复调试，发现关键的函数是在这几行：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">
+movzx   edx, byte ptr [rax]
+mov     rcx, cs:off_6020A0 ; &#34;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{&#34;...
+mov     eax, [rbp+var_14]
+cdqe
+mov     eax, dword_6020C0[rax*4]
+cdqe
+add     rax, rcx
+movzx   eax, byte ptr [rax]
+</code></pre><p>对于这个指令，应该就是对数组进行取值组合，可以看下<code>dword_6020C0</code>存储的数据
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220421235604.png"
+    ></figure>
+
+中间的<code>align 8</code> 指令会根据不同编译器和cpu而呈现不同的行为，<code>align</code>指令简单来说也就是数据宽度对齐，根据数据的规律，可以大致知道是每隔三个0一个有效数据。</p>
+<p>上面存储了一个字符串：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">.rodata:0000000000400E58 aL3tMeT3llY0uS0 db &#39;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{FL4G}_W0nt_b3_3X4ctly_th4t&#39;
+.rodata:0000000000400E58                 db &#39;_345y_t0_c4ptur3_H0wev3r_1T_w1ll_b3_C00l_1F_Y0u_g0t_1t&#39;,0
+</code></pre><p>提取出来的字符串是：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{FL4G}_W0nt_b3_3X4ctly_th4t_345y_t0_c4ptur3_H0wev3r_1T_w1ll_b3_C00l_1F_Y0u_g0t_1t
+</span></span></code></pre></div><p>然后提取一下上面数组存储的数据：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ida_chars</span><span class="p">[]</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x24</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x05</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x36</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x07</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x27</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x26</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x0D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x56</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x16</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x02</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x29</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x2B</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>现在知道一些已有的数据，下面需要对算法逻辑进行推导：
+根据上面找到的关键指令进行C语言代码转化：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">rax</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[]</span> <span class="o">=</span>  <span class="s">&#34;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{FL4G}_W0nt_b3_3X4ctly_th4t_345y_t0_c4ptur3_H0wev3r_1T_w1ll_b3_C00l_1F_Y0u_g0t_1t&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ida_chars</span><span class="p">[]</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x24</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x05</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x36</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x07</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x27</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x26</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x0D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x56</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x16</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x02</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x29</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mh">0x2B</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">argv</span> <span class="o">+</span> <span class="n">rax</span><span class="p">)</span> <span class="o">!=</span>  <span class="n">str</span><span class="p">[</span><span class="n">ida_chars</span><span class="p">[</span><span class="n">rax</span><span class="o">*</span><span class="mi">4</span><span class="p">]])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Error_exit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>在继续跟逻辑，跟进上面的指令，整体看下汇编，进行C语言整合：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[]</span> <span class="o">=</span>  <span class="s">&#34;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{FL4G}_W0nt_b3_3X4ctly_th4t_345y_t0_c4ptur3_H0wev3r_1T_w1ll_b3_C00l_1F_Y0u_g0t_1t&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ida_chars</span><span class="p">[]</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x24</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x05</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x36</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x07</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x27</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x26</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x0D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x56</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x16</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x02</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x29</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">	<span class="mh">0x2B</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span>
+</span></span><span class="line"><span class="cl">	<span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">31</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">argv</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">!=</span>  <span class="n">str</span><span class="p">[</span><span class="n">ida_chars</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="p">]])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nf">Error_exit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>现在主要逻辑基本已经整合成C语言代码，下面根据主要的逻辑，编写一个C语言代码进行求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">string</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&#34;L3t_ME_T3ll_Y0u_S0m3th1ng_1mp0rtant_A_{FL4G}_W0nt_b3_3X4ctly_th4t_345y_t0_c4ptur3_H0wev3r_1T_w1ll_b3_C00l_1F_Y0u_g0t_1&#34;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">ida_chars</span><span class="p">[]</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="mh">0x24</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x05</span><span class="p">,</span> <span class="mh">0x36</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x07</span><span class="p">,</span>  <span class="mh">0x27</span><span class="p">,</span> <span class="mh">0x26</span><span class="p">,</span> <span class="mh">0x2D</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">          <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x0D</span><span class="p">,</span> <span class="mh">0x56</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="mh">0x2D</span><span class="p">,</span> <span class="mh">0x16</span><span class="p">,</span> <span class="mh">0x02</span><span class="p">,</span> <span class="mh">0x15</span><span class="p">,</span> <span class="mh">0x03</span><span class="p">,</span> <span class="mh">0x65</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x29</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">          <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x01</span><span class="p">,</span> <span class="mh">0x44</span><span class="p">,</span> <span class="mh">0x2B</span>
+</span></span><span class="line"><span class="cl">        <span class="p">};</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">flag</span><span class="p">[</span><span class="mi">31</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">31</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="n">ida_chars</span><span class="p">[</span><span class="n">i</span><span class="p">]];</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>编译并运行程序，得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ALEXCTF{W3_L0v3_C_W1th_CL45535}
+</span></span></code></pre></div><p>补充知识：</p>
+<blockquote>
+<p>Linux x64 fastcall 调用约定</p>
+<ul>
+<li>Linux 下的调用约定叫做 “System V AMD64 ABI”，此约定主要在 Solaris，GNU/Linux，FreeBSD 和其他非微软OS上使用；</li>
+<li>Linux 的 x64 下也只有一种函数调用约定，即 __fastcall ，其他调用约定的关键字会被忽略，也就是说 ABI 只有__fastcall ；</li>
+<li>一个函数在调用时，如果参数个数小于等于 6 个时，前 6 个参数是从左至右依次存放于 RDI，RSI，RDX，RCX，R8，R9 寄存器里面，剩下的参数通过栈传递，从右至左顺序入栈；</li>
+<li>如果参数个数大于 6 个时，前 5 个参数是从左至右依次存放于 RDI，RSI，RDX，RCX，RAX 寄存器里面，剩下的参数通过栈传递，从右至左顺序入栈；</li>
+<li>对于系统调用，使用 R10 代替 RCX；</li>
+</ul></blockquote>
+
+<h2 class="relative group">easyRE1
+    <div id="easyre1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#easyre1" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>附件中是一个rar文件，解压后的文件夹含有两个文件
+一个easy-32文件
+一个easy-64文件</p>
+<p>查看下文件的大致信息：
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220422045950.png"
+    ></figure>
+</p>
+<p>ELF x64位程序，通过gcc进行编译的，没有壳
+使用IDA pro 查看下程序</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">push    rbp
+mov     rbp, rsp
+sub     rsp, 120h
+mov     [rbp+var_114], edi
+mov     [rbp+var_120], rsi
+mov     rax, fs:28h
+mov     [rbp+var_8], rax
+xor     eax, eax
+mov     edi, offset s   ; &#34;What is the password?&#34;
+call    _puts
+lea     rax, [rbp+s1]
+mov     rdi, rax
+mov     eax, 0
+call    _gets
+lea     rax, [rbp+s1]
+mov     esi, offset s2  ; &#34;the password&#34;
+mov     rdi, rax        ; s1
+call    _strcmp
+test    eax, eax
+jnz     short loc_40068F
+mov     edi, offset aFlagDb2f62a36a ; &#34;FLAG:db2f62a36a018bce28e46d976e3f9864&#34;
+call    _puts
+jmp     short loc_400699
+loc_40068F:                             ; CODE XREF: main+5B↑j
+mov     edi, offset aWrong ; &#34;Wrong!!&#34;
+call    _puts
+</code></pre><p>发现程序就挺简单的，关键信息就直接呈现出来了</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">mov     edi, offset aFlagDb2f62a36a ; &#34;FLAG:db2f62a36a018bce28e46d976e3f9864&#34;
+</code></pre><p>这道题目的Flag应该就是：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">flag{db2f62a36a018bce28e46d976e3f9864}
+</span></span></code></pre></div>
+<h2 class="relative group">Reversing-x64Elf-100
+    <div id="reversing-x64elf-100" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#reversing-x64elf-100" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>查看下文件信息，应该是Elf的文件，使用DIE查看下程序信息
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220422051546.png"
+    ></figure>
+</p>
+<p>Elf x64程序，没有壳，gcc编译。
+使用IDA看下，发现整个程序还是比较简单的，逻辑流程比较清晰</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">main            proc near               ; DATA XREF: start+1D↑o
+
+s               = byte ptr -110h
+var_8           = qword ptr -8
+
+; __unwind {
+push    rbp
+mov     rbp, rsp
+sub     rsp, 110h
+mov     rax, fs:28h
+mov     [rbp+var_8], rax
+xor     eax, eax
+mov     edi, offset format ; &#34;Enter the password: &#34;
+mov     eax, 0
+call    _printf
+mov     rdx, cs:stdin   ; stream
+lea     rax, [rbp+s]
+mov     esi, 0FFh       ; n
+mov     rdi, rax        ; s
+call    _fgets
+test    rax, rax
+jz      short loc_400866
+lea     rax, [rbp+s]
+mov     rdi, rax
+call    sub_4006FD
+test    eax, eax
+jnz     short loc_400855
+mov     edi, offset s   ; &#34;Nice!&#34;
+call    _puts
+mov     eax, 0
+jmp     short loc_40086B
+
+loc_400855:                             ; CODE XREF: main+5A↑j
+	mov     edi, offset aIncorrectPassw ; &#34;Incorrect password!&#34;
+	call    _puts
+	mov     eax, 1
+</code></pre><p>其实也就是一个判断，来判断flag的数据是否正确，主要应该就是对<code>sub_4006FD</code>函数的分析，
+下面就需要进入<code>sub_4006FD</code>函数里面，观察这个函数的行为</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">sub_4006FD      proc near               ; CODE XREF: main+53↓p
+
+var_38          = qword ptr -38h
+var_24          = dword ptr -24h
+var_20          = qword ptr -20h
+var_18          = qword ptr -18h
+var_10          = qword ptr -10h
+
+push    rbp
+mov     rbp, rsp
+mov     [rbp+var_38], rdi
+mov     [rbp+var_24], 0
+mov     [rbp+var_20], offset aDufhbmf ; &#34;Dufhbmf&#34;
+mov     [rbp+var_18], offset aPgImos ; &#34;pG`imos&#34;
+mov     [rbp+var_10], offset aEwuglpt ; &#34;ewUglpt&#34;
+mov     [rbp+var_24], 0
+jmp     short loc_40079B
+
+loc_40072D:                        ; CODE XREF: sub_4006FD+A2↓j
+	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+	add     eax, eax
+	add     eax, edx
+	sub     ecx, eax
+	mov     edx, ecx
+	movsxd  rax, edx
+	mov     rsi, [rbp+rax*8+var_20]
+	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+	add     eax, eax
+	cdqe
+	add     rax, rsi
+	movzx   eax, byte ptr [rax]
+	movsx   edx, al
+	mov     eax, [rbp+var_24]
+	movsxd  rcx, eax
+	mov     rax, [rbp+var_38]
+	add     rax, rcx
+	movzx   eax, byte ptr [rax]
+	movsx   eax, al
+	sub     edx, eax
+	mov     eax, edx
+	cmp     eax, 1
+	jz      short loc_400797
+	mov     eax, 1
+	jmp     short loc_4007A6
+
+loc_400797:                             ; CODE XREF: sub_4006FD+91↑j
+	add     [rbp+var_24], 1
+
+loc_40079B:                             ; CODE XREF: sub_4006FD+2E↑j
+	cmp     [rbp+var_24], 0Bh
+	jle     short loc_40072D
+	mov     eax, 0
+loc_4007A6:                             ; CODE XREF: sub_4006FD+98↑j
+pop     rbp
+retn
+
+sub_4006FD      endp
+</code></pre>
+<h3 class="relative group">算法分析
+    <div id="算法分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ae%97%e6%b3%95%e5%88%86%e6%9e%90" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>关键应该是根据汇编代码来进行算法解读
+找到关键的汇编代码：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">jmp     short loc_40079B
+
+loc_40072D:                        ; CODE XREF: sub_4006FD+A2↓j
+	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+	add     eax, eax
+	add     eax, edx
+	sub     ecx, eax
+	mov     edx, ecx
+	movsxd  rax, edx
+	mov     rsi, [rbp+rax*8+var_20]
+	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+	add     eax, eax
+	cdqe
+	add     rax, rsi
+	movzx   eax, byte ptr [rax]
+	movsx   edx, al
+	mov     eax, [rbp+var_24]
+	movsxd  rcx, eax
+	mov     rax, [rbp+var_38]
+	add     rax, rcx
+	movzx   eax, byte ptr [rax]
+	movsx   eax, al
+	sub     edx, eax
+	mov     eax, edx
+	cmp     eax, 1
+	jz      short loc_400797
+	mov     eax, 1
+	jmp     short loc_4007A6
+
+loc_400797:                             ; CODE XREF: sub_4006FD+91↑j
+	add     [rbp+var_24], 1
+
+loc_40079B:                             ; CODE XREF: sub_4006FD+2E↑j
+	cmp     [rbp+var_24], 0Bh
+	jle     short loc_40072D
+	mov     eax, 0
+</code></pre><p>这一大段代码应该就是关键的汇编代码，开始像剥洋葱一样，一层一层剥下这个程序的逻辑</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+</code></pre><p>这段代码是 <code>[rpb+var_24] / 3</code> ，可能看不明白，在《C++反汇编揭秘》一书中给出了除法的汇编运算模型，也算是编译器的一个模型。
+</p>
+$$
+\frac{\text{ecx} \cdot M}{2^{n+1}}
+$$<p>
+这里的M是指<code>mov edx, 55555556h</code>中的数值<code>55555556h</code>，
+这里的n是指<code>sar eax, 1Fh</code>中的数值<code>1Fh</code>
+根据公式，可以推导出除数的计算公式</p>
+$$
+除数 = \frac{2^{n+1}}{M}
+$$<p>
+根据根据推导的除法公式进行计算，得到除数是3。（关于除法的汇编分析可以阅读看雪一个师傅写的博客：<a
+  href="https://bbs.pediy.com/thread-261946.htm"
+    target="_blank"
+  >[原创]#30天写作挑战#反汇编代码还原之除数为非2的幂-编程技术-看雪论坛-安全社区|安全招聘|bbs.pediy.com</a>）</p>
+<p>现在可以清晰地明白了这段代码就是 ：n / 3</p>
+<p>接下来，看下面一段代码：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	add     eax, eax
+	add     eax, edx
+	sub     ecx, eax
+	mov     edx, ecx
+</code></pre><p>这一段代码，是比较容易理解的，结合着上面的代码：</p>
+<ul>
+<li>eax = <code>n / 3</code></li>
+<li>edx = <code>n / 3</code></li>
+<li>ecx = <code>n</code>
+根据信息，这段代码应该就是<code>n - 3 * (n / 3)</code>，可能有些人感觉很晕乎，着其实是取余运算，简言之，就是 <code>n % 3</code>，仔细分析下，就会发现和 <code>n % 3</code>的结果一致。</li>
+</ul>
+<p>现在这大段代码就是 <code>n % 3</code></p>
+<p>继续往下走起！</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	movsxd  rax, edx
+	mov     rsi, [rbp+rax*8+var_20]
+</code></pre><p>这个非常简单，就是数组喽，即<code>rbp[n % 3]</code></p>
+<p>接下来往下看</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	mov     ecx, [rbp+var_24]
+	mov     edx, 55555556h
+	mov     eax, ecx
+	imul    edx
+	mov     eax, ecx
+	sar     eax, 1Fh
+	sub     edx, eax
+	mov     eax, edx
+	add     eax, eax
+</code></pre><p>非常明显的除法，这段代码就是<code>2 * (n / 3)</code>
+后面紧跟着一段代码：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	cdqe
+	add     rax, rsi
+	movzx   eax, byte ptr [rax]
+	movsx   edx, al
+</code></pre><p>其实就是对上面数据的一个整合，也就是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">*(rbp[n % 3] + 2 * (n / 3))
+</span></span></code></pre></div><p>现在最难读懂的部分已经过去了，剩下的部分就比较简单，一口气读完</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">	mov     eax, [rbp+var_24]
+	movsxd  rcx, eax
+	mov     rax, [rbp+var_38]
+	add     rax, rcx
+	movzx   eax, byte ptr [rax]
+	movsx   eax, al
+</code></pre><p>直接读就行了，结合程序的信息：</p>
+<ul>
+<li>rax : <code>arg</code></li>
+<li>rcx : <code>n</code></li>
+</ul>
+<p>所以这段代码就是</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">*(arg + n)
+</span></span></code></pre></div><p>核心部分已经处理完毕了，再整体审计下代码得到</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span> <span class="o">*</span><span class="p">(</span><span class="n">rbp</span><span class="p">[</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="p">]</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">3</span><span class="p">))</span> <span class="o">-</span> <span class="o">*</span><span class="p">(</span><span class="n">arg</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>根据这样的代码，可以继续优化下，得到</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span> <span class="n">rbp</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span><span class="p">][</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)]</span> <span class="o">-</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+<h3 class="relative group">求解
+    <div id="求解" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%b1%82%e8%a7%a3" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>根据核心代码的分析，可以编写程序进行求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="o">*</span><span class="n">v3</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">v3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;Dufhbmf&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">v3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;pG`imos&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">v3</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;ewUglpt&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">flag</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v3</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">3</span><span class="p">)]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>编译并运行程序，得到</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Code_Talkers
+</span></span></code></pre></div><p>这道题目，主要考察运算的汇编理解。对于汇编的识别还是有一定要求的。至于我为什么不使用IDA pro的F5的Hex-rays插件的功能，我是想要进一步提高自身对于汇编语言的理解，而Hex-rays在很多时候都是无法使用，在真正的逆向工程中，更多的还是人工进行还原，而不是使用IDA的插件进行还原。而且，我是在进行练习，自然是希望挖掘到更多的知识点和技巧点。如果是比赛的话，肯定是更多采用F5的功能。</p>
+
+<h2 class="relative group">BABYRE
+    <div id="babyre" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#babyre" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>这道题目，有些技巧，不过总体还是挺有意思的。
+看下程序信息先：
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220422233020.png"
+    ></figure>
+</p>
+<p>ELF x64程序 GCC编译的程序
+使用IDA pro看看</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">main            proc near               ; DATA XREF: _start+1D↑o
+s               = byte ptr -20h
+var_8           = dword ptr -8
+var_4           = dword ptr -4
+
+; __unwind {
+                push    rbp
+                mov     rbp, rsp
+                sub     rsp, 20h
+                mov     [rbp+var_4], 0
+                jmp     short loc_400637
+
+loc_400617:                             ; CODE XREF: main+38↓j
+                mov     eax, [rbp+var_4]
+                cdqe
+                movzx   eax, judge[rax]
+                xor     eax, 0Ch
+                mov     edx, eax
+                mov     eax, [rbp+var_4]
+                cdqe
+                mov     judge[rax], dl
+                add     [rbp+var_4], 1
+
+loc_400637:                             ; CODE XREF: main+F↑j
+                cmp     [rbp+var_4], 0B5h
+                jle     short loc_400617
+                mov     edi, offset format ; &#34;Please input flag:&#34;
+                mov     eax, 0
+                call    _printf
+                lea     rax, [rbp+s]
+                mov     rsi, rax
+                mov     edi, offset a20s ; &#34;%20s&#34;
+                mov     eax, 0
+                call    ___isoc99_scanf
+                lea     rax, [rbp+s]
+                mov     rdi, rax        ; s
+                call    _strlen
+                mov     [rbp+var_8], eax
+                cmp     [rbp+var_8], 0Eh
+                jnz     short loc_400698
+                mov     edx, offset judge
+                lea     rax, [rbp+s]
+                mov     rdi, rax
+                call    rdx ; judge
+                test    eax, eax
+                jz      short loc_400698
+                mov     edi, offset s   ; &#34;Right!&#34;
+                call    _puts
+                jmp     short loc_4006A2
+
+loc_400698:                             ; CODE XREF: main+72↑j
+                                        ; main+84↑j
+                mov     edi, offset aWrong ; &#34;Wrong!&#34;
+                call    _puts
+
+loc_4006A2:                             ; CODE XREF: main+90↑j
+                mov     eax, 0
+                leave
+                retn
+; } // starts at 400606
+main            endp
+</code></pre>
+<h3 class="relative group">问题分析
+    <div id="问题分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%97%ae%e9%a2%98%e5%88%86%e6%9e%90" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>主程序的汇编并不很难的样子，但是这里是有坑的</p>
+<p>如果直接看主逻辑的话，没有什么难度。
+主逻辑就是一个函数判断的问题，如果函数判断成功，就返回正确，错误就返回错误。
+但是仔细看下，调用了一个Judge数据，相当于调用了数据。根据这个数据转换成函数会发现这个数据被混淆了。一直集中这个区域，就不知道怎么混淆。怎么跳出这个坑？这个的解决方法就挺简单的，放大一些自己的观测区域，能看到一些关键点</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">loc_400617:                             ; CODE XREF: main+38↓j
+                mov     eax, [rbp+var_4]
+                cdqe
+                movzx   eax, judge[rax]
+                xor     eax, 0Ch
+                mov     edx, eax
+                mov     eax, [rbp+var_4]
+                cdqe
+                mov     judge[rax], dl
+                add     [rbp+var_4], 1
+                
+loc_400637:                             ; CODE XREF: main+F↑j
+                cmp     [rbp+var_4], 0B5h
+                jle     short loc_400617
+</code></pre><p>这段代码对<code>judge</code>数据进行异或处理，静态观察就不能看到准确的judge数据。如果想要正确看到这个函数的数据，就需要看到运行过程中的运行数据。解决方法有两个，一种是静态解决方案，另一种是动态解决方案。</p>
+
+<h3 class="relative group">静态解决方案
+    <div id="静态解决方案" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%9d%99%e6%80%81%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>采用静态反汇编的方案，也就比较简单，直接在IDA里面嵌入执行脚本，使用执行脚本对数据进行异或修改。IDA pro支持嵌入Python脚本进行异或操作来修改数据。进行异或来得到正确的数据。</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt=""
+    src="/images/XCTF-REVERSE-DAILY/Pasted_image_20220423113951.png"
+    ></figure>
+<p>运行一次，然后将judge数据段进行代码转换，就能得到相应的函数：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">judge           proc near               ; CODE XREF: main+80↑p
+                                        ; DATA XREF: main+16↑r ...
+
+var_28          = qword ptr -28h
+var_20          = byte ptr -20h
+var_1F          = byte ptr -1Fh
+var_1E          = byte ptr -1Eh
+var_1D          = byte ptr -1Dh
+var_1C          = byte ptr -1Ch
+var_1B          = byte ptr -1Bh
+var_1A          = byte ptr -1Ah
+var_19          = byte ptr -19h
+var_18          = byte ptr -18h
+var_17          = byte ptr -17h
+var_16          = byte ptr -16h
+var_15          = byte ptr -15h
+var_14          = byte ptr -14h
+var_13          = byte ptr -13h
+var_4           = dword ptr -4
+
+                push    rbp
+                mov     rbp, rsp
+                mov     [rbp+var_28], rdi
+                mov     [rbp+var_20], 66h ; &#39;f&#39;
+                mov     [rbp+var_1F], 6Dh ; &#39;m&#39;
+                mov     [rbp+var_1E], 63h ; &#39;c&#39;
+                mov     [rbp+var_1D], 64h ; &#39;d&#39;
+                mov     [rbp+var_1C], 7Fh
+                mov     [rbp+var_1B], 6Bh ; &#39;k&#39;
+                mov     [rbp+var_1A], 37h ; &#39;7&#39;
+                mov     [rbp+var_19], 64h ; &#39;d&#39;
+                mov     [rbp+var_18], 3Bh ; &#39;;&#39;
+                mov     [rbp+var_17], 56h ; &#39;V&#39;
+                mov     [rbp+var_16], 60h ; &#39;`&#39;
+                mov     [rbp+var_15], 3Bh ; &#39;;&#39;
+                mov     [rbp+var_14], 6Eh ; &#39;n&#39;
+                mov     [rbp+var_13], 70h ; &#39;p&#39;
+                mov     [rbp+var_4], 0
+                jmp     short loc_600B71
+
+loc_600B49:                             ; CODE XREF: judge+75↓j
+                mov     eax, [rbp+var_4]
+                movsxd  rdx, eax
+                mov     rax, [rbp+var_28]
+                add     rax, rdx
+                mov     edx, [rbp+var_4]
+                movsxd  rcx, edx
+                mov     rdx, [rbp+var_28]
+                add     rdx, rcx
+                movzx   edx, byte ptr [rdx]
+                mov     ecx, [rbp+var_4]
+                xor     edx, ecx
+                mov     [rax], dl
+                add     [rbp+var_4], 1
+
+loc_600B71:                             ; CODE XREF: judge+47↑j
+                cmp     [rbp+var_4], 0Dh
+                jle     short loc_600B49
+                mov     [rbp+var_4], 0
+                jmp     short loc_600BA9
+
+loc_600B80:                             ; CODE XREF: judge+AD↓j
+                mov     eax, [rbp+var_4]
+                movsxd  rdx, eax
+                mov     rax, [rbp+var_28]
+                add     rax, rdx
+                movzx   edx, byte ptr [rax]
+                mov     eax, [rbp+var_4]
+                cdqe
+                movzx   eax, [rbp+rax+var_20]
+                cmp     dl, al
+                jz      short loc_600BA5
+                mov     eax, 0
+                jmp     short loc_600BB4
+
+loc_600BA5:                             ; CODE XREF: judge+9C↑j
+                add     [rbp+var_4], 1
+
+loc_600BA9:                             ; CODE XREF: judge+7E↑j
+                cmp     [rbp+var_4], 0Dh
+                jle     short loc_600B80
+                mov     eax, 1
+
+loc_600BB4:                             ; CODE XREF: judge+A3↑j
+                pop     rbp
+                retn
+judge           endp
+</code></pre>
+<h3 class="relative group">动态解决方案
+    <div id="动态解决方案" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%8a%a8%e6%80%81%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>动态解决相对来说会更简单些，就是进行动态调试，使代码运行到指定位置，然后查看数据即可，这样配置可能会有些难度，需要更高的运行性能，但是总体操作相对更简单些。</p>
+<p>断点断在<code>mov     edi, offset format ; &quot;Please input flag:&quot;</code> 这个指令就好，然后运行下动态调试。断在这个位置，查看下Judge数据就可以得到这个函数：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">judge proc near                         ; CODE XREF: main+80↑p
+                                        ; DATA XREF: main+16↑r ...
+
+var_28= qword ptr -28h
+var_20= byte ptr -20h
+var_1F= byte ptr -1Fh
+var_1E= byte ptr -1Eh
+var_1D= byte ptr -1Dh
+var_1C= byte ptr -1Ch
+var_1B= byte ptr -1Bh
+var_1A= byte ptr -1Ah
+var_19= byte ptr -19h
+var_18= byte ptr -18h
+var_17= byte ptr -17h
+var_16= byte ptr -16h
+var_15= byte ptr -15h
+var_14= byte ptr -14h
+var_13= byte ptr -13h
+var_4= dword ptr -4
+
+push    rbp
+mov     rbp, rsp
+mov     [rbp+var_28], rdi
+mov     [rbp+var_20], 66h ; &#39;f&#39;
+mov     [rbp+var_1F], 6Dh ; &#39;m&#39;
+mov     [rbp+var_1E], 63h ; &#39;c&#39;
+mov     [rbp+var_1D], 64h ; &#39;d&#39;
+mov     [rbp+var_1C], 7Fh
+mov     [rbp+var_1B], 6Bh ; &#39;k&#39;
+mov     [rbp+var_1A], 37h ; &#39;7&#39;
+mov     [rbp+var_19], 64h ; &#39;d&#39;
+mov     [rbp+var_18], 3Bh ; &#39;;&#39;
+mov     [rbp+var_17], 56h ; &#39;V&#39;
+mov     [rbp+var_16], 60h ; &#39;`&#39;
+mov     [rbp+var_15], 3Bh ; &#39;;&#39;
+mov     [rbp+var_14], 6Eh ; &#39;n&#39;
+mov     [rbp+var_13], 70h ; &#39;p&#39;
+mov     [rbp+var_4], 0
+jmp     short loc_600B71
+
+loc_600B49:                             ; CODE XREF: judge+75↓j
+mov     eax, [rbp+var_4]
+movsxd  rdx, eax
+mov     rax, [rbp+var_28]
+add     rax, rdx
+mov     edx, [rbp+var_4]
+movsxd  rcx, edx
+mov     rdx, [rbp+var_28]
+add     rdx, rcx
+movzx   edx, byte ptr [rdx]
+mov     ecx, [rbp+var_4]
+xor     edx, ecx
+mov     [rax], dl
+add     [rbp+var_4], 1
+
+loc_600B71:                             ; CODE XREF: judge+47↑j
+cmp     [rbp+var_4], 0Dh
+jle     short loc_600B49
+mov     [rbp+var_4], 0
+jmp     short loc_600BA9
+
+loc_600B80:                             ; CODE XREF: judge+AD↓j
+mov     eax, [rbp+var_4]
+movsxd  rdx, eax
+mov     rax, [rbp+var_28]
+add     rax, rdx
+movzx   edx, byte ptr [rax]
+mov     eax, [rbp+var_4]
+cdqe
+movzx   eax, [rbp+rax+var_20]
+cmp     dl, al
+jz      short loc_600BA5
+mov     eax, 0
+jmp     short loc_600BB4
+
+loc_600BA5:                             ; CODE XREF: judge+9C↑j
+add     [rbp+var_4], 1
+
+loc_600BA9:                             ; CODE XREF: judge+7E↑j
+cmp     [rbp+var_4], 0Dh
+jle     short loc_600B80
+mov     eax, 1
+
+loc_600BB4:                             ; CODE XREF: judge+A3↑j
+pop     rbp
+retn
+judge endp
+</code></pre>
+<h3 class="relative group">judge函数分析
+    <div id="judge函数分析" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#judge%e5%87%bd%e6%95%b0%e5%88%86%e6%9e%90" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>现在找到了函数，就需要对函数进行分析来发现关键的判断逻辑，来进行关键步骤的推理分析与判断</p>
+<p>对函数大致看一下，应该就是两个for循环了，第一个for循环是对参数进行异或操作，而第二个for循环是对局部变量进行操作。</p>
+<p>一段一段地分析吧</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">                mov     [rbp+var_4], 0
+                jmp     short loc_600B71
+
+loc_600B49:                             ; CODE XREF: judge+75↓j
+                mov     eax, [rbp+var_4]
+                movsxd  rdx, eax
+                mov     rax, [rbp+var_28]
+                add     rax, rdx
+                mov     edx, [rbp+var_4]
+                movsxd  rcx, edx
+                mov     rdx, [rbp+var_28]
+                add     rdx, rcx
+                movzx   edx, byte ptr [rdx]
+                mov     ecx, [rbp+var_4]
+                xor     edx, ecx
+                mov     [rax], dl
+                add     [rbp+var_4], 1
+
+loc_600B71:                             ; CODE XREF: judge+47↑j
+                cmp     [rbp+var_4], 0Dh
+                jle     short loc_600B49
+</code></pre><p>首先对于这段代码，要知道的一些信息：</p>
+<ul>
+<li><code>[rbp+var_4]</code> : i</li>
+<li><code>[rbp+var_28]</code> : rdi &ndash;&gt; arg</li>
+</ul>
+<p>所以根据这些信息，可以对这段汇编代码进行还原</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span> <span class="mh">0xD</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="o">*</span><span class="p">(</span><span class="n">arg</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">arg</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">^</span><span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>接着看下面一个循环语句：</p>
+<pre tabindex="0"><code class="language-x86asm" data-lang="x86asm">                mov     [rbp+var_4], 0
+                jmp     short loc_600BA9
+
+loc_600B80:                             ; CODE XREF: judge+AD↓j
+                mov     eax, [rbp+var_4]
+                movsxd  rdx, eax
+                mov     rax, [rbp+var_28]
+                add     rax, rdx
+                movzx   edx, byte ptr [rax]
+                mov     eax, [rbp+var_4]
+                cdqe
+                movzx   eax, [rbp+rax+var_20]
+                cmp     dl, al
+                jz      short loc_600BA5
+                mov     eax, 0
+                jmp     short loc_600BB4
+
+loc_600BA5:                             ; CODE XREF: judge+9C↑j
+                add     [rbp+var_4], 1
+
+loc_600BA9:                             ; CODE XREF: judge+7E↑j
+                cmp     [rbp+var_4], 0Dh
+                jle     short loc_600B80
+</code></pre><p>这段代码应该就是核心判断的逻辑咯，需要知道点信息来进行审计：</p>
+<ul>
+<li><code>[rbp+var_4]</code> : i</li>
+<li><code>[rbp+var_28]</code> : rdi &ndash;&gt; arg</li>
+<li><code>[rbp+var_20]</code> : <code>str[0xD]</code></li>
+</ul>
+<p>根据这些信息进行代码还原，非常简单</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mh">0xD</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="n">arg</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="o">!=</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>这个函数的核心逻辑代码已经有了，现在对这个函数的代码进行整合就能得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">judge</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">arg</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mh">0xD</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;f&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;m&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;c&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;d&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0x7F</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;k&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;7&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;d&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;V&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;`&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;n&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;p&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span> <span class="mh">0xD</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">arg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">arg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">^</span><span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span><span class="n">arg</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+<h3 class="relative group">求解
+    <div id="求解-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%b1%82%e8%a7%a3-1" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>现在Judge函数算是分析完成了，可以根据函数进行求解了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="kt">char</span> <span class="n">data</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">      <span class="kt">char</span> <span class="n">temp</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">      <span class="kt">char</span> <span class="n">flag</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">memcpy</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s">&#34;fmcd&#34;</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">127</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">memcpy</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="s">&#34;k7d;V`;np&#34;</span><span class="p">,</span> <span class="mi">9</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">strcat</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">temp</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">14</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">flag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></div><p>编译代码，并执行得到</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">flag{n1c3_j0b}k7d;V`;npfmcdk7d;V`;npf
+</span></span></code></pre></div><p>flag就是前半部分，即<code>flag{n1c3_j0b}</code></p>
+<p>这道题目也是可以使用IDA pro的Hex-Rays插件进行F5反编译的，和自己分析的结果基本上是一致的。本菜狗也只是想要提高一下自己的汇编水准，进行了相应的练习。因此并没有使用Hex-Rays插件进行反编译分析，而是直接查看汇编来进行阅读分析。</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_posts/posts/XCTF-REVERSE-Advanced_Daliy_001.md"
+          data-oid-likes="likes_posts/posts/XCTF-REVERSE-Advanced_Daliy_001.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/link/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Link
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2022-01-29T16:47:31&#43;08:00">29 January 2022</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/2022_wdb_ql-writeup/">
+              <span class="leading-6">
+                2022 网鼎杯 青龙组 Writeup&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2022-08-31T17:28:44&#43;08:00">31 August 2022</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          Jasmine❄Hiker
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="https://jashiker.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

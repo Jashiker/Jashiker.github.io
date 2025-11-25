@@ -1,0 +1,2034 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>BUUCTF CRYPTO (2) writeup &middot; (,,・ω・,,)</title>
+    <meta name="title" content="BUUCTF CRYPTO (2) writeup &middot; (,,・ω・,,)">
+  
+
+  
+  
+    <meta name="description" content="My awesome website">
+  
+  
+    <meta name="keywords" content="ctf,writeup,crypto,">
+  
+  
+  
+  <link rel="canonical" href="https://jashiker.github.io/posts/posts/buuctf-crypto-2_writeup/">
+  
+
+  
+  
+    <meta name="author" content="Jasmine❄Hiker">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jashiker" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="https://jashiker.github.io/posts/posts/buuctf-crypto-2_writeup/">
+  <meta property="og:site_name" content="(,,・ω・,,)">
+  <meta property="og:title" content="BUUCTF CRYPTO (2) writeup">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-06-26T10:34:27+08:00">
+    <meta property="article:modified_time" content="2021-06-26T10:34:27+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Crypto">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BUUCTF CRYPTO (2) writeup">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.2028a88cfced6d5b344415a33ade070dc2df1b25ff170e8024bedc3074c0e07c6b5307558a78c2705c69e4ec42c7e8880eb7d2d87880470577c388a821481e89.css"
+    integrity="sha512-ICiojPztbVs0RBWjOt4HDcLfGyX/Fw6AJL7cMHTA4HxrUwdVinjCcFxp5OxCx&#43;iIDrfS2HiARwV3w4ioIUgeiQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.9cc802d09f28c6af56ceee7bc6e320a39251fdae98243f2a9942f221ac57a9f49c51609699a91794a7b2580ee1deaa8e4d794a68ffa94aa317c66e893ce51e02.js"
+      integrity="sha512-nMgC0J8oxq9Wzu57xuMgo5JR/a6YJD8qmULyIaxXqfScUWCWmakXlKeyWA7h3qqOTXlKaP&#43;pSqMXxm6JPOUeAg=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.9e578d7ac3b5270b37ae32edae7835a744cda7734036e6e2f1ccf16f382b056ccd51c0df6b7ef3470991357a026507840aa22c1740ea2fe6bbce9b4223c5c182.css"
+    integrity="sha512-nleNesO1Jws3rjLtrng1p0TNp3NANubi8czxbzgrBWzNUcDfa37zRwmRNXoCZQeECqIsF0DqL&#43;a7zptCI8XBgg==">
+  
+  
+  
+  <script
+    defer
+    type="text/javascript"
+    src="/js/katex.bundle.a10a4a0655682a978b0422e48a40f3515d4d96c8e600a48e3dad34029a55cc00b128b89a908855227d1c07897ce09cdfe9f0d57decb148cb73f17dbb8a0a715c.js"
+    integrity="sha512-oQpKBlVoKpeLBCLkikDzUV1NlsjmAKSOPa00AppVzACxKLiakIhVIn0cB4l84Jzf6fDVfeyxSMtz8X27igpxXA=="
+    id="katex-render"></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "BUUCTF CRYPTO (2) writeup",
+    "headline": "BUUCTF CRYPTO (2) writeup",
+    
+    
+    "inLanguage": "en",
+    "url" : "https:\/\/jashiker.github.io\/posts\/posts\/buuctf-crypto-2_writeup\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jasmine❄Hiker"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-06-26T10:34:27\u002b08:00",
+    "datePublished": "2021-06-26T10:34:27\u002b08:00",
+    
+    "dateModified": "2021-06-26T10:34:27\u002b08:00",
+    
+    "keywords": ["ctf","writeup","crypto"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1560"
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div
+  class="fixed inset-x-0 min-h-[130px] opacity-65 bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal z-80"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          (,,・ω・,,)
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/posts/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Blog"
+  title="Posts">
+  
+  
+    <p class="text-base font-medium">
+      Blog
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/about/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="About"
+  title="About">
+  
+  
+    <p class="text-base font-medium">
+      About
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/link/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Link"
+  title="Link">
+  
+  
+    <p class="text-base font-medium">
+      Link
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Blog"
+    title="Posts">
+    
+    
+      <p class="text-bg font-bg">
+        Blog
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="About"
+    title="About">
+    
+    
+      <p class="text-bg font-bg">
+        About
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/link/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Link"
+    title="Link">
+    
+    
+      <p class="text-bg font-bg">
+        Link
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
+  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        BUUCTF CRYPTO (2) writeup
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2021-06-26T10:34:27&#43;08:00">26 June 2021</time><span class="px-2 text-primary-500">&middot;</span><span>1560 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts/posts/BUUCTF-CRYPTO-2_writeup.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="Jasmine❄Hiker"
+        src="/img/profile_hu_2b75c06d2f9c96f6.jpg"
+        data-zoom-src="/img/profile.jpg">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        Author
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        Jasmine❄Hiker
+      </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jashiker"
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#题目求解">题目求解：</a>
+      <ul>
+        <li><a href="#0x0-传统知识古典密码">0x0 传统知识+古典密码</a></li>
+        <li><a href="#0x1-信息化时代的步伐">0x1 信息化时代的步伐</a></li>
+        <li><a href="#0x2-rsa1">0x2 RSA1</a></li>
+        <li><a href="#0x3-凯撒转换呵呵">0x3 凯撒？转换？呵呵！</a></li>
+        <li><a href="#0x4-old-fashion">0x4 old-fashion</a></li>
+        <li><a href="#0x5-萌萌哒的八戒">0x5 萌萌哒的八戒</a></li>
+        <li><a href="#0x6-权限获得第一步">0x6 权限获得第一步</a></li>
+        <li><a href="#0x7-世上无难事">0x7 世上无难事</a></li>
+        <li><a href="#0x8-rsa3">0x8 RSA3</a></li>
+        <li><a href="#0x9-rsa2">0x9 RSA2</a></li>
+        <li><a href="#0xa-异性相吸">0xA 异性相吸</a></li>
+        <li><a href="#0xb-rsa">0xB RSA</a></li>
+        <li><a href="#0xc-还原大师">0xC 还原大师</a></li>
+        <li><a href="#0xd-unencode">0xD Unencode</a></li>
+        <li><a href="#0xe-robomunication">0xE robomunication</a></li>
+        <li><a href="#0xf-rsaroll">0xF RSAROLL</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#题目求解">题目求解：</a>
+      <ul>
+        <li><a href="#0x0-传统知识古典密码">0x0 传统知识+古典密码</a></li>
+        <li><a href="#0x1-信息化时代的步伐">0x1 信息化时代的步伐</a></li>
+        <li><a href="#0x2-rsa1">0x2 RSA1</a></li>
+        <li><a href="#0x3-凯撒转换呵呵">0x3 凯撒？转换？呵呵！</a></li>
+        <li><a href="#0x4-old-fashion">0x4 old-fashion</a></li>
+        <li><a href="#0x5-萌萌哒的八戒">0x5 萌萌哒的八戒</a></li>
+        <li><a href="#0x6-权限获得第一步">0x6 权限获得第一步</a></li>
+        <li><a href="#0x7-世上无难事">0x7 世上无难事</a></li>
+        <li><a href="#0x8-rsa3">0x8 RSA3</a></li>
+        <li><a href="#0x9-rsa2">0x9 RSA2</a></li>
+        <li><a href="#0xa-异性相吸">0xA 异性相吸</a></li>
+        <li><a href="#0xb-rsa">0xB RSA</a></li>
+        <li><a href="#0xc-还原大师">0xC 还原大师</a></li>
+        <li><a href="#0xd-unencode">0xD Unencode</a></li>
+        <li><a href="#0xe-robomunication">0xE robomunication</a></li>
+        <li><a href="#0xf-rsaroll">0xF RSAROLL</a></li>
+      </ul>
+    </li>
+    <li><a href="#参考">参考：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>
+
+还是BUUCTF的题目，熟悉的感觉，再来一次！</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-136.png"
+    ></figure>
+BUUCTF首页</p>
+<p>本次的题目大致如下：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-137.png"
+    ></figure>
+CTF题目</p>
+<p>题目是16道密码学题目：</p>
+<ol>
+<li>传统知识+古典密码</li>
+<li>信息化时代的步伐</li>
+<li>RSA1</li>
+<li>凯撒？转换？呵呵！</li>
+<li>old-fashion</li>
+<li>萌萌哒的八戒</li>
+<li>权限获得第一步</li>
+<li>世上无难事</li>
+<li>RSA3</li>
+<li>RSA2</li>
+<li>异性相吸</li>
+<li>RSA</li>
+<li>还原大师</li>
+<li>Unencode</li>
+<li>robomunication</li>
+<li>RSAROLL</li>
+</ol>
+
+<h2 class="relative group">题目求解：
+    <div id="题目求解" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%a2%98%e7%9b%ae%e6%b1%82%e8%a7%a3" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>题目都还比较简单，正常来做就好。</p>
+
+<h3 class="relative group">0x0 传统知识+古典密码
+    <div id="0x0-传统知识古典密码" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x0-%e4%bc%a0%e7%bb%9f%e7%9f%a5%e8%af%86%e5%8f%a4%e5%85%b8%e5%af%86%e7%a0%81" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>下载附件，得到题目</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-138.png"
+    ></figure>
+<p>题目信息</p>
+<p>应该是考察古典密码的题目，是考察六十甲子顺序纳音表的题目</p>
+<p>这里列出六十顺序纳音表：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-139.png"
+    ></figure>
+<p>六十甲子顺序表</p>
+<p>根据六十甲子顺序表编写python脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">C_sky</span> <span class="o">=</span> <span class="s2">&#34;甲乙丙丁戊己庚辛壬癸&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">C_earth</span> <span class="o">=</span> <span class="s2">&#34;子丑寅卯辰巳午未申酉戌亥&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">C_dict</span><span class="o">=</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">C_dict</span><span class="p">[</span><span class="n">C_sky</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">C_sky</span><span class="p">)]</span><span class="o">+</span><span class="n">C_earth</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="n">C_earth</span><span class="p">)]]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;辛卯，癸巳，丙戌，辛未，庚辰，癸酉，己卯，癸巳&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_list</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;，&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">C_dict</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">+</span><span class="mi">60</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrype</span><span class="p">(</span><span class="n">cipher</span><span class="p">,</span><span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cipher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cipher_len</span><span class="o">%</span><span class="n">key</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="n">cipher_len</span> <span class="o">//</span> <span class="n">key</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="n">cipher_len</span> <span class="o">//</span> <span class="n">key</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cipher_len</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span> <span class="o">=</span> <span class="n">i</span><span class="o">%</span><span class="n">key</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">a</span><span class="p">:</span><span class="n">result</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">+</span><span class="n">cipher</span><span class="p">[</span><span class="n">i</span><span class="p">]})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plainer</span> <span class="o">=</span> <span class="n">plainer</span> <span class="o">+</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">plainer</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer_list</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">decrype</span><span class="p">(</span><span class="n">plainer</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plainer_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">plainer_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">Caesar</span><span class="p">(</span><span class="n">cipher</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dict_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;j&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;q&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;v&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dict_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[(</span><span class="n">dict_list</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">%</span><span class="mi">26</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plainer</span> <span class="o">+=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">plainer</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">plainer_set</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Caesar</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><blockquote>
+<p>说明：</p>
+<ol>
+<li>
+<p>脚本使用了三种加密算法，分别是传统文化加密，栅栏密码，凯撒密码</p>
+</li>
+<li>
+<p>最终的输出结果是凯撒密码爆破的结果，需要进行筛选</p>
+</li>
+</ol></blockquote>
+<p>通过简单的筛选可以得到flag为：flag{SHUANGYU}</p>
+
+<h3 class="relative group">0x1 信息化时代的步伐
+    <div id="0x1-信息化时代的步伐" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x1-%e4%bf%a1%e6%81%af%e5%8c%96%e6%97%b6%e4%bb%a3%e7%9a%84%e6%ad%a5%e4%bc%90" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>审题目</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image.png"
+    ></figure>
+<p>应该是和中文相关的密码</p>
+<p>看附件：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-1.png"
+    ></figure>
+<p>附件是一串数字，应该需要数字和中文进行联系</p>
+<p>搜索一下：中文电码</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-2.png"
+    ></figure>
+<p>得到了不错的搜索结果</p>
+<p>这里涉及了一个中文电码的知识，这是一个比较偏的知识，这里可以积累一下：</p>
+<p>中文电码，又称：中文商用电码（Chinese commercial code, CCC）、中文电报码（Chinese telegraph code, CTC）或中文电报明码（Chinese ordinary telegraph code, COTC），原本是用于电报之中传送中文信息的方法。它是第一个将汉字化作电子信号的编码表。[1]</p>
+<p>简单来说，就是针对中文设计的一种数字编码方式。</p>
+<p>这里直接使用<a
+  href="http://code.mcdvisa.com/"
+    target="_blank"
+  >在线脚本</a>进行解码：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-3.png"
+    ></figure>
+<p>解码得出结果，即flag是flag{计算机要从娃娃抓起}</p>
+
+<h3 class="relative group">0x2 RSA1
+    <div id="0x2-rsa1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x2-rsa1" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>题目考察RSA加密算法</p>
+<p>下载附件，得到数据：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">8637633767257008567099653486541091171320491509433615447539162437911244175885667806398411790524083553445158113502227745206205327690939504032994699902053229</span> 
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">12640674973996472769176047937170883420927050821480010581593137135372473880595613737337630629752577346147039284030082593490776630572584959954205336880228469</span> 
+</span></span><span class="line"><span class="cl"><span class="n">dp</span> <span class="o">=</span> <span class="mi">6500795702216834621109042351193261530650043841056252930930949663358625016881832840728066026150264693076109354874099841380454881716097778307268116910582929</span> 
+</span></span><span class="line"><span class="cl"><span class="n">dq</span> <span class="o">=</span> <span class="mi">783472263673553449019532580386470672380574033551303889137911760438881683674556098098256795673512201963002175438762767516968043599582527539160811120550041</span> 
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">24722305403887382073567316467649080662631552905960229399079107995602154418176056335800638887527614164073530437657085079676157350205351945222989351316076486573599576041978339872265925062764318536089007310270278526159678937431903862892400747915525118983959970607934142974736675784325993445942031372107342103852</span>
+</span></span></code></pre></div><p>有p和q，以及dp和dq，但是没有e，n等参数</p>
+<p>这道题目是一道典型的dp，dq泄露的RSA题目</p>
+<p>由于涉及dp，dq参数，需要推导一下公式：</p>
+<p>首先，最基本的RSA求值公式：</p>
+<p>\(m \equiv c^d\ mod\ n\) 和 \(c \equiv m^e\ mod\ n\)</p>
+<p>然后，这里有不同于常规RSA的新参数dp和dq：</p>
+<p>\( d_p \equiv d\ mod\ (p-1) \)和 \( d_q \equiv d\ mod\ (q-1) \)</p>
+<p>下面就需要根据已知的条件进行推导：</p>
+$$ m \equiv c^d \ mod\ n \Rightarrow m = c^d + k \cdot n \Rightarrow m = c^d + k \cdot p \cdot q $$<p>由上面的推导可以得出：</p>
+$$ m_p \equiv c^d\  mod \ p  \\ m_q \equiv c^d\ mod\ q $$<p>进一步推导可以得出：</p>
+$$ m_p + k \cdot p = c^d$$<p>将上式带入到\( m_q \equiv c^d \  mod \  q \) 可得：</p>
+$$ m_q \equiv m_q + kp\ mod\  q $$<p>然后简单整理可得：</p>
+$$ k \equiv p^{-1} \cdot (m_q - m_p)\  mod\ q $$<p>故可得：</p>
+$$ m \equiv (p^{-1} \cdot (m_q-m_p)\ mod\ q ) \cdot p+ m_p \ mod \  (p \cdot q) $$<p>同理可得：</p>
+$$ m \equiv (p^{-1} \cdot (m_q-m_p)\ mod\ q ) \cdot q+ m_q \ mod \  (p \cdot q) $$$$ m \equiv (q^{-1} \cdot (m_p-m_q)\ mod\ p ) \cdot p+ m_p \ mod \  (p \cdot q) $$$$ m \equiv (q^{-1} \cdot (m_p-m_q)\ mod\ p ) \cdot q+ m_q \ mod \  (p \cdot q) $$<p>根据推导的公式，这里使用一个python脚本解决问题：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">8637633767257008567099653486541091171320491509433615447539162437911244175885667806398411790524083553445158113502227745206205327690939504032994699902053229</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">12640674973996472769176047937170883420927050821480010581593137135372473880595613737337630629752577346147039284030082593490776630572584959954205336880228469</span>
+</span></span><span class="line"><span class="cl"><span class="n">dp</span> <span class="o">=</span> <span class="mi">6500795702216834621109042351193261530650043841056252930930949663358625016881832840728066026150264693076109354874099841380454881716097778307268116910582929</span>
+</span></span><span class="line"><span class="cl"><span class="n">dq</span> <span class="o">=</span> <span class="mi">783472263673553449019532580386470672380574033551303889137911760438881683674556098098256795673512201963002175438762767516968043599582527539160811120550041</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">24722305403887382073567316467649080662631552905960229399079107995602154418176056335800638887527614164073530437657085079676157350205351945222989351316076486573599576041978339872265925062764318536089007310270278526159678937431903862892400747915525118983959970607934142974736675784325993445942031372107342103852</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">mp</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">dp</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mq</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">dq</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Ip</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Iq</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">m1</span> <span class="o">=</span> <span class="p">((((</span><span class="n">mq</span><span class="o">-</span><span class="n">mp</span><span class="p">)</span><span class="o">*</span><span class="n">Ip</span><span class="p">)</span><span class="o">%</span><span class="n">q</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">+</span><span class="n">mp</span><span class="p">)</span><span class="o">%</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m2</span> <span class="o">=</span> <span class="p">((((</span><span class="n">mq</span><span class="o">-</span><span class="n">mp</span><span class="p">)</span><span class="o">*</span><span class="n">Ip</span><span class="p">)</span><span class="o">%</span><span class="n">q</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="o">+</span><span class="n">mq</span><span class="p">)</span><span class="o">%</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m3</span> <span class="o">=</span> <span class="p">((((</span><span class="n">mp</span><span class="o">-</span><span class="n">mq</span><span class="p">)</span><span class="o">*</span><span class="n">Iq</span><span class="p">)</span><span class="o">%</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">p</span><span class="o">+</span><span class="n">mp</span><span class="p">)</span><span class="o">%</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m4</span> <span class="o">=</span> <span class="p">((((</span><span class="n">mp</span><span class="o">-</span><span class="n">mq</span><span class="p">)</span><span class="o">*</span><span class="n">Iq</span><span class="p">)</span><span class="o">%</span><span class="n">p</span><span class="p">)</span><span class="o">*</span><span class="n">q</span><span class="o">+</span><span class="n">mq</span><span class="p">)</span><span class="o">%</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">flag1</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag2</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag3</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag4</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s2">&#34;flag:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flag1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s2">&#34;flag:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flag2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s2">&#34;flag:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flag3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s2">&#34;flag:</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flag4</span><span class="p">)</span>
+</span></span></code></pre></div><p>脚本运行即得到flag，即noxCTF{W31c0m3_70_Ch1n470wn}</p>
+<p>根据题目要求，故flag： flag{W31c0m3_70_Ch1n470wn}</p>
+
+<h3 class="relative group">0x3 凯撒？转换？呵呵！
+    <div id="0x3-凯撒转换呵呵" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x3-%e5%87%af%e6%92%92%e8%bd%ac%e6%8d%a2%e5%91%b5%e5%91%b5" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>题目应该是考察变种凯撒加密的</p>
+<pre tabindex="0"><code>MTHJ{CUBCGXGUGXWREXIPOYAOEYFIGXWRXCHTKHFCOHCFDUCGTXZOHIXOEOWMEHZO}
+注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}
+</code></pre><p>这里使用一个<a
+  href="https://quipqiup.com/"
+    target="_blank"
+  >在线工具</a>进行求解</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-4-1024x468.png"
+    ></figure>
+<p>通过在线工具就得到flag，即flag{substitutioncipherdecryptionisalwayseasyjustlikeapieceofcake}</p>
+<p>“忘了是否要进行大小写转换，题目的思路大致就是这样了”</p>
+
+<h3 class="relative group">0x4 old-fashion
+    <div id="0x4-old-fashion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x4-old-fashion" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>题目描述没什么好说的，直接下载附件，查看附件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Os drnuzearyuwn, y jtkjzoztzoes douwlr oj y ilzwex eq lsdexosa kn pwodw tsozj eq ufyoszlbz yrl rlufydlx pozw douwlrzlbz, ydderxosa ze y rlatfyr jnjzli; mjy gfbmw vla xy wbfnsy symmyew (mjy vrwm qrvvrf), hlbew rd symmyew, mebhsymw rd symmyew, vbomgeyw rd mjy lxrzy, lfk wr dremj. Mjy eyqybzye kyqbhjyew mjy myom xa hyedrevbfn lf bfzyewy wgxwmbmgmbrf. Wr mjy dsln bw f1_2jyf-k3_jg1-vb-vl_l
+</span></span></code></pre></div><p>一段文字，直接丢<a
+  href="https://quipqiup.com/"
+    target="_blank"
+  >在线工具</a>里面进行词频分析吧：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-5-1024x306.png"
+    ></figure>
+<p>得到词频分析结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Xl fogkvryoeksg, e hjdhvxvjvxrl fxksao xh e zavsrb rc alfrbxly dg wsxfs jlxvh rc knexlvaiv eoa oaknefab wxvs fxksaovaiv, effrobxly vr e oayjneo hghvaz; the units may be single letters (the most common), pairs of letters, triplets of letters, mixtures of the above, and so forth. The receiver deciphers the text by performing an inverse substitution. So the flag is n1_2hen-d3_hu1-mi-ma_a
+</span></span></code></pre></div><p>故得flag：flag{n1_2hen-d3_hu1-mi-ma_a}</p>
+
+<h3 class="relative group">0x5 萌萌哒的八戒
+    <div id="0x5-萌萌哒的八戒" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x5-%e8%90%8c%e8%90%8c%e5%93%92%e7%9a%84%e5%85%ab%e6%88%92" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>萌萌哒的八戒，应该是猪圈密码</p>
+<p>什么是猪圈密码？</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image.png"
+    ></figure>
+<p>猪圈密码（英语：pigpen cipher)，亦称共济会密码（masonic cipher）或 共济会员密码（Freemason&rsquo;s cipher），是一种以格子为基础的简单替代式密码。即使使用符号，也不会影响密码分析，亦可用在其它替代式的方法。右边的例子，是把字母填进格子的模样。</p>
+<p>早在1700年代，共济会常常使用这种密码保护一些私密纪录或用来通讯，所以又称共济会密码。[2]</p>
+<pre tabindex="0"><code>萌萌哒的八戒原来曾经是猪村的村长，从远古时期，猪村就有一种神秘的代码。请从附件中找出代码，看看萌萌哒的猪八戒到底想说啥 注意：得到的 flag 请包上 flag{} 提交
+</code></pre><p>题目描述正好和猜想对应，下载附件，查看附件</p>
+<p>得到一张图片:</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-6.png"
+    ></figure>
+<p>下面那一串应该就是猪圈密码，进行解密：</p>
+<p>这里使用在线工具进行解密：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-7.png"
+    ></figure>
+<p>得到flag，即flag{whenthepigwanttoeat}</p>
+
+<h3 class="relative group">0x6 权限获得第一步
+    <div id="0x6-权限获得第一步" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x6-%e6%9d%83%e9%99%90%e8%8e%b7%e5%be%97%e7%ac%ac%e4%b8%80%e6%ad%a5" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>这题应该是使用哈希密码破解的方法进行解密</p>
+<p>下载附件，查看附件内容：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">Administrator</span><span class="err">:</span><span class="mf">500</span><span class="err">:</span><span class="n">806EDC27AA52E314AAD3B435B51404EE</span><span class="err">:</span><span class="n">F4AD50F57683D4260DFD48AA351A17A8</span><span class="p">::</span><span class="err">:</span>
+</span></span></code></pre></div><p>密文明显是windows系统的hash加密，第一段的哈希加密应该是Administrator的用户名，第二段的哈希加密应该是windows系统的密码</p>
+<p>直接对第二段哈希值进行哈希破解：</p>
+<p>这里使用<a
+  href="https://cmd5.com/"
+    target="_blank"
+  >在线工具</a>进行破解：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-8.png"
+    ></figure>
+<p>故flag即为flag{3617656}</p>
+
+<h3 class="relative group">0x7 世上无难事
+    <div id="0x7-世上无难事" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x7-%e4%b8%96%e4%b8%8a%e6%97%a0%e9%9a%be%e4%ba%8b" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>打开题目：</p>
+<pre tabindex="0"><code>以下是某国现任总统外发的一段指令，经过一种奇异的加密方式，毫无规律，看来只能分析了。请将这段语句还原成通顺语句，并从中找到key作为答案提交，答案是32位，包含小写字母。 注意：得到的 flag 请包上 flag{} 提交
+</code></pre><p>下载附件，查看附件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">VIZZB IFIUOJBWO NVXAP OBC XZZ UKHVN IFIUOJBWO HB XVIXW XAW VXFI X QIXN VBD KQ IFIUOJBWO WBKAH NBWXO VBD XJBCN NKG QLKEIU DI XUI VIUI DKNV QNCWIANQ XN DXPIMKIZW VKHV QEVBBZ KA XUZKAHNBA FKUHKAKX XAW DI VXFI HBN QNCWIANQ NCAKAH KA MUBG XZZ XEUBQQ XGIUKEX MUBG PKAWIUHXUNIA NVUBCHV 12NV HUXWI XAW DI XUI SCQN QB HZXW NVXN XZZ EBCZW SBKA CQ NBWXO XAW DI DXAN NB NVXAP DXPIMKIZW MBU JIKAH QCEV XA BCNQNXAWKAH VBQN HKFI OBCUQIZFIQ X JKH UBCAW BM XLLZXCQI XAW NVI PIO KQ 640I11012805M211J0XJ24MM02X1IW09
+</span></span></code></pre></div><p>得到一段文字，直接丢到在线工具得：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">HELLO EVERYBODY THANK YOU ALL RIGHT EVERYBODY GO AHEAD AND HAVE A SEAT HOW IS EVERYBODY DOING TODAY HOW ABOUT TIM SPICER WE ARE HERE WITH STUDENTS AT WAKEFIELD HIGH SCHOOL IN ARLINGTON VIRGINIA AND WE HAVE GOT STUDENTS TUNING IN FROM ALL ACROSS AMERICA FROM KINDERGARTEN THROUGH 12TH GRADE AND WE ARE JUST SO GLAD THAT ALL COULD JOIN US TODAY AND WE WANT TO THANK WAKEFIELD FOR BEING SUCH AN OUTSTANDING HOST GIVE YOURSELVES A BIG ROUND OF APPLAUSE AND THE KEY IS 640E11012805F211B0AB24FF02A1ED09
+</span></span></code></pre></div><p>得到flag，即flag为flag{640e11012805f211b0ab24ff02a1ed09}</p>
+
+<h3 class="relative group">0x8 RSA3
+    <div id="0x8-rsa3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x8-rsa3" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>RSA题目，直接下载附件，查看附件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">c1</span><span class="o">=</span><span class="mi">22322035275663237041646893770451933509324701913484303338076210603542612758956262869640822486470121149424485571361007421293675516338822195280313794991136048140918842471219840263536338886250492682739436410013436651161720725855484866690084788721349555662019879081501113222996123305533009325964377798892703161521852805956811219563883312896330156298621674684353919547558127920925706842808914762199011054955816534977675267395009575347820387073483928425066536361482774892370969520740304287456555508933372782327506569010772537497541764311429052216291198932092617792645253901478910801592878203564861118912045464959832566051361</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span><span class="o">=</span><span class="mi">22708078815885011462462049064339185898712439277226831073457888403129378547350292420267016551819052430779004755846649044001024141485283286483130702616057274698473611149508798869706347501931583117632710700787228016480127677393649929530416598686027354216422565934459015161927613607902831542857977859612596282353679327773303727004407262197231586324599181983572622404590354084541788062262164510140605868122410388090174420147752408554129789760902300898046273909007852818474030770699647647363015102118956737673941354217692696044969695308506436573142565573487583507037356944848039864382339216266670673567488871508925311154801</span>
+</span></span><span class="line"><span class="cl"><span class="n">e1</span><span class="o">=</span><span class="mi">11187289</span>
+</span></span><span class="line"><span class="cl"><span class="n">c2</span><span class="o">=</span><span class="mi">18702010045187015556548691642394982835669262147230212731309938675226458555210425972429418449273410535387985931036711854265623905066805665751803269106880746769003478900791099590239513925449748814075904017471585572848473556490565450062664706449128415834787961947266259789785962922238701134079720414228414066193071495304612341052987455615930023536823801499269773357186087452747500840640419365011554421183037505653461286732740983702740822671148045619497667184586123657285604061875653909567822328914065337797733444640351518775487649819978262363617265797982843179630888729407238496650987720428708217115257989007867331698397</span>
+</span></span><span class="line"><span class="cl"><span class="n">e2</span><span class="o">=</span><span class="mi">9647291</span>
+</span></span></code></pre></div><p>看到c1，c2，e1，e2应该是RSA共模攻击</p>
+<p>RSA共模攻击需要使用到扩展欧几里得定理：</p>
+<p>扩展欧几里得算法是欧几里得算法（又叫辗转相除法）的扩展。除了计算a、b两个整数的最大公约数，此算法还能找到整数x、y（其中一个很可能是负数）。通常谈到最大公因子时, 我们都会提到一个非常基本的事实: 给予二整数 a 与 b, 必存在有整数 x 与 y 使得\( ax + by = gcd(a,b) \)。有两个数a,b，对它们进行辗转相除法，可得它们的最大公约数——这是众所周知的。然后，收集辗转相除法中产生的式子，倒回去，可以得到\( ax+by=gcd(a,b) \)的整数解。[3]</p>
+<p>根据维基百科，可以找到扩展欧几里得定理的python算法 [4] :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">ext_euclid</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">old_s</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">old_t</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">old_r</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="n">a</span><span class="p">,</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="n">r</span><span class="o">!=</span><span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">q</span><span class="o">=</span><span class="n">old_r</span><span class="o">//</span><span class="n">r</span>
+</span></span><span class="line"><span class="cl">            <span class="n">old_r</span><span class="p">,</span><span class="n">r</span><span class="o">=</span><span class="n">r</span><span class="p">,</span><span class="n">old_r</span><span class="o">-</span><span class="n">q</span><span class="o">*</span><span class="n">r</span>
+</span></span><span class="line"><span class="cl">            <span class="n">old_s</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">old_s</span><span class="o">-</span><span class="n">q</span><span class="o">*</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl">            <span class="n">old_t</span><span class="p">,</span><span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="p">,</span><span class="n">old_t</span><span class="o">-</span><span class="n">q</span><span class="o">*</span><span class="n">t</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">old_s</span><span class="p">,</span> <span class="n">old_t</span><span class="p">,</span> <span class="n">old_r</span>
+</span></span></code></pre></div><p>这里根据题目要求，使用一个python脚本解决题目：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">gmpy2</span> <span class="kn">import</span> <span class="n">invert</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gongmo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">egcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">egcd</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span> <span class="o">//</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">=</span> <span class="n">egcd</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">s1</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s1</span> <span class="o">=</span> <span class="o">-</span> <span class="n">s1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c1</span> <span class="o">=</span> <span class="n">invert</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">s2</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s2</span> <span class="o">=</span> <span class="o">-</span> <span class="n">s2</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c2</span> <span class="o">=</span> <span class="n">invert</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">s1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">m</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c1</span><span class="o">=</span><span class="mi">22322035275663237041646893770451933509324701913484303338076210603542612758956262869640822486470121149424485571361007421293675516338822195280313794991136048140918842471219840263536338886250492682739436410013436651161720725855484866690084788721349555662019879081501113222996123305533009325964377798892703161521852805956811219563883312896330156298621674684353919547558127920925706842808914762199011054955816534977675267395009575347820387073483928425066536361482774892370969520740304287456555508933372782327506569010772537497541764311429052216291198932092617792645253901478910801592878203564861118912045464959832566051361</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span><span class="o">=</span><span class="mi">22708078815885011462462049064339185898712439277226831073457888403129378547350292420267016551819052430779004755846649044001024141485283286483130702616057274698473611149508798869706347501931583117632710700787228016480127677393649929530416598686027354216422565934459015161927613607902831542857977859612596282353679327773303727004407262197231586324599181983572622404590354084541788062262164510140605868122410388090174420147752408554129789760902300898046273909007852818474030770699647647363015102118956737673941354217692696044969695308506436573142565573487583507037356944848039864382339216266670673567488871508925311154801</span>
+</span></span><span class="line"><span class="cl"><span class="n">e1</span><span class="o">=</span><span class="mi">11187289</span>
+</span></span><span class="line"><span class="cl"><span class="n">c2</span><span class="o">=</span><span class="mi">18702010045187015556548691642394982835669262147230212731309938675226458555210425972429418449273410535387985931036711854265623905066805665751803269106880746769003478900791099590239513925449748814075904017471585572848473556490565450062664706449128415834787961947266259789785962922238701134079720414228414066193071495304612341052987455615930023536823801499269773357186087452747500840640419365011554421183037505653461286732740983702740822671148045619497667184586123657285604061875653909567822328914065337797733444640351518775487649819978262363617265797982843179630888729407238496650987720428708217115257989007867331698397</span>
+</span></span><span class="line"><span class="cl"><span class="n">e2</span><span class="o">=</span><span class="mi">9647291</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">gongmo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></div><p>根据脚本可以直接求出flag：flag{49d91077a1abcb14f1a9d546c80be9ef}</p>
+
+<h3 class="relative group">0x9 RSA2
+    <div id="0x9-rsa2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x9-rsa2" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>直接下载附件，打开附件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span>
+</span></span><span class="line"><span class="cl"><span class="n">dp</span> <span class="o">=</span> <span class="mi">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span>
+</span></span></code></pre></div><p>题目考察的应该就是典型的dp泄露问题，这里就进行简单的公式推导：
+</p>
+$$ n = p \cdot q $$$$ \varphi(n) = (p-1) \cdot (q-1)  $$$$  d_p \equiv d\ mod\ (p-1) $$$$ d \equiv e^{-1}\ mod\  \varphi(n) $$<p>根据已知信息进行推导：</p>
+$$ d = e^{-1} + k(p-1)(q-1) \Rightarrow dp \equiv e^{-1} mod\ (p-1)\   $$<p>同理，也可以推导出：</p>
+$$ d = e^{-1} + k(p-1)(q-1) \Rightarrow dp \equiv e^{-1} mod\ (q-1)\  $$<p>易得：</p>
+$$ dp \cdot e -1 = k \cdot (q-1) $$<p>爆破出k即可求得的q值，进一步即可求得结果，这里使用一个python脚本求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">248254007851526241177721526698901802985832766176221609612258877371620580060433101538328030305219918697643619814200930679612109885533801335348445023751670478437073055544724280684733298051599167660303645183146161497485358633681492129668802402065797789905550489547645118787266601929429724133167768465309665906113</span>
+</span></span><span class="line"><span class="cl"><span class="n">dp</span> <span class="o">=</span> <span class="mi">905074498052346904643025132879518330691925174573054004621877253318682675055421970943552016695528560364834446303196939207056642927148093290374440210503657</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="mi">140423670976252696807533673586209400575664282100684119784203527124521188996403826597436883766041879067494280957410201958935737360380801845453829293997433414188838725751796261702622028587211560353362847191060306578510511380965162133472698713063592621028959167072781482562673683090590521214218071160287665180751</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp</span> <span class="o">=</span> <span class="n">dp</span> <span class="o">*</span><span class="n">e</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">e</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">//</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y</span> <span class="o">=</span> <span class="n">n</span><span class="o">%</span><span class="n">x</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">p</span><span class="o">=</span><span class="n">x</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># print p</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print q</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">flag</span>
+</span></span></code></pre></div><p>运行脚本即可求出flag：flag{wow_leaking_dp_breaks_rsa?_98924743502}</p>
+
+<h3 class="relative group">0xA 异性相吸
+    <div id="0xa-异性相吸" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xa-%e5%bc%82%e6%80%a7%e7%9b%b8%e5%90%b8" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>看题目，应该是考察异或操作的题目</p>
+<p>下载附件，查看附件</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-9.png"
+    ></figure>
+附件内容</p>
+<p>两个文件，应该是使用异或处理最终得到结果，这里使用一个python脚本进行文件的二进制数据读取，然后进行异或操作求解出flag：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># env = python3</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">struct</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 读取key.txt文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;key.txt&#34;</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s2">&#34;rb&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">k</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 读取密文.txt文件</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;密文.txt&#34;</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s2">&#34;rb&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 文件二进制数据进行异或处理</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span><span class="o">=</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">byteorder</span><span class="o">=</span><span class="s2">&#34;big&#34;</span><span class="p">,</span><span class="n">signed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">^</span><span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">byteorder</span><span class="o">=</span><span class="s2">&#34;big&#34;</span><span class="p">,</span><span class="n">signed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 求解flag</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div><p>运行脚本得到flag：flag{ea1bc0988992276b7f95b54a7435e89e}</p>
+
+<h3 class="relative group">0xB RSA
+    <div id="0xb-rsa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xb-rsa" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>RSA题目，直接下载附件，查看附件</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-10.png"
+    ></figure>
+附件内容</p>
+<p>常规的RSA题目，使用openssl工具进行公钥文件的读取和私钥文件的解密</p>
+<p>首先使用openssl对公钥文件进行解析：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&gt; openssl rsa -pubin -in pub.key -modulus -text
+</span></span><span class="line"><span class="cl">RSA Public-Key: <span class="o">(</span><span class="m">256</span> bit<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Modulus:
+</span></span><span class="line"><span class="cl">    00:c0:33:2c:5c:64:ae:47:18:2f:6c:1c:87:6d:42:
+</span></span><span class="line"><span class="cl">    33:69:10:54:5a:58:f7:ee:fe:fc:0b:ca:af:5a:f3:
+</span></span><span class="line"><span class="cl">    41:cc:dd
+</span></span><span class="line"><span class="cl">Exponent: <span class="m">65537</span> <span class="o">(</span>0x10001<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Modulus</span><span class="o">=</span>C0332C5C64AE47182F6C1C876D42336910545A58F7EEFEFC0BCAAF5AF341CCDD
+</span></span><span class="line"><span class="cl">writing RSA key
+</span></span><span class="line"><span class="cl">-----BEGIN PUBLIC KEY-----
+</span></span><span class="line"><span class="cl">MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAMAzLFxkrkcYL2wch21CM2kQVFpY9+7+
+</span></span><span class="line"><span class="cl">/AvKr1rzQczdAgMBAAE<span class="o">=</span>
+</span></span><span class="line"><span class="cl">-----END PUBLIC KEY-----
+</span></span></code></pre></div><p>获得到了n和e</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mh">0xC0332C5C64AE47182F6C1C876D42336910545A58F7EEFEFC0BCAAF5AF341CCDD</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+</span></span></code></pre></div><p>使用<a
+  href="http://factordb.com/"
+    target="_blank"
+  >factordb</a>进行大数分解</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-11-1024x124.png"
+    ></figure>
+
+得到p和q：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">p</span><span class="o">=</span><span class="mi">285960468890451637935629440372639283459</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span><span class="o">=</span><span class="mi">304008741604601924494328155975272418463</span>
+</span></span></code></pre></div><p>根据已知的信息，编写python脚本，来获取flag：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># </span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">rsa</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">libnum</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">65537</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">86934482296048119190666062003494800588905656017203025617216654058378322103517</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">285960468890451637935629440372639283459</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">304008741604601924494328155975272418463</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">libnum</span><span class="o">.</span><span class="n">invmod</span><span class="p">(</span><span class="n">e</span><span class="p">,(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="n">rsa</span><span class="o">.</span><span class="n">PrivateKey</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;flag.enc&#34;</span><span class="p">,</span><span class="s2">&#34;rb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">=</span> <span class="n">rsa</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div><p>执行脚本，获取到flag：flag{decrypt_256}</p>
+
+<h3 class="relative group">0xC 还原大师
+    <div id="0xc-还原大师" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xc-%e8%bf%98%e5%8e%9f%e5%a4%a7%e5%b8%88" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>打开题目描述：</p>
+<pre tabindex="0"><code>我们得到了一串神秘字符串：TASC?O3RJMV?WDJKX?ZM,问号部分是未知大写字母，为了确定这个神秘字符串，我们通过了其他途径获得了这个字串的32位MD5码。但是我们获得它的32位MD5码也是残缺不全，E903???4DAB????08?????51?80??8A?,请猜出神秘字符串的原本模样，并且提交这个字串的32位MD5码作为答案。 注意：得到的 flag 请包上 flag{} 提交
+</code></pre><p>题目应该是考察md5加密的暴力破解来还原md5的数值：</p>
+<p>根据题目要求编写python脚本进行还原：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hashlib</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_dict</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span><span class="mi">91</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_dict</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">md5_encrypt</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">md5</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;TASC?O3RJMV?WDJKX?ZM&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_list</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="s2">&#34;?&#34;</span> <span class="ow">in</span> <span class="n">cipher</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cipher</span><span class="p">[:</span><span class="n">cipher</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&#34;?&#34;</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher</span> <span class="o">=</span> <span class="n">cipher</span><span class="p">[</span><span class="n">cipher</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&#34;?&#34;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cipher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_dict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cipher_dict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">cipher_dict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">md5_str</span> <span class="o">=</span><span class="n">md5_encrypt</span><span class="p">(</span><span class="n">cipher_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="n">cipher_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="n">cipher_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">k</span><span class="o">+</span><span class="n">cipher_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">md5_str</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;E903&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="s2">&#34;flag{&#34;</span><span class="o">+</span><span class="n">md5_str</span><span class="o">+</span><span class="s2">&#34;}&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span> <span class="s2">&#34;flag{&#34;</span><span class="o">+</span><span class="n">md5_str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">+</span><span class="s2">&#34;}&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>
+</span></span></code></pre></div><p>运行脚本就可以获得flag，结果有大写和小写，忘记了具体是要求提交小写flag和大写flag。</p>
+<p>运行结果：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>E9032994DABAC08080091151380478A2<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>e9032994dabac08080091151380478a2<span class="o">}</span>
+</span></span></code></pre></div>
+<h3 class="relative group">0xD Unencode
+    <div id="0xd-unencode" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xd-unencode" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>看题目应该是考察UUencode编码的题目</p>
+<p>下载附件，查看附件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">89FQA9WMD&lt;V1A&lt;V1S83DY.#&lt;W3$Q,2TM]
+</span></span></code></pre></div><p>丢<a
+  href="http://ctf.ssleye.com/uu.html"
+    target="_blank"
+  >在线工具</a>里面进行解码：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-12-1024x431.png"
+    ></figure>
+<p>解码即可获得flag：flag{dsdasdsa99877LLLKK}</p>
+
+<h3 class="relative group">0xE robomunication
+    <div id="0xe-robomunication" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xe-robomunication" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>直接下载附件，查看附件：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-13.png"
+    ></figure>
+附件内容</p>
+<p>发现是一个音频文件，听出来是如下内容：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">bbbb b bpbb bpbb ppp bpp bbbb bp p bb bbb p bbbb b pbp b pbpp bb p bb bbb pbbb ppp ppp bppb pbbb b b bppb
+</span></span></code></pre></div><p>发现是一个摩尔斯电码加密，破译得：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">HELLOWHATISTHEKEYITISBOOPBEEP
+</span></span></code></pre></div><p>对单词进行分割可得：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">HELLO WHAT IS THE KEY IT IS BOOPBEEP
+</span></span></code></pre></div><p>故flag是flag:flag{BOOPBEEP}</p>
+
+<h3 class="relative group">0xF RSAROLL
+    <div id="0xf-rsaroll" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0xf-rsaroll" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>RSA题目，直接下载附件，查看附件</p>
+<p>题目.txt</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">RSA roll！roll！roll！
+</span></span><span class="line"><span class="cl">Only number and a-z
+</span></span><span class="line"><span class="cl">（don&#39;t use editor
+</span></span><span class="line"><span class="cl">which MS provide）
+</span></span></code></pre></div><p>data.txt</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">{920139713,19}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">704796792
+</span></span><span class="line"><span class="cl">752211152
+</span></span><span class="line"><span class="cl">274704164
+</span></span><span class="line"><span class="cl">18414022
+</span></span><span class="line"><span class="cl">368270835
+</span></span><span class="line"><span class="cl">483295235
+</span></span><span class="line"><span class="cl">263072905
+</span></span><span class="line"><span class="cl">459788476
+</span></span><span class="line"><span class="cl">483295235
+</span></span><span class="line"><span class="cl">459788476
+</span></span><span class="line"><span class="cl">663551792
+</span></span><span class="line"><span class="cl">475206804
+</span></span><span class="line"><span class="cl">459788476
+</span></span><span class="line"><span class="cl">428313374
+</span></span><span class="line"><span class="cl">475206804
+</span></span><span class="line"><span class="cl">459788476
+</span></span><span class="line"><span class="cl">425392137
+</span></span><span class="line"><span class="cl">704796792
+</span></span><span class="line"><span class="cl">458265677
+</span></span><span class="line"><span class="cl">341524652
+</span></span><span class="line"><span class="cl">483295235
+</span></span><span class="line"><span class="cl">534149509
+</span></span><span class="line"><span class="cl">425392137
+</span></span><span class="line"><span class="cl">428313374
+</span></span><span class="line"><span class="cl">425392137
+</span></span><span class="line"><span class="cl">341524652
+</span></span><span class="line"><span class="cl">458265677
+</span></span><span class="line"><span class="cl">263072905
+</span></span><span class="line"><span class="cl">483295235
+</span></span><span class="line"><span class="cl">828509797
+</span></span><span class="line"><span class="cl">341524652
+</span></span><span class="line"><span class="cl">425392137
+</span></span><span class="line"><span class="cl">475206804
+</span></span><span class="line"><span class="cl">428313374
+</span></span><span class="line"><span class="cl">483295235
+</span></span><span class="line"><span class="cl">475206804
+</span></span><span class="line"><span class="cl">459788476
+</span></span><span class="line"><span class="cl">306220148
+</span></span></code></pre></div><p>题目考查RSA低加密指数攻击，但是这道题目，可以试试分解一下n然后进行一下拼接</p>
+<p>首先可以先去<a
+  href="http://factordb.com/"
+    target="_blank"
+  >在线网站</a>进行大数分解：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/BUUCTF-CRYPTO-2_writeup/image-14-1024x121.png"
+    ></figure>
+<p>得到p和q的数值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">18443</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">49891</span>
+</span></span></code></pre></div><p>然后使用一个python脚本解决问题：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">libnum</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pub_str</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_list</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.txt&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s2">&#34;{&#34;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pub_str</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="n">line</span> <span class="o">!=</span> <span class="s2">&#34;&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cipher_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pub_list</span><span class="o">=</span> <span class="n">pub_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pub_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pub_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">18443</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">49891</span>
+</span></span><span class="line"><span class="cl"><span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">libnum</span><span class="o">.</span><span class="n">invmod</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">phi</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">m</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">+=</span> <span class="n">plainer</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">flag</span>
+</span></span></code></pre></div><p>运行脚本获得flag，即flag{13212je2ue28fy71w8u87y31r78eu1e2}</p>
+
+<h2 class="relative group">参考：
+    <div id="参考" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%8f%82%e8%80%83" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<ol>
+<li>[标准中文电码(Chinese Commercial Code)简介、用途及查询](<a
+  href="https://www.chasedream.com/show.aspx?id=4487&amp;cid=30#:~:text="
+    target="_blank"
+  >https://www.chasedream.com/show.aspx?id=4487&cid=30#:~:text=</a>中文电码，又称：中文商用电码（Chinese commercial code%2C CCC）、中文电报码（Chinese telegraph,code%2C CTC）或中文电报明码（Chinese ordinary telegraph code%2C COTC），原本是用于电报之中传送中文信息的方法。)</li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/%e8%b1%ac%e5%9c%88%e5%af%86%e7%a2%bc"
+    target="_blank"
+  >猪圈密码-维基百科</a></li>
+<li>[扩展欧几里得算法-百度百科](<a
+  href="https://baike.baidu.com/item/"
+    target="_blank"
+  >https://baike.baidu.com/item/</a>扩展欧几里得算法/2029414?fromtitle=扩展欧几里德算法&amp;fromid=1053275#:~:text=扩展欧几里得算法 （英语：Extended Euclidean algorithm）是 欧几里得算法 （又叫辗转相除法）的扩展。 已知整数a、b，扩展欧几里得算法可以在求得a、b的 最大公约数,by %3D gcd (a%2Cb) 。 有两个数a%2Cb，对它们进行辗转相除法，可得它们的最大公约数——这是众所周知的。 然后，收集辗转相除法中产生的式子，倒回去，可以得到ax%2Bby%3Dgcd (a%2Cb)的整数解。)</li>
+<li>[扩展欧几里得算法-维基百科](<a
+  href="https://baike.baidu.com/item/"
+    target="_blank"
+  >https://baike.baidu.com/item/</a>扩展欧几里得算法/2029414?fromtitle=扩展欧几里德算法&amp;fromid=1053275#:~:text=扩展欧几里得算法 （英语：Extended Euclidean algorithm）是 欧几里得算法 （又叫辗转相除法）的扩展。 已知整数a、b，扩展欧几里得算法可以在求得a、b的 最大公约数,by %3D gcd (a%2Cb) 。 有两个数a%2Cb，对它们进行辗转相除法，可得它们的最大公约数——这是众所周知的。 然后，收集辗转相除法中产生的式子，倒回去，可以得到ax%2Bby%3Dgcd (a%2Cb)的整数解。)</li>
+</ol>
+<p>本期wp分享到此为止，有时间再来喝杯茶呀！</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_posts/posts/BUUCTF-CRYPTO-2_writeup.md"
+          data-oid-likes="likes_posts/posts/BUUCTF-CRYPTO-2_writeup.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/crypto_rsa_attack/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;尽沾手襟 淋满眼眶
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2021-06-26T08:24:32&#43;08:00">26 June 2021</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/buuctf-crypto-3_writeup/">
+              <span class="leading-6">
+                BUUCTF CRYPTO (3) writeup&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2021-06-26T16:29:54&#43;08:00">26 June 2021</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          Jasmine❄Hiker
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="https://jashiker.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

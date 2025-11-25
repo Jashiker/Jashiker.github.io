@@ -1,0 +1,2172 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>2022 网鼎杯 青龙组 Writeup &middot; (,,・ω・,,)</title>
+    <meta name="title" content="2022 网鼎杯 青龙组 Writeup &middot; (,,・ω・,,)">
+  
+
+  
+  
+    <meta name="description" content="My awesome website">
+  
+  
+    <meta name="keywords" content="writeup,ctf,">
+  
+  
+  
+  <link rel="canonical" href="https://jashiker.github.io/posts/posts/2022_wdb_ql-writeup/">
+  
+
+  
+  
+    <meta name="author" content="Jasmine❄Hiker">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jashiker" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="https://jashiker.github.io/posts/posts/2022_wdb_ql-writeup/">
+  <meta property="og:site_name" content="(,,・ω・,,)">
+  <meta property="og:title" content="2022 网鼎杯 青龙组 Writeup">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-08-31T17:28:44+08:00">
+    <meta property="article:modified_time" content="2022-08-31T17:28:44+08:00">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Ctf">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2022 网鼎杯 青龙组 Writeup">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.2028a88cfced6d5b344415a33ade070dc2df1b25ff170e8024bedc3074c0e07c6b5307558a78c2705c69e4ec42c7e8880eb7d2d87880470577c388a821481e89.css"
+    integrity="sha512-ICiojPztbVs0RBWjOt4HDcLfGyX/Fw6AJL7cMHTA4HxrUwdVinjCcFxp5OxCx&#43;iIDrfS2HiARwV3w4ioIUgeiQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.9cc802d09f28c6af56ceee7bc6e320a39251fdae98243f2a9942f221ac57a9f49c51609699a91794a7b2580ee1deaa8e4d794a68ffa94aa317c66e893ce51e02.js"
+      integrity="sha512-nMgC0J8oxq9Wzu57xuMgo5JR/a6YJD8qmULyIaxXqfScUWCWmakXlKeyWA7h3qqOTXlKaP&#43;pSqMXxm6JPOUeAg=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/katex/katex.min.9e578d7ac3b5270b37ae32edae7835a744cda7734036e6e2f1ccf16f382b056ccd51c0df6b7ef3470991357a026507840aa22c1740ea2fe6bbce9b4223c5c182.css"
+    integrity="sha512-nleNesO1Jws3rjLtrng1p0TNp3NANubi8czxbzgrBWzNUcDfa37zRwmRNXoCZQeECqIsF0DqL&#43;a7zptCI8XBgg==">
+  
+  
+  
+  <script
+    defer
+    type="text/javascript"
+    src="/js/katex.bundle.a10a4a0655682a978b0422e48a40f3515d4d96c8e600a48e3dad34029a55cc00b128b89a908855227d1c07897ce09cdfe9f0d57decb148cb73f17dbb8a0a715c.js"
+    integrity="sha512-oQpKBlVoKpeLBCLkikDzUV1NlsjmAKSOPa00AppVzACxKLiakIhVIn0cB4l84Jzf6fDVfeyxSMtz8X27igpxXA=="
+    id="katex-render"></script>
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "2022 网鼎杯 青龙组 Writeup",
+    "headline": "2022 网鼎杯 青龙组 Writeup",
+    
+    
+    "inLanguage": "en",
+    "url" : "https:\/\/jashiker.github.io\/posts\/posts\/2022_wdb_ql-writeup\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jasmine❄Hiker"
+    },
+    "copyrightYear": "2022",
+    "dateCreated": "2022-08-31T17:28:44\u002b08:00",
+    "datePublished": "2022-08-31T17:28:44\u002b08:00",
+    
+    "dateModified": "2022-08-31T17:28:44\u002b08:00",
+    
+    "keywords": ["writeup","ctf"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1899"
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div
+  class="fixed inset-x-0 min-h-[130px] opacity-65 bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal z-80"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          (,,・ω・,,)
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/posts/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Blog"
+  title="Posts">
+  
+  
+    <p class="text-base font-medium">
+      Blog
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/about/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="About"
+  title="About">
+  
+  
+    <p class="text-base font-medium">
+      About
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/link/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Link"
+  title="Link">
+  
+  
+    <p class="text-base font-medium">
+      Link
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Blog"
+    title="Posts">
+    
+    
+      <p class="text-bg font-bg">
+        Blog
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="About"
+    title="About">
+    
+    
+      <p class="text-bg font-bg">
+        About
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/link/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Link"
+    title="Link">
+    
+    
+      <p class="text-bg font-bg">
+        Link
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
+  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        2022 网鼎杯 青龙组 Writeup
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2022-08-31T17:28:44&#43;08:00">31 August 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1899 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts/posts/2022_WDB_QL-writeup.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="Jasmine❄Hiker"
+        src="/img/profile_hu_2b75c06d2f9c96f6.jpg"
+        data-zoom-src="/img/profile.jpg">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        Author
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        Jasmine❄Hiker
+      </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jashiker"
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#fakeshell">fakeshell</a></li>
+        <li><a href="#handmake">Handmake</a></li>
+      </ul>
+    </li>
+    <li><a href="#复现">复现</a>
+      <ul>
+        <li><a href="#crypto091">Crypto091</a></li>
+        <li><a href="#grasshopper">grasshopper</a></li>
+        <li><a href="#david_homework">david_homework</a></li>
+        <li><a href="#whereiscode">whereiscode</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#解出">解出</a>
+      <ul>
+        <li><a href="#fakeshell">fakeshell</a></li>
+        <li><a href="#handmake">Handmake</a></li>
+      </ul>
+    </li>
+    <li><a href="#复现">复现</a>
+      <ul>
+        <li><a href="#crypto091">Crypto091</a></li>
+        <li><a href="#grasshopper">grasshopper</a></li>
+        <li><a href="#david_homework">david_homework</a></li>
+        <li><a href="#whereiscode">whereiscode</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<p>今年网鼎杯的逆向题目是相对来说比较简单的，在比赛的时候做出了两道逆向题目。</p>
+<p>第二道逆向apk的题目找到文章了，但是去看Crypto的题目了，也就没有认真去钻逆向的那道题目。</p>
+<p>Crypto题目由于自身的数学敏感度不够没能解出，还需要继续提高</p>
+
+<h2 class="relative group">解出
+    <div id="解出" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%a7%a3%e5%87%ba" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">fakeshell
+    <div id="fakeshell" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#fakeshell" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>题目给到了一个exe文件，使用die查看该文件：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828123956402"
+    src="/images/2022_WDB_QL-writeup/image-20220828123956402.png"
+    ></figure>
+<p>发现是一个upx压缩壳加密的程序，尝试使用upx脱壳：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828133038392"
+    src="/images/2022_WDB_QL-writeup/image-20220828133038392.png"
+    ></figure>
+<p>发现壳可能被修改过，需要手动脱壳。先尝试运行下程序，寻找下可能存在的锚点字符串信息：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828140533175"
+    src="/images/2022_WDB_QL-writeup/image-20220828140533175.png"
+    ></figure>
+<p>找到两个锚点字符串，一个是<code>&lt;&lt;Input your flag:</code>，另一个是<code>Wrong.</code></p>
+<p>使用x64dbg进行手动脱壳，进行入口点的测试找到一个关键跳转地址0x1400276CB</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828140317972"
+    src="/images/2022_WDB_QL-writeup/image-20220828140317972.png"
+    ></figure>
+<p>这是一个长跳转指令，运行到这个指令的时候程序已经完成解密。可以对程序的内存引用进行查看：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828140739058"
+    src="/images/2022_WDB_QL-writeup/image-20220828140739058.png"
+    ></figure>
+<p>发现程序的内存引用中已经出现了锚点字符串，说明此时的程序已经完成了解密。然后跟进到锚点字符串所在的函数位置：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828140905779"
+    src="/images/2022_WDB_QL-writeup/image-20220828140905779.png"
+    ></figure>
+<p>这个位置应该是主函数空间，在这个主函数空间中对函数开头位置下断点，然后让程序运行到断点位置</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828141834266"
+    src="/images/2022_WDB_QL-writeup/image-20220828141834266.png"
+    ></figure>
+<p>然后使用x64dbg的Scylla插件进行dump内存：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828142149592"
+    src="/images/2022_WDB_QL-writeup/image-20220828142149592.png"
+    ></figure>
+<p>从当前位置进行dump即可，得到一个dump的程序。</p>
+<p>现在完成手动脱壳，进入到下一步，进行ida pro的静态分析：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828142350437"
+    src="/images/2022_WDB_QL-writeup/image-20220828142350437.png"
+    ></figure>
+<p>使用F5插件来查看程序反编译的代码进行分析</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828142457029"
+    src="/images/2022_WDB_QL-writeup/image-20220828142457029.png"
+    ></figure>
+<p>输入的数据存储到v4变量中，对v4变量处理的函数有两个，对这两个函数依次进行审计。</p>
+<p>首先分析第一个函数，这个函数要一直跟进跟进到和参数有关的位置</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828142835318"
+    src="/images/2022_WDB_QL-writeup/image-20220828142835318.png"
+    ></figure>
+<p>第一个函数中，存在一个判断和一个异或运算。</p>
+<p>判断是对输入的数据进行了处理，猜测应该是进行长度判断，判断长度是否是20位。</p>
+<p>异或操作是单纯对于输入数据的运行对于程序运行流程没有太多影响</p>
+<p>分析第二个函数，和第一个函数的跟进方法类似</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828144648807"
+    src="/images/2022_WDB_QL-writeup/image-20220828144648807.png"
+    ></figure>
+<p>第二个函数同样也有一个异或操作和一个特殊的函数，跟进这个函数查看：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828145157336"
+    src="/images/2022_WDB_QL-writeup/image-20220828145157336.png"
+    ></figure>
+<p>发现判断的位置有密文，跟进密文查看：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828145310441"
+    src="/images/2022_WDB_QL-writeup/image-20220828145310441.png"
+    ></figure>
+<p>使用<code>shift</code>+ <code>E</code>将数据提取出来，可以得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">ida_chars</span><span class="p">[]</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="mh">0x4B</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x48</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x45</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x30</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5C</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x49</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5A</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x70</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x6D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x78</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x6F</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x48</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x64</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x64</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>显然是以4字节，小端序存储的</p>
+<p>现在获取的密文和两次运算，编写脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="mh">0x4B</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x48</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x45</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x30</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5C</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x49</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5A</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x79</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x70</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x6D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x78</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x13</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x6F</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x48</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x5D</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x64</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x64</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span> <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">c</span><span class="p">[::</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mh">0x14</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mh">0x14</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(((</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">^</span><span class="mh">0x50</span><span class="p">)</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span><span class="o">^</span><span class="mh">0x66</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flag</span><span class="p">))</span>
+</span></span></code></pre></div><p>运行得到flag：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">why_m0dify_pUx_SheLL
+</span></span></code></pre></div>
+<h3 class="relative group">Handmake
+    <div id="handmake" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#handmake" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>这道题目是手工，应该是需要手工寻找一些内容</p>
+<p>题目给到了一个go程序的源码：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828150430370"
+    src="/images/2022_WDB_QL-writeup/image-20220828150430370.png"
+    ></figure>
+<p>总共有大约15w行的代码，尝试编译运行：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828150855335"
+    src="/images/2022_WDB_QL-writeup/image-20220828150855335.png"
+    ></figure>
+<p>应该是英文的阅读理解找函数的题目，理解这两句话的意思就可以求解。</p>
+<p><code>Input the first function, which has 6 parameters and the third named gLIhR: </code></p>
+<p>这句话就是找到一个有六个参数的函数而且第三个参数是<code>gLIhR</code></p>
+<p><code>Input the second function, which has 3 callers and invokes the function named cHZv5op8rOmlAkb6:</code></p>
+<p>这句话就是找到一个函数，这个函数被调用了3次并且调用了一个名为<code>cHZv5op8rOmlAkb6</code>函数。</p>
+<p>根据要求去寻找函数名：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828151548954"
+    src="/images/2022_WDB_QL-writeup/image-20220828151548954.png"
+    ></figure>
+<p>然后进行程序的测试就可以得到flag：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828151706620"
+    src="/images/2022_WDB_QL-writeup/image-20220828151706620.png"
+    ></figure>
+
+<h2 class="relative group">复现
+    <div id="复现" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%a4%8d%e7%8e%b0" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Crypto091
+    <div id="crypto091" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#crypto091" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>这道题目被队友解答，我就没有进行看了，赛后进行复现下</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828152017556"
+    src="/images/2022_WDB_QL-writeup/image-20220828152017556.png"
+    ></figure>
+<p>这道题目要寻找到关键信息，本道题目的关键信息有：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">170号段首批放号的联通号码
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Hash：
+</span></span><span class="line"><span class="cl">c22a563acc2a587afbfaaaa6d67bc6e628872b00bd7e998873881f7c6fdc62fc
+</span></span><span class="line"><span class="cl">}^{-1}\ \text{mod}\ p
+</span></span><span class="line"><span class="cl">$$
+</span></span><span class="line"><span class="cl">flag格式：flag{13位电话号码（纯数字，含国家代码）}
+</span></span></code></pre></div><p>使用搜索引擎进行查找：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828153105747"
+    src="/images/2022_WDB_QL-writeup/image-20220828153105747.png"
+    ></figure>
+<p>1709是首批号码段，下面是对hash的类型进行猜测，首先看看哈希的长度：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828153953231"
+    src="/images/2022_WDB_QL-writeup/image-20220828153953231.png"
+    ></figure>
+<p>hash数据的长度是64位可能是sha256加密，可以使用hacker工具Hashcat进行爆破求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hashcat -m <span class="m">1400</span> -a <span class="m">3</span> c22a563acc2a587afbfaaaa6d67bc6e628872b00bd7e998873881f7c6fdc62fc 861709?d?d?d?d?d?d?d
+</span></span></code></pre></div><p>运行得到：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220828155215870"
+    src="/images/2022_WDB_QL-writeup/image-20220828155215870.png"
+    ></figure>
+<p>由此可以得到tel是8617091733716，故flag是<code>flag{8617091733716}</code></p>
+
+<h3 class="relative group">grasshopper
+    <div id="grasshopper" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#grasshopper" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<blockquote>
+<p>这道题目当时代码没有审计清楚，采用Z3-solver进行求解，未能求解成功</p></blockquote>
+<p>题目给到一个python源码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">grassfield</span> <span class="kn">import</span> <span class="n">flag</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="n">getPrime</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">k</span> <span class="o">=</span> <span class="p">[</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grasshopper</span> <span class="o">=</span> <span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">grasshopper</span> <span class="o">=</span> <span class="n">grasshopper</span> <span class="o">*</span> <span class="n">k</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Grasshopper#&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;:&#39;</span><span class="o">+</span><span class="nb">hex</span><span class="p">(</span><span class="n">grasshopper</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+</span></span></code></pre></div><p>进行审计可以发现：</p>
+$$
+k_{10} = g_0 =  C_0 \cdot k_{00}\ \text{mod}\ p \\\\
+k_{11} = g_0 =  C_0 \cdot k_{00} \cdot k_{01}\ \text{mod}\ p \\\\
+k_{12} = g_0 =  C_0 \cdot k_{00} \cdot k_{01}\cdot k_{02}\ \text{mod}\ p \\\\
+k_{13} = g_0 =  C_0 \cdot k_{00} \cdot k_{01}\cdot k_{02}\cdot k_{03}\ \text{mod}\ p \\\\
+k_{14} = g_0 =  C_0 \cdot k_{00} \cdot k_{01}\cdot k_{02}\cdot k_{03} \cdot k_{04}\ \text{mod}\ p \\\\
+$$$$
+k_{20} = g_0 =  C_1 \cdot k_{10}\ \text{mod}\ p \\\\
+k_{21} = g_0 =  C_1 \cdot k_{10} \cdot k_{11}\ \text{mod}\ p \\\\
+k_{22} = g_0 =  C_1 \cdot k_{10} \cdot k_{11}\cdot k_{12}\ \text{mod}\ p \\\\
+k_{23} = g_0 =  C_1 \cdot k_{10} \cdot k_{11}\cdot k_{12}\cdot k_{13}\ \text{mod}\ p \\\\
+k_{24} = g_0 =  C_1 \cdot k_{10} \cdot k_{11}\cdot k_{12}\cdot k_{13} \cdot k_{14}\ \text{mod}\ p \\\\
+$$<p>
+可以发现有规律存在，已知\(k_{14}\ k_{24}\ k_{34}\ k_{44}\ k_{54}\) 可以推出\(k_{23}\ k_{33}\ k_{43}\ k_{53}\)</p>
+<p>同理可以推出\(k_{32}\ k_{42}\ k_{52}\)，依此可以推出\(k_{41}\ k_{51}\) 和\(k_{50}\)</p>
+<p>推导公式：
+</p>
+$$
+k_{ij} = k_{i(j+1)} \cdot k_{(i-1)j}^{-1}\ \text{mod}\ p
+$$<p>
+根据推导公式可以进行求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">gmpy2</span> <span class="kn">import</span> <span class="n">invert</span><span class="p">,</span><span class="n">gcd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">isprime</span>
+</span></span><span class="line"><span class="cl"><span class="n">know</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;flag{&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./output.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:],</span><span class="mi">16</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">maxg</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxg</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">**</span><span class="mi">16</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">isprime</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g04</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g14</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g13</span> <span class="o">=</span> <span class="n">g14</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g04</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g24</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g23</span> <span class="o">=</span> <span class="n">g24</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g14</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g22</span> <span class="o">=</span> <span class="n">g23</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g13</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g34</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g33</span> <span class="o">=</span> <span class="n">g34</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g24</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g32</span> <span class="o">=</span> <span class="n">g33</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g23</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g31</span> <span class="o">=</span> <span class="n">g32</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g22</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g44</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g43</span> <span class="o">=</span> <span class="n">g44</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g34</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g42</span> <span class="o">=</span> <span class="n">g43</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g33</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g41</span> <span class="o">=</span> <span class="n">g42</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g32</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g40</span> <span class="o">=</span> <span class="n">g41</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">g31</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="p">[</span><span class="n">g40</span><span class="p">,</span> <span class="n">g41</span><span class="p">,</span> <span class="n">g42</span><span class="p">,</span> <span class="n">g43</span><span class="p">,</span> <span class="n">g44</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">42</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_k</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="n">k</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">alp</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">invert</span><span class="p">(</span><span class="n">_k</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flag</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">alp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">k</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">alp</span> <span class="o">=</span> <span class="n">alp</span> <span class="o">*</span> <span class="n">k</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">%</span> <span class="n">p</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">flag</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;}&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;p = </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;flag{&#39;</span><span class="o">+</span><span class="n">flag</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span></code></pre></div><p>运行代码得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">p = 59441
+</span></span><span class="line"><span class="cl">b&#39;flag{749d39d4-78db-4c55-b4ff-bca873d0f18e}&#39;
+</span></span></code></pre></div><p>这种思路是由局部推断整体的想法，可能将题目的过程复杂化，而显得不是非常优雅。</p>
+<hr>
+<p>此题的求解脚本还可以使用sagemath进行相应的脚本求解，思路也是大致一样的思路。</p>
+<p>构造一个p的整数环，来进行运算求解，这种求解方法反而会更加简单，sagemath求解的脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">g</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./output.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">g</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:],</span><span class="mi">16</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">maxg</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxg</span><span class="p">,</span> <span class="mi">2</span><span class="o">^</span><span class="mi">16</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">is_prime</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">=</span> <span class="n">g</span>
+</span></span><span class="line"><span class="cl">        <span class="n">F</span> <span class="o">=</span> <span class="n">GF</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="n">F</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flag</span> <span class="o">=</span> <span class="n">data</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;flag{&#39;</span><span class="o">+</span><span class="nb">bytes</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">pass</span>
+</span></span></code></pre></div><p>运行脚本就可以得到flag，<code>b'flag{749d39d4-78db-4c55-b4ff-bca873d0f18e}'</code></p>
+<p>这种脚本的思路就是直接进行整体运算来求解。</p>
+
+<h3 class="relative group">david_homework
+    <div id="david_homework" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#david_homework" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<blockquote>
+<p>这道题目是当时考虑是将递归转循环来进行求解，但是时间复杂度还是很高，不能正常进行求解。想到线性代数的提示，时间已经所剩无几，故未能完成求解</p></blockquote>
+<p>题目说到是一个线性代数的作业，应该是一个线性代码相关的问题求解。</p>
+<p>赛题给到的代码是一个含有递归的函数：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829095725043"
+    src="/images/2022_WDB_QL-writeup/image-20220829095725043.png"
+    ></figure>
+<p>通过搜索引擎搜索关键信息</p>
+<ol>
+<li>搜索 <code>递归函数转线代</code> : <a
+  href="https://blog.csdn.net/wdq347/article/details/8919645"
+    target="_blank"
+  >(191条消息) 线性代数求解递推形式数列的通项公式_wdq347的博客-CSDN博客</a></li>
+<li>搜索 <code>递推 线代</code> : <a
+  href="https://www.bilibili.com/video/BV18p411o7vc/"
+    target="_blank"
+  >线性代数-递推法解“数字型”行列式_哔哩哔哩_bilibili</a></li>
+<li>搜索 <code>线性代数-递推法解“数字型”行列式</code> : <a
+  href="https://zhuanlan.zhihu.com/p/37683681"
+    target="_blank"
+  >递推公式法在行列式计算中的证明与应用 - 知乎 (zhihu.com)</a></li>
+<li>搜索 <code>递推公式法 行列式 </code></li>
+</ol>
+<p>找到文章：<a
+  href="https://www.zhihu.com/question/426892843"
+    target="_blank"
+  >怎么用递归法计算行列式? - 知乎 (zhihu.com)</a></p>
+<p>根据文章：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829101251970"
+    src="/images/2022_WDB_QL-writeup/image-20220829101251970.png"
+    ></figure>
+<p>显然这道题目是要求求解出逆过程，首先需要抽象出递推函数的递归公式：</p>
+$$
+f(x,cof) = \left\\\{
+\begin{array}{l}
+x+1 & & {x < 3} \\\\
+cof_2\cdot f(x-3) + cof_1\cdot f(x-2) + cof_0\cdot f(x-1) & & {x \geq 3}
+\end{array}
+\right.
+$$<p>根据查找到的一系列文章中的<a
+  href="https://blog.csdn.net/u011815404/article/details/99621516"
+    target="_blank"
+  >(191条消息) 线性代数 —— 线性递推关系_Alex_McAvoy的博客-CSDN博客_线性递推关系</a>，可以看到：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829102307637"
+    src="/images/2022_WDB_QL-writeup/image-20220829102307637.png"
+    ></figure>
+<p>根据关系可以得到</p>
+$$
+f(n) = A * f(n-1) 
+$$$$
+A = \left[\begin{array}{ccc}
+1 & 0 & 0 \\\\
+0 & 1 & 0 \\\\
+0 & 0 & 1 \\\\
+cof_2 & cof_1 & cof_0 
+\end{array} \right]
+$$$$
+f(n-1) = \left[
+\begin{array}{l}
+f(n-3) \\\\
+f(n-2) \\\\
+f(n-1) \\\\
+\end{array}
+\right]
+$$<p>紧接着根据这个：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829104119031"
+    src="/images/2022_WDB_QL-writeup/image-20220829104119031.png"
+    ></figure>
+<p>可以得到：
+</p>
+$$
+F(n) = A^{n-2}\cdot f(2)
+$$$$
+f(2) = \left[
+\begin{array}{l}
+f(0)\\\\
+f(1) \\\\
+f(2) \\\\
+\end{array}
+\right]
+= \left[
+\begin{array}{l}
+1\\\\
+2 \\\\
+3 \\\\
+\end{array}
+\right]
+$$<p>尝试使用sagemath求解，出现报错</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829113116331"
+    src="/images/2022_WDB_QL-writeup/image-20220829113116331.png"
+    ></figure>
+<p>进行次方运算必须是一个方块矩阵，也就是矩阵的维度必须是2x2, 3x3 … n x n 的矩阵，进行运算推导下：
+</p>
+$$
+f(n) = A * f(n-1) = \left[
+\begin{array}{c}
+f(n-3) \\\\
+f(n-2) \\\\
+f(n-1) \\\\
+cof_2\cdot f(n-3) + cof_1\cdot f(n-2) + cof_0\cdot f(n-1)
+\end{array}
+\right]
+$$<p>继续进行推导：
+</p>
+$$
+f(n-1) = A * f(n-2) = \left[
+\begin{array}{c}
+f(n-4) \\\\
+f(n-3) \\\\
+f(n-2) \\\\
+cof_2\cdot f(n-4) + cof_1\cdot f(n-3) + cof_0\cdot f(n-2)
+\end{array}
+\right]
+$$$$
+A * f(n-1) \\\\
+= \left[\begin{array}{l}
+1 & 0 & 0 \\\\
+0 & 1 & 0 \\\\
+0 & 0 & 1 \\\\
+cof_2 & cof_1 & cof_0 
+\end{array} \right] \cdot \left[
+\begin{array}{c}
+f(n-4) \\\\
+f(n-3) \\\\
+f(n-2) \\\\
+cof_2\cdot f(n-4) + cof_1\cdot f(n-3) + cof_0\cdot f(n-2)
+\end{array}
+\right]
+$$<p>此时无法进行运算，进行推导发现将A修改成如下形式运算结果不变：</p>
+$$
+A = \left[
+\begin{array}{ccc}
+0 & 1 & 0 \\\\
+0 & 0 & 1 \\\\
+cof_2 & cof_1 & cof_0
+\end{array}
+\right]
+$$<p>再次尝试编写sage代码进行运算：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># sagemath</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span><span class="p">,</span> <span class="n">sha256</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">binascii</span> <span class="kn">import</span> <span class="n">unhexlify</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cof_t</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">353</span><span class="p">,</span> <span class="o">-</span><span class="mi">1162</span><span class="p">,</span> <span class="mi">32767</span><span class="p">],</span> <span class="p">[</span><span class="mi">206</span><span class="p">,</span> <span class="o">-</span><span class="mi">8021</span><span class="p">,</span> <span class="mi">42110</span><span class="p">],</span> <span class="p">[</span><span class="mi">262</span><span class="p">,</span> <span class="o">-</span><span class="mi">7088</span><span class="p">,</span> <span class="mi">31882</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">388</span><span class="p">,</span> <span class="o">-</span><span class="mi">6394</span><span class="p">,</span> <span class="mi">21225</span><span class="p">],</span> <span class="p">[</span><span class="mi">295</span><span class="p">,</span> <span class="o">-</span><span class="mi">9469</span><span class="p">,</span> <span class="mi">44468</span><span class="p">],</span> <span class="p">[</span><span class="mi">749</span><span class="p">,</span> <span class="o">-</span><span class="mi">3501</span><span class="p">,</span> <span class="mi">40559</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">528</span><span class="p">,</span> <span class="o">-</span><span class="mi">2690</span><span class="p">,</span> <span class="mi">10210</span><span class="p">],</span> <span class="p">[</span><span class="mi">354</span><span class="p">,</span> <span class="o">-</span><span class="mi">5383</span><span class="p">,</span> <span class="mi">18437</span><span class="p">],</span> <span class="p">[</span><span class="mi">491</span><span class="p">,</span> <span class="o">-</span><span class="mi">8467</span><span class="p">,</span> <span class="mi">26892</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">932</span><span class="p">,</span> <span class="o">-</span><span class="mi">6984</span><span class="p">,</span> <span class="mi">20447</span><span class="p">],</span> <span class="p">[</span><span class="mi">731</span><span class="p">,</span> <span class="o">-</span><span class="mi">6281</span><span class="p">,</span> <span class="mi">11340</span><span class="p">],</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="o">-</span><span class="mi">5392</span><span class="p">,</span> <span class="mi">44071</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">685</span><span class="p">,</span> <span class="o">-</span><span class="mi">6555</span><span class="p">,</span> <span class="mi">40938</span><span class="p">],</span> <span class="p">[</span><span class="mi">408</span><span class="p">,</span> <span class="o">-</span><span class="mi">8070</span><span class="p">,</span> <span class="mi">47959</span><span class="p">],</span> <span class="p">[</span><span class="mi">182</span><span class="p">,</span> <span class="o">-</span><span class="mi">9857</span><span class="p">,</span> <span class="mi">49477</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">593</span><span class="p">,</span> <span class="o">-</span><span class="mi">3584</span><span class="p">,</span> <span class="mi">49243</span><span class="p">],</span> <span class="p">[</span><span class="mi">929</span><span class="p">,</span> <span class="o">-</span><span class="mi">7410</span><span class="p">,</span> <span class="mi">31929</span><span class="p">],</span> <span class="p">[</span><span class="mi">970</span><span class="p">,</span> <span class="o">-</span><span class="mi">4549</span><span class="p">,</span> <span class="mi">17160</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">141</span><span class="p">,</span> <span class="o">-</span><span class="mi">2435</span><span class="p">,</span> <span class="mi">36408</span><span class="p">],</span> <span class="p">[</span><span class="mi">344</span><span class="p">,</span> <span class="o">-</span><span class="mi">3814</span><span class="p">,</span> <span class="mi">18949</span><span class="p">],</span> <span class="p">[</span><span class="mi">291</span><span class="p">,</span> <span class="o">-</span><span class="mi">7457</span><span class="p">,</span> <span class="mi">40587</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">765</span><span class="p">,</span> <span class="o">-</span><span class="mi">7011</span><span class="p">,</span> <span class="mi">32097</span><span class="p">],</span> <span class="p">[</span><span class="mi">700</span><span class="p">,</span> <span class="o">-</span><span class="mi">8534</span><span class="p">,</span> <span class="mi">18013</span><span class="p">],</span> <span class="p">[</span><span class="mi">267</span><span class="p">,</span> <span class="o">-</span><span class="mi">2541</span><span class="p">,</span> <span class="mi">33488</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">249</span><span class="p">,</span> <span class="o">-</span><span class="mi">8934</span><span class="p">,</span> <span class="mi">12321</span><span class="p">],</span> <span class="p">[</span><span class="mi">589</span><span class="p">,</span> <span class="o">-</span><span class="mi">9617</span><span class="p">,</span> <span class="mi">41998</span><span class="p">],</span> <span class="p">[</span><span class="mi">840</span><span class="p">,</span> <span class="o">-</span><span class="mi">1166</span><span class="p">,</span> <span class="mi">22814</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">947</span><span class="p">,</span> <span class="o">-</span><span class="mi">5660</span><span class="p">,</span> <span class="mi">41003</span><span class="p">],</span> <span class="p">[</span><span class="mi">206</span><span class="p">,</span> <span class="o">-</span><span class="mi">7195</span><span class="p">,</span> <span class="mi">46261</span><span class="p">],</span> <span class="p">[</span><span class="mi">784</span><span class="p">,</span> <span class="o">-</span><span class="mi">9270</span><span class="p">,</span> <span class="mi">28410</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">338</span><span class="p">,</span> <span class="o">-</span><span class="mi">3690</span><span class="p">,</span> <span class="mi">19608</span><span class="p">],</span> <span class="p">[</span><span class="mi">559</span><span class="p">,</span> <span class="o">-</span><span class="mi">2078</span><span class="p">,</span> <span class="mi">44397</span><span class="p">],</span> <span class="p">[</span><span class="mi">534</span><span class="p">,</span> <span class="o">-</span><span class="mi">3438</span><span class="p">,</span> <span class="mi">47830</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">515</span><span class="p">,</span> <span class="o">-</span><span class="mi">2139</span><span class="p">,</span> <span class="mi">39546</span><span class="p">],</span> <span class="p">[</span><span class="mi">603</span><span class="p">,</span> <span class="o">-</span><span class="mi">6460</span><span class="p">,</span> <span class="mi">49953</span><span class="p">],</span> <span class="p">[</span><span class="mi">234</span><span class="p">,</span> <span class="o">-</span><span class="mi">6824</span><span class="p">,</span> <span class="mi">12579</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">805</span><span class="p">,</span> <span class="o">-</span><span class="mi">8793</span><span class="p">,</span> <span class="mi">36465</span><span class="p">],</span> <span class="p">[</span><span class="mi">245</span><span class="p">,</span> <span class="o">-</span><span class="mi">5886</span><span class="p">,</span> <span class="mi">21077</span><span class="p">],</span> <span class="p">[</span><span class="mi">190</span><span class="p">,</span> <span class="o">-</span><span class="mi">7658</span><span class="p">,</span> <span class="mi">20396</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">392</span><span class="p">,</span> <span class="o">-</span><span class="mi">7053</span><span class="p">,</span> <span class="mi">19739</span><span class="p">],</span> <span class="p">[</span><span class="mi">609</span><span class="p">,</span> <span class="o">-</span><span class="mi">5399</span><span class="p">,</span> <span class="mi">39959</span><span class="p">],</span> <span class="p">[</span><span class="mi">479</span><span class="p">,</span> <span class="o">-</span><span class="mi">8172</span><span class="p">,</span> <span class="mi">45734</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">321</span><span class="p">,</span> <span class="o">-</span><span class="mi">7102</span><span class="p">,</span> <span class="mi">41224</span><span class="p">],</span> <span class="p">[</span><span class="mi">720</span><span class="p">,</span> <span class="o">-</span><span class="mi">4487</span><span class="p">,</span> <span class="mi">11055</span><span class="p">],</span> <span class="p">[</span><span class="mi">208</span><span class="p">,</span> <span class="o">-</span><span class="mi">1897</span><span class="p">,</span> <span class="mi">15237</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">890</span><span class="p">,</span> <span class="o">-</span><span class="mi">4427</span><span class="p">,</span> <span class="mi">35168</span><span class="p">],</span> <span class="p">[</span><span class="mi">513</span><span class="p">,</span> <span class="o">-</span><span class="mi">5106</span><span class="p">,</span> <span class="mi">45849</span><span class="p">],</span> <span class="p">[</span><span class="mi">666</span><span class="p">,</span> <span class="o">-</span><span class="mi">1137</span><span class="p">,</span> <span class="mi">23725</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">755</span><span class="p">,</span> <span class="o">-</span><span class="mi">6732</span><span class="p">,</span> <span class="mi">39995</span><span class="p">],</span> <span class="p">[</span><span class="mi">589</span><span class="p">,</span> <span class="o">-</span><span class="mi">6421</span><span class="p">,</span> <span class="mi">43716</span><span class="p">],</span> <span class="p">[</span><span class="mi">866</span><span class="p">,</span> <span class="o">-</span><span class="mi">3265</span><span class="p">,</span> <span class="mi">30017</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">416</span><span class="p">,</span> <span class="o">-</span><span class="mi">6540</span><span class="p">,</span> <span class="mi">34979</span><span class="p">],</span> <span class="p">[</span><span class="mi">840</span><span class="p">,</span> <span class="o">-</span><span class="mi">1305</span><span class="p">,</span> <span class="mi">18242</span><span class="p">],</span> <span class="p">[</span><span class="mi">731</span><span class="p">,</span> <span class="o">-</span><span class="mi">6844</span><span class="p">,</span> <span class="mi">13781</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">561</span><span class="p">,</span> <span class="o">-</span><span class="mi">2728</span><span class="p">,</span> <span class="mi">10298</span><span class="p">],</span> <span class="p">[</span><span class="mi">863</span><span class="p">,</span> <span class="o">-</span><span class="mi">5953</span><span class="p">,</span> <span class="mi">23132</span><span class="p">],</span> <span class="p">[</span><span class="mi">204</span><span class="p">,</span> <span class="o">-</span><span class="mi">4208</span><span class="p">,</span> <span class="mi">27492</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">158</span><span class="p">,</span> <span class="o">-</span><span class="mi">8701</span><span class="p">,</span> <span class="mi">12720</span><span class="p">],</span> <span class="p">[</span><span class="mi">802</span><span class="p">,</span> <span class="o">-</span><span class="mi">4740</span><span class="p">,</span> <span class="mi">16628</span><span class="p">],</span> <span class="p">[</span><span class="mi">491</span><span class="p">,</span> <span class="o">-</span><span class="mi">6874</span><span class="p">,</span> <span class="mi">29057</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">531</span><span class="p">,</span> <span class="o">-</span><span class="mi">4829</span><span class="p">,</span> <span class="mi">29205</span><span class="p">],</span> <span class="p">[</span><span class="mi">363</span><span class="p">,</span> <span class="o">-</span><span class="mi">4775</span><span class="p">,</span> <span class="mi">41711</span><span class="p">],</span> <span class="p">[</span><span class="mi">319</span><span class="p">,</span> <span class="o">-</span><span class="mi">9206</span><span class="p">,</span> <span class="mi">46164</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">317</span><span class="p">,</span> <span class="o">-</span><span class="mi">9270</span><span class="p">,</span> <span class="mi">18290</span><span class="p">],</span> <span class="p">[</span><span class="mi">680</span><span class="p">,</span> <span class="o">-</span><span class="mi">5136</span><span class="p">,</span> <span class="mi">12009</span><span class="p">],</span> <span class="p">[</span><span class="mi">880</span><span class="p">,</span> <span class="o">-</span><span class="mi">2940</span><span class="p">,</span> <span class="mi">34900</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">162</span><span class="p">,</span> <span class="o">-</span><span class="mi">2587</span><span class="p">,</span> <span class="mi">49881</span><span class="p">],</span> <span class="p">[</span><span class="mi">997</span><span class="p">,</span> <span class="o">-</span><span class="mi">5265</span><span class="p">,</span> <span class="mi">20890</span><span class="p">],</span> <span class="p">[</span><span class="mi">485</span><span class="p">,</span> <span class="o">-</span><span class="mi">9395</span><span class="p">,</span> <span class="mi">23048</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">867</span><span class="p">,</span> <span class="o">-</span><span class="mi">1652</span><span class="p">,</span> <span class="mi">18926</span><span class="p">],</span> <span class="p">[</span><span class="mi">691</span><span class="p">,</span> <span class="o">-</span><span class="mi">7844</span><span class="p">,</span> <span class="mi">11180</span><span class="p">],</span> <span class="p">[</span><span class="mi">355</span><span class="p">,</span> <span class="o">-</span><span class="mi">5990</span><span class="p">,</span> <span class="mi">13172</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">923</span><span class="p">,</span> <span class="o">-</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">23110</span><span class="p">],</span> <span class="p">[</span><span class="mi">214</span><span class="p">,</span> <span class="o">-</span><span class="mi">4719</span><span class="p">,</span> <span class="mi">23005</span><span class="p">],</span> <span class="p">[</span><span class="mi">921</span><span class="p">,</span> <span class="o">-</span><span class="mi">9528</span><span class="p">,</span> <span class="mi">29351</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">349</span><span class="p">,</span> <span class="o">-</span><span class="mi">7957</span><span class="p">,</span> <span class="mi">20161</span><span class="p">],</span> <span class="p">[</span><span class="mi">470</span><span class="p">,</span> <span class="o">-</span><span class="mi">1889</span><span class="p">,</span> <span class="mi">46170</span><span class="p">],</span> <span class="p">[</span><span class="mi">244</span><span class="p">,</span> <span class="o">-</span><span class="mi">6106</span><span class="p">,</span> <span class="mi">23879</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">419</span><span class="p">,</span> <span class="o">-</span><span class="mi">5440</span><span class="p">,</span> <span class="mi">43576</span><span class="p">],</span> <span class="p">[</span><span class="mi">930</span><span class="p">,</span> <span class="o">-</span><span class="mi">1123</span><span class="p">,</span> <span class="mi">29859</span><span class="p">],</span> <span class="p">[</span><span class="mi">151</span><span class="p">,</span> <span class="o">-</span><span class="mi">5759</span><span class="p">,</span> <span class="mi">23405</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">843</span><span class="p">,</span> <span class="o">-</span><span class="mi">6770</span><span class="p">,</span> <span class="mi">36558</span><span class="p">],</span> <span class="p">[</span><span class="mi">574</span><span class="p">,</span> <span class="o">-</span><span class="mi">6171</span><span class="p">,</span> <span class="mi">33778</span><span class="p">],</span> <span class="p">[</span><span class="mi">772</span><span class="p">,</span> <span class="o">-</span><span class="mi">1073</span><span class="p">,</span> <span class="mi">44718</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">932</span><span class="p">,</span> <span class="o">-</span><span class="mi">4037</span><span class="p">,</span> <span class="mi">40088</span><span class="p">],</span> <span class="p">[</span><span class="mi">848</span><span class="p">,</span> <span class="o">-</span><span class="mi">5813</span><span class="p">,</span> <span class="mi">27304</span><span class="p">],</span> <span class="p">[</span><span class="mi">194</span><span class="p">,</span> <span class="o">-</span><span class="mi">6016</span><span class="p">,</span> <span class="mi">39770</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">966</span><span class="p">,</span> <span class="o">-</span><span class="mi">6789</span><span class="p">,</span> <span class="mi">14217</span><span class="p">],</span> <span class="p">[</span><span class="mi">219</span><span class="p">,</span> <span class="o">-</span><span class="mi">6849</span><span class="p">,</span> <span class="mi">40922</span><span class="p">],</span> <span class="p">[</span><span class="mi">352</span><span class="p">,</span> <span class="o">-</span><span class="mi">6046</span><span class="p">,</span> <span class="mi">18558</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">794</span><span class="p">,</span> <span class="o">-</span><span class="mi">8254</span><span class="p">,</span> <span class="mi">29748</span><span class="p">],</span> <span class="p">[</span><span class="mi">618</span><span class="p">,</span> <span class="o">-</span><span class="mi">5887</span><span class="p">,</span> <span class="mi">15535</span><span class="p">],</span> <span class="p">[</span><span class="mi">202</span><span class="p">,</span> <span class="o">-</span><span class="mi">9288</span><span class="p">,</span> <span class="mi">26590</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">611</span><span class="p">,</span> <span class="o">-</span><span class="mi">4341</span><span class="p">,</span> <span class="mi">46682</span><span class="p">],</span> <span class="p">[</span><span class="mi">155</span><span class="p">,</span> <span class="o">-</span><span class="mi">7909</span><span class="p">,</span> <span class="mi">16654</span><span class="p">],</span> <span class="p">[</span><span class="mi">935</span><span class="p">,</span> <span class="o">-</span><span class="mi">5739</span><span class="p">,</span> <span class="mi">39342</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">998</span><span class="p">,</span> <span class="o">-</span><span class="mi">6538</span><span class="p">,</span> <span class="mi">24363</span><span class="p">],</span> <span class="p">[</span><span class="mi">125</span><span class="p">,</span> <span class="o">-</span><span class="mi">5679</span><span class="p">,</span> <span class="mi">36725</span><span class="p">],</span> <span class="p">[</span><span class="mi">507</span><span class="p">,</span> <span class="o">-</span><span class="mi">7074</span><span class="p">,</span> <span class="mi">15475</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">699</span><span class="p">,</span> <span class="o">-</span><span class="mi">5836</span><span class="p">,</span> <span class="mi">47549</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="n">B</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">cof_t</span><span class="p">[</span><span class="n">i</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">A</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">^</span> <span class="p">(</span><span class="mi">200000</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">B</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">+=</span> <span class="n">C</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">)[</span><span class="o">-</span><span class="mi">2000</span><span class="p">:</span><span class="o">-</span><span class="mi">1000</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="n">unhexlify</span><span class="p">(</span><span class="n">md5</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">check</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">verify</span> <span class="o">=</span> <span class="s1">&#39;2cf44ec396e3bb9ed0f2f3bdbe4fab6325ae9d9ec3107881308156069452a6d5&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;s= </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;key = </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;hash(key) = </span><span class="si">{</span><span class="n">check</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;check = </span><span class="si">{</span><span class="n">check</span><span class="o">==</span><span class="n">verify</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>运行sagemath脚本得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">s= 8365222366127410597598169954399481033882921410074214649102398062373189165630613993923060190128768377015697889610969869189338768501949778819512483009804114510646333513147157016729806311717181191848898389803672575716843797638777123435881498143998689577186959772296072473194533856870919617472555638920296793205581043222881816090693269730028856738454951305575065708823347157677411074157254186955326531403441609073128679935513392779152628590893913048822608749327034655805831509883357484164977115164240733564895591006693108254829407400850621646091808483228634435805213269066211974452289769022399418497986464430356041737753404266468993201044272042844144895601296459104534111416147795404108912440106970848660340526207025880755825643455720871621993251258247195860214917957713359490024807893442884343732717743882154397539800059579470352302688717025991780505564794824908605015195865226780305658376169579983423732703921876787723921599023795922881747318116849413935343800909756656082327558085457335537828343666748
+</span></span><span class="line"><span class="cl">key = b&#39;S29O\x9a\xf3Z\x87\xe5\xbc{?D`xB&#39;
+</span></span><span class="line"><span class="cl">hash(key) = 2cf44ec396e3bb9ed0f2f3bdbe4fab6325ae9d9ec3107881308156069452a6d5
+</span></span><span class="line"><span class="cl">check = True
+</span></span></code></pre></div><p>现在已经获取到了密钥key，使用python进行aes解密即可。</p>
+<blockquote>
+<p><strong>注意：！！！</strong></p>
+<p>如果使用的是Python3.10版本，可能会出现报错：</p>
+<p><code>SystemError: PY_SSIZE_T_CLEAN macro must be defined for '#' formats</code></p>
+<p>这种情况是由于pycrypto库导致的问题，进行求解可以尝试安装miniconda创建python虚拟环境，切换到python3.8安装pycrypto库进行求解就可以正常求解</p></blockquote>
+<p>求解python脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span><span class="p">,</span> <span class="n">sha256</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">binascii</span> <span class="kn">import</span> <span class="n">unhexlify</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;836522236612741059759816995439948103388292141007421464910239806237318916563061399392306019012876837701569788</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">96109698691893387685019497788195124830098041145106463335131471570167298063117171811918488983898036725757168437976</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">38777123435881498143998689577186959772296072473194533856870919617472555638920296793205581043222881816090693269730</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">02885673845495130557506570882334715767741107415725418695532653140344160907312867993551339277915262859089391304882</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">26087493270346558058315098833574841649771151642407335648955910066931082548294074008506216460918084832286344358052</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">13269066211974452289769022399418497986464430356041737753404266468993201044272042844144895601296459104534111416147</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">79540410891244010697084866034052620702588075582564345572087162199325125824719586021491795771335949002480789344288</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">43437327177438821543975398000595794703523026887170259917805055647948249086050151958652267803056583761695799834237</span><span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="s1">32703921876787723921599023795922881747318116849413935343800909756656082327558085457335537828343666748&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="n">unhexlify</span><span class="p">(</span><span class="n">md5</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">aes</span> <span class="o">=</span> <span class="n">AES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="n">AES</span><span class="o">.</span><span class="n">MODE_ECB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;4f12b3a3eadc4146386f4732266f02bd03114a404ba4cb2dabae213ecec451c9d52c70dc3d25154b5af8a304afafed87&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">aes</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">c</span><span class="p">))</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">))</span>
+</span></span></code></pre></div><p>运行脚本即可得到相应的flag: <code>b'flag{519427b3-d104-4c34-a29d-5a7c128031ff}'</code></p>
+
+<h3 class="relative group">whereiscode
+    <div id="whereiscode" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#whereiscode" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<blockquote>
+<p>这道题目当时是找到文章了但是当时去看密码学题目了，没有细看这道题目</p></blockquote>
+<p>题目给到了一个apk程序文件，但是主程序里面没有程序的源代码：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829185549101"
+    src="/images/2022_WDB_QL-writeup/image-20220829185549101.png"
+    ></figure>
+<p>感觉没有什么思路去处理，对程序的具体结构仔细分析：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829185730520"
+    src="/images/2022_WDB_QL-writeup/image-20220829185730520.png"
+    ></figure>
+<p>发现有一个类似于壳的代码程序，尝试进行搜索找到了壳的相关博客和程序源码。</p>
+<p>dpt壳程序文章：<a
+  href="https://www.cnblogs.com/luoyesiqiu/p/dpt.html"
+    target="_blank"
+  >Android函数抽取壳的实现 - luoyesiqiu - 博客园 (cnblogs.com)</a></p>
+<p>dpt壳源码：<a
+  href="https://github.com/luoyesiqiu/dpt-shell"
+    target="_blank"
+  >luoyesiqiu/dpt-shell: Android函数抽取壳实现 (github.com)</a></p>
+<p>下载壳工具的release版本，进行反编译查看dpt.jar java包文件，可以使用jadx进行反编译查看内容，找到dpt函数进行代码逻辑的审计</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829190248720"
+    src="/images/2022_WDB_QL-writeup/image-20220829190248720.png"
+    ></figure>
+<p>根据文章，这个壳是一个函数抽取壳会进行函数的抽取壳：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829190759843"
+    src="/images/2022_WDB_QL-writeup/image-20220829190759843.png"
+    ></figure>
+<p>文章也把壳运行的整个流程逻辑写出来了：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829190732698"
+    src="/images/2022_WDB_QL-writeup/image-20220829190732698.png"
+    ></figure>
+<p>根据文章的信息，这道题目首先的一个子任务就是脱壳，而脱壳目前来说的目标就是对整个壳程序的逻辑进行分析。对整个流程大致分析下，发现主要是对于Dex进行操作，首先可以在dpt函数中搜索Dex关键字来定位到函数位置：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829191309699"
+    src="/images/2022_WDB_QL-writeup/image-20220829191309699.png"
+    ></figure>
+<p>找到一个关键的函数，跟进这个函数，可以找到些许信息</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829191405666"
+    src="/images/2022_WDB_QL-writeup/image-20220829191405666.png"
+    ></figure>
+<p>这个函数打开了一个<code>OoooooOooo</code>的文件，这是一个关键的文件信息，可能依据文章中的逻辑找到原来字节码的存储位置。这个函数不长，简单来说就是对原有的Dex进行提取，然后将提取的Dex写入到这个文件中，主要是写入操作的具体实现</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829192021242"
+    src="/images/2022_WDB_QL-writeup/image-20220829192021242.png"
+    ></figure>
+<p>跟进<code>writeMultiDexCode</code>查看内部实现情况：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220829192849282"
+    src="/images/2022_WDB_QL-writeup/image-20220829192849282.png"
+    ></figure>
+<p>感觉是比较类似于pe结构的实现方式，也就是找到相应的位置进行求解</p>
+<p>应该就是类似的一种结构，知道相应的函数偏移位置和相应的数据大小来对dex文件的函数进行抽取，根据这个原理可以进行PE文件结构类似的操作方式进行处理。编写一个小的程序将抽取出来的数据重新填充到相应的位置中。</p>
+<p>可以编写一个python脚本进行脱壳处理：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">struct</span> <span class="kn">import</span> <span class="n">unpack</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./classes2.dex&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./OoooooOooo&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">raw</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;version = </span><span class="si">{</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;H&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;dexcount = </span><span class="si">{</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;H&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;dexCodesIndex1 = </span><span class="si">{</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">8</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;dexCodesIndex2 = </span><span class="si">{</span><span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">12</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pos</span> <span class="o">=</span> <span class="mh">0x10</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="kc">True</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">method_index</span> <span class="o">=</span> <span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="mi">4</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">+=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">    <span class="n">offset_dex</span> <span class="o">=</span> <span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="mi">4</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">+=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">    <span class="n">instruction_data_size</span> <span class="o">=</span> <span class="n">unpack</span><span class="p">(</span><span class="s1">&#39;&lt;I&#39;</span><span class="p">,</span><span class="n">raw</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="mi">4</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">+=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">    <span class="n">instruction_data</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="n">instruction_data_size</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">+=</span> <span class="n">instruction_data_size</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="n">offset_dex</span><span class="p">]</span><span class="o">+</span><span class="n">instruction_data</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">offset_dex</span><span class="o">+</span><span class="n">instruction_data_size</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">pos</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./classes2_dump.dex&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span></code></pre></div><p>脱壳后的程序，可以使用dex2jar程序进行解包，可以得到一个jar包程序：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830160534943"
+    src="/images/2022_WDB_QL-writeup/image-20220830160534943.png"
+    ></figure>
+<p>可以直接解压得到一个文件夹，文件夹里面含有程序的class文件：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830160400390"
+    src="/images/2022_WDB_QL-writeup/image-20220830160400390.png"
+    ></figure>
+<p>这个文件结构是Android程序包的文件结构，我们关注的点应该就是com文件夹，进入到com\example\nothingcode文件夹中：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830161024487"
+    src="/images/2022_WDB_QL-writeup/image-20220830161024487.png"
+    ></figure>
+<p>这两个核心文件应该就是程序的主要文件，使用jd-gui工具进行java字节码文件的反编译来获取到java源码文件来看到程序的真实代码：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830161253724"
+    src="/images/2022_WDB_QL-writeup/image-20220830161253724.png"
+    ></figure>
+<p>直接将程序保存成一个java源代码文件</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830161338787"
+    src="/images/2022_WDB_QL-writeup/image-20220830161338787.png"
+    ></figure>
+<p>点击Save来保存反编译的源码</p>
+<p>使用java ide进行源码的审计，打开生成的源代码文件，一看多少会有些惊讶：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830161646007"
+    src="/images/2022_WDB_QL-writeup/image-20220830161646007.png"
+    ></figure>
+<p>有很多混淆和switch，应该是控制流平坦化的方式进行代码混淆的。这种混淆方式主要是由于一个发生器来形成switch结构，来混淆整个程序的主要流程结构。这种混淆的解决方式主要是脚本去混淆和静态代码审计来获取到主要的程序流程。</p>
+<p>尝试寻找些未进行混淆的字符串，来确定大致的逻辑特征：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830162651236"
+    src="/images/2022_WDB_QL-writeup/image-20220830162651236.png"
+    ></figure>
+<p>可以看出flag的数据应该是位于password的输入位置，往下继续寻找发现：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830224828585"
+    src="/images/2022_WDB_QL-writeup/image-20220830224828585.png"
+    ></figure>
+<p>发现，check函数对str2和str3进行了处理，而str2和str3就对应的是两个输入框的内容，根据一般输入行的原理，应该是第一个输入行是用户名，而第二个输入行是密码。进入到check函数中一探究竟：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830225238183"
+    src="/images/2022_WDB_QL-writeup/image-20220830225238183.png"
+    ></figure>
+<p>字符串str2有一个等于判断，判断str2是不是等于<code>“helloctf”</code> 这显然像是一个用户名，而不是密码。由于密码是flag这个设定，所以这个str2的形式显然不像是flag的形式。下面寻找字符串str3的操作：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830230118538"
+    src="/images/2022_WDB_QL-writeup/image-20220830230118538.png"
+    ></figure>
+<p>找到str3的相关操作，并且找到一组数据，暂时不清楚这组数据有什么用。这个操作显然是把str3转成一个Int数组的操作，跟进函数查看具体操作情况：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830230758071"
+    src="/images/2022_WDB_QL-writeup/image-20220830230758071.png"
+    ></figure>
+<p>函数内部有两个操作，一个是判断长度的操作，另一个是除法操作。应该是进行Int数组的初始化处理，继续探究后续操作：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830231328844"
+    src="/images/2022_WDB_QL-writeup/image-20220830231328844.png"
+    ></figure>
+<p>进行大端序处理的操作，以及后面有迭代的操作，根据目前分析的情况。可以判断这个函数就是将字符串以大端序的方式转成Int数组。</p>
+<p>这个函数分析完毕继续探究以下的内容：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220830231925973"
+    src="/images/2022_WDB_QL-writeup/image-20220830231925973.png"
+    ></figure>
+<p>发现非常有趣的特征，一个特征是<code>&lt;32</code>说明可能有32轮次，后面两个运算方程。这些特征和TEA加密算法的特征类似。尝试进行TEA算法的比对，TEA加密算法有32轮次加密并且每轮加密的算法也是相应的一致。由此可以判断这个加密算法应该就是TEA加密算法。</p>
+<p>现在找到了加密算法，一个加密算法应该有相应的密钥和相应的密文以及明文。由于我们输入的内容就是要加密的明文，因此找到密文和密钥就可能求解出此题。进行寻找相关信息：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220831113843486"
+    src="/images/2022_WDB_QL-writeup/image-20220831113843486.png"
+    ></figure>
+<p>可以大致看出这个数据像是密文的，之前找到的四个成员的数组数据比较符号TEA加密算法的密钥形式，据此推断那个数据应该就是密钥。而且数据只对Int数组进行了加密前面两个成员。没有加密其他成员。</p>
+<p>可以大致总结下，加密的大致逻辑：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-20220831115650012"
+    src="/images/2022_WDB_QL-writeup/image-20220831115650012.png"
+    ></figure>
+<p>根据整合的逻辑可以编写脚本进行求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">ctypes</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">c_int32</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">c_int32</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1640531527</span>
+</span></span><span class="line"><span class="cl">    <span class="n">total</span> <span class="o">=</span> <span class="n">c_uint32</span><span class="p">(</span><span class="n">delta</span> <span class="o">*</span> <span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">32</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y</span><span class="o">.</span><span class="n">value</span> <span class="o">-=</span> <span class="p">((</span><span class="n">x</span><span class="o">.</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="n">k</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">^</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="n">total</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">^</span> <span class="p">((</span><span class="n">x</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;&gt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">k</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span><span class="o">.</span><span class="n">value</span> <span class="o">-=</span> <span class="p">((</span><span class="n">y</span><span class="o">.</span><span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">+</span> <span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">^</span> <span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="n">total</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">^</span> <span class="p">((</span><span class="n">y</span><span class="o">.</span><span class="n">value</span> <span class="o">&gt;&gt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">total</span><span class="o">.</span><span class="n">value</span> <span class="o">-=</span> <span class="n">delta</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">value</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">c_bytes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="mi">63</span><span class="p">,</span> <span class="o">-</span><span class="mi">69</span><span class="p">,</span> <span class="o">-</span><span class="mi">86</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">114</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="o">-</span><span class="mi">75</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="mi">65</span><span class="p">,</span> <span class="mi">103</span><span class="p">,</span> <span class="mi">121</span><span class="p">,</span> <span class="mi">107</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mi">99</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">c_bytes</span><span class="p">),</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">num</span> <span class="o">+=</span> <span class="nb">hex</span><span class="p">((</span><span class="n">c_bytes</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">v</span><span class="p">]</span> <span class="o">+</span> <span class="mi">256</span><span class="p">)</span><span class="o">%</span><span class="mi">256</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">31</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="o">-</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">32</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2023708229</span><span class="p">,</span> <span class="o">-</span><span class="mi">158607964</span><span class="p">,</span> <span class="o">-</span><span class="mi">2120859654</span><span class="p">,</span> <span class="mi">1167043672</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">decrypt</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">key</span><span class="p">))</span> <span class="o">+</span> <span class="n">c</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">)[</span><span class="mi">2</span><span class="p">:][</span><span class="n">v</span><span class="p">:</span><span class="n">v</span><span class="o">+</span><span class="mi">2</span><span class="p">],</span><span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">+=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;flag</span><span class="se">{{</span><span class="si">{</span><span class="n">flag</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span><span class="si">}</span><span class="se">}}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><p>运行得到flag：<code>flag{Givey0urf1Agykoc}</code></p>
+<p>这道题目的脱壳方法也很多种，可以使用frida进行hook，然后让程序运行到解密的位置进行内存dump来进行脱壳。当然还有另一个方法也可以进行脱壳，在网上搜索到的一篇博客中有详细说明：<a
+  href="https://blog.csdn.net/m0_64604636/article/details/121885541"
+    target="_blank"
+  >(191条消息) Android脱壳之整体脱壳原理与实践，今天带你详细了解各组件原理_m0_64604636的博客-CSDN博客_android 脱壳</a></p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_posts/posts/2022_WDB_QL-writeup.md"
+          data-oid-likes="likes_posts/posts/2022_WDB_QL-writeup.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/xctf-reverse-advanced_daliy_001/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;攻防世界进阶区日常训练001
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2022-04-23T15:14:39&#43;08:00">23 April 2022</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/xctf-reverse_daliy_002/">
+              <span class="leading-6">
+                攻防世界 RE 日常练习 002&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2022-09-04T11:30:27&#43;08:00">4 September 2022</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          Jasmine❄Hiker
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="https://jashiker.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>

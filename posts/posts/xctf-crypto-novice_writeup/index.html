@@ -1,0 +1,2446 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>XCTF CRYPTO novice_writeup &middot; (,,・ω・,,)</title>
+    <meta name="title" content="XCTF CRYPTO novice_writeup &middot; (,,・ω・,,)">
+  
+
+  
+  
+    <meta name="description" content="My awesome website">
+  
+  
+    <meta name="keywords" content="ctf,writeup,crypto,">
+  
+  
+  
+  <link rel="canonical" href="https://jashiker.github.io/posts/posts/xctf-crypto-novice_writeup/">
+  
+
+  
+  
+    <meta name="author" content="Jasmine❄Hiker">
+  
+  
+    
+      
+        
+          <link href="https://github.com/jashiker" rel="me">
+        
+      
+    
+  
+
+  
+  <meta property="og:url" content="https://jashiker.github.io/posts/posts/xctf-crypto-novice_writeup/">
+  <meta property="og:site_name" content="(,,・ω・,,)">
+  <meta property="og:title" content="XCTF CRYPTO novice_writeup">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-06-25T22:01:32+08:00">
+    <meta property="article:modified_time" content="2021-06-25T22:01:32+08:00">
+    <meta property="article:tag" content="Ctf">
+    <meta property="article:tag" content="Writeup">
+    <meta property="article:tag" content="Crypto">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="XCTF CRYPTO novice_writeup">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.2028a88cfced6d5b344415a33ade070dc2df1b25ff170e8024bedc3074c0e07c6b5307558a78c2705c69e4ec42c7e8880eb7d2d87880470577c388a821481e89.css"
+    integrity="sha512-ICiojPztbVs0RBWjOt4HDcLfGyX/Fw6AJL7cMHTA4HxrUwdVinjCcFxp5OxCx&#43;iIDrfS2HiARwV3w4ioIUgeiQ==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.6f41174b3a05b680820fe08cadbfa5fb7a7ca347b76a0955cdc68b9d8aca1ce24f0547e138cea33bcc7904d551a90afcb1cc7f2d9fe8557075d501419046c08c.js"
+    integrity="sha512-b0EXSzoFtoCCD&#43;CMrb&#43;l&#43;3p8o0e3aglVzcaLnYrKHOJPBUfhOM6jO8x5BNVRqQr8scx/LZ/oVXB11QFBkEbAjA=="></script>
+  
+  
+  
+  
+  
+  
+    
+    <script src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
+
+  
+  
+  
+    
+  
+  
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.9cc802d09f28c6af56ceee7bc6e320a39251fdae98243f2a9942f221ac57a9f49c51609699a91794a7b2580ee1deaa8e4d794a68ffa94aa317c66e893ce51e02.js"
+      integrity="sha512-nMgC0J8oxq9Wzu57xuMgo5JR/a6YJD8qmULyIaxXqfScUWCWmakXlKeyWA7h3qqOTXlKaP&#43;pSqMXxm6JPOUeAg=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "XCTF CRYPTO novice_writeup",
+    "headline": "XCTF CRYPTO novice_writeup",
+    
+    
+    "inLanguage": "en",
+    "url" : "https:\/\/jashiker.github.io\/posts\/posts\/xctf-crypto-novice_writeup\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jasmine❄Hiker"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-06-25T22:01:32\u002b08:00",
+    "datePublished": "2021-06-25T22:01:32\u002b08:00",
+    
+    "dateModified": "2021-06-25T22:01:32\u002b08:00",
+    
+    "keywords": ["ctf","writeup","crypto"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1542"
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    
+    
+      <div class="min-h-[148px]"></div>
+<div
+  class="fixed inset-x-0 min-h-[130px] opacity-65 bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal z-80"></div>
+<div class="fixed inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  class="main-menu flex items-center justify-between py-6 md:justify-start gap-x-3 pt-[2px] pr-2 md:pr-4 pb-[3px] pl-0">
+  
+  
+
+  <div class="flex flex-1 items-center justify-between">
+    <nav class="flex space-x-3">
+      
+        <a href="/" class="text-base font-medium">
+          (,,・ω・,,)
+        </a>
+      
+    </nav>
+    
+  <nav class="hidden md:flex items-center gap-x-5 md:ml-12 h-12">
+    
+      
+        
+  <a
+  href="/posts/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Blog"
+  title="Posts">
+  
+  
+    <p class="text-base font-medium">
+      Blog
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/about/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="About"
+  title="About">
+  
+  
+    <p class="text-base font-medium">
+      About
+    </p>
+  
+</a>
+
+
+
+      
+        
+  <a
+  href="/link/"
+  
+  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+  aria-label="Link"
+  title="Link">
+  
+  
+    <p class="text-base font-medium">
+      Link
+    </p>
+  
+</a>
+
+
+
+      
+    
+
+    
+
+    
+
+    
+      <button
+        id="search-button"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <div class=" flex items-center">
+        <button
+          id="appearance-switcher"
+          aria-label="Dark mode switcher"
+          type="button"
+          class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+          <div class="flex items-center justify-center dark:hidden">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div class="items-center justify-center hidden dark:flex">
+            <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </nav>
+
+    
+  <div class="flex md:hidden items-center gap-x-5 md:ml-12 h-12">
+    <span></span>
+
+    
+
+    
+
+    
+      <button
+        id="search-button-mobile"
+        aria-label="Search"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+        title="Search (/)">
+        <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      </button>
+    
+
+    
+      <button
+        id="appearance-switcher-mobile"
+        aria-label="Dark mode switcher"
+        type="button"
+        class="text-base hover:text-primary-600 dark:hover:text-primary-400 me-1">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    
+  </div>
+
+  </div>
+  
+  <div class="-my-2 md:hidden">
+    <div id="menu-button" class="block">
+      
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50 pt-[5px]">
+          <ul
+            class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none text-end max-w-7xl">
+            <li id="menu-close-button">
+              <span
+                class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+              </span>
+            </li>
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/posts/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Blog"
+    title="Posts">
+    
+    
+      <p class="text-bg font-bg">
+        Blog
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/about/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="About"
+    title="About">
+    
+    
+      <p class="text-bg font-bg">
+        About
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+              
+  <li class="mt-1">
+  <a
+    href="/link/"
+    
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
+    aria-label="Link"
+    title="Link">
+    
+    
+      <p class="text-bg font-bg">
+        Link
+      </p>
+    
+  </a>
+</li>
+
+
+
+            
+
+          </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.00a57c73ea12f2cab2980c3c3d649e89f6d82f190f74bbe2b67f2f5e39ab7d032ece47086400ca05396758aace13299da49aca43ea643d2625e62c506267a169.js"
+  integrity="sha512-AKV8c&#43;oS8sqymAw8PWSeifbYLxkPdLvitn8vXjmrfQMuzkcIZADKBTlnWKrOEymdpJrKQ&#43;pkPSYl5ixQYmehaQ=="
+  data-blur-id="menu-blur"></script>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        XCTF CRYPTO novice_writeup
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2021-06-25T22:01:32&#43;08:00">25 June 2021</time><span class="px-2 text-primary-500">&middot;</span><span>1542 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span
+    id="views_posts/posts/XCTF-CRYPTO-novice_writeup.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="views"
+    >loading</span
+  >
+  <span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></span>
+</span>
+
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+  
+  
+
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+    
+<div class="flex author">
+  
+    
+    
+      
+    
+    
+      
+      
+        
+      
+      <img
+        class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
+        width="96"
+        height="96"
+        alt="Jasmine❄Hiker"
+        src="/img/profile_hu_2b75c06d2f9c96f6.jpg"
+        data-zoom-src="/img/profile.jpg">
+    
+  
+  <div class="place-self-center">
+    
+      <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+        Author
+      </div>
+      <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+        Jasmine❄Hiker
+      </div>
+    
+    
+    <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/jashiker"
+          target="_blank"
+          aria-label="Github"
+          title="Github"
+          rel="me noopener noreferrer"
+          ><span class="inline-block align-text-bottom"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></span></a
+        >
+      
+    
+  </div>
+
+</div>
+  </div>
+</div>
+
+  
+
+  
+
+  
+    <div class="mb-5"></div>
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#base64">base64</a></li>
+    <li><a href="#caesar">Caesar</a></li>
+    <li><a href="#morse">Morse</a></li>
+    <li><a href="#幂数加密">幂数加密</a>
+      <ul>
+        <li><a href="#01248云影密码">01248云影密码</a></li>
+      </ul>
+    </li>
+    <li><a href="#railfence">Railfence</a></li>
+    <li><a href="#不仅仅是morse">不仅仅是Morse</a></li>
+    <li><a href="#混合编码">混合编码</a></li>
+    <li><a href="#easy_rsa">easy_RSA</a>
+      <ul>
+        <li><a href="#rsa算法">RSA算法</a></li>
+      </ul>
+    </li>
+    <li><a href="#easychallenge">easychallenge</a></li>
+    <li><a href="#转轮机加密">转轮机加密</a></li>
+    <li><a href="#normal_rsa">Normal_RSA</a></li>
+    <li><a href="#esay_ecc">esay_ECC</a></li>
+    <li><a href="#参考">参考：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#base64">base64</a></li>
+    <li><a href="#caesar">Caesar</a></li>
+    <li><a href="#morse">Morse</a></li>
+    <li><a href="#幂数加密">幂数加密</a>
+      <ul>
+        <li><a href="#01248云影密码">01248云影密码</a></li>
+      </ul>
+    </li>
+    <li><a href="#railfence">Railfence</a></li>
+    <li><a href="#不仅仅是morse">不仅仅是Morse</a></li>
+    <li><a href="#混合编码">混合编码</a></li>
+    <li><a href="#easy_rsa">easy_RSA</a>
+      <ul>
+        <li><a href="#rsa算法">RSA算法</a></li>
+      </ul>
+    </li>
+    <li><a href="#easychallenge">easychallenge</a></li>
+    <li><a href="#转轮机加密">转轮机加密</a></li>
+    <li><a href="#normal_rsa">Normal_RSA</a></li>
+    <li><a href="#esay_ecc">esay_ECC</a></li>
+    <li><a href="#参考">参考：</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+            
+          </div>
+        </div>
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          <p>这次又是XCTF平台，没错，我又来无聊谈谈解题了</p>
+<p>首先先来一张XCTF的首页图片，来开启本次的writeup文章：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-86"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-86.png"
+    ></figure>
+<p>xctf首页</p>
+<p>这次我们要搞哪些题目的思路呢？这次还是新手区，不过是不一样的新手局，这回盘一盘密码学。</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="image-87"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-87.png"
+    ></figure>
+<p>crypto新手区题目</p>
+<p>题目数量不变，依然是12道题目：</p>
+<ul>
+<li>base64</li>
+<li>Caesar</li>
+<li>Morse</li>
+<li>幂数加密</li>
+<li>Railfence</li>
+<li>不仅仅是Morse</li>
+<li>混合编码</li>
+<li>easy_RSA</li>
+<li>easychallenge</li>
+<li>转轮机加密</li>
+<li>Normal_RSA</li>
+<li>esay_ECC</li>
+</ul>
+<p>在开始进行密码学的题目问题思路分析的开始之前，首先进行一部分知识的了解。</p>
+<p>密码学的CTF题目通常都是以附件形式来进行考察的。不像网页需要进入到平台设定的docker靶机中</p>
+<p>CTF中密码学题目目前的趋势是越来越难，而且分值越来越高。密码学的题目往往分为编码题目和密码学题目，而密码学题目又会分为古典密码学题目和现代密码学题目。</p>
+<p>密码学早在公元前400多年就已经产生，人类使用密码的历史几乎与使用文字的时间一样长，密码学的发展大致可以分为 3 个阶段: 1949 年之前的古典密码学阶段; 1949 年至 1975 年密码学成为科学的分支; 1976 年以后对称密钥密码算法得到进一步发展，产生了密码学的新方向—公钥密码学。1976 年，W.Diffie 和 M.Hellman 在发表的文章“密码学的新方向”中首次公开提出了公钥密码( Public-key Cryptography) 的概念。公钥密码的提出实现了加密密钥和解密密钥之间的独立，解决了对称密码体制中通信双方必须共享密钥的问题，在密码学界具有划时代的意义。[1]</p>
+<p>CTF中的编码题目往往会考察一些常用的编码类型，当然也会出现一些比较偏的编码方式进行编码。</p>
+<p>常用的编码方式有：ASCii编码，Base64编码，Bin编码，Hex编码，URL编码以及HTML编码。</p>
+<p>CTF中的古典密码学题目可以通过查找相关的密码学算法来了解与密码学相关内容的更多信息，通过网络方式进行解决，或者获取一些灵感。古典密码学经常会考察最基础的凯撒密码，栅栏密码，或者替换密码。这些古典密码学的处理思路和方式都比较相似，而且网络已经有很多处理这些密码的算法工具来进行加密和解密。</p>
+<p>CTF中的现代密码学题目主要会考察RSA加密算法，ECC加密算法等经典的现代密码学算法。也会有一些新的加密算法题目，这种题目往往需要进行算法分析，通过加密算法的语法逻辑来设计解密算法通过逆元的思维求出明文。</p>
+<p>关于密码学的更多内容，可以访问：http://eol.sicau.edu.cn:8080/ 来了解更多密码学相关的内容。</p>
+<p>下面就开始本回的题目！</p>
+
+<h2 class="relative group">base64
+    <div id="base64" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#base64" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到这道题目，猜想这道题目可能是考察base64编码方式的密码学题目</p>
+<p>进入道题目页面，看看是否可以得到一点tip：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image.png"
+    ></figure>
+base64题目</p>
+<p>没有什么特别的tip，只是给题目一个情景化的描述，没有太多有用信息的描述。</p>
+<p>直接下载附件内容，并打开附件文件进行查看：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-1-1024x120.png"
+    ></figure>
+附件文件</p>
+<p>文件内容有一段字符型文字：Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9</p>
+<p>根据题目的内容，尝试使用一下base64进行解码，可以使用在线的解码工具，也可以使用python脚本进行解码。这里编写简单的python脚本进行解码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python3 脚本</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s1">&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span><span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">cipher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">plainer</span><span class="p">,</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># python2 脚本</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s1">&#39;Y3liZXJwZWFjZXtXZWxjb21lX3RvX25ld19Xb3JsZCF9&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span><span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">cipher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">plainer</span><span class="p">)</span>
+</span></span></code></pre></div><p>然后运行python脚本进行解码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python base64_decode.py <span class="c1"># 这里创建的python2脚本文件名是base64_decode.py</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">python3 base64_decode3.py <span class="c1"># 这里创建的python3脚本文件名是base64_decode3.py</span>
+</span></span></code></pre></div><p>执行命令后查看执行结果</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-2.png"
+    ></figure>
+<p>成功拿到flag数据，这道题目是道签到题。</p>
+<p>这道题目主要考察base64编码知识，没有什么难度，就是一道签到题目。</p>
+
+<h2 class="relative group">Caesar
+    <div id="caesar" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#caesar" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目，自然就联系到Caesar cipher，翻译成中文就是凯撒密码。</p>
+<p>所有解决这道题目的关键就是凯撒密码的密码逻辑了</p>
+<p>凯撒密码（英语：Caesar cipher），或称凯撒加密、凯撒变换、变换加密，是一种最简单且最广为人知的加密技术。凯撒密码是一种替换加密技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是3的时候，所有的字母A将被替换成D，B变成E，以此类推。这个加密方法是以罗马共和时期凯撒的名字命名的，据称当年凯撒曾用此方法与其将军们进行联系。[2]</p>
+<p>点开题目的页面，看看是否有些有用的信息</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-3-1024x301.png"
+    ></figure>
+Caesar题目</p>
+<p>从题目描述中依旧获取不到更多的信息，没有太多有用的信息可以帮助解题</p>
+<p>直接下载附件并进行查看：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-4-1024x134.png"
+    ></figure>
+附件内容</p>
+<p>附件内容中，只有一段加密文字：oknqdbqmoq{kag_tmhq_xqmdzqp_omqemd_qzodkbfuaz}</p>
+<p>根据题目这应该是凯撒加密算法，可以使用在线的工具进行解密，也可以使用python脚本进行解决，这里使用python脚本进行解密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2脚本</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;j&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;q&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;v&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;oknqdbqmoq</span><span class="si">{kag_tmhq_xqmdzqp_omqemd_qzodkbfuaz}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dict_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[(</span><span class="n">dict_list</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">%</span><span class="mi">26</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plainer</span> <span class="o">+=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span> <span class="n">plainer</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># pyhton3脚本</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;j&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;q&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;v&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;oknqdbqmoq</span><span class="si">{kag_tmhq_xqmdzqp_omqemd_qzodkbfuaz}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dict_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[(</span><span class="n">dict_list</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">%</span><span class="mi">26</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plainer</span> <span class="o">+=</span> <span class="n">i</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">plainer</span><span class="p">)</span>
+</span></span></code></pre></div><p>这道题目的python2和python3脚本差别不大，虽然密码学的大多数题目还是推荐使用python2进行编写，但是对于使用sagemath的密码学题目，python3还是比较适合。下面运行python脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2 </span>
+</span></span><span class="line"><span class="cl"><span class="n">python</span> <span class="n">Caesar_decode</span><span class="o">.</span><span class="n">py</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># python3</span>
+</span></span><span class="line"><span class="cl"><span class="n">python3</span> <span class="n">Caesar_decode3</span><span class="o">.</span><span class="n">py</span>
+</span></span></code></pre></div><p>查看终端显示的运行结果：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-5.png"
+    ></figure>
+运行结果</p>
+<p>从运行结果发现：cyberpeace{you_have_learned_caesar_encryption} 应该是有明显含义的解密的文段，很可能是这道题目的flag。尝试进行提交，发现这段数据就是flag数据。</p>
+<p>这道题目解决，题目没有什么难度，算是签到题。</p>
+<p>题目主要考察凯撒密码的相关知识，非常直接的解密方法，没有什么难度。</p>
+
+<h2 class="relative group">Morse
+    <div id="morse" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#morse" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目Morse，自然而然便联想到了摩尔斯电码。这道题目有可能是在考察摩尔斯电码。</p>
+<p>点开题目页面，看看题目描述中会有什么有用的信息：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-6-1024x280.png"
+    ></figure>
+Morse题目</p>
+<p>题目描述依然是大片无用的信息，但是最后提示了提交flag的格式和内容要求。</p>
+<p>直接打开附件并进行查看需要进行解密的内容：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-7-1024x101.png"
+    ></figure>
+附件内容</p>
+<p>文件内容非常像bin方式的加密，但是考虑到题目Morse，应该是Morse电码方式的加密</p>
+<p>首先，需要了解什么摩尔斯电码：</p>
+<p>摩尔斯电码（英语：Morse code）是一种时通时断的信号代码，通过不同的排列顺序来表达不同的英文字母、数字和标点符号。是由美国人艾尔菲德·维尔与萨缪尔·摩尔斯在1836年发明。[3]</p>
+<p>摩尔斯电码是一种早期的数字化通信形式，但是它不同于现代只使用0和1两种状态的二进制代码，它的代码包括五种：</p>
+<ol>
+<li>点（·）：1</li>
+<li>划（-）：111</li>
+<li>字符内部的停顿（在点和划之间）：0</li>
+<li>字符之间的停顿：000</li>
+<li>单词之间的停顿：0000000</li>
+</ol>
+<p>根据摩尔斯电码的知识点，这道题目可以使用在线工具进行解密，也可以使用python脚本进行解密。这里使用python脚本进行解密：</p>
+<blockquote>
+<p>这里的密文文段和摩尔斯代码的文段不太一致，需要进行一下代换。这里使用 1 代表 - ，0 代表 ·</p>
+<p>来进行摩尔斯电码的解密算法的设计和编写。</p></blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2脚本</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;01&#39;</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1000&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1010&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;100&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0010&#39;</span><span class="p">:</span><span class="s1">&#39;f&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;110&#39;</span><span class="p">:</span><span class="s1">&#39;g&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0000&#39;</span><span class="p">:</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;00&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0111&#39;</span><span class="p">:</span><span class="s1">&#39;j&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;101&#39;</span><span class="p">:</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0100&#39;</span><span class="p">:</span><span class="s1">&#39;l&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;11&#39;</span><span class="p">:</span><span class="s1">&#39;m&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;10&#39;</span><span class="p">:</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;111&#39;</span><span class="p">:</span><span class="s1">&#39;o&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0110&#39;</span><span class="p">:</span><span class="s1">&#39;p&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1101&#39;</span><span class="p">:</span><span class="s1">&#39;q&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;010&#39;</span><span class="p">:</span><span class="s1">&#39;r&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;000&#39;</span><span class="p">:</span><span class="s1">&#39;s&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;001&#39;</span><span class="p">:</span><span class="s1">&#39;u&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0001&#39;</span><span class="p">:</span><span class="s1">&#39;v&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;011&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1001&#39;</span><span class="p">:</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1011&#39;</span><span class="p">:</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1100&#39;</span><span class="p">:</span><span class="s1">&#39;z&#39;</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;11 111 010 000 0 1010 111 100 0 00 000 000 111 00 10 1 0 010 0 000 1 00 10 110&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># python3脚本</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;01&#39;</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1000&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1010&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;100&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0010&#39;</span><span class="p">:</span><span class="s1">&#39;f&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;110&#39;</span><span class="p">:</span><span class="s1">&#39;g&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0000&#39;</span><span class="p">:</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;00&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0111&#39;</span><span class="p">:</span><span class="s1">&#39;j&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;101&#39;</span><span class="p">:</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0100&#39;</span><span class="p">:</span><span class="s1">&#39;l&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;11&#39;</span><span class="p">:</span><span class="s1">&#39;m&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;10&#39;</span><span class="p">:</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;111&#39;</span><span class="p">:</span><span class="s1">&#39;o&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0110&#39;</span><span class="p">:</span><span class="s1">&#39;p&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1101&#39;</span><span class="p">:</span><span class="s1">&#39;q&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;010&#39;</span><span class="p">:</span><span class="s1">&#39;r&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;000&#39;</span><span class="p">:</span><span class="s1">&#39;s&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;001&#39;</span><span class="p">:</span><span class="s1">&#39;u&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;0001&#39;</span><span class="p">:</span><span class="s1">&#39;v&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;011&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1001&#39;</span><span class="p">:</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1011&#39;</span><span class="p">:</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s1">&#39;1100&#39;</span><span class="p">:</span><span class="s1">&#39;z&#39;</span>
+</span></span><span class="line"><span class="cl">             <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;11 111 010 000 0 1010 111 100 0 00 000 000 111 00 10 1 0 010 0 000 1 00 10 110&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">plainer</span><span class="p">)</span>
+</span></span></code></pre></div><p>这道题目的python2和python3的求解脚本差别也不是非常大，执行脚本后直接查看执行结果：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-8.png"
+    ></figure>
+执行结果</p>
+<p>发现执行结果是一句有意义的句子，应该就是flag数据了。然后再利用题目描述所说的信息对执行出来的flag数据进行个加帽处理：cyberpeace{morsecodeissointeresting}</p>
+<p>题目解决，题目也是签到题，没有什么难度。</p>
+<p>题目主要考察了摩尔斯电码的解密方法，以及摩尔斯电码相关知识，签到题。</p>
+
+<h2 class="relative group">幂数加密
+    <div id="幂数加密" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%b9%82%e6%95%b0%e5%8a%a0%e5%af%86" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目的时候有些懵逼，本菜鸡不太了解什么的是幂数加密，于是只能求助一下搜索引擎。</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-9.png"
+    ></figure>
+二进制幂数加密-百度百科</p>
+<p>好像是一个加密方法，这种加密方法大致逻辑是：</p>
+<ol>
+<li>将明文对应字母序列</li>
+<li>对字母序列进行处理加密</li>
+<li>使用间隔符进行间隔</li>
+<li>获得密文</li>
+</ol>
+<p>现在知道这种加密方法，点开题目的描述看看是否可以获取到更多的信息</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-10-1024x284.png"
+    ></figure>
+幂数加密题目</p>
+<p>题目描述中仅仅告诉了需要提交的flag格式，和flag数据类型。题目描述的其他信息都是无用的信息。</p>
+<p>将附件下载下来并查看附件中的密文信息内容：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-11-1024x69.png"
+    ></figure>
+附件资料</p>
+<p>发现密文数据不太对劲呀，二进制幂数加密的数据都是01234的形式，这个密文的形式是01248的形式</p>
+<p>于是作为菜鸡的我只能去再次求助于搜索引擎了，查到了云影密码：</p>
+
+<h3 class="relative group">01248云影密码
+    <div id="01248云影密码" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#01248%e4%ba%91%e5%bd%b1%e5%af%86%e7%a0%81" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>原理：有1，2，4，8这四个数字，可以通过加法来用这四个数字表示0-9中的任何一个数字，列如0=28， 也就是0=2+8，同理7=124， 9=18。这样之后再用1-26来表示26个英文字母，就有了密文与明文之间的对应关系。引入0来作为间隔，以免出现混乱。所以云影密码又叫“01248密码”。[4]</p>
+<p>看来密文是云影密码没错了，由于云影密码是比较少见的密码，而是加密逻辑比较简单，网络上几乎没有什么可用的在线工具。这道题目可以使用手工解密，也可以使用python脚本进行解密。这里使用python脚本进行解密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;j&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;q&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;v&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;8842101220480224404014224202480122&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_array</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;0&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_array</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">flag</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># python3</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;j&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">,</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;q&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;v&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;8842101220480224404014224202480122&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_array</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;0&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_array</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></div><p>执行python脚本并查看终端输出的结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-12.png"
+    ></figure>
+<p>获取到明文，然后对明文加个flag数据形式的帽子并进行字母大写：cyberpeace{WELLDONE}</p>
+<p>这道题目解决，题目属于签到题，没有什么难度</p>
+<p>这道题目主要考察幂数加密的知识，（云影密码的设计逻辑其实和幂数加密相似，只是在设计过程进行了修改。）题目难度比较低·，签到题。</p>
+
+<h2 class="relative group">Railfence
+    <div id="railfence" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#railfence" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目大致知道考察的是什么密码的加密算法了，题目是栅栏，应该就是栅栏密码的密码知识考察</p>
+<p>什么是栅栏密码呢？</p>
+<p>所谓栅栏密码，就是把要加密的明文分成N个一组，然后把每组的第1个字连起来，形成一段无规律的话。 不过栅栏密码本身有一个潜规则，就是组成栅栏的字母一般不会太多。（一般不超过30个，也就是一、两句话）。加密原理：</p>
+<ol>
+<li>把将要传递的信息中的字母交替排成上下两行。</li>
+<li>再将下面一行字母排在上面一行的后边，从而形成一段密码。[5]</li>
+</ol>
+<p>栅栏密码大致就是一种分组密码的一种密码算法，便于更好理解栅栏密码，这里有一个例子：</p>
+<p>明文：THE LONGEST DAY MUST HAVE AN END5</p>
+<p>加密：</p>
+<ol>
+<li>把将要传递的信息中的字母交替排成上下两行。
+T E O G S D Y U T A E N N
+H L N E T A M S H V A E D</li>
+<li>密文：将下面一行字母排在上面一行的后边。
+TEOGSDYUTAENN HLNETAMSHVAED</li>
+</ol>
+<p>解密：</p>
+<p>先将密文分为两行</p>
+<p>T E O G S D Y U T A E N N</p>
+<p>H L N E T A M S H V A E D</p>
+<p>再按上下上下的顺序组合成一句话明文：</p>
+<p>THE LONGEST DAY MUST HAVE AN EN</p>
+<p>现在知识也大致了解了，点开题目揭开这道题目的真实面目吧！</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-13-1024x266.png"
+    ></figure>
+Railfence题目</p>
+<p>题目描述中也暗示了是栅栏密码的信息</p>
+<p>于是直接下载附件，看看附件中的描述内容密文究竟是啥样：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-14-1024x120.png"
+    ></figure>
+附件内容</p>
+<p>密文形式看样子像是解密出来直接就是flag数据。</p>
+<p>这道题目可以使用在线工具进行解密，也可以使用python脚本进行解密。这里还是一如既往，使用python脚本进行解密：（这道题目比较狗，是W型的栅栏密码解密）</p>
+<blockquote>
+<p>栅栏密码有两种类型：一种是传统型栅栏密码，一种是W型栅栏密码，W型栅栏密码比较复杂。</p></blockquote>
+<p>传统型栅栏密码脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrype</span><span class="p">(</span><span class="n">cipher</span><span class="p">,</span><span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cipher</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cipher_len</span><span class="o">%</span><span class="n">key</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="n">cipher_len</span> <span class="o">/</span> <span class="n">key</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="n">cipher_len</span> <span class="o">/</span> <span class="n">key</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cipher_len</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span> <span class="o">=</span> <span class="n">i</span><span class="o">%</span><span class="n">key</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">a</span><span class="p">:</span><span class="n">result</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">+</span><span class="n">cipher</span><span class="p">[</span><span class="n">i</span><span class="p">]})</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plainer</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">plainer</span> <span class="o">=</span> <span class="n">plainer</span> <span class="o">+</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span> <span class="n">plainer</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;TEOGSDYUTAENNHLNETAMSHVAED&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">decrype</span><span class="p">(</span><span class="n">cipher</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span></span></code></pre></div><p>W型栅栏密码脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fence</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">numrails</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fence</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numrails</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rails</span> <span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">numrails</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span><span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">numrails</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">fence</span><span class="p">[</span><span class="n">rails</span><span class="p">[</span><span class="n">n</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">rails</span><span class="p">)]][</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">rail</span> <span class="ow">in</span> <span class="n">fence</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">rail</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fence</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rng</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pos</span> <span class="o">=</span> <span class="n">fence</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="n">pos</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">rng</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">z</span> <span class="o">=</span> <span class="s2">&#34;ccehgyaefnpeoobe</span><span class="si">{lcirg}</span><span class="s2">epriec_ora_g&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">decode</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> 
+</span></span></code></pre></div><p>这道题目是W型的栅栏密码，这里使用W型栅栏密码的脚本进行破解：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-15.png"
+    ></figure>
+<p>成功跑出flag数据：cyberpeace{railfence_cipher_gogogo}</p>
+<p>题目解决，这道题目属于简单题目</p>
+<p>题目主要考察对栅栏密码的知识全面性考察，如果知识不全面可能会有一点绕，不容易解出。难度算是简单题目。</p>
+
+<h2 class="relative group">不仅仅是Morse
+    <div id="不仅仅是morse" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e4%b8%8d%e4%bb%85%e4%bb%85%e6%98%afmorse" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看题目应该知道这道题目不是非常简单的样子，应该是一个复合加密的题目，就是涉及多种加密算法的加密。</p>
+<p>点开题目页面，希望可以获取到更多关于题目的tip：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-16-1024x205.png"
+    ></figure>
+题目页面</p>
+<p>题目描述中有两个重要的tip信息：flag的数据格式和flag是一种食物的单词。对于解题有主要作用的是flag数据是一种食物的单词。</p>
+<p>下面打开附件，进行解密：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-17.png"
+    ></figure>
+附件内容</p>
+<p>看来是一个摩尔斯电码的加密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">--/.-/-.--/..--.-/-..././..--.-/..../.-/...-/./..--.-/.-/-./---/-/...././.-./..--.-/-.././-.-./---/-.././..../..../..../..../.-/.-/.-/.-/.-/-.../.-/.-/-.../-.../-.../.-/.-/-.../-.../.-/.-/.-/.-/.-/.-/.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/.-/.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../-.../.-/.-/.-/-.../-.../.-/.-/-.../.-/.-/.-/.-/-.../.-/-.../.-/.-/-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/-.../-.../.-/.-/-.../-.../-.../.-/-.../.-/.-/.-/-.../.-/-.../.-/-.../-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../-.../.-/.-/-.../-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/-.../-.../.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/-.../-.../.-
+</span></span></code></pre></div><p>首先先编写一个摩尔斯电码的解密脚本：（当然也可以使用在线的摩尔斯电码解密工具进行解密）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="s1">&#39;.-&#39;</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-...&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-.-.&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-..&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;..-.&#39;</span><span class="p">:</span><span class="s1">&#39;f&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;--.&#39;</span><span class="p">:</span><span class="s1">&#39;g&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;....&#39;</span><span class="p">:</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;..&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.---&#39;</span><span class="p">:</span><span class="s1">&#39;j&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-.-&#39;</span><span class="p">:</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.-..&#39;</span><span class="p">:</span><span class="s1">&#39;l&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;--&#39;</span><span class="p">:</span><span class="s1">&#39;m&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-.&#39;</span><span class="p">:</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;---&#39;</span><span class="p">:</span><span class="s1">&#39;o&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.--.&#39;</span><span class="p">:</span><span class="s1">&#39;p&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;--.-&#39;</span><span class="p">:</span><span class="s1">&#39;q&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.-.&#39;</span><span class="p">:</span><span class="s1">&#39;r&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;...&#39;</span><span class="p">:</span><span class="s1">&#39;s&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;..-&#39;</span><span class="p">:</span><span class="s1">&#39;u&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;...-&#39;</span><span class="p">:</span><span class="s1">&#39;v&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;.--&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-..-&#39;</span><span class="p">:</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;-.--&#39;</span><span class="p">:</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;--..&#39;</span><span class="p">:</span><span class="s1">&#39;z&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;..--.-&#39;</span><span class="p">:</span><span class="s1">&#39;_&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;--/.-/-.--/..--.-/-..././..--.-/..../.-/...-/./..--.-/.-/-./---/-/...././.-./..--.-/-.././-.-./---/-.././..../..../..../..../.-/.-/.-/.-/.-/-.../.-/.-/-.../-.../-.../.-/.-/-.../-.../.-/.-/.-/.-/.-/.-/.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/.-/.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../-.../.-/.-/.-/-.../-.../.-/.-/-.../.-/.-/.-/.-/-.../.-/-.../.-/.-/-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/-.../-.../.-/.-/-.../-.../-.../.-/-.../.-/.-/.-/-.../.-/-.../.-/-.../-.../.-/.-/.-/-.../-.../.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../-.../.-/.-/-.../-.../.-/.-/-.../.-/.-/-.../.-/.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/.-/-.../.-/-.../.-/.-/-.../-.../.-/-.../.-/.-/.-/.-/-.../-.../.-/-.../.-/.-/-.../-.../.-&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">plainer</span> <span class="o">+=</span> <span class="n">dict_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span></code></pre></div><p>执行编写好的python脚本，并查看终端的返回结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-18.png"
+    ></figure>
+<p>获得一段解密后的文段：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">may_be_have_another_decodehhhhaaaaabaabbbaabbaaaaaaaabaababaaaaaaabbabaaabbaaabbaabaaaababaabaaabbabaaabaaabaababbaabbbabaaabababbaaabbabaaabaabaabaaaabbabbaabbaabaabaaabaabaabaababaabbabaaaabbabaabba
+</span></span></code></pre></div><p>仔细看看文段，好像出题人想要我们去解密后面那段ab组成的密文</p>
+<p>那段密文形式没有见过，于是本菜鸡又去求助搜索引擎了。搜索发现是培根密码，正好于tip相对应了。那什么是培根密码呢？</p>
+<p>培根密码，又名倍康尼密码（英语：Bacon&rsquo;s cipher）是由法兰西斯·培根发明的一种隐写术。</p>
+<p>加密时，明文中的每个字母都会转换成一组五个英文字母。其转换依靠下表：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">a AAAAA   g AABBA    n ABBAA   t BAABA
+</span></span><span class="line"><span class="cl">b AAAAB   h AABBB    o ABBAB   u-v BAABB 
+</span></span><span class="line"><span class="cl">c AAABA   i-j ABAAA  p ABBBA   w BABAA
+</span></span><span class="line"><span class="cl">d AAABB   k ABAAB    q ABBBB   x BABAB
+</span></span><span class="line"><span class="cl">e AABAA   l ABABA    r BAAAA   y BABBA
+</span></span><span class="line"><span class="cl">f AABAB   m ABABB    s BAAAB   z BABBB
+</span></span></code></pre></div><p>这只是一款最常用的加密表，有另外一款将每种字母配以不同的字母组予以转换，即I与J、U与V皆有不同编号。</p>
+<p>加密者需使用两种不同字体，分别代表A和B。准备好一篇包含相同AB字数的假信息后，按照密文格式化假信息，即依密文中每个字母是A还是B分别套用两种字体。</p>
+<p>解密时，将上述方法倒转。所有字体一转回A，字体二转回B，以后再按上表拼回字母。</p>
+<p>法兰西斯·培根另外准备了一种方法，其将大小写分别看作A与B，可用于无法使用不同字体的场合（例如只能处理纯文本时）。但这样比起字体不同更容易被看出来，而且和语言对大小写的要求也不太兼容。</p>
+<p>培根密码本质上是将二进制信息通过样式的区别，加在了正常书写之上。培根密码所包含的信息可以和用于承载其的文章完全无关。[6]</p>
+<p>将摩尔斯电码解密出来的文段的后半部分取出作为密文，即：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">aaaaabaabbbaabbaaaaaaaabaababaaaaaaabbabaaabbaaabbaabaaaababaabaaabbabaaabaaabaababbaabbbabaaabababbaaabbabaaabaabaabaaaabbabbaabbaabaabaaabaabaabaababaabbabaaaabbabaabba
+</span></span></code></pre></div><p>可以使用网上的培根密码工具进行解密也可以使用python脚本进行解密，这里使用python脚本进行解密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span><span class="o">=</span><span class="p">{</span>            
+</span></span><span class="line"><span class="cl">	<span class="s1">&#39;aaaaa&#39;</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aaaab&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aaaba&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aaabb&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aabaa&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aabab&#39;</span><span class="p">:</span><span class="s1">&#39;f&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aabba&#39;</span><span class="p">:</span><span class="s1">&#39;g&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;aabbb&#39;</span><span class="p">:</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abaaa&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abaab&#39;</span><span class="p">:</span><span class="s1">&#39;j&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;ababa&#39;</span><span class="p">:</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;ababb&#39;</span><span class="p">:</span><span class="s1">&#39;l&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abbaa&#39;</span><span class="p">:</span><span class="s1">&#39;m&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abbab&#39;</span><span class="p">:</span><span class="s1">&#39;n&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abbba&#39;</span><span class="p">:</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;abbbb&#39;</span><span class="p">:</span><span class="s1">&#39;p&#39;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;baaaa&#39;</span><span class="p">:</span><span class="s1">&#39;q&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;baaab&#39;</span><span class="p">:</span><span class="s1">&#39;r&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;baaba&#39;</span><span class="p">:</span><span class="s1">&#39;s&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;baabb&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;babaa&#39;</span><span class="p">:</span><span class="s1">&#39;u&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;babab&#39;</span><span class="p">:</span><span class="s1">&#39;v&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;babba&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;babbb&#39;</span><span class="p">:</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;bbaaa&#39;</span><span class="p">:</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;bbaab&#39;</span><span class="p">:</span><span class="s1">&#39;z&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;aaaaabaabbbaabbaaaaaaaabaababaaaaaaabbabaaabbaaabbaabaaaababaabaaabbabaaabaaabaababbaabbbabaaabababbaaabbabaaabaabaabaaaabbabbaabbaabaabaaabaabaabaababaabbabaaaabbabaabba&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">cipher_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cipher</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">5</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cipher</span><span class="p">),</span><span class="mi">5</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">plainer</span> <span class="o">=</span><span class="n">plainer</span><span class="o">+</span><span class="n">dict_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span></code></pre></div><p>执行python脚本，并查看终端返回的结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-19.png"
+    ></figure>
+<p>看来输出的结果应该就是未成熟的flag数据：attackanddefenceworldisinteresting</p>
+<p>对这个数据进行加帽处理：cyberpeace{attackanddefenceworldisinteresting}</p>
+<p>flag数据成功拿到</p>
+<p>这道题目主要考察古典密码学的替换加密算法知识，难度上应该算是简单题，思路也是比较流畅的。</p>
+
+<h2 class="relative group">混合编码
+    <div id="混合编码" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%b7%b7%e5%90%88%e7%bc%96%e7%a0%81" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目，这道题应该是考察编码相关的知识的内容</p>
+<p>点开题目页面，看看能得到什么关键信息：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-20-1024x293.png"
+    ></figure>
+混合编码题目</p>
+<p>题目描述中就有一个关键信息，就是题目的要求提交的flag数据格式信息，没有其他关键性的信息了</p>
+<p>下载附件并打开查看密文：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-21-1024x150.png"
+    ></figure>
+附件内容</p>
+<p>附件中的密文内容看样子像是base64编码格式的：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">JiM3NjsmIzEyMjsmIzY5OyYjMTIwOyYjNzk7JiM4MzsmIzU2OyYjMTIwOyYjNzc7JiM2ODsmIzY5OyYjMTE4OyYjNzc7JiM4NDsmIzY1OyYjNTI7JiM3NjsmIzEyMjsmIzEwNzsmIzUzOyYjNzY7JiMxMjI7JiM2OTsmIzEyMDsmIzc3OyYjODM7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiMxMDc7JiMxMTg7JiM3NzsmIzg0OyYjNjU7JiMxMjA7JiM3NjsmIzEyMjsmIzY5OyYjMTIwOyYjNzg7JiMxMDU7JiM1NjsmIzEyMDsmIzc3OyYjODQ7JiM2OTsmIzExODsmIzc5OyYjODQ7JiM5OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzUwOyYjNzY7JiMxMjI7JiM2OTsmIzEyMDsmIzc4OyYjMTA1OyYjNTY7JiM1MzsmIzc4OyYjMTIxOyYjNTY7JiM1MzsmIzc5OyYjODM7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiM5OTsmIzExODsmIzc5OyYjODQ7JiM5OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzExOTsmIzc2OyYjMTIyOyYjNjk7JiMxMTk7JiM3NzsmIzY3OyYjNTY7JiMxMjA7JiM3NzsmIzY4OyYjNjU7JiMxMTg7JiM3NzsmIzg0OyYjNjU7JiMxMjA7JiM3NjsmIzEyMjsmIzY5OyYjMTE5OyYjNzc7JiMxMDU7JiM1NjsmIzEyMDsmIzc3OyYjNjg7JiM2OTsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzExOTsmIzc2OyYjMTIyOyYjMTA3OyYjNTM7JiM3NjsmIzEyMjsmIzY5OyYjMTE5OyYjNzc7JiM4MzsmIzU2OyYjMTIwOyYjNzc7JiM4NDsmIzEwNzsmIzExODsmIzc3OyYjODQ7JiM2OTsmIzEyMDsmIzc2OyYjMTIyOyYjNjk7JiMxMjA7JiM3ODsmIzY3OyYjNTY7JiMxMjA7JiM3NzsmIzY4OyYjMTAzOyYjMTE4OyYjNzc7JiM4NDsmIzY1OyYjMTE5Ow==
+</span></span></code></pre></div><p>使用在base64关卡中的python脚本进行base64解密（当然也可以使用在线工具进行base64解密）</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-22-1024x63.png"
+    ></figure>
+<p>接出来的数据好像又是一种编码格式：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#52;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#69;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#50;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#53;&amp;#78;&amp;#121;&amp;#56;&amp;#53;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#99;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#65;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#103;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#119;
+</span></span></code></pre></div><p>看样子应该是ascii编码格式，可以使用在线的ascii编码工具进行解密，也可使用python脚本进行解密，一如既往，这里使用python脚本进行解密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#52;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#69;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#50;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#105;&amp;#56;&amp;#53;&amp;#78;&amp;#121;&amp;#56;&amp;#53;&amp;#79;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#99;&amp;#118;&amp;#79;&amp;#84;&amp;#99;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#65;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#105;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#69;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#119;&amp;#76;&amp;#122;&amp;#107;&amp;#53;&amp;#76;&amp;#122;&amp;#69;&amp;#119;&amp;#77;&amp;#83;&amp;#56;&amp;#120;&amp;#77;&amp;#84;&amp;#107;&amp;#118;&amp;#77;&amp;#84;&amp;#69;&amp;#120;&amp;#76;&amp;#122;&amp;#69;&amp;#120;&amp;#78;&amp;#67;&amp;#56;&amp;#120;&amp;#77;&amp;#68;&amp;#103;&amp;#118;&amp;#77;&amp;#84;&amp;#65;&amp;#119;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="n">cipher</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&amp;#&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span>  <span class="n">cipher_arr</span><span class="p">:</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">plainer</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span></code></pre></div><p>执行编写好的python代码并查看终端输出情况：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-24-1024x51.png"
+    ></figure>
+<p>输出的解密信息像是base64格式的编码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">LzExOS8xMDEvMTA4Lzk5LzExMS8xMDkvMTAxLzExNi8xMTEvOTcvMTE2LzExNi85Ny85OS8xMDcvOTcvMTEwLzEwMC8xMDAvMTAxLzEwMi8xMDEvMTEwLzk5LzEwMS8xMTkvMTExLzExNC8xMDgvMTAw
+</span></span></code></pre></div><p>可以再使用一次base64解码的python脚本进行base64解码（也可以使用在线base64工具进行解码）：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-25.png"
+    ></figure>
+<p>解码后又是一段ascii的编码格式，这里还是编写一个ascii解码的python脚本：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;/119/101/108/99/111/109/101/116/111/97/116/116/97/99/107/97/110/100/100/101/102/101/110/99/101/119/111/114/108/100&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span> <span class="o">=</span> <span class="n">cipher</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">plainer</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span></code></pre></div><p>执行编写好的python代码并查看终端输出的结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-26.png"
+    ></figure>
+<p>解码出来的数据应该就是flag数据：welcometoattackanddefenceworld</p>
+<p>根据题目要求，需要对这个flag数据进行加帽处理：cyberpeace{welcometoattackanddefenceworld}</p>
+<p>题目解决，题目属于简单题目，思路就是反复套娃操作：base64-&gt;ASCII-&gt;base64-&gt;ASCII</p>
+<p>题目主要考察对编码数据的识别和基本编码方式的解决，简单题。</p>
+
+<h2 class="relative group">easy_RSA
+    <div id="easy_rsa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#easy_rsa" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看题目，这应该是考察到ctf中密码学的核心模块，也就是现代密码学的部分，RSA加密算法。</p>
+<p>什么是RSA加密算法？</p>
+<p>RSA加密算法是一种非对称加密算法，在公开密钥加密和电子商业中被广泛使用。RSA是由罗纳德·李维斯特（Ron Rivest）、阿迪·萨莫尔（Adi Shamir）和伦纳德·阿德曼（Leonard Adleman）在1977年一起提出的。当时他们三人都在麻省理工学院工作。RSA 就是他们三人姓氏开头字母拼在一起组成的。</p>
+<p>对极大整数做因数分解的难度决定了 RSA 算法的可靠性。换言之，对一极大整数做因数分解愈困难，RSA 算法愈可靠。假如有人找到一种快速因数分解的算法的话，那么用 RSA 加密的信息的可靠性就会极度下降。但找到这样的算法的可能性是非常小的。今天只有短的 RSA 钥匙才可能被强力方式破解。到目前为止，世界上还没有任何可靠的攻击RSA算法的方式。只要其钥匙的长度足够长，用RSA加密的信息实际上是不能被破解的。[7]</p>
+<p>RSA是现在密码学的一个典型代表，加密过程不像古典密码学中的密码那么简单，加密过程是非常复杂的。RSA加密算法的安全性也是相当高的。</p>
+
+<h3 class="relative group">RSA算法
+    <div id="rsa算法" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#rsa%e7%ae%97%e6%b3%95" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>密钥生成的步骤 [8]</p>
+<p>我们通过一个例子，来理解RSA算法。假设爱丽丝要与鲍勃进行加密通信，她该怎么生成公钥和私钥呢？</p>
+<p><strong>第一步，随机选择两个不相等的质数p和q。</strong></p>
+<p>爱丽丝选择了61和53。（实际应用中，这两个质数越大，就越难破解。）</p>
+<p><strong>第二步，计算p和q的乘积n。</strong></p>
+<p>爱丽丝就把61和53相乘。</p>
+<blockquote>
+$$
+> n = 61×53 = 3233
+> $$</blockquote>
+<p>n的长度就是密钥长度。3233写成二进制是110010100001，一共有12位，所以这个密钥就是12位。实际应用中，RSA密钥一般是1024位，重要场合则为2048位。</p>
+<p><strong>第三步，计算n的欧拉函数φ(n)。</strong></p>
+<blockquote>
+<p>n是质数，则 φ(n)=n-1
+</p>
+$$
+> n = p_1 × p_2
+> $$$$
+> φ(n) = φ(p_1 \cdot p_2) = φ(p_1)\cdot φ(p_1)
+> $$$$
+> => φ(n) = (p-1)(q-1)
+> $$</blockquote>
+<p>爱丽丝算出φ(3233)等于60×52，即3120。</p>
+<p><strong>第四步，随机选择一个整数e，条件是1&lt; e &lt; φ(n)，且e与φ(n) 互质。</strong></p>
+<p>爱丽丝就在1到3120之间，随机选择了17。（实际应用中，常常选择65537。）</p>
+<p><strong>第五步，计算e对于φ(n)的模反元素d。</strong></p>
+<p>所谓”模反元素”就是指有一个整数d，可以使得ed被φ(n)除的余数为1。</p>
+<blockquote>
+$$
+> ed ≡ 1 (mod φ(n))
+> $$</blockquote>
+<p>这个式子等价于</p>
+<blockquote>
+$$
+> ed - 1 = kφ(n)
+> $$</blockquote>
+<p>于是，找到模反元素d，实质上就是对下面这个二元一次方程求解。(-k = y)</p>
+<blockquote>
+$$
+> ex + φ(n)y = 1
+> $$</blockquote>
+<p>已知 e=17, φ(n)=3120，</p>
+<blockquote>
+$$
+> 17x + 3120y = 1
+> $$</blockquote>
+<p>这个方程可以用“扩展欧几里得算法”(又叫辗转相除法)求解，此处省略具体过程。总之，爱丽丝算出一组整数解为 (x,y)=(2753,-15)，即 d=2753。</p>
+<p>至此所有计算完成。</p>
+<p><strong>第六步，将n和e封装成公钥，n和d封装成私钥。</strong></p>
+<p>在爱丽丝的例子中，n=3233，e=17，d=2753，所以公钥就是 (3233,17)，私钥就是（3233, 2753）。</p>
+<p>实际应用中，公钥和私钥的数据都采用ASN.1格式表达。</p>
+<p>这些RSA加密算法的流程和重要的几个参数是解决RSA算法密码学题目的核心，只有清晰地了解RSA加密算法的每个细节，面对RSA题目才能胸有成竹、游刃有余。</p>
+<p>点开题目，看看题目描述能给出哪些提示吧：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-27-1024x280.png"
+    ></figure>
+easy_RSA</p>
+<p>题目中只有提交格式的提示，除此之外，都是描述性的信息，但是对解题没有太多作用。</p>
+<p>下载附件，直接查看附件中的信息：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-28.png"
+    ></figure>
+附件内容</p>
+<p>这道题目应该是简单的计算，即根据RSA设计的算法过程进行逆向计算。这道题目可以使用rsatool工具进行直接求解，本菜鸡还是编写一个python脚本进行求解吧：（此脚本只能针对简单问题）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span><span class="o">=</span><span class="mi">473398607161</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span><span class="o">=</span><span class="mi">4511491</span><span class="n">e</span><span class="o">=</span><span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="n">pn</span><span class="o">=</span><span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span><span class="o">=</span><span class="p">(</span><span class="n">pn</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">e</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">flag</span>
+</span></span></code></pre></div><p>执行编写的脚本，查看终端输出的结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-29.png"
+    ></figure>
+<p>这段输出的数据应该就是flag数据：125631357777427553</p>
+<p>给这段flag数据加个帽子：cyberpeace{125631357777427553}</p>
+<p>这道题目是RSA题目中的签到题，难度非常低，思路也非常简单</p>
+<p>题目主要考察RSA加密算法的过程，签到题。</p>
+
+<h2 class="relative group">easychallenge
+    <div id="easychallenge" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#easychallenge" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>这道题的题目似乎看不出什么门路来，于是只能点开题目描述的页面：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-30-1024x292.png"
+    ></figure>
+easychallenge题目</p>
+<p>这道题目应该是在说程序方面的问题，题目描述也得到不了太多有用的信息，于是下载附件来获取到这道题目的真实面目：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-31.png"
+    ></figure>
+<p>发现附件是一个python的一个可以执行的文件，查看文件的属性：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-32.png"
+    ></figure>
+<p>发现是一个pyc文件，本菜鸡不知道什么是pyc文件，于是通过互联网的搜索引擎求助一波：</p>
+<p>pyc是一种二进制文件，是由Python文件经过编译后所生成的文件，它是一种byte code，Python文件变成pyc文件后，加载的速度有所提高，而且pyc还是一种跨平台的字节码，由python的虚拟机来执行的，就类似于JAVA或者.NET的虚拟机的概念。pyc的内容与python的版本是相关的，不同版本编译后的pyc文件是不同的，例如2.5版本编译的是pyc文件，而2.4版本编译的python是无法执行的。[9]</p>
+<p>pyc文件是py文件经过编译的文件格式，文件内容是一种可执行字节码，尝试执行一下这个文件：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-33.png"
+    ></figure>
+<p>发现需要执行一下这个文件，需要输入flag数据，看来flag数据很可能就在这个文件内部。这里就需要进行反编译，即把pyc文件打回原形。通过互联网的搜索引擎查询到python内置了一个uncompyle模块可以进行pyc反编译。</p>
+<p>于是可以使用<code>pip install uncompyle </code>命令安装一下uncompyle。</p>
+<p>在命令行中执行：<code>uncompyle6 -o test.py '.\42aa1a89e3ae48c38e8b713051557020 (1).pyc'</code></p>
+<p>文件应该成功输出成了一个test.py文件。</p>
+<p>通过代码编辑器，查看到这个文件的源代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># uncompyle6 version 3.7.4</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Python bytecode 2.7 (62211)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Decompiled from: Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Embedded file name: ans.py</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Compiled at: 2018-08-09 11:29:44</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode1</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>    
+</span></span><span class="line"><span class="cl">	<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">x</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">^</span> <span class="mi">36</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">25</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode2</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>    
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">x</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="mi">36</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">^</span> <span class="mi">36</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode3</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b32encode</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="s1">&#39;Please Input your flag:&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">final</span> <span class="o">=</span> <span class="s1">&#39;UC7KOWVXWVNKNIC2XCXKHKK2W5NLBKNOUOSK3LNNVWW3E===&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">encode3</span><span class="p">(</span><span class="n">encode2</span><span class="p">(</span><span class="n">encode1</span><span class="p">(</span><span class="n">flag</span><span class="p">)))</span> <span class="o">==</span> <span class="n">final</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span> <span class="s1">&#39;correct&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span> <span class="s1">&#39;wrong&#39;</span>
+</span></span></code></pre></div><p>看到文件源代码，发现flag数据是进行三次加密的：</p>
+<ol>
+<li>异或处理-&gt;加数值chuli-&gt;ASCII编码</li>
+<li>加数值处理-&gt;异或处理-&gt;ASCII编码</li>
+<li>base32编码处理</li>
+</ol>
+<p>我们可以根据这个代码逻辑逆向设计一个加密算法脚本来解决：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decode1</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="n">base64</span><span class="o">.</span><span class="n">b32decode</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decode2</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">s</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">x</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">^</span> <span class="mi">36</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span><span class="mi">36</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">s</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decode3</span><span class="p">(</span><span class="n">ans</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">s</span><span class="o">=</span><span class="s1">&#39;&#39;</span>    
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">x</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="mi">25</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">^</span> <span class="mi">36</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="s2">&#34;UC7KOWVXWVNKNIC2XCXKHKK2W5NLBKNOUOSK3LNNVWW3E===&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer</span> <span class="o">=</span> <span class="n">decode3</span><span class="p">(</span><span class="n">decode2</span><span class="p">(</span><span class="n">decode1</span><span class="p">(</span><span class="n">cipher</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">plainer</span>
+</span></span></code></pre></div><p>执行一下编写好的代码，查看终端输出的结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-35.png"
+    ></figure>
+<p>看输出结果，应该是flag数据没错了。</p>
+<p>再次执行以下pyc程序验证一下：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-36.png"
+    ></figure>
+<p>看来是没错了，成功获取这道题目的flag数据：cyberpeace{interestinghhhhh}</p>
+<p>这道题目的难度上也是简单题，思路也是比较流畅的。</p>
+<p>题目主要考察pyc文件的反编译，以及编码和密码学的一些简单理论。简单题。</p>
+
+<h2 class="relative group">转轮机加密
+    <div id="转轮机加密" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e8%bd%ac%e8%bd%ae%e6%9c%ba%e5%8a%a0%e5%af%86" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目有些懵懵的，本菜鸡不知道啥是转轮机加密，于是只能求助一下搜索引擎来获取与转轮机加密相关的更多信息：</p>
+<p>转轮机是古典加密方法的集大成者，二战时轴心国普遍应用了该技术，可惜惨遭盟军攻破，德日还蒙在鼓里，一定程度上改变了最终的战局。</p>
+<p>转轮机的原理概括起来就是循环置换的多表代换技术，尤其是多筒转轮机，可重复使用数以万计的字母替换表。</p>
+<p>以三筒转轮机为例：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="../../../../Note/Blog/post_5.assets/929265-20160422083905866-1151128365.jpg"
+    ></figure>
+<p>有三个可以独立旋转的圆筒，每个圆筒内部有26个输入引脚和26个输出引脚，内部连线使得输入与输出唯一连接。</p>
+<p>每按一下输入键（旋转键），快速转子旋转一个引脚，当快速转子转满一轮（循环归位）时，带动中速转子旋转一个引脚，以此类推，类似钟表的秒分时。</p>
+<p>今天，转轮机的意义在于它曾经给目前最广泛使用的密码&ndash;数据加密标准DES指明了方向。[10]</p>
+<p>转轮机加密是一种古典密码学的一种加密方法，应该是古典密码学的分组密码</p>
+<p>加密过程大致是：</p>
+<p>明文-&gt;分组处理（类似于栅栏密码处理方式）-&gt;文段内容位移+密文-&gt;多文段顺序重排+密钥-&gt;密文组</p>
+<p>下面点开题目描述，看看可以得到什么信息：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-37-1024x272.png"
+    ></figure>
+转轮机加密题目</p>
+<p>根据题目描述的信息，可以获得以下几点提示：</p>
+<ol>
+<li>二战</li>
+<li>托马斯·杰斐逊</li>
+<li>flag格式</li>
+</ol>
+<p>下面下载附件，并进行查看：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-38.png"
+    ></figure>
+附件内容</p>
+<p>要想获取到flag数据，应该就需要对附件内容的数据进行机密，这里编写一个python脚本来解密：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python2</span>
+</span></span><span class="line"><span class="cl"><span class="n">dict_list</span> <span class="o">=</span> <span class="p">{</span>            
+</span></span><span class="line"><span class="cl"><span class="s1">&#39;1&#39;</span><span class="p">:</span><span class="s1">&#39;ZWAXJGDLUBVIQHKYPNTCRMOSFE&#39;</span><span class="p">,</span>            <span class="s1">&#39;2&#39;</span><span class="p">:</span><span class="s1">&#39;KPBELNACZDTRXMJQOYHGVSFUWI&#39;</span><span class="p">,</span>            <span class="s1">&#39;3&#39;</span><span class="p">:</span><span class="s1">&#39;BDMAIZVRNSJUWFHTEQGYXPLOCK&#39;</span><span class="p">,</span>            <span class="s1">&#39;4&#39;</span><span class="p">:</span><span class="s1">&#39;RPLNDVHGFCUKTEBSXQYIZMJWAO&#39;</span><span class="p">,</span>            <span class="s1">&#39;5&#39;</span><span class="p">:</span><span class="s1">&#39;IHFRLABEUOTSGJVDKCPMNZQWXY&#39;</span><span class="p">,</span>            <span class="s1">&#39;6&#39;</span><span class="p">:</span><span class="s1">&#39;AMKGHIWPNYCJBFZDRUSLOQXVET&#39;</span><span class="p">,</span>            <span class="s1">&#39;7&#39;</span><span class="p">:</span><span class="s1">&#39;GWTHSPYBXIZULVKMRAFDCEONJQ&#39;</span><span class="p">,</span>            <span class="s1">&#39;8&#39;</span><span class="p">:</span><span class="s1">&#39;NOZUTWDCVRJLXKISEFAPMYGHBQ&#39;</span><span class="p">,</span>            <span class="s1">&#39;9&#39;</span><span class="p">:</span><span class="s1">&#39;XPLTDSRFHENYVUBMCQWAOIKZGJ&#39;</span><span class="p">,</span>            <span class="s1">&#39;10&#39;</span><span class="p">:</span><span class="s1">&#39;UDNAJFBOWTGVRSCZQKELMXYIHP&#39;</span><span class="p">,</span>            <span class="s1">&#39;11&#39;</span><span class="p">:</span><span class="s1">&#39;MNBVCXZQWERTPOIUYALSKDJFHG&#39;</span><span class="p">,</span>            <span class="s1">&#39;12&#39;</span><span class="p">:</span><span class="s1">&#39;LVNCMXZPQOWEIURYTASBKJDFHG&#39;</span><span class="p">,</span>             <span class="s1">&#39;13&#39;</span><span class="p">:</span><span class="s1">&#39;JZQAWSXCDERFVBGTYHNUMKILOP&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span><span class="o">=</span><span class="s2">&#34;NFQKSEVOQOFNP&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher_arr</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer_arr</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">plainer_list</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cipher_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dict_list</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">cipher_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">location</span> <span class="o">=</span> <span class="n">j</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">cipher</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">str_get</span> <span class="o">=</span> <span class="n">j</span><span class="p">[</span><span class="n">location</span><span class="p">:]</span> <span class="o">+</span> <span class="n">j</span><span class="p">[:</span><span class="n">location</span><span class="p">]</span>    	
+</span></span><span class="line"><span class="cl">        <span class="n">plainer_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">str_get</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">plainer_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">str_get</span><span class="o">=</span><span class="s2">&#34;&#34;</span>    
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">plainer_arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">str_get</span> <span class="o">+=</span> <span class="n">j</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">str_get</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span></code></pre></div><p>执行刚刚编写好的python脚本，并在终端命令行中查看执行结果：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-39.png"
+    ></figure>
+<p>得到了一个明文的列表：</p>
+<pre tabindex="0"><code>nfqksevoqofnpahgcxiusnwcbnctwpcubfotuvyzetmdrmezgkccdqhneyczuvtxjtgszrtqwtrezbrypqfawawsbqfxxywvsaxdcswzmpbxbbojczxedjlxygkigvqqrrqoiitjkdrkytuoczhydzljeipsykufhfgullzolhblrnhjbxmmiogdvlugxvkxjuqvmkamlpiiywyxsambkvlqsiaavfireintheholeuzaulcdkfprstwvfoomsyaupkairdtpxrppdldmkncsjzfnmnnjkpsegzphtyadfgbjojqqecgjvhheunvaonrhfhgilwjdwwymbbgmw
+</code></pre><p>列表中存在明文，这时候需要看看题目描述的3个tip：</p>
+<ol>
+<li>二战</li>
+<li>托马斯·杰斐逊</li>
+<li>flag格式</li>
+</ol>
+<p>由于转轮机加密是托马斯·杰斐逊发明的，因而tip2已经使用，tip3是要在提交的时候使用，这时候还有一个tip1，二战。找一下明文列表中是否有与二战相关的文段。</p>
+<p>发现文段：fireinthehole 与二战相关，这个明文段应该就是flag数据了。</p>
+<p>根据题目描述的flag数据要求，fireinthehole就是正确的flag数据了。</p>
+<p>题目解决，题目的思路也是比较流畅简单的，难度上算是简单题。</p>
+<p>题目主要考察的是古典密码学中的转轮机加密，简单题。</p>
+
+<h2 class="relative group">Normal_RSA
+    <div id="normal_rsa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#normal_rsa" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目，感觉这道题目应该不简单，明显的一道RSA加密算法题目，估计也是考察RSA加密算法相关知识的题目。</p>
+<p>直接点开题目描述，看看可以获取到什么有用的tip</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-40-1024x273.png"
+    ></figure>
+Normal_RSA题目</p>
+<p>根据题目描述，这道题目应该是需要使用到工具的。RSA加密算法题目通常会使用到openssl，rsatool，factordb，sagemath工具进行rsa的公钥私钥的运算。</p>
+<p>下载附件，查看附件有什么东西吧：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-41.png"
+    ></figure>
+附件</p>
+<p>附件个压缩文件，我们对压缩文件进行解压获得一个文件夹：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-42.png"
+    ></figure>
+<p>打开这个文件夹：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-43.png"
+    ></figure>
+文件夹内容</p>
+<p>发现有两个文件，一个是公钥，一个是密文。pem格式的文件应该是openssl的一种文件格式</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-44.png"
+    ></figure>
+<p>这里使用openssl来获取到公钥文件的e和n，使用openssl的rsa功能之前可以先看看rsa功能的帮助：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-45.png"
+    ></figure>
+openssl rsa帮助</p>
+<p>了解了大致参数，执行命令<code>rsa -pubin -text -modulus -in pubkey.pem</code> 来获取e和n的数据：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-46.png"
+    ></figure>
+<p>exponent就是e，modulus就是n。</p>
+<p>这里的e是十进制的，n是十六进制的：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Exponent: 65537 (0x10001)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Modulus=C2636AE5C3D8E43FFB97AB09028F1AAC6C0BF6CD3D70EBCA281BFFE97FBE30DD
+</span></span></code></pre></div><p>需要进行转换，使用ipython交互求出十进制数值：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-48.png"
+    ></figure>
+<p>现在得到：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">n=87924348264132406875276140514499937145050893665602592992418171647042491658461
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">e=65537
+</span></span></code></pre></div><p>下面需要求出p和q，这里需要进行大数分解，这里使用<a
+  href="http://factordb.com/"
+    target="_blank"
+  >focterdb</a>进行大数分解：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-49-1024x111.png"
+    ></figure>
+<p>现在得到的数据有：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">p=275127860351348928173285174381581152299
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">q=319576316814478949870590164193048041239
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">n=87924348264132406875276140514499937145050893665602592992418171647042491658461
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">e=65537
+</span></span></code></pre></div><p>现在这些数据可以求出参数d了，这里使用rsatool求解参数d、生成私钥文件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python ~/rsatool/rsatool.py  -f PEM -o private.pem  -p <span class="m">275127860351348928173285174381581152299</span> -q <span class="m">319576316814478949870590164193048041239</span> -e <span class="m">65537</span> 
+</span></span></code></pre></div><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-53-1024x313.png"
+    ></figure>
+<p>现在得到了私钥文件和公钥文件了，可以使用openssl进行解密了</p>
+<p>opensssl解密RSA加密算法的模块是rsautl，解密之前，先看看rsautl的帮助：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-51.png"
+    ></figure>
+<p>了解大致参数后，执行命令开始进行求解：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> rsautl -in flag.enc -inkey private.pem -out flag.txt -decrypt
+</span></span></code></pre></div><p>然后查看生成的txt文件内容：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-54.png"
+    ></figure>
+<p>成功获取到flag数据：PCTF{256b_i5_m3dium}</p>
+<p>题目解决，题目是比较常规的RSA题目，题目主要考察RSA知识的掌握以及RSA工具的使用。</p>
+<p>题目难度上，题目算是简单题目。</p>
+
+<h2 class="relative group">esay_ECC
+    <div id="esay_ecc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#esay_ecc" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>看到题目，这道题目应该是一个比较难的题目，题目考察到的是ecc加密算法，是密码学中比较难也是比较核心的考察点。ecc加密算法也是ctf密码学的难点。什么是ecc加密算法？</p>
+<p>椭圆曲线密码学（英语：Elliptic Curve Cryptography，缩写：ECC）是一种基于椭圆曲线数学的公开密钥加密算法。椭圆曲线在密码学中的使用是在1985年由Neal Koblitz（英语：Neal Koblitz）和Victor Miller（英语：Victor Miller）分别独立提出的。</p>
+<p>ECC的主要优势是它相比RSA加密算法使用较小的密钥长度并提供相当等级的安全性。ECC的另一个优势是可以定义群之间的双线性映射，基于Weil对或是Tate对；双线性映射已经在密码学中发现了大量的应用，例如基于身份的加密。[11]</p>
+<p>点开题目，看看题目能给我们什么有用的信息：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-55-1024x301.png"
+    ></figure>
+easy_ECC题目</p>
+<p>题目的描述提示了ecc基本原理和提交的flag格式。这道题目解决的关键应该就是ecc基本原理。</p>
+<p>点开附件进行下载，查看附件内容：</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-56.png"
+    ></figure>
+附件内容</p>
+<p>本菜鸡现在实在是看不懂ecc加密算法的基本原理，这道题目直接搬大佬的脚本求解：[12]</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Gx</span> <span class="o">=</span> <span class="mi">6478678675</span>
+</span></span><span class="line"><span class="cl"><span class="n">Gy</span> <span class="o">=</span> <span class="mi">5636379357093</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">16546484</span> 
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="mi">4548674875</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">15424654874903</span>
+</span></span><span class="line"><span class="cl"><span class="n">k</span> <span class="o">=</span> <span class="mi">546768</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">Gx</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">Gy</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">Gx</span> <span class="ow">and</span> <span class="n">y</span><span class="o">==</span><span class="n">Gy</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">inv</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">Gy</span><span class="p">,</span> <span class="n">p</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">Gx</span><span class="o">*</span><span class="n">Gx</span><span class="o">+</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="o">%</span><span class="n">p</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">inv</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">Gx</span><span class="p">),</span> <span class="n">p</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="p">(</span><span class="n">y</span><span class="o">-</span><span class="n">Gy</span><span class="p">)</span><span class="o">*</span><span class="n">inv</span><span class="o">%</span><span class="n">p</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">xr</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span><span class="o">*</span><span class="n">temp</span><span class="o">-</span><span class="n">Gx</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">%</span><span class="n">p</span>
+</span></span><span class="line"><span class="cl">    <span class="n">yr</span> <span class="o">=</span> <span class="p">(</span><span class="n">temp</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">xr</span><span class="p">)</span><span class="o">-</span><span class="n">y</span><span class="p">)</span><span class="o">%</span><span class="n">p</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">#print(i,xr,yr)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">xr</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">yr</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</span></span></code></pre></div><p>执行脚本进行求解：</p>
+<figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="img"
+    src="/images/XCTF-CRYPTO-novice_writeup/image-57.png"
+    ></figure>
+<p>解出来的数值：19477226185390。对解出来的数值加个帽子：cyberpeace{19477226185390}</p>
+<p>flag数据就是：cyberpeace{19477226185390}</p>
+<p>题目解决，难度适中，主要考察ecc基本原理（本菜鸡现在看不懂，嘤嘤嘤）</p>
+
+<h2 class="relative group">参考：
+    <div id="参考" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%8f%82%e8%80%83" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<ol>
+<li><a
+  href="https://blog.csdn.net/jiang_xinxing/article/details/89360638"
+    target="_blank"
+  >密码学发展简史</a></li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/%e5%87%af%e6%92%92%e5%af%86%e7%a0%81"
+    target="_blank"
+  >凯撒密码-维基百科</a></li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/%e6%91%a9%e5%b0%94%e6%96%af%e7%94%b5%e7%a0%81"
+    target="_blank"
+  >摩尔斯电码-维基百科</a></li>
+<li><a
+  href="https://www.jianshu.com/p/b5aa5cf60f83"
+    target="_blank"
+  >01248云影密码-简书</a></li>
+<li><a
+  href="https://baike.baidu.com/item/%e6%a0%85%e6%a0%8f%e5%af%86%e7%a0%81/228209"
+    target="_blank"
+  >栅栏密码-百度百科</a></li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/%e5%9f%b9%e6%a0%b9%e5%af%86%e7%a2%bc"
+    target="_blank"
+  >培根密码-维基百科</a></li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/RSA%e5%8a%a0%e5%af%86%e6%bc%94%e7%ae%97%e6%b3%95"
+    target="_blank"
+  >RSA加密算法-维基百科</a></li>
+<li><a
+  href="https://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html"
+    target="_blank"
+  >RSA加密算法-阮一峰</a></li>
+<li><a
+  href="https://www.php.cn/python-tutorials-416352.html"
+    target="_blank"
+  >什么是.pyc文件-Python教程-PHP中文网</a></li>
+<li><a
+  href="https://www.cnblogs.com/block2016/p/5419894.html"
+    target="_blank"
+  >古典加密方法（三）转轮机 - block2016 - 博客园</a></li>
+<li><a
+  href="https://wiwiki.kfd.me/wiki/%e6%a4%ad%e5%9c%86%e6%9b%b2%e7%ba%bf%e5%af%86%e7%a0%81%e5%ad%a6?__cf_chl_jschl_tk__=a9978b71ec35dea51611bffa9ddfde17af6370e0-1617507761-0-AS1qzJ-oZAEq_LTzowb0J7phGWNrxR30GyxWwo6CyT69z-ihrCQkPQyVQt09Ilbvz62nswUGfiKGW0V7wr81F8k7VR2CTAXsMzT-d0exQRmElW9n_yv_SYJl2ZMXNsx1IF8xd9OYYwHGTSD_-s2IngOPyneCJ2vgpXqo9Ni7n7kPjZpACS3_rMdRHNdn9nCJNQX7QmB-220VQx5FnGlcQZzU9u4WOLCZDnB04Ui439-MF7E9NDg4g3poRLyDAA2mB3SznYOkHvz-9GPxSImOa87p75BN9SNM69QUdhG0fuDleenL6XoNzcYBuM-Q1lgNA-S_BnZsPAuTtUo3aDdZNP8woYFz6qr5K2WzLVQ-fYEofJN4TCVQPCn1f1PbnffLiUhOHT342PmSBmuo0xDZy6RHHJMOjFSeWT5TixJIYYmYiz2EbnrifJikVyt0-CZycYnh_-QPhzzbqleCFm90uSXCfvMuTtZ9kAzWZHqBLVpLcS1VS6spCfFZYw78f9bC7pUZUqcNYyB7pY_vhuQX6Mg"
+    target="_blank"
+  >椭圆曲线密码学-维基百科</a></li>
+<li><a
+  href="https://blog.csdn.net/weixin_46227016/article/details/111565136"
+    target="_blank"
+  >XCTF easy_ECC WP</a></li>
+</ol>
+<p>XCTF的新手区密码学题目可能难度不是很高，但是XCTF新手区的密码学题目涉及的范围还是比较广的。从编码到密码，从古典到现代，从rsa到ecc都有涉及，密码学考察的基本知识都涉及到了。</p>
+<p>本期wp分享到此为止，有时间再来喝杯茶呀！</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+
+      
+      
+        
+        
+          
+          
+        
+        
+        
+        <script
+          type="text/javascript"
+          src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+          integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+          data-oid="views_posts/posts/XCTF-CRYPTO-novice_writeup.md"
+          data-oid-likes="likes_posts/posts/XCTF-CRYPTO-novice_writeup.md"></script>
+      
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/xctf-web-novice_writeup/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;XCTF WEB novice Writeup
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2021-06-25T21:08:13&#43;08:00">25 June 2021</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/posts/buuctf-crypto-1_writeup/">
+              <span class="leading-6">
+                BUUCTF CRYPTO (1) writeup&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+              <span class="me-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2021-06-26T08:12:56&#43;08:00">26 June 2021</time>
+              </span>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2025
+          Jasmine❄Hiker
+      </p>
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js"
+    integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="https://jashiker.github.io/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+  
+</html>
