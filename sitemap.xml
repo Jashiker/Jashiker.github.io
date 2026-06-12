@@ -4,18 +4,24 @@
 
   <url>
     <loc>https://jashiker.github.io/</loc>
-    <lastmod>2026-06-12T00:00:00+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://jashiker.github.io/posts/deploy-gemma4-on-rocm-15min/</loc>
-    <lastmod>2026-06-12T00:00:00+08:00</lastmod>
+    <lastmod>2026-06-13T02:19:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://jashiker.github.io/posts/</loc>
+    <lastmod>2026-06-13T02:19:21+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jashiker.github.io/posts/gemma4-emotion-lora-amd/</loc>
+    <lastmod>2026-06-13T02:19:21+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://jashiker.github.io/posts/deploy-gemma4-on-rocm-15min/</loc>
     <lastmod>2026-06-12T00:00:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Jasmine❄Hiker</copyright>
-    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://jashiker.github.io/tags/rocm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jun 2026 02:19:21 +0800</lastBuildDate><atom:link href="https://jashiker.github.io/tags/rocm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>在 AMD ROCm 云环境用 LoRA 微调 Gemma 4 情感分类模型</title>
+      <link>https://jashiker.github.io/posts/gemma4-emotion-lora-amd/</link>
+      <pubDate>Sat, 13 Jun 2026 02:19:21 +0800</pubDate>
+      
+      <guid>https://jashiker.github.io/posts/gemma4-emotion-lora-amd/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>15 分钟在 AMD ROCm 云平台部署 Gemma 4</title>
