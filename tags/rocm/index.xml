@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ROCm on (,,・ω・,,)</title>
+    <link>https://jashiker.github.io/tags/rocm/</link>
+    <description>Recent content in ROCm on (,,・ω・,,)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Jasmine❄Hiker</copyright>
+    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://jashiker.github.io/tags/rocm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>15 分钟在 AMD ROCm 云平台部署 Gemma 4</title>
+      <link>https://jashiker.github.io/posts/deploy-gemma4-on-rocm-15min/</link>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://jashiker.github.io/posts/deploy-gemma4-on-rocm-15min/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
