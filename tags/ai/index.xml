@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Jasmine❄Hiker</copyright>
-    <lastBuildDate>Sat, 13 Jun 2026 02:19:21 +0800</lastBuildDate><atom:link href="https://jashiker.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Jul 2026 15:00:00 +0800</lastBuildDate><atom:link href="https://jashiker.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>5 分钟动手实现第一个 LLM 智能体</title>
+      <link>https://jashiker.github.io/posts/build-first-llm-agent-in-5-minutes/</link>
+      <pubDate>Mon, 13 Jul 2026 15:00:00 +0800</pubDate>
+      
+      <guid>https://jashiker.github.io/posts/build-first-llm-agent-in-5-minutes/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>在 AMD ROCm 云环境用 LoRA 微调 Gemma 4 情感分类模型</title>
